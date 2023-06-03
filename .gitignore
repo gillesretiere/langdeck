@@ -1,5 +1,11 @@
 frontend/node_modules/
 frontend/public/
+frontend/src/assets/
 backend/__pycache__/
 backend/routers/__pycache__/
 backend/.env
+backend/nohup.out
+backend/nohup.err
+frontend/nohup_react.out
+frontend/nohup_react.err
+
