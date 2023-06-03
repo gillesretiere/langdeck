@@ -93,3 +93,42 @@ INFO:     165.225.205.13:22141 - "GET /language-deck/ HTTP/1.1" 200 OK
 INFO:     165.225.205.13:22140 - "GET /language-deck/ HTTP/1.1" 200 OK
 INFO:     23.148.145.28:51005 - "GET / HTTP/1.1" 404 Not Found
 INFO:     87.27.233.77:44021 - "GET / HTTP/1.0" 404 Not Found
+INFO:     80.119.6.242:52203 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:52204 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:6074 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:6073 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:21435 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:21436 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     167.94.138.49:34828 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.49:56438 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.49:42214 - "PRI %2A HTTP/2.0" 404 Not Found
+INFO:     165.225.205.13:28735 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:29183 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:56639 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:56640 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:52255 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:52256 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:52270 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:52271 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:54395 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     80.119.6.242:54394 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:42224 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:42223 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63239 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63240 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63241 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63242 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:45304 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:45303 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:11198 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:11197 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63272 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63274 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63275 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     160.238.38.123:63273 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:47615 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:47614 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:49278 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:49277 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:41531 - "GET /language-deck/ HTTP/1.1" 200 OK
+INFO:     165.225.205.13:41530 - "GET /language-deck/ HTTP/1.1" 200 OK
