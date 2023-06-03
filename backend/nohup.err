@@ -1,0 +1,15 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/gre/projects/langdeck/venv/src/backend']
+INFO:     Uvicorn running on http://51.91.8.112:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [412789] using StatReload
+INFO:     Started server process [412791]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.

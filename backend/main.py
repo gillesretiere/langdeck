@@ -3,13 +3,15 @@ from decouple import config
 import uvicorn
 from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
-from routers.translationLanguages import router as home_router
-
+from routers.language_deck import router as language_deck_router
 
 HOST = config('HOST', cast=str)
 DOMAIN = config('DOMAIN', cast=str)
 WWW_DOMAIN = config('WWW_DOMAIN', cast=str)
+DB_URL = config('DB_URL', cast=str)
+DB_NAME = config('DB_NAME', cast=str)
 
+# used by frontend calls
 origins = [
 "http://localhost",
 "http://localhost:8080",
@@ -29,9 +31,6 @@ origins = [
 "http://"+WWW_DOMAIN+":3000",
 ]
 
-DB_URL = config('DB_URL', cast=str)
-DB_NAME = config('DB_NAME', cast=str)
-
 app = FastAPI()
 app.add_middleware(
 CORSMiddleware,
@@ -50,7 +49,7 @@ async def startup_db_client():
 async def shutdown_db_client():
     app.mongodb_client.close()
 
-app.include_router(home_router, prefix="/translationLanguages", tags=["translationLanguages"])
+app.include_router(language_deck_router, prefix="/language-deck", tags=["language deck"])
 
 if __name__ == "__main__":
     uvicorn.run("__main__:app",host=HOST,port=8000, reload=True)
