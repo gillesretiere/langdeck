@@ -7,7 +7,6 @@ const Header  = () => {
     return (
         <>
         <NavBar></NavBar>
-        <OldNavBar></OldNavBar>
         </>
     )
 }
