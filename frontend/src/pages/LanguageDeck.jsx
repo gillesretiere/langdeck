@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import LanguageDeckCard from "../components/LanguageDeckCard"
 import DarkLightModeToggle from "../components/DarkLightModeToggle"
+import SwitchMode from "../components/SwitchMode"
 
 import {useState, useEffect,useContext} from 'react'
 import Button from '@mui/material/Button';
@@ -34,6 +35,7 @@ const LanguageDeck = () => {
             )
             }
             </div>
+            <SwitchMode></SwitchMode>
             <DarkLightModeToggle/>
             <Button variant="contained">Hello World</Button>
         </div> 

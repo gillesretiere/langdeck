@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import Layout from "./components/Layout";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { blue } from '@mui/material/colors';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+    primary: {
+      main: blue[500],
+    },    
+  },
+});
+
+export const appContext = React.createContext({
+  theme: lightTheme,
+  translationLanguage:'all'
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn with Langdeck 
-        </a>
-      </header>
-    </div>
-  );
+  <ThemeProvider theme={lightTheme}>
+    <appContext.Provider>
+      return (
+        <div>
+          <Layout >
+            <div>
+              This is the App
+            </div>
+          </Layout>
+        </div>
+      );
+    </appContext.Provider>
+  </ThemeProvider>
 }
 
 export default App;

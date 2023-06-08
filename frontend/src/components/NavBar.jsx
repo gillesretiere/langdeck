@@ -1,5 +1,8 @@
 import React from 'react'
-import {useState} from 'react'
+import {useState, useContext} from 'react'
+
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,11 +17,17 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
 import logo from '../assets/logo-langdeck-w_fpt-v1.png';
+import DarkLightModeToggle from "../components/DarkLightModeToggle"
+import { appContext } from "../App";
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Settings', 'About', 'Contact',];
 
 const NavBar = () => {
+
+    const menuItems = useContext(appContext);
+    console.log(menuItems)
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -69,9 +78,10 @@ const NavBar = () => {
             alt="Logo"
             src={logo}
             />
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, pl:1 }}>
-            Langdeck
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
+            {menuItems.translationLanguage}
             </Typography>
+            <DarkLightModeToggle></DarkLightModeToggle>
             <Button color="inherit">Login</Button>
 
             {/* more icon menu (settings...) */ }
@@ -105,19 +115,20 @@ const NavBar = () => {
                     >
                     <MenuItem key="switchdarklightmode" onClick={handleCloseUserMenu}>
                     <Button aria-describedby={id} variant="contained" onClick={handleClick}>
-        Open Popover
-      </Button>
-                        <Popover
-                            id={id}
-                            open={open}
-                            anchorEl={anchorEl}
-                            onClose={handleClose}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                        > <Typography sx={{ p: 2 }}>The content of the Popover.</Typography>
-                        </Popover>                       
+                        Open Popover
+                    </Button>
+                    <Popover
+                        id={id}
+                        open={open}
+                        anchorEl={anchorEl}
+                        onClose={handleClose}
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'left',
+                        }}
+                    > <Typography sx={{ p: 2 }}>The content of the Popover.</Typography>
+                        <DarkLightModeToggle></DarkLightModeToggle>
+                    </Popover>                       
                     </MenuItem>
                     {settings.map((setting) => (
                         <MenuItem key={setting} onClick={handleCloseUserMenu}>
