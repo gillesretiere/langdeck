@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://use.typekit.net/tjn2ftb.css');
+/* special fonts */
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+/* mui fonts */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+                
+/*
+The box-sizing CSS property sets how the total width and height of an element is calculated.
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+here padding is included in box-sizing but not margin which is extra-sizing
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+  }
+}
+
+.App-header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.logo-small img{
+    width:60px;
+}
+
+  
