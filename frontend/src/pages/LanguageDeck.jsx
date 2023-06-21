@@ -1,11 +1,9 @@
 import React from 'react'
 import Layout from '../components/UI/Layout'
 import LanguageDeckCard from "../components/LanguageDeckCard"
-import DarkLightModeToggle from "../components/DarkLightModeToggle"
 import SwitchMode from "../components/SwitchMode"
 
 import {useState, useEffect,useContext} from 'react'
-import Button from '@mui/material/Button';
 
 let BASE_URL = "http://51.91.8.112:8000/language-deck"
 
@@ -36,8 +34,6 @@ const LanguageDeck = () => {
             }
             </div>
             <SwitchMode></SwitchMode>
-            <DarkLightModeToggle/>
-            <Button variant="contained">Hello World</Button>
         </div> 
     </Layout>
     </>
