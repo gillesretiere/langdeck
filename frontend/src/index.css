@@ -17,6 +17,10 @@ here padding is included in box-sizing but not margin which is extra-sizing
 * {
   box-sizing: border-box;
 }
+html {
+  font-family: sans-serif;
+  background: #1f1f1f;
+}
 
 body {
   --color-background: #fafafa;

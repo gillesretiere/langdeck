@@ -27,7 +27,7 @@ function App() {
     <appContext.Provider>
       return (
         <div>
-          <Layout >
+          <Layout>
             <div>
               This is the App
             </div>
