@@ -13,6 +13,11 @@ const Languages = () => {
   let [isPending, setIsPending] = useState(true)
   const [selectedLanguage, setSelectedLanguage] = useState('');
 
+  const selectHandler = (selection) => {
+    console.log("From Above " + selection);
+    setSelectedLanguage(selection);
+  };
+
   useEffect(() => {
     fetch(`${BASE_URL}/`)
       .then(response => response.json())
@@ -31,6 +36,7 @@ const Languages = () => {
               languages={languages}
               selection={selectedLanguage}
               message="Message here"
+              onSelect={selectHandler}
             />
           )}
         <LanguageDeckList languages={languages}/>    
