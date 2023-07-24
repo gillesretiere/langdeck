@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter,Routes,Route,} from "react-router-dom";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import './index.css';
 
@@ -13,7 +14,7 @@ import '@fontsource/roboto/700.css';
 import { AuthProvider } from './context/AuthProvider';
 import reportWebVitals from './reportWebVitals';
 
-import LanguageDeck from "./pages/LanguageDeck"
+import Languages from "./pages/Languages"
 
 import CssBaseline from '@mui/material/CssBaseline';
 import App from './App';
@@ -21,18 +22,18 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
+    <BrowserRouter>
       <AuthProvider>
-          <CssBaseline />
-          <Routes>
-            <Route path="/" element={<LanguageDeck />} />                     
-            <Route path="*" element={
-                <main style={{ padding: "1rem" }}>
-                  <p>There's nothing here!</p>
-                </main>
+        <CssBaseline />
+        <Routes>
+          <Route path="/" element={<Languages />} />
+          <Route path="*" element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
           }
           />
-          </Routes>
+        </Routes>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
