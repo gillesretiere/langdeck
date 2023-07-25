@@ -1,5 +1,6 @@
 import React from "react";
 import LanguageDeckCard from "../../LanguageDeckCard";
+import classes from "./LanguageDeckList.module.css";
 
 const LanguageDeckList = ({languages}) => {
     return (

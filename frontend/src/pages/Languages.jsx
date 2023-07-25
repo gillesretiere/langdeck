@@ -52,7 +52,7 @@ const Languages = () => {
           sx={{ width: 300 }}
           renderInput={(params) => <TextField {...params} label="Language" />}
         /> 
-      <div className="mx-8">
+      <div>
         {/* !selectedLanguage && (
           <SelectLanguage
             title="Choose language"
