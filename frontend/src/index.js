@@ -10,30 +10,33 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-
+import { AppContext } from './App';
 import { AuthProvider } from './context/AuthProvider';
+
 import reportWebVitals from './reportWebVitals';
 
 import Languages from "./pages/Languages"
 
 import CssBaseline from '@mui/material/CssBaseline';
-import App from './App';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
+        <AppContext.Provider>
         <CssBaseline />
-        <Routes>
-          <Route path="/" element={<Languages />} />
-          <Route path="*" element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-          />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Languages />} />
+            <Route path="*" element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+            />
+          </Routes>
+        </AppContext.Provider>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>

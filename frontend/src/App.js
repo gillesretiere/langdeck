@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Layout from "./components/UI/Layout";
 /*
  This global entry component is not used, specific routes components are used instead.
 */
+
+export const AppContext = React.createContext({
+    selectedLanguage: 'Français'
+});
+
 function App() {
       return (
-      <div>
-        <Layout>
-          <div>
-            This is the App
-          </div>
-        </Layout>
-      </div>
+      <>
+          This is the App
+      </>
       );
 }
 

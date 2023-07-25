@@ -3,6 +3,7 @@ import {useState, useContext} from 'react'
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,15 +19,12 @@ import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
 import logo from '../../assets/logo-langdeck-w_fpt-v1.png';
 import DarkLightModeToggle from "../../components/DarkLightModeToggle"
-import { appContext } from "../../App";
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Settings', 'About', 'Contact',];
 
 const NavBar = () => {
 
-    const menuItems = useContext(appContext);
-    console.log(menuItems)
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -55,7 +53,7 @@ const NavBar = () => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
         };
-    
+
     return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar 
@@ -79,7 +77,7 @@ const NavBar = () => {
             src={logo}
             />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
-            {menuItems.translationLanguage}
+
             </Typography>
             <DarkLightModeToggle></DarkLightModeToggle>
             <Button color="inherit">Login</Button>
