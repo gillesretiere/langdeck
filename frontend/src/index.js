@@ -10,7 +10,6 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { AppContext } from './App';
 import { AuthProvider } from './context/AuthProvider';
 
 import reportWebVitals from './reportWebVitals';
@@ -25,7 +24,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AuthProvider>
-        <AppContext.Provider>
         <CssBaseline />
           <Routes>
             <Route path="/" element={<Languages />} />
@@ -36,7 +34,6 @@ root.render(
             }
             />
           </Routes>
-        </AppContext.Provider>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useContext} from 'react'
+import { appContext } from "../../App";
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -25,6 +26,8 @@ const settings = ['Settings', 'About', 'Contact',];
 
 const NavBar = () => {
 
+    const menuItems = useContext(appContext);
+    console.log(menuItems);
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -77,8 +80,10 @@ const NavBar = () => {
             src={logo}
             />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
-
+            <p>Selection : {menuItems.translationLanguage}
+            <Button color="secondary" href="/">Change</Button></p>
             </Typography>
+            
             <DarkLightModeToggle></DarkLightModeToggle>
             <Button color="inherit">Login</Button>
 
