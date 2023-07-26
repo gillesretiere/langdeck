@@ -15,7 +15,7 @@ import { AuthProvider } from './context/AuthProvider';
 import reportWebVitals from './reportWebVitals';
 
 import Languages from "./pages/Languages";
-import ThemeDecks from "./pages/ThemeDecks";
+import Decks from "./pages/Decks";
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -28,7 +28,7 @@ root.render(
         <CssBaseline />
           <Routes>
             <Route path="/" element={<Languages />} />
-            <Route path="themeDecks/:id" element={<ThemeDecks />} />
+            <Route path="decks/:id" element={<Decks />} />
             <Route path="*" element={
               <main style={{ padding: "1rem" }}>
                 <p>There's nothing here!</p>
