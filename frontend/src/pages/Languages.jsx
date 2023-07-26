@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/UI/Layout'
-import LanguageDeckCard from "../components/LanguageDeckCard"
-import SelectLanguage from '../components/UI/SelectLanguage';
 import LanguageDeckList from '../components/Decks/Languages/LanguageDeckList.jsx';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
+
 
 import { useState, useEffect, useContext } from 'react'
 import { appContext } from "../App";
@@ -37,6 +37,7 @@ const Languages = () => {
 
   return (
     <Layout>
+      <div className={`${classes.search__language}`}>
       <Autocomplete
           disablePortal
           value={value}
@@ -52,21 +53,11 @@ const Languages = () => {
           sx={{ width: 300 }}
           renderInput={(params) => <TextField {...params} label="Language" />}
         /> 
+      </div>
       <div>
-        {/* !selectedLanguage && (
-          <SelectLanguage
-            title="Choose language"
-            languages={languages}
-            selection={selectedLanguage}
-            message="Message here"
-            onSelect={selectHandler}
-          />
-        ) */ }
-
         <LanguageDeckList languages={
           languages.filter(({ language_name_fr }) => language_name_fr.startsWith(inputValue))
           } />
-
       </div>
     </Layout>
   )
