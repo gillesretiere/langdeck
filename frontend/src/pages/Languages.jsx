@@ -1,20 +1,22 @@
-import React from 'react'
-import Layout from '../components/UI/Layout'
-import LanguageDeckList from '../components/Decks/Languages/LanguageDeckList.jsx';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
-import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
-
+import React from 'react';
 
 import { useState, useEffect, useContext } from 'react'
 import { appContext } from "../App";
 
-let BASE_URL = "http://51.91.8.112:8000/language-deck"
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+
+import Layout from '../components/UI/Layout';
+import LanguageDeckList from '../components/Decks/Languages/LanguageDeckList.jsx';
+import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
+
+const BASE_URL = "http://51.91.8.112:8000/language-deck";
 
 const Languages = () => {
+
   const menuItems = useContext(appContext);
-  let [languages, setLanguages] = useState([])
-  let [isPending, setIsPending] = useState(true)
+  const [languages, setLanguages] = useState([])
+  const [isPending, setIsPending] = useState(true)
   const [selectedLanguage, setSelectedLanguage] = useState('');
   const [value, setValue] = React.useState(languages[0]);
   const [inputValue, setInputValue] = React.useState('');
@@ -46,7 +48,7 @@ const Languages = () => {
           }}
           inputValue={inputValue}
           onInputChange={(event, newInputValue) => {
-            setInputValue(newInputValue);
+            setInputValue(newInputValue.toLowerCase());
           }}
           id="combo-box-demo"
           options={language_name}
@@ -56,7 +58,7 @@ const Languages = () => {
       </div>
       <div>
         <LanguageDeckList languages={
-          languages.filter(({ language_name_fr }) => language_name_fr.startsWith(inputValue))
+          languages.filter(({ language_name_fr }) => language_name_fr.toLowerCase().startsWith(inputValue))
           } />
       </div>
     </Layout>

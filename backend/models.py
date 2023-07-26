@@ -39,7 +39,7 @@ class LanguageDeckBase(MongoBaseModel):
 class LanguageDeckDB(LanguageDeckBase):
     pass
 
-# stories
+# stories (decks)
 class Stories(MongoBaseModel):
     language: str = Field(..., min_length=3, max_length=3)
     domains : Optional[Any]
