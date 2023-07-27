@@ -8,6 +8,7 @@ const DomainDeckCard = ({domains}) => {
   return (
       <div className={`${classes.card__container}`}>
         <Link to={`/`}>
+            <div>{domain}</div>
             <div>{domain_translated}</div>
         </Link>    
       </div>
