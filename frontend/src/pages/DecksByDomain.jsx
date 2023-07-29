@@ -6,11 +6,13 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
 import AutoComplete from '../components/UI/AutoComplete';
-import SceneDeckCardIterator from '../components/Decks/Scenes/SceneDeckCardIterator';
+
 import Layout from '../components/UI/Layout';
 
+import DomainIterator from "../components/Decks/Domains/DomainIterator";
+
 const Decks = () => {
-  const BASE_URL = "http://51.91.8.112:8000/scene-deck";
+  const BASE_URL = "http://51.91.8.112:8000/story-deck";
   const {id} = useParams();
   const [decks, setDecks] = useState ('');
 
@@ -45,10 +47,10 @@ const Decks = () => {
 
   return (
       <Layout>
-        {decks && <AutoComplete options={decks.decks.map(a => a.story)} value={value} inputValue={inputValue} setValue={setValueHandler} setInputValue={setInputValueHandler}/>}
+        {decks && <AutoComplete options={decks.domains.map(a => a.domain)} value={value} inputValue={inputValue} setValue={setValueHandler} setInputValue={setInputValueHandler}/>}
         <div>
-          {decks && <SceneDeckCardIterator scenes={decks.decks.filter(({story}) => story.toLowerCase().startsWith(inputValue))} />}
-        </div>
+          {decks && <DomainIterator key={decks.language} domains={decks.domains.filter(({ domain }) => domain.toLowerCase().startsWith(inputValue))}/>}
+        </div>   
       </Layout>
   )
 }

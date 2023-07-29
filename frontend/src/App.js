@@ -5,7 +5,9 @@ import React, { useState } from 'react';
 
 export const appContext = React.createContext({
     theme: 'lightTheme',
-    translationLanguage:'all'
+    translationLanguage:'all',
+    selectedScene: '',
+    setSelectedScene: (scene) => {}
   });
   
 

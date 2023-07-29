@@ -16,6 +16,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Languages from "./pages/Languages";
 import Decks from "./pages/Decks";
+import Scenes from "./pages/Scenes";
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -29,6 +30,7 @@ root.render(
           <Routes>
             <Route path="/" element={<Languages />} />
             <Route path="decks/:id" element={<Decks />} />
+            <Route path="scenes/:id" element={<Scenes />} />
             <Route path="*" element={
               <main style={{ padding: "1rem" }}>
                 <p>There's nothing here!</p>

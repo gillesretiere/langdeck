@@ -46,3 +46,11 @@ class Stories(MongoBaseModel):
 
 class StoriesDB(Stories):
     pass
+
+# stories (decks)
+class Scene(MongoBaseModel):
+    language: str = Field(..., min_length=3, max_length=3)
+    decks : Optional[Any]
+
+class SceneDB(Scene):
+    pass

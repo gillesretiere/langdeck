@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
 from routers.language_deck import router as language_deck_router
 from routers.story_deck import router as story_deck_router
+from routers.scene_deck import router as scene_deck_router
 
 HOST = config('HOST', cast=str)
 DOMAIN = config('DOMAIN', cast=str)
@@ -52,6 +53,7 @@ async def shutdown_db_client():
 
 app.include_router(language_deck_router, prefix="/language-deck", tags=["language deck"])
 app.include_router(story_deck_router, prefix="/story-deck", tags=["story deck"])
+app.include_router(scene_deck_router, prefix="/scene-deck", tags=["scene deck"])
 
 if __name__ == "__main__":
     uvicorn.run("__main__:app",host=HOST,port=8000, reload=True)
