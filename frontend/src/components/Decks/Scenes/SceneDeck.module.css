@@ -1,0 +1,14 @@
+.scene__wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .scene__container {
+    background-color: white;
+    border-radius: 0.8rem;
+    max-width: 64rem;
+  }
+  

@@ -1,17 +1,19 @@
 import React, { useContext } from 'react';
 import classes from "./SceneDeckCard.module.css";
-import PhraseCardIterator from "./Phrases/PhraseCardIterator";
 import { Link } from "react-router-dom";
-import { appContext } from "../../../App";
+import DeckContext from "../../../context/DeckContext";
 
 
 const SceneDeckCard = ({scene}) => {
-  let selectedScene = useContext(appContext);
-  selectedScene = {scene};
+  let params = useContext(DeckContext);
+
+  const linkHandler = (event) => {
+    params.deck = {scene};
+  };
 
   return (
     <div className={`${classes.card__container}`}>
-      <Link to={{pathname:`/scenes/${scene.language}`}}>
+      <Link to={{pathname:`/scenes/${scene.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{scene.story}</div>

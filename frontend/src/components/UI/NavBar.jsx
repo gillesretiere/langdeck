@@ -27,7 +27,6 @@ const settings = ['Settings', 'About', 'Contact',];
 const NavBar = () => {
 
     const menuItems = useContext(appContext);
-    console.log(menuItems);
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);

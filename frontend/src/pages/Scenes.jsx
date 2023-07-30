@@ -1,13 +1,17 @@
 import React, { useContext } from 'react';
-import { appContext } from "../App";
+import DeckContext from "../context/DeckContext";
+import SceneDeck from '../components/Decks/Scenes/SceneDeck';
 
 const Scenes = (props) => {
-    // let { phrases } = props.location.state;
-    const contextVars = useContext(appContext);
-    console.log(contextVars);
+
+    let ctx = useContext(DeckContext);
+    console.log(ctx);    
+    const deck = ctx.deck;
 
   return (
-    <div>Scenes</div>
+    <div>
+      <SceneDeck deck={deck}/>
+    </div>
   )
 }
 
