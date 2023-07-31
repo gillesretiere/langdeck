@@ -1,12 +1,12 @@
 import Header from "./Header"
 import Footer from "./Footer"
-import styles from "./Layout.module.css";
+import classes from "./Layout.module.css";
 
 const Layout = ({children}) => {
   return (
-    <div className="flex flex-col">
+    <div className={classes.container}>
         <Header />
-        <div className={styles.layout}>{children}</div>
+        <div className={classes.layout}>{children}</div>
         <Footer/>
     </div>
   )
