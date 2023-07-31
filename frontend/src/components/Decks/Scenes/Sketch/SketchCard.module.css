@@ -38,3 +38,39 @@
   .sketch__details {
     padding: 2.3rem;
   }
+
+  .sketch__deck__tags {
+    margin: 0.75rem; 
+  }
+
+  .sketch__deck__tag__common {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+    margin-right: 0.5rem; 
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+    color: white;
+    width: fit-content;
+    block-size: fit-content;
+    height: 100%;
+    font-family : var(--secondary-font);
+    font-size: 0.8em;
+    border-radius: 12px;
+  }
+
+  .sketch__deck__tag__language {
+    background-color: #43BED9;
+  }
+  .sketch__deck__tag__domain {
+    background-color: #6DBF1B;
+  }
+  .sketch__deck__tag__theme {
+    background-color: #FA7F08;
+  }
