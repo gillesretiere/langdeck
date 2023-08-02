@@ -1,7 +1,7 @@
 import React from 'react';
 import SketchCard from "./SketchCard";
 
-const PhraseCardIterator = ({ scene }) => {
+const SketchCardIterator = ({ scene }) => { if(scene) {
   const {phrases} = scene;
   return (
     <div>
@@ -10,6 +10,6 @@ const PhraseCardIterator = ({ scene }) => {
         })}
     </div>
   )
-}
+}}
 
-export default PhraseCardIterator
+export default SketchCardIterator;

@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./SketchCard.module.css";
 
-const SketchHeader = ({scene}) => {
-    const {story, story_translated, story_img, domain, language, theme} = scene;
+const SketchHeader = ({scene}) => { if (scene) {
+    const {story, story_translated, story_img, story_note, story_note_translated, domain, language, theme} = scene;
   return (
     <>
         <div className={classes.sketch__deck__tags}>
@@ -15,17 +15,24 @@ const SketchHeader = ({scene}) => {
             <img src={story_img} alt="https://unsplash.com/"></img>
         </div> 
         <div className={classes.sketch__details}>
-            <div className={classes.sketch__title__translated}>
-                {story_translated}
-            </div>               
-            <div className={classes.sketch__title}>
+            <div className={`${classes.sketch__title} ${classes.sketch__title__fr}`}>
                 {story}
-            </div>         
+            </div>
+            <div className={`${classes.sketch__title} ${classes.sketch__title__translated}`}>
+                {story_translated}
+            </div>                
+            <div className={`${classes.sketch__note} ${classes.sketch__note__fr}`}>
+                {story_note}
+            </div>  
+            <div className={`${classes.sketch__note} ${classes.sketch__note__tr}`}>
+                {story_note_translated}
+            </div>              
         </div>    
     </div>           
     </>
 
   )
-}
+}}
+
 
 export default SketchHeader

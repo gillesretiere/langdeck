@@ -8,7 +8,7 @@ const SceneDeck = ({deck}) => {
     <div className={classes.scene__wrapper}>
         <div className={classes.scene__grid}>
             <div className={classes.scene__container}>
-                <SketchHeader scene={deck.scene}/>
+                {deck && <SketchHeader scene={deck.scene}/>}
             </div>
             {deck && <SketchCardIterator scene={deck.scene} />}       
         </div>
