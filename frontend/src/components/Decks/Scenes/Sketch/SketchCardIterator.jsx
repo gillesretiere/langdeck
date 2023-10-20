@@ -3,6 +3,7 @@ import SketchCard from "./SketchCard";
 
 const SketchCardIterator = ({ scene }) => { if(scene) {
   const {phrases} = scene;
+  console.log (phrases);
   return (
     <div>
       {phrases && phrases.map((el) => {

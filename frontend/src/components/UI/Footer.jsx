@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className="h-full shadow-inner p-5 overflow-hidden">
         <nav className="flex justify-start relative items-center h-16">
-            <div>&copy;Langdeck 2023</div> 
+            <div>&copy;Langdeck Cartolang 2023</div> 
         </nav>
       </div>  
     </>

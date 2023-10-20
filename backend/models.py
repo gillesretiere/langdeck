@@ -54,3 +54,19 @@ class Scene(MongoBaseModel):
 
 class SceneDB(Scene):
     pass
+
+# saynetes (decks)
+class Saynete(MongoBaseModel):
+    language: str = Field(..., min_length=3, max_length=3)
+    stories : Optional[Any]
+
+class SayneteDB(Saynete):
+    pass
+
+# saynetes (decks)
+class LangDeck(MongoBaseModel):
+    language: str = Field(..., min_length=3, max_length=3)
+    stories : Optional[Any]
+
+class LangDeckDB(LangDeck):
+    pass
