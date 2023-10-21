@@ -9,3 +9,7 @@ backend/nohup.err
 frontend/nohup_react.out
 frontend/nohup_react.err
 
+frontend/save_pid.txt
+frontend/.nohup_react.out
+frontend/.nohup_react.out
+frontend/save_pid.txt
