@@ -18,6 +18,7 @@ import Languages from "./pages/Languages";
 import Decks from "./pages/Decks";
 import Scenes from "./pages/Scenes";
 import LangDecks from "./pages/LangDecks";
+import StoryDeck from "./pages/StoryDeck";
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -30,6 +31,7 @@ root.render(
         <CssBaseline />
           <Routes>
             <Route path="/" element={<LangDecks />} />
+            <Route path="story_deck/:id" element={<StoryDeck />} />
             <Route path="decks/:id" element={<Decks />} />
             <Route path="scenes/:id" element={<Scenes />} />
             <Route path="*" element={
