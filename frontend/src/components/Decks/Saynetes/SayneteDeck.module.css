@@ -1,0 +1,20 @@
+.scene__wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+.scene__container {
+  background-color: white;
+  border-radius: 0.8rem;
+  max-width: 64rem;
+}
+
+.scene__grid {
+  display: grid;
+  @media (min-width: 640px) { 
+    grid-template-columns: repeat(1, minmax(0, 1fr)); 
+   }
+}

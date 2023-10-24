@@ -669,3 +669,3280 @@ src/pages/StoryDeck.jsx
   Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
 
 webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 22:18:  'story_translation' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 5:19:  'story_translated' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 22:18:  'story_translation' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 15:23:  'story_illustration' is not defined  no-undef
+  Line 22:18:  'story_translation' is not defined   no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 5:19:  'story_translated' is assigned a value but never used  no-unused-vars
+  Line 5:37:  'story_img' is assigned a value but never used         no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 15:23:  'story_illustration' is not defined  no-undef
+  Line 22:18:  'story_translation' is not defined   no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 22:18:  'story_translation' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 5:19:  'story_translated' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/components/Decks/Scenes/Sketch/SketchHeader.jsx
+  Line 22:18:  'story_translation' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './pages/LangDecks' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 18:0-42
+Module not found: Error: Can't resolve './pages/LangDecks' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './pages/LangDecks' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 18:0-42
+Module not found: Error: Can't resolve './pages/LangDecks' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/index.js
+  Line 33:39:  'LanguageDeck' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+  Line 20:8:  'LangDecks' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/index.js
+  Line 33:39:  'LanguageDeck' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './pages/SayneteDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 20:0-46
+Module not found: Error: Can't resolve './pages/SayneteDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 18:0-48
+Module not found: Error: Can't resolve './pages/LanguageDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 19:0-42
+Module not found: Error: Can't resolve './pages/StoryDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 19:0-42
+Module not found: Error: Can't resolve './pages/StoryDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/pages/SayneteDeck.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/gre/projects/langdeck/venv/src/frontend/src/pages/SayneteDeck.jsx: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+  4 | import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
+  5 |
+> 6 | const SayneteDeck = (props) => {
+    |       ^
+  7 |
+  8 |     let ctx = useContext(DeckContext);
+  9 |     console.log(ctx);    
+    at instantiate (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:63:32)
+    at constructor (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:358:12)
+    at FlowParserMixin.raise (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:3255:19)
+    at FlowScopeHandler.checkRedeclarationInScope (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1528:19)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1499:12)
+    at FlowScopeHandler.declareName (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:1595:11)
+    at FlowParserMixin.declareNameFromIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7511:16)
+    at FlowParserMixin.checkIdentifier (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7507:12)
+    at FlowParserMixin.checkLVal (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:7446:12)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13278:10)
+    at FlowParserMixin.parseVarId (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5718:11)
+    at FlowParserMixin.parseVar (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13256:12)
+    at FlowParserMixin.parseVarStatement (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13096:10)
+    at FlowParserMixin.parseStatementContent (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12679:23)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12584:17)
+    at FlowParserMixin.parseStatementLike (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5130:24)
+    at FlowParserMixin.parseModuleItem (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12561:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13185:36)
+    at FlowParserMixin.parseBlockBody (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:13178:10)
+    at FlowParserMixin.parseProgram (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12460:10)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:12450:25)
+    at FlowParserMixin.parseTopLevel (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:5935:28)
+    at FlowParserMixin.parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14346:10)
+    at parse (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/parser/lib/index.js:14387:38)
+    at parser (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transformation/index.js:21:50)
+    at run.next (<anonymous>)
+    at transform (/home/gre/projects/langdeck/venv/src/frontend/node_modules/@babel/core/lib/transform.js:22:41)
+    at transform.next (<anonymous>)
+    at step (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:261:32)
+    at /home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/gre/projects/langdeck/venv/src/frontend/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 20:0-46
+Module not found: Error: Can't resolve './pages/SayneteDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/index.js 20:0-46
+Module not found: Error: Can't resolve './pages/SayneteDeck' in '/home/gre/projects/langdeck/venv/src/frontend/src'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 5:0-45
+Module not found: Error: Can't resolve './SceneDeck.module.css' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 4 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 5:0-45
+Module not found: Error: Can't resolve './SceneDeck.module.css' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 4 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 5:0-45
+Module not found: Error: Can't resolve './SceneDeck.module.css' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 4 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 6:0-61
+Module not found: Error: Can't resolve './Sketch/SketchCardIterator' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 3 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/Decks/Saynetes/SayneteDeckCard.jsx
+  Line 23:16:  'PhraseCard' is not defined  no-undef
+
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/components/Decks/Saynetes/SayneteDeckCard.jsx
+  Line 5:7:  'SayneteDeckCard' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/components/Decks/Saynetes/SayneteDeckCard.jsx
+  Line 23:16:  'PhraseCard' is not defined  no-undef
+
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-49
+Module not found: Error: Can't resolve './Sketch/SketchHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteCardHeader.jsx 5:0-47
+Module not found: Error: Can't resolve './SayneteCard.module.css' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteCardHeader.jsx 5:0-47
+Module not found: Error: Can't resolve './SayneteCard.module.css' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-52
+Module not found: Error: Can't resolve './SayneteCardHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-52
+Module not found: Error: Can't resolve './SayneteCardHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-52
+Module not found: Error: Can't resolve './SayneteCardHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in ./src/components/Decks/Saynetes/SayneteDeck.jsx 7:0-52
+Module not found: Error: Can't resolve './SayneteCardHeader' in '/home/gre/projects/langdeck/venv/src/frontend/src/components/Decks/Saynetes'
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 2 errors and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SayneteDeck.jsx
+Syntax error: Identifier 'SayneteDeck' has already been declared. (6:6) (6:6)
+WARNING in [eslint] 
+src/components/Decks/Languages/LanguageDeckCard.jsx
+  Line 7:33:  'lang_name_en' is assigned a value but never used  no-unused-vars
+
+src/index.js
+  Line 4:10:  'ThemeProvider' is defined but never used  no-unused-vars
+  Line 4:25:  'createTheme' is defined but never used    no-unused-vars
+  Line 17:8:  'Languages' is defined but never used      no-unused-vars
+
+src/pages/LangDecks.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguageDeck.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/LanguagePage.jsx
+  Line 19:10:  'isPending' is assigned a value but never used         no-unused-vars
+  Line 20:10:  'selectedLanguage' is assigned a value but never used  no-unused-vars
+  Line 25:9:   'selectHandler' is assigned a value but never used     no-unused-vars
+
+src/pages/StoryDeck.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/StoryPage.jsx
+  Line 34:5:  React Hook useEffect has a missing dependency: 'id'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR in [eslint] 
+src/pages/SayneteDeck.jsx
+  Line 6:6:  Parsing error: Identifier 'SayneteDeck' has already been declared. (6:6)
+
+webpack compiled with 1 error and 1 warning

@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 import AutoComplete from '../components/UI/AutoComplete';
-import SceneDeckCardIterator from '../components/Decks/Scenes/SceneDeckCardIterator';
+import StoryDeckList from '../components/Decks/Stories/StoryDeckList';
 import Layout from '../components/UI/Layout';
 
 const BASE_URL = "http://51.91.8.112:8000/storydeck";
 
 
-const StoryDeck = () => {
+const StoryPage = () => {
 
   const {id} = useParams();
   const [decks, setDecks] = useState ('');
@@ -47,10 +47,10 @@ const StoryDeck = () => {
     <Layout>
         {decks && <AutoComplete options={decks.stories.map(a => a.story)} value={value} inputValue={inputValue} setValue={setValueHandler} setInputValue={setInputValueHandler}/>}
         <div>
-            {decks && <SceneDeckCardIterator scenes={decks.stories.filter(({story}) => story.toLowerCase().startsWith(inputValue))} />}
+            {decks && <StoryDeckList scenes={decks.stories.filter(({story}) => story.toLowerCase().startsWith(inputValue))} img={decks.lang_flag_icon}/>}
         </div>
   </Layout>
   )
 }
 
-export default StoryDeck
+export default StoryPage

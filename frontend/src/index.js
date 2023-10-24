@@ -17,8 +17,9 @@ import reportWebVitals from './reportWebVitals';
 import Languages from "./pages/Languages";
 import Decks from "./pages/Decks";
 import Scenes from "./pages/Scenes";
-import LangDecks from "./pages/LangDecks";
-import StoryDeck from "./pages/StoryDeck";
+import LanguagePage from "./pages/LanguagePage";
+import StoryPage from "./pages/StoryPage";
+import SaynetePage from "./pages/SaynetePage";
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -30,8 +31,9 @@ root.render(
       <AuthProvider>
         <CssBaseline />
           <Routes>
-            <Route path="/" element={<LangDecks />} />
-            <Route path="story_deck/:id" element={<StoryDeck />} />
+            <Route path="/" element={<LanguagePage />} />
+            <Route path="story_page/:id" element={<StoryPage />} />
+            <Route path="saynete_page/:id" element={<SaynetePage />} />
             <Route path="decks/:id" element={<Decks />} />
             <Route path="scenes/:id" element={<Scenes />} />
             <Route path="*" element={

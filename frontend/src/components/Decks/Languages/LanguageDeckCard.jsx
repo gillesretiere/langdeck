@@ -8,7 +8,7 @@ const LanguageDeckCard = ({language_deck}) => {
 
   return (
     <div className={`${classes.card__container}`}>
-      <Link to={`/story_deck/${language}`}>
+      <Link to={`/story_page/${language}`}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{lang_name_fr}</div>

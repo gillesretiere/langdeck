@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import classes from "./SceneDeckCard.module.css";
+import classes from "./StoryDeckCard.module.css";
 import { Link } from "react-router-dom";
 import DeckContext from "../../../context/DeckContext";
 
 
-const SceneDeckCard = ({scene, img}) => {
+const StoryDeckCard = ({scene, img}) => {
   let params = useContext(DeckContext);
 
   const linkHandler = (event) => {
@@ -13,7 +13,7 @@ const SceneDeckCard = ({scene, img}) => {
 
   return (
     <div className={`${classes.card__container}`}>
-      <Link to={{pathname:`/scenes/${scene.language}`}} onClick={linkHandler}>
+      <Link to={{pathname:`/saynete_page/${scene.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{scene.story_translation}</div>
@@ -28,4 +28,4 @@ const SceneDeckCard = ({scene, img}) => {
   )
 }
 
-export default SceneDeckCard
+export default StoryDeckCard

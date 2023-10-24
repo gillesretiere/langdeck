@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from "./SketchCard.module.css";
+import classes from "./SayneteDeckCard.module.css";
 
-const SketchHeader = ({scene}) => { if (scene) {
+const SayneteDeckCardHeader = ({scene}) => { if (scene) {
     const {story, story_translation, story_illustration, story_note, story_note_translated, domain, language, theme} = scene;
     console.log(scene);
   return (
@@ -36,4 +36,4 @@ const SketchHeader = ({scene}) => { if (scene) {
 }}
 
 
-export default SketchHeader
+export default SayneteDeckCardHeader

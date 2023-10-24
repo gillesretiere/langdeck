@@ -12,7 +12,7 @@ import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
 const BASE_URL = "http://51.91.8.112:8000/langdeck";
 
 
-const LangDecks = () => {
+const LanguagePage = () => {
 
   const menuItems = useContext(appContext);
   const [languages, setLanguages] = useState([])
@@ -39,7 +39,7 @@ const LangDecks = () => {
 
   return (
     <Layout>
-      <div>LangDecks</div>
+      <div>LanguageDeck</div>
       <div className={`${classes.search__language}`}>
       <Autocomplete
           disablePortal
@@ -67,4 +67,4 @@ const LangDecks = () => {
   )
 }
 
-export default LangDecks
+export default LanguagePage
