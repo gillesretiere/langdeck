@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
-
+import DeckContext from "../../../context/DeckContext";
 import classes from "./LanguageDeckCard.module.css";
 
 const LanguageDeckCard = ({language_deck}) => {
   const {language,lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon} = language_deck;
+  let params = useContext(DeckContext);
+  params.language={language};
 
   return (
     <div className={`${classes.card__container}`}>
