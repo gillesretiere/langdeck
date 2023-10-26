@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 import AutoComplete from '../components/UI/AutoComplete';
-import StoryDeckList from '../components/Decks/Stories/StoryDeckList';
+import StoryDeck from '../components/Decks/Stories/StoryDeck';
+
 import Layout from '../components/UI/Layout';
 
 const BASE_URL = "http://51.91.8.112:8000/storydeck";
@@ -47,7 +48,7 @@ const StoryPage = () => {
     <Layout>
         {decks && <AutoComplete options={decks.stories.map(a => a.story)} value={value} inputValue={inputValue} setValue={setValueHandler} setInputValue={setInputValueHandler}/>}
         <div>
-            {decks && <StoryDeckList scenes={decks.stories.filter(({story}) => story.toLowerCase().startsWith(inputValue))} img={decks.lang_flag_icon}/>}
+            {decks && <StoryDeck scenes={decks.stories.filter(({story}) => story.toLowerCase().startsWith(inputValue))} img={decks.lang_flag_icon}/>}
         </div>
   </Layout>
   )

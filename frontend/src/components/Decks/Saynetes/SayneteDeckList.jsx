@@ -7,7 +7,7 @@ const SayneteDeckList = ({ scene }) => { if(scene) {
   return (
     <div>
       {phrases && phrases.map((el) => {
-        return (<SayneteDeckCard key={el._id} Phrase={el.phrase} />)
+        return (<SayneteDeckCard key={el._id} Phrase={el} />)
         })}
     </div>
   )

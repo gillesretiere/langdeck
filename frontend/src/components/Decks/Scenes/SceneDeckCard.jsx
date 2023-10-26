@@ -6,6 +6,7 @@ import DeckContext from "../../../context/DeckContext";
 
 const SceneDeckCard = ({scene, img}) => {
   let params = useContext(DeckContext);
+  console.log(scene);
 
   const linkHandler = (event) => {
     params.deck = {scene};

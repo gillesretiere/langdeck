@@ -7,7 +7,7 @@ import { PanoramaRounded } from '@mui/icons-material';
 
 const SayneteDeck = ({deck}) => {
   let params = useContext(DeckContext);
-  console.log(params.language);
+  console.log(deck);
   return (
     <div className={classes.scene__wrapper}>
         <div className={classes.scene__grid}>

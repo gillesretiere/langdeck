@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
 import Layout from '../components/UI/Layout';
-import LanguageDeckList from '../components/Decks/Languages/LanguageDeckList.jsx';
+import LanguageDeck from '../components/Decks/Languages/LanguageDeck.jsx';
 import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
 
 const BASE_URL = "http://51.91.8.112:8000/langdeck";
@@ -58,7 +58,7 @@ const LanguagePage = () => {
         /> 
       </div>
       <div>
-        <LanguageDeckList languages={
+        <LanguageDeck languages={
           languages.filter(({ lang_name_fr }) => lang_name_fr.toLowerCase().startsWith(inputValue))
           } />
       </div>
