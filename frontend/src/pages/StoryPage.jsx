@@ -20,7 +20,7 @@ const StoryPage = () => {
 
   const skipLevels = (json) => {
     let data = json;
-    console.log(data);
+    // console.log(data);
     return data;
   };
 

@@ -23,7 +23,7 @@ const LanguagePage = () => {
   const language_name = languages.map(a => a.lang_name_fr);
 
   const selectHandler = (selection) => {
-    console.log("From Above " + selection);
+    // console.log("From Above " + selection);
     setSelectedLanguage(selection);
     menuItems.translationLanguage = selection;
   };

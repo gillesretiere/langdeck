@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import classes from "./SayneteDeckCard.module.css";
 const SayneteDeckCardHeader = ({scene}) => { if (scene) {
     const {story, story_translation, story_illustration, story_note, story_note_translated, domain, language, theme} = scene;
-    console.log(scene);
+    // console.log(scene);
     
   return (
     <>
