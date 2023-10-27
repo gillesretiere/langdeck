@@ -48,3 +48,7 @@
   background-color: var(--primary-color);
   align-items: center;   
 }
+
+.saynete__keyword__wrapper {
+  color: red;
+}

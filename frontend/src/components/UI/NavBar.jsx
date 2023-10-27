@@ -1,5 +1,7 @@
 import React from 'react'
-import {useState, useContext} from 'react'
+import {useState, useContext} from 'react';
+import { Link, NavLink } from 'react-router-dom'
+
 import { appContext } from "../../App";
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -71,13 +73,15 @@ const NavBar = () => {
             >
             <MenuIcon />
             </IconButton>
-            <Box
-            component="img"
-            display="flex"
-            sx={{ height: 54, flexGrow: 0}}
-            alt="Logo"
-            src={logo}
-            />
+            <Link to="/">
+                <Box
+                component="img"
+                display="flex"
+                sx={{ height: 54, flexGrow: 0}}
+                alt="Logo"
+                src={logo}>
+                </Box>
+            </Link>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
             <p>Selection : {menuItems.translationLanguage}
             <Button color="secondary" href="/">Change</Button></p>
