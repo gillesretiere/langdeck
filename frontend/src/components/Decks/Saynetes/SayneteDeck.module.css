@@ -45,9 +45,18 @@
   padding: 0.75rem; 
   flex-direction: row; 
   justify-content: flex-start; 
-  background-color: var(--primary-color);
+  background-color: var(--color-bg-alu);
   align-items: center;   
 }
+
+.saynete__phrase {
+  display: flex; 
+  padding: 0.75rem; 
+  color: black;
+  font-family : var(--secondary-font);
+  font-size: medium;
+}
+
 
 .saynete__keyword__wrapper {
   color: red;

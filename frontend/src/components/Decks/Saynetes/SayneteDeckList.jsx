@@ -1,6 +1,5 @@
 import React from 'react';
 import SayneteDeckCard from "./SayneteDeckCard";
-import ReactPopperTest from '../../UI/Popper/ReactPopperTest';
 
 const SayneteDeckList = ({ scene }) => { if(scene) {
   const {phrases} = scene;
@@ -11,7 +10,6 @@ const SayneteDeckList = ({ scene }) => { if(scene) {
         return (
           <>
         <SayneteDeckCard key={el._id} Phrase={el} />
-        <ReactPopperTest />
           </>
 
         )

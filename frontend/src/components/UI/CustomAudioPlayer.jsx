@@ -1,6 +1,7 @@
 import React from 'react'
 
 const CustomAudioPlayer = ({media_url}) => {
+  var audio = new Audio(media_url);
   return (
     <div>
         <audio controls preload="metadata">

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import Popper from "@mui/material/Popper";
 
-const PhraseSpanKeyword = ({phrase}) => {
+import Popper from "@mui/material/Popper";
+import PhraseDeckPhraseWordPopper from "./PhraseDeckPhraseWordPopper";
+import classes from "./PhraseDeckCard.module.css";
+
+
+const PhraseDeckPhraseWords = ({phrase}) => {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [wordElement, setWordElement] = React.useState(null);
+  const [arrowRef, setArrowRef] = useState(null);
 
   const get_element_by_rec_id = ({elem}) => {
     let obj = vk_dict.find((o) => o.word_rec_id === elem);
@@ -32,9 +36,11 @@ const PhraseSpanKeyword = ({phrase}) => {
   const vk_phrase_kw = phrase.phrase_html_kw.split("<kw>");
 
   const handleClick = (event) => {
+    setArrowRef(event.currentTarget);
     let obj = vk_dict.find((o) => o.word_rec_id === event.target.id);
     setWordElement(obj.word_translation);
     setAnchorEl(anchorEl ? null : event.currentTarget);
+
   };
 
   const open = Boolean(anchorEl);
@@ -43,17 +49,24 @@ const PhraseSpanKeyword = ({phrase}) => {
   return (
     <>
     <div>
-        <Popper id={id} open={open} anchorEl={anchorEl}>
-          <Box sx={{ border: 1, p: 3, bgcolor: "background.paper" }}>
-            <div className="keyword__wrapper">{wordElement}</div>
-            <button type="button">
-                </button>
-              <button type="button">
-              Action 2
-              </button>
-          Action 1
-
-          </Box>
+        
+        <Popper id={id} 
+            open={open} 
+            anchorEl={anchorEl}
+            placement="bottom"
+            disablePortal={false}
+            modifiers={[
+              {
+               name: 'arrow',
+               enabled: true,
+               options: {
+                 element: arrowRef,
+               }
+              }
+            ]}
+          >
+          <PhraseDeckPhraseWordPopper word={wordElement}/>
+        
         </Popper>
       </div> 
     <div>
@@ -72,4 +85,4 @@ const PhraseSpanKeyword = ({phrase}) => {
   )
 }
 
-export default PhraseSpanKeyword
+export default PhraseDeckPhraseWords

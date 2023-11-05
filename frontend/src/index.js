@@ -23,6 +23,31 @@ import SaynetePage from "./pages/SaynetePage";
 
 import CssBaseline from '@mui/material/CssBaseline';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      type: 'ligth',
+      main: '#fefefe',
+    },
+    secondary: {
+      main: '#f50057',
+    },
+
+  },
+  props: {
+    MuiTooltip: {
+      arrow: true,
+    },
+  },
+    typography: {
+      fontFamily: 'Quicksand',
+      fontWeigthLigth: 400,
+      fontWeigthRegular: 500,
+      fontWeigthMedium: 600,
+      fontWeigthBold: 700,
+    }
+
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
