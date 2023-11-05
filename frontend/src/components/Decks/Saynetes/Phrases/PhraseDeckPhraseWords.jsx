@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Popper from "@mui/material/Popper";
 import PhraseDeckPhraseWordPopper from "./PhraseDeckPhraseWordPopper";
+import PhraseDeckPhraseWordPopper2 from "./PhraseDeckPhraseWordPopper2";
 import classes from "./PhraseDeckCard.module.css";
 
 
