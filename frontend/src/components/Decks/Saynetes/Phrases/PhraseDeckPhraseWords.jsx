@@ -12,6 +12,9 @@ const PhraseDeckPhraseWords = ({phrase}) => {
   const [wordElement, setWordElement] = React.useState(null);
   const [arrowRef, setArrowRef] = useState(null);
 
+  const callbackModal = () => {
+    setAnchorEl(null);
+ }
   const get_element_by_rec_id = ({elem}) => {
     let obj = vk_dict.find((o) => o.word_rec_id === elem);
     if (obj) {
@@ -39,9 +42,8 @@ const PhraseDeckPhraseWords = ({phrase}) => {
   const handleClick = (event) => {
     setArrowRef(event.currentTarget);
     let obj = vk_dict.find((o) => o.word_rec_id === event.target.id);
-    setWordElement(obj.word_translation);
+    setWordElement(obj);
     setAnchorEl(anchorEl ? null : event.currentTarget);
-
   };
 
   const open = Boolean(anchorEl);
@@ -66,7 +68,7 @@ const PhraseDeckPhraseWords = ({phrase}) => {
               }
             ]}
           >
-          <PhraseDeckPhraseWordPopper word={wordElement}/>
+          <PhraseDeckPhraseWordPopper2 word={wordElement} callbackModal={callbackModal}/>
         
         </Popper>
       </div> 
