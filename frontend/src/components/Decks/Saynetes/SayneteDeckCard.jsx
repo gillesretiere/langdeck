@@ -10,22 +10,24 @@ import MediaSimpleAudioPlayer from '../../UI/MediaPlayer/MediaSimpleAudioPlayer'
 const SayneteDeckCard = ({Phrase}) => {
     const {phrase, phrase_translation, phrase_html, phrase_audio_url_fr, phrase_audio_url, words} = Phrase;
     return (
-    <section>
-      <div className={classes.saynete__phrase__container}>
-        <div className={classes.saynete__phrase__wrapper}>
-          <div>
-          <span><MediaSimpleAudioPlayer media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayer></span>
-
-            <span><CustomAudioPlayer media_url={phrase_audio_url_fr}/></span>
-            {/* replace Parser() by a component (phrase_html_word_id, phrase_vk_word_id, phrase_vk_tr_word_id)  */ }
-            <span className={classes.saynete__phrase}><PhraseDeckPhraseWords phrase={Phrase}></PhraseDeckPhraseWords></span>
-            {/* <PhraseDeck words = {words}></PhraseDeck> */}
-            <span><CustomAudioPlayer media_url={phrase_audio_url}/></span>
-            <span className={classes.saynete__phrase}>{phrase_translation}</span>
+    <>
+      <div className={classes.saynete__phrase__grid__container}>
+        <div className={classes.saynete__phrase__grid__sidebar}>
+          <span className={classes.saynete__phrase__grid__sidebar_item}>15</span>
+        </div>
+        <div className={classes.saynete__phrase__grid__main}>
+          <div className={classes.saynete__phrase__flex__fr}>
+            <div className={classes.media__player}><MediaSimpleAudioPlayer media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayer></div>
+            <PhraseDeckPhraseWords phrase={Phrase}></PhraseDeckPhraseWords>
           </div>
+          <div className={classes.saynete__phrase__flex__fr}>
+            <span className={classes.media__player}><MediaSimpleAudioPlayer media_url={phrase_audio_url}></MediaSimpleAudioPlayer></span>
+            <div>{phrase_translation}</div>
+          </div>
+          
         </div>
       </div>
-    </section>
+    </>
   )
 }
 

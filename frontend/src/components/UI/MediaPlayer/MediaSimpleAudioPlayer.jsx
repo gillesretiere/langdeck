@@ -31,11 +31,9 @@ const MediaSimpleAudioPlayer = ({media_url}) => {
 
   return (
     <div>
-        <p>
-            <a id="play-pause-button" className="fa fa-play" onClick={togglePlay}>
-            { isPlaying ? <PauseCircleOutlineIcon className={classes.svg_icons} /> : <PlayCircleOutlineIcon className={classes.svg_icons} /> }
-            </a>
-        </p>
+      <a id="play-pause-button" onClick={togglePlay}>
+      { isPlaying ? <PauseCircleOutlineIcon className={classes.svg_icons} /> : <PlayCircleOutlineIcon className={classes.svg_icons} /> }
+      </a>
     </div>
   )
 }

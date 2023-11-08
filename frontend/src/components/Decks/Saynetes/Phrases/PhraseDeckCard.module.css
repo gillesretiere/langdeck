@@ -56,3 +56,8 @@
     background-color: white;
     border-radius: 12px;
 }
+
+.marked__item{
+  /* #4abebd; */
+  background-color: var(--primary-color);
+}

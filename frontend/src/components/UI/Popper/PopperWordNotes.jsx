@@ -20,8 +20,10 @@ const PopperWordNotes = ({ word_notes, word_nutri_notes  }) => {
       <div>
         <div className={classes.know__more} >{word_notes}</div>
         <div className={classes.know__more} >
-          <img className={classes.nutri__icon} src="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1699431491/langdeck/dfptfmy84so3wjm48wcd.png" />
-
+          <img 
+          className={classes.nutri__icon} 
+          src="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1699431491/langdeck/dfptfmy84so3wjm48wcd.png" 
+          alt="Icon by Freepik"/>
           {word_nutri_notes}
         </div>
       </div>
