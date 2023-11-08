@@ -1,0 +1,7 @@
+.svg_icons {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1.8);
+}

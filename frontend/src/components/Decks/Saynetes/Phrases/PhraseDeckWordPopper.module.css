@@ -136,7 +136,7 @@ h2 {
 }
 
 .button1 {
-  background-color: hsl(179, 62%, 43%);
+  background: hsl(179, 62%, 43%);
   color: white;
 }
 

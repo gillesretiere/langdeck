@@ -26,11 +26,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme({
   palette: {
     primary: {
-      type: 'ligth',
-      main: '#fefefe',
+      type: 'light',
+      main: 'hsl(179, 62%, 43%);',
     },
     secondary: {
-      main: '#f50057',
+      main: '#4abebd',
     },
 
   },
@@ -40,7 +40,7 @@ const theme = createTheme({
     },
   },
     typography: {
-      fontFamily: 'Quicksand',
+      fontFamily: 'neue-haas-grotesk-display',
       fontWeigthLigth: 400,
       fontWeigthRegular: 500,
       fontWeigthMedium: 600,
@@ -52,24 +52,26 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <CssBaseline />
-          <Routes>
-            <Route path="/" element={<LanguagePage />} />
-            <Route path="story_page/:id" element={<StoryPage />} />
-            <Route path="saynete_page/:id" element={<SaynetePage />} />
-            <Route path="decks/:id" element={<Decks />} />
-            <Route path="scenes/:id" element={<Scenes />} />
-            <Route path="*" element={
-              <main style={{ padding: "1rem" }}>
-                <p>There's nothing here!</p>
-              </main>
-            }
-            />
-          </Routes>
-      </AuthProvider>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <AuthProvider>
+          <CssBaseline />
+            <Routes>
+              <Route path="/" element={<LanguagePage />} />
+              <Route path="story_page/:id" element={<StoryPage />} />
+              <Route path="saynete_page/:id" element={<SaynetePage />} />
+              <Route path="decks/:id" element={<Decks />} />
+              <Route path="scenes/:id" element={<Scenes />} />
+              <Route path="*" element={
+                <main style={{ padding: "1rem" }}>
+                  <p>There's nothing here!</p>
+                </main>
+              }
+              />
+            </Routes>
+        </AuthProvider>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -1,10 +1,10 @@
 import React, { useState, useEffect} from "react";
-import classes from "./Audio.module.css";
+import classes from "./MediaSimpleAudioPlayer.module.css";
 
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 
-const SimpleAudioPlayer = ({media_url}) => {
+const MediaSimpleAudioPlayer = ({media_url}) => {
 
     const [isPlaying, setIsPlaying] = useState(false);
     useEffect(() => {
@@ -40,4 +40,4 @@ const SimpleAudioPlayer = ({media_url}) => {
   )
 }
 
-export default SimpleAudioPlayer
+export default MediaSimpleAudioPlayer
