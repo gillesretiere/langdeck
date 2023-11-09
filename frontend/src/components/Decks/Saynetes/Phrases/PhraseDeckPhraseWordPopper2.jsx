@@ -28,7 +28,7 @@ const PhraseDeckPhraseWordPopper2 = ({word, callbackModal}) => {
             <>
             <div className={classes.word__popper__wrapper}>{word.word_translation}</div>
             <div className={classes.word__audio__wrapper}><MediaSimpleAudioPlayer media_url={word.word_audio_url}></MediaSimpleAudioPlayer></div>
-            <div className={classes.word__audio__wrapper}><PopperWordNotes word_notes={word.word_notes} word_nutri_notes={word.word_nutri_notes}/></div>
+            <div className={classes.word__audio__wrapper}><PopperWordNotes word_notes={word.word_notes_translation} word_nutri_notes={word.word_nutri_notes_translation}/></div>
             </>
           ):(
             <>
@@ -38,41 +38,7 @@ const PhraseDeckPhraseWordPopper2 = ({word, callbackModal}) => {
             </>
           )
           }
-          
-          { visible ? (
-            <>
-          <div className={classes.container}>
-            <div className={classes.word_notes}>
-            <p>{word.word_notes}</p>
-            <Box
-                display="flex"
-                justifyContent="space-between"
-                flexDirection="column"
-                alignItems="flex-end"
-                sx={{ borderRadius: 0, my: 0, mx:0, pt:1, px:0, }}
-                >
-            </Box>               
-        </div>
-        <div className={classes.word_nutri_notes}>
-            <p>{word.word_nutri_notes}</p>
-            <Box
-                display="flex"
-                justifyContent="space-between"
-                flexDirection="column"
-                alignItems="flex-end"
-                sx={{ borderRadius: 0, my: 0, mx:0, pt:1, px:0,}}
-                >
 
-            </Box>  
-        </div>  
-
-          </div>
-          <Button className={classes.button1} onClick={closeButtonClickHandler} variant="contained" color="primary" fullWidth sx={{ pt:1, borderRadius: "0px 0px 16px 16px", backgroundColor: "hsl(71, 73%, 54%)",}}>
-                    Close All
-        </Button>
-        </>
-          ) : (
-            <>
           <div className={classes.container}>
             <Button color="primary" className={classes.button1} onClick={handleClick} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
             Translate
@@ -81,9 +47,6 @@ const PhraseDeckPhraseWordPopper2 = ({word, callbackModal}) => {
             OK
             </Button> 
           </div>
-             </>
-          )
-          }  
 
                  
 

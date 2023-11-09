@@ -16,14 +16,18 @@
   }
   
   .sketch__title__fr {
+    font-family: var(--serif-primary-font);
+    text-transform: none;
     color: var(--secondary-color);
-    font-weight: 700;
+    font-weight: 500;
   }
   
   .sketch__title__translated {
+    font-family: var(--serif-primary-font);
+    text-transform: none;   
     color: var(--primary-color);
-    font-weight: 500;
-    font-size: 2.2rem;
+    font-weight: 400;
+    font-size: 2.0rem;
   }
   
   .sketch__note {
