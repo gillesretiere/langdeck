@@ -1,0 +1,50 @@
+.phrase__note__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.phrase__note__header{
+    display: flex;
+    max-width: 30rem;
+    font-family : var(--serif-primary-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    justify-content:flex-start;
+    padding: 1rem;
+}
+
+.phrase__note__wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+}
+
+.phrase__note__content{
+    display: flex;
+    max-width: 15rem;
+    font-family : var(--secondary-font);
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    justify-content:center;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.phrase__note__content__tr{
+    display: flex;
+    max-width: 15rem;
+    font-family : var(--secondary-font);
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    justify-content:center;
+    text-align: justify;
+    padding: 1rem;
+    background-color:bisque;
+}
+
+.media__player {
+    margin-right: 1rem;;
+  }
