@@ -17,12 +17,12 @@ const SceneDeckCard = ({scene, img}) => {
       <Link to={{pathname:`/scenes/${scene.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
-            <div className={`${classes.card__title}`}>{scene.story_translation}</div>
+            <div className={`${classes.card__title}`}>{scene.story}</div>
           </div>
           <div className={`${classes.card__img}`}>
             <img src={img} alt="flag Icon" />
           </div>
-          <div className={`${classes.card__subtitle}`}>{scene.story}</div>
+          <div className={`${classes.card__subtitle}`}>{scene.story_translation}</div>
         </div>
       </Link>
     </div>

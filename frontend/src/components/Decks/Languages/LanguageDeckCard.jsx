@@ -14,11 +14,11 @@ const LanguageDeckCard = ({language_deck}) => {
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{lang_name_fr}</div>
+            <div className={`${classes.card__subtitle}`}>{lang_name_native}</div>
           </div>
           <div className={`${classes.card__img}`}>
             <img src={lang_flag_icon} alt="flag Icon"/>
           </div>
-          <div className={`${classes.card__subtitle}`}>{lang_name_native}</div>
         </div>
       </Link>
     </div>

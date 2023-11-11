@@ -16,12 +16,17 @@ const StoryDeckCard = ({scene, img}) => {
       <Link to={{pathname:`/saynete_page/${scene.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
-            <div className={`${classes.card__title}`}>{scene.story_translation}</div>
+            <div className={`${classes.card__title}`}>{scene.story}</div>
+            <div className={`${classes.card__title__flag}`}>
+            <div className={`${classes.card__subtitle}`}>{scene.story_translation}</div>
+            <div className={`${classes.card__language__img}` } id="flag">
+              <img src={img} alt="flag Icon" />
+            </div>            
+            </div>
           </div>
           <div className={`${classes.card__img}`}>
-            <img src={img} alt="flag Icon" />
+            <img src={scene.story_illustration} alt="flag Icon" />
           </div>
-          <div className={`${classes.card__subtitle}`}>{scene.story}</div>
         </div>
       </Link>
     </div>
