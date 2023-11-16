@@ -27,7 +27,15 @@ const StoryDeckCard = ({scene, img}) => {
           <div className={`${classes.card__img}`}>
             <img src={scene.story_illustration} alt="flag Icon" />
           </div>
-        </div>
+          <div className={`${classes.card__desc}`}>
+            <div>{scene.story_desc}</div>
+          </div>          
+          <hr></hr>
+          <div className={`${classes.card__desc}`}>
+            <div>{scene.story_desc_translation}</div>
+          </div>             
+        </div>          
+
       </Link>
     </div>
   )

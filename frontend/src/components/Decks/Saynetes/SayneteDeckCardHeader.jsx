@@ -2,16 +2,11 @@ import React, { useContext } from 'react';
 
 import classes from "./SayneteDeckCard.module.css";
 const SayneteDeckCardHeader = ({scene}) => { if (scene) {
-    const {story, story_translation, story_illustration, story_note, story_note_translated, domain, language, theme} = scene;
+    const {story, story_translation, story_illustration, story_note, story_note_translated, story_synopsis, story_synopsis_translation} = scene;
     // console.log(scene);
     
   return (
     <>
-        <div className={classes.sketch__deck__tags}>
-            <span className={`${classes.sketch__deck__tag__common} ${classes.sketch__deck__tag__language}`}>{language}</span>
-            <span className={`${classes.sketch__deck__tag__common} ${classes.sketch__deck__tag__domain}`}>{domain}</span>
-            <span className={`${classes.sketch__deck__tag__common} ${classes.sketch__deck__tag__theme}`}>{theme}</span>
-        </div>
         <div className={classes.sketch__container}>
             <div className={classes.sketch__illustration}>
                 <img src={story_illustration} alt="https://unsplash.com/"></img>
@@ -28,7 +23,10 @@ const SayneteDeckCardHeader = ({scene}) => { if (scene) {
                 </div>  
                 <div className={`${classes.sketch__note} ${classes.sketch__note__tr}`}>
                     {story_note_translated}
-                </div>              
+                </div>       
+                <div className={`${classes.sketch__synopsis} ${classes.sketch__synopsis__fr}`}>
+                    {story_synopsis_translation}
+                </div>                        
             </div>    
         </div>           
     </>

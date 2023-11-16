@@ -117,3 +117,12 @@
     grid-template-columns: repeat(4, minmax(0, 1fr)); 
     }
 }
+
+.card__desc {
+    display:flex;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+    padding: 1.0rem;
+    font-size: 0.8rem;
+    font-family: var(--serif-primary-font);
+    text-align:justify;
+}

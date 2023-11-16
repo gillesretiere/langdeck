@@ -62,12 +62,12 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar 
         position="static"
-        color="transparent">
+        color="primary">
         <Toolbar>
             <IconButton
             size="large"
             edge="start"
-            color="primary"
+            color="secondary"
             aria-label="menu"
             sx={{ mr: 2 }}
             >
@@ -83,8 +83,6 @@ const NavBar = () => {
                 </Box>
             </Link>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
-            <p>Selection : {menuItems.translationLanguage}
-            <Button color="secondary" href="/">Change</Button></p>
             </Typography>
             
             <DarkLightModeToggle></DarkLightModeToggle>

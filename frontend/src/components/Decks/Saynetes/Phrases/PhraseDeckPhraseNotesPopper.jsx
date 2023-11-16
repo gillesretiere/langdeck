@@ -27,7 +27,7 @@ const PhraseDeckPhraseNotesPopper = ({phrase}) => {
             <span className={classes.phrase__note__number}>2.</span>
             {phrase.phrase_notes_2_translation}
         </div>
-        ):(<div className={classes.phrase__note__content__tr}>&nbsp;</div>)
+        ):(<div>&nbsp;</div>)
         }
 
       </div>

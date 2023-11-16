@@ -163,3 +163,16 @@
     padding-left: 1.25rem; 
     flex-basis: 33.333333%; 
   }
+
+  .sketch__synopsis {
+    display:flex;
+    max-width: 48rem;
+  }
+
+  .sketch__synopsis__fr {
+    display:flex;
+    font-family: var(--serif-primary-font);
+    font-size: 1.1rem;
+    color:black;
+
+  }

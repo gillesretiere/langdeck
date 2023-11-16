@@ -28,6 +28,7 @@ const theme = createTheme({
     primary: {
       type: 'light',
       main: 'hsl(179, 62%, 43%);',
+      dark: '#CC00CC',
     },
     secondary: {
       main: '#4abebd',
