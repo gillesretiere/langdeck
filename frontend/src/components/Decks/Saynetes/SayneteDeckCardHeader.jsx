@@ -1,10 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
+
+
 
 import classes from "./SayneteDeckCard.module.css";
 const SayneteDeckCardHeader = ({scene}) => { if (scene) {
     const {story, story_translation, story_illustration, story_note, story_note_translated, story_synopsis, story_synopsis_translation} = scene;
     // console.log(scene);
-    
+
   return (
     <>
         <div className={classes.sketch__container}>
@@ -23,10 +25,8 @@ const SayneteDeckCardHeader = ({scene}) => { if (scene) {
                 </div>  
                 <div className={`${classes.sketch__note} ${classes.sketch__note__tr}`}>
                     {story_note_translated}
-                </div>       
-                <div className={`${classes.sketch__synopsis} ${classes.sketch__synopsis__fr}`}>
-                    {story_synopsis_translation}
-                </div>                        
+                </div>     
+    
             </div>    
         </div>           
     </>

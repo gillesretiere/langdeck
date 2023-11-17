@@ -150,3 +150,16 @@
 .media__player {
   margin-right: 1rem;;
 }
+
+.sketch__synopsis {
+  display:flex;
+  max-width: 48rem;
+}
+
+.sketch__synopsis__fr {
+  display:flex;
+  font-family: var(--serif-primary-font);
+  font-size: 1.1rem;
+  color:black;
+
+}
