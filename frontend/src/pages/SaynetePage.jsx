@@ -6,12 +6,10 @@ import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
 const SaynetePage = (props) => {
 
     let ctx = useContext(DeckContext);
-    // console.log(ctx);    
-    const deck = ctx.deck;
 
   return (
     <Layout>
-      <SayneteDeck deck={deck}/>
+      <SayneteDeck deck={ctx.deck}/>
     </Layout>
   )
 }

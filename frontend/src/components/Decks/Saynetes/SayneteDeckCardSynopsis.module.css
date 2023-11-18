@@ -1,0 +1,17 @@
+.card__container {
+    display:flex;
+    max-width: 48rem;
+  }
+  
+
+.card__desc {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-content:end;
+    margin: 0.5rem;
+    padding: 1.0rem;
+    font-size: 1.4rem;
+    font-family: var(--serif-primary-font);
+    text-align:justify;
+}

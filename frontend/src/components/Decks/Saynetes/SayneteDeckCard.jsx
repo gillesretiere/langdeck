@@ -10,8 +10,6 @@ import MediaSimpleAudioPlayer from '../../UI/MediaPlayer/MediaSimpleAudioPlayer'
 
 const SayneteDeckCard = ({Phrase}) => {
     const {phrase, phrase_translation, phrase_html, phrase_audio_url_fr, phrase_audio_url, phrase_position, phrase_notes, words} = Phrase;
-    console.log(phrase_notes.length);
-
     const [notesVisible, setNotesVisible] = useState(false);
 
     const handleClick = (event) => {
