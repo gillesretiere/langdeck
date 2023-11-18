@@ -11,7 +11,7 @@ const SayneteDeckCardHeader = ({scene}) => { if (scene) {
     <>
         <div className={classes.sketch__container}>
             <div className={classes.sketch__illustration}>
-                <img src={story_illustration} alt="https://unsplash.com/"></img>
+                <img src={story_illustration} alt="story illustration by Unsplash"></img>
             </div> 
             <div className={classes.sketch__details}>
                 <div className={`${classes.sketch__title} ${classes.sketch__title__fr}`}>

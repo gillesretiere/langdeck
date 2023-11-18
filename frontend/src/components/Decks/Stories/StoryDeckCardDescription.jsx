@@ -25,7 +25,7 @@ const StoryDeckCardDescription = ({scene}) => {
 
   return (
     <>
-    <Box sx={{ display:'flex', flexDirection:'column', flexGrow:1, alignContent: 'space-between', m:1}}>
+    <Box sx={{ display:'flex', flexDirection:'column', flexGrow:1, alignContent: 'end', m:1}}>
         { translate ? (
             <div className={`${classes.card__desc}`}>{story_desc_translation}</div>):(
             <div className={`${classes.card__desc}`}>{story_desc}</div>)
