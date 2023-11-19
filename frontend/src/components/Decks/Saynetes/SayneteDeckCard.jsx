@@ -17,7 +17,6 @@ const SayneteDeckCard = ({Phrase}) => {
     };
 
     return (
-    <>
       <div className={classes.saynete__phrase__grid__container}>
         <div className={classes.saynete__phrase__grid__sidebar}>
           <div className={classes.saynete__phrase__grid__sidebar_item}>{phrase_position}</div>
@@ -52,7 +51,6 @@ const SayneteDeckCard = ({Phrase}) => {
 
 
       </div>
-    </>
   )
 }
 

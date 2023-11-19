@@ -9,7 +9,7 @@
 .scene__container {
   background-color: white;
   border-radius: 0.8rem;
-  max-width: 64rem;
+  max-width: 640px;
 }
 
 .scene__grid {
@@ -85,7 +85,7 @@
   min-width:8vh;
   max-width:8vh;
   /* 4abebd */ 
-  background-color: var(--color-bg-alu);
+  background-color: var(--primary-color);
   color: white;
   align-items: center;
   font-size: 1.3rem;
@@ -121,6 +121,7 @@
 .saynete__phrase__grid__main__note {
   padding: 0;
   flex-grow: 1;
+  align-self: stretch;
 }
 
 .saynete__phrase__flex__fr{

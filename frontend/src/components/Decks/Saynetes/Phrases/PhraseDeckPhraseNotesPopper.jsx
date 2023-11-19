@@ -10,7 +10,6 @@ const PhraseDeckPhraseNotesPopper = ({phrase}) => {
 
   const isNotes2 = phrase.phrase_notes_2_translation.length;
   return (
-    <>
     <div className={classes.phrase__note__container}>
 
       <div className={classes.phrase__note__header}>
@@ -20,19 +19,18 @@ const PhraseDeckPhraseNotesPopper = ({phrase}) => {
       <div className={classes.phrase__note__wrapper}>
         <div className={classes.phrase__note__content}>
           <span className={classes.phrase__note__number}>1.</span>
-          {phrase.phrase_notes_translation}
+          <div className={classes.phrase__note__content__text}>{phrase.phrase_notes_translation}</div>
         </div>
         {isNotes2 > 0 ? (
           <div className={classes.phrase__note__content__tr}>
             <span className={classes.phrase__note__number}>2.</span>
-            {phrase.phrase_notes_2_translation}
+            <div className={classes.phrase__note__content__text}>{phrase.phrase_notes_2_translation}</div>
         </div>
         ):(<div>&nbsp;</div>)
         }
 
       </div>
     </div>
-    </>
   )
 }
 

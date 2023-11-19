@@ -17,7 +17,7 @@
 .phrase__note__wrapper{
     display: flex;
     flex-direction: row;
-    max-width: 49rem;
+    max-width: 35rem;
     border-radius: 0px 0px 12px 0px;
     background-color: antiquewhite;
 }
@@ -30,7 +30,6 @@
 
 .phrase__note__content{
     display: flex;
-    max-width:100%;
     font-family : var(--secondary-font);
     font-size: 0.6rem;
     font-weight: 500;
@@ -43,7 +42,6 @@
 
 .phrase__note__content__tr{
     display: flex;
-    max-width:max-content;
     font-family : var(--secondary-font);
     font-size: 0.6rem;
     font-weight: 500;
@@ -53,6 +51,11 @@
     border-radius: 0px 0px 12px 0px;
     padding: 1rem 1rem 1rem 0.5rem;
     background-color:bisque;
+}
+
+.phrase__note__content__text {
+    width:auto;
+    max-width: auto;
 }
 
 .media__player {
