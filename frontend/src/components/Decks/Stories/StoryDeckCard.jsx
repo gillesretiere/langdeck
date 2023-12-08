@@ -11,9 +11,11 @@ const StoryDeckCard = ({scene, img}) => {
   const linkHandler = (event) => {
     params.deck = {scene};
   };
+  console.log (scene);
 
   return (
-    <div className={`${classes.card__container}`}>
+    <>
+      <div className={`${classes.card__container}`}>
       <Link to={{pathname:`/saynete_page/${scene.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
@@ -32,6 +34,14 @@ const StoryDeckCard = ({scene, img}) => {
       </Link>
       <StoryDeckCardDescription scene={scene}></StoryDeckCardDescription>     
     </div>
+    <div>
+    <Link to={{pathname:`/tp_page/${scene.language}`}} onClick={linkHandler}>
+      Link to TPs Page
+    </Link>
+      </div>
+    <div>Link to Quiz Page</div>
+    </>
+
   )
 }
 

@@ -46,6 +46,7 @@ const StoryPage = () => {
 
   return (
     <Layout>
+        <div>StoryPage</div>
         {decks && <AutoComplete options={decks.stories.map(a => a.story)} value={value} inputValue={inputValue} setValue={setValueHandler} setInputValue={setInputValueHandler}/>}
         <div>
             {decks && <StoryDeck scenes={decks.stories.filter(({story}) => story.toLowerCase().startsWith(inputValue))} img={decks.lang_flag_icon}/>}
