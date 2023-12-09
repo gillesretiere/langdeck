@@ -16,7 +16,7 @@ const StoryDeckCard = ({scene, img}) => {
   return (
     <>
       <div className={`${classes.card__container}`}>
-      <Link to={{pathname:`/saynete_page/${scene.language}`}} onClick={linkHandler}>
+      <Link to={{pathname:`/lesson_page/${scene.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{scene.story}</div>
@@ -36,7 +36,7 @@ const StoryDeckCard = ({scene, img}) => {
     </div>
     <div>
     <Link to={{pathname:`/tp_page/${scene.language}`}} onClick={linkHandler}>
-      Link to TPs Page
+      Link to StudyPage
     </Link>
       </div>
     <div>Link to Quiz Page</div>

@@ -20,7 +20,8 @@ import Scenes from "./pages/Scenes";
 import LanguagePage from "./pages/LanguagePage";
 import StoryPage from "./pages/StoryPage";
 import SaynetePage from "./pages/SaynetePage";
-import TpPage from './pages/TpPage';
+import StudyPage from './pages/StudyPage';
+import LessonPage from './pages/LessonPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -61,8 +62,9 @@ root.render(
             <Routes>
               <Route path="/" element={<LanguagePage />} />
               <Route path="story_page/:id" element={<StoryPage />} />
+              <Route path="lesson_page/:id" element={<LessonPage />} />
               <Route path="saynete_page/:id" element={<SaynetePage />} />
-              <Route path="tp_page/:id" element={<TpPage />} />
+              <Route path="study_page/:id" element={<StudyPage />} />
               <Route path="decks/:id" element={<Decks />} />
               <Route path="scenes/:id" element={<Scenes />} />
               <Route path="*" element={
