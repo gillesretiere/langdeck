@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Layout from '../components/UI/Layout';
 import DeckContext from "../context/DeckContext";
 import SayneteDeck from '../components/Decks/Saynetes/SayneteDeck';
-import LessonDeck from '../components/Decks/Lessons/LessonDeck';
+import LessonDeckCard from '../components/Decks/Lessons/LessonDeckCard';
 
 const LessonPage = () => {
     
@@ -10,8 +10,8 @@ const LessonPage = () => {
 
     return (
         <Layout>
-            <div>LessonPage</div>
-            <LessonDeck deck={ctx.deck}/>
+            <div>Lesson Page</div>
+            <LessonDeckCard deck={ctx.deck}/>
         </Layout>
     )
 

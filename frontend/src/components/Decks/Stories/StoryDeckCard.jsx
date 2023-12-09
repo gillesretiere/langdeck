@@ -11,7 +11,6 @@ const StoryDeckCard = ({scene, img}) => {
   const linkHandler = (event) => {
     params.deck = {scene};
   };
-  console.log (scene);
 
   return (
     <>
