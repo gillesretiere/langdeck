@@ -7,12 +7,12 @@ const SaynetePage = (props) => {
 
     let ctx = useContext(DeckContext);
 
-  return (
-    <Layout>
-      <div>SaynetePage</div>
-      <SayneteDeck deck={ctx.deck}/>
-    </Layout>
-  )
+    return (
+      <Layout>
+        <div>SaynetePage</div>
+        <SayneteDeck deck={ctx.deck}/>
+      </Layout>
+    )
 }
 
 export default SaynetePage

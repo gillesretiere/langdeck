@@ -79,7 +79,7 @@ const PhraseDeckPhraseWords = ({phrase}) => {
               <mark className={classes.marked__item} id={elem}>{get_kw_by_rec_id({ elem })}</mark>
             </span>
           ) : (
-            <span>{elem}</span>
+            <span key={elem}>{elem}</span>
           )
         )}         
     </div>

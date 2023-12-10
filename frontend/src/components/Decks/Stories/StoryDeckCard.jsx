@@ -7,7 +7,8 @@ import StoryDeckCardDescription from './StoryDeckCardDescription';
 
 const StoryDeckCard = ({scene, img}) => {
   let params = useContext(DeckContext);
-
+  // console.log (params);
+  // console.log (scene);
   const linkHandler = (event) => {
     params.deck = {scene};
   };
@@ -33,12 +34,6 @@ const StoryDeckCard = ({scene, img}) => {
       </Link>
       <StoryDeckCardDescription scene={scene}></StoryDeckCardDescription>     
     </div>
-    <div>
-    <Link to={{pathname:`/tp_page/${scene.language}`}} onClick={linkHandler}>
-      Link to StudyPage
-    </Link>
-      </div>
-    <div>Link to Quiz Page</div>
     </>
 
   )

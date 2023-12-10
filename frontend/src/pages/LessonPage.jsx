@@ -8,7 +8,7 @@ import LessonDeckList from '../components/Decks/Lessons/LessonDeckList';
 const LessonPage = () => {
     
     let ctx = useContext(DeckContext);
-    console.log(ctx);
+    // console.log(ctx);
 
     return (
         <Layout>

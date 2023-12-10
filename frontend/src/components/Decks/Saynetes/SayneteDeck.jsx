@@ -5,7 +5,7 @@ import SayneteDeckCardHeader from './SayneteDeckCardHeader';
 import SayneteDeckCardSynopsis from "./SayneteDeckCardSynopsis";
 
 const SayneteDeck = ({deck}) => {
-  
+  // console.log(deck);
   return (
     <div className={classes.scene__wrapper}>
         <div className={classes.scene__grid}>
