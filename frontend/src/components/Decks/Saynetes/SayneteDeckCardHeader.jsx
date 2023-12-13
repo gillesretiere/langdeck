@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-
-
-
 import classes from "./SayneteDeckCard.module.css";
+
 const SayneteDeckCardHeader = ({scene}) => { if (scene) {
     const {story, story_translation, story_illustration, story_note, story_note_translated, story_synopsis, story_synopsis_translation} = scene;
     // console.log(scene);
@@ -11,7 +9,7 @@ const SayneteDeckCardHeader = ({scene}) => { if (scene) {
     <>
         <div className={classes.sketch__container}>
             <div className={classes.sketch__illustration}>
-                <img src={story_illustration} alt="story illustration by Unsplash"></img>
+                <img src={story_illustration} alt="story illustration"></img>
             </div> 
             <div className={classes.sketch__details}>
                 <div className={`${classes.sketch__title} ${classes.sketch__title__fr}`}>

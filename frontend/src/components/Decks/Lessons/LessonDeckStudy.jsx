@@ -13,16 +13,16 @@ const LessonDeckStudy = ({deck}) => {
             <Link to={{pathname:`/study_page/${ctx.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
-                        <div className={`${classes.card__title}`}>{deck.scene.story}</div>
+                        <div className={`${classes.card__title}`}>{deck.scene.tp_name}</div>
                         <div className={`${classes.card__title__flag}`}>
-                            <div className={`${classes.card__subtitle}`}>{deck.scene.story_translation}</div>
+                            <div className={`${classes.card__subtitle}`}>{deck.scene.tp_translation}</div>
                             <div className={`${classes.card__language__img}` } id="flag">
                                 <img src={ctx.language_deck.lang_flag_icon} alt="flag Icon" />
                             </div>          
                         </div>
                     </div>
                     <div className={`${classes.card__img}`}>
-                        <img src={deck.scene.story_illustration} alt="flag Icon" />
+                        <img src={deck.scene.tp_illustration} alt="flag Icon" />
                     </div>
                 </div>                    
             </Link>     

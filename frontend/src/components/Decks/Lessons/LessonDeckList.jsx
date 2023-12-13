@@ -11,11 +11,20 @@ const LessonDeckList = ({deck}) => {
 
     // console.log(ctx);
     return (
-        <div className={`${classes.card__container}`}>
+        <>
+        <div className={`${classes.card__list__container}`}>
+        <div>
             <LessonDeckSaynete deck={ctx.deck}></LessonDeckSaynete>
-            <LessonDeckStudy deck={ctx.deck}></LessonDeckStudy>
-            <LessonDeckQuiz></LessonDeckQuiz>
         </div>
+        <div>
+            <LessonDeckStudy deck={ctx.deck}></LessonDeckStudy>
+        </div>
+        <div>
+            <LessonDeckQuiz deck={ctx.deck}></LessonDeckQuiz>
+        </div>
+        </div>
+        </>
+
     )
 }
 
