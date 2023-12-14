@@ -13,7 +13,7 @@ const LessonDeckQuiz = ({deck}) => {
             <Link to={{pathname:`/study_page/${ctx.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
-                        <div className={`${classes.card__title}`}>Quiz</div>
+                        <div className={`${classes.card__title}`}>Evaluation</div>
                         <div className={`${classes.card__title__flag}`}>
                             <div className={`${classes.card__subtitle}`}>Quiz</div>
                             <div className={`${classes.card__language__img}` } id="flag">
@@ -22,7 +22,7 @@ const LessonDeckQuiz = ({deck}) => {
                         </div>
                     </div>
                     <div className={`${classes.card__img}`}>
-                        <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1702393014/langdeck/assets/images/saynetes/e5ufvnujt24xthozib0c.jpg' alt="flag Icon" />
+                        <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1702561866/langdeck/assets/images/saynetes/testbleu.png' alt="flag Icon" />
                     </div>
                 </div>                    
             </Link>     

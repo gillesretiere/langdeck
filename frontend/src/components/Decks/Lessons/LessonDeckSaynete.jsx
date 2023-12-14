@@ -5,6 +5,8 @@ import DeckContext from "../../../context/DeckContext";
 
 const LessonDeckSaynete = ({deck}) => {
     let ctx = useContext(DeckContext);
+    deck.scene.lesson_illustration = "https://res.cloudinary.com/dhc7ovnwk/image/upload/v1702561870/langdeck/assets/images/saynetes/le%C3%A7on-bleu.png";
+
     // console.log(ctx.language_deck);
     return (
         <>
@@ -21,7 +23,7 @@ const LessonDeckSaynete = ({deck}) => {
                         </div>
                     </div>
                     <div className={`${classes.card__img}`}>
-                        <img src={deck.scene.story_illustration} alt="flag Icon" />
+                        <img src={deck.scene.lesson_illustration} alt="flag Icon" />
                     </div>
                 </div>                    
             </Link>     
