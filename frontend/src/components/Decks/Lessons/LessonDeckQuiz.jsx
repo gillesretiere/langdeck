@@ -10,7 +10,7 @@ const LessonDeckQuiz = ({deck}) => {
     return (
         <>
             <div>
-            <Link to={{pathname:`/study_page/${ctx.language_deck.language}`}} >
+            <Link to={{pathname:`/quiz_page/${ctx.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
                         <div className={`${classes.card__title}`}>Evaluation</div>

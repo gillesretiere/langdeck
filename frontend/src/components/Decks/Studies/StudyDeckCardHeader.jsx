@@ -18,7 +18,10 @@ const StudyDeckCardHeader = ({study}) => {if (study) {
                 <div className={`${classes.study_card__title} ${classes.study_card__title__translated}`}>
                     {tp_translation}
                 </div>               
-            </div>    
+            </div>   
+            <div className={classes.study_card__illustration}>
+                <img src="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1701422568/langdeck/assets/images/pictorials/t5vale0dleo6hlmsusgz.png" alt="tp illustration"></img>
+            </div>              
         </div>           
     </>
 
