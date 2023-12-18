@@ -11,7 +11,7 @@ const QuizDeck = ({deck}) => {
             <div className={classes.quiz__container}>
                 {deck && <QuizDeckCardHeader quiz={deck.scene}/>}
             </div>
-            {deck && <QuizDeckList quiz={deck.scene} />}       
+            {deck && <QuizDeckList deck={deck.scene} />}       
         </div>
     </div>
   )
