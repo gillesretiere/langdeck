@@ -22,7 +22,7 @@ const LessonDeckStudy = ({deck}) => {
                         </div>
                     </div>
                     <div className={`${classes.card__img}`}>
-                        <img src={deck.scene.tp_illustration} alt="flag Icon" />
+                        <img src={deck.scene.tp_lesson_header} alt="flag Icon" />
                     </div>
                 </div>                    
             </Link>     

@@ -22,7 +22,7 @@ const LessonDeckQuiz = ({deck}) => {
                         </div>
                     </div>
                     <div className={`${classes.card__img}`}>
-                        <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1702561866/langdeck/assets/images/saynetes/testbleu.png' alt="flag Icon" />
+                        <img src={deck.scene.tp_quiz[0].quiz_lesson_header} alt="flag Icon" />
                     </div>
                 </div>                    
             </Link>     

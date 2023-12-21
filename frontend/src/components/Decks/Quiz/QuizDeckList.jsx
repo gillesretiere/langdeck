@@ -9,7 +9,7 @@ const QuizDeckList = ({deck}) => {
     <div>
       {deck.tp_quiz[0].quiz_translation}
       <div>
-       {/*<QuizComponent quiz={deck_quiz}/>*/}
+       <QuizComponent quiz={deck.tp_quiz[0]} />
       </div>
     </div>
   )

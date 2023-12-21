@@ -2,14 +2,14 @@ import React from 'react';
 import classes from "./StudyDeck.module.css";
 
 const StudyDeckCardHeader = ({study}) => {if (study) {
-  const {tp_name, tp_translation, tp_illustration,} = study;
+  const {tp_name, tp_translation, tp_lesson_header,} = study;
   console.log(study);
 
   return (
     <>
         <div className={classes.study_card__container}>
           <div className={classes.study_card__illustration}>
-                <img src={tp_illustration} alt="tp illustration"></img>
+                <img src={tp_lesson_header} alt="tp illustration"></img>
             </div> 
             <div className={classes.study_card__details}>
                 <div className={`${classes.study_card__title} ${classes.study_card__title__fr}`}>
