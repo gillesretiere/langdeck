@@ -4,9 +4,7 @@ import classes from "./QuizComponent.module.css";
 const QuizComponent = ({quiz}) => {
     console.log(quiz);
 
-    const questions = quiz.quiz_form.questions;
-    const qlen = questions.length;
-    console.log({qlen})
+    const questions = quiz.quiz_form_translation.questions;
     const [activeQuestion, setActiveQuestion] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState('')
     const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null)
@@ -19,7 +17,6 @@ const QuizComponent = ({quiz}) => {
 
     const onClickNext = () => {
         setSelectedAnswerIndex(null)
-        setActiveQuestion((prev) => prev + 1)
         setResult((prev) =>
             selectedAnswer
             ? {
@@ -52,29 +49,46 @@ const QuizComponent = ({quiz}) => {
 
     return (
         <>
-        {quiz.quiz_name}
-        <div className={classes.quiz_container}>
-            <div>
-                <span className={classes.active_question_no}>{addLeadingZero(activeQuestion + 1)}</span>
-                <span className={classes.total_question}>/{addLeadingZero(questions.length)}</span>
-            </div>            
-            <h2>{question}</h2>
-            <ul>
-                {answers.map((answer, index) => (
-                <li 
-                    onClick={() => onAnswerSelected(index+1)} 
-                    key={answer}
-                    className={selectedAnswerIndex === index+1 ? classes.selected_answer : null}>
-                {answer}
-                </li>
-                ))}
-            </ul>      
-            <div className={classes.flex_right}>
-                <button onClick={onClickNext} disabled={selectedAnswerIndex === null}>
-                    {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
-                </button>
+        {!showResult ? (
+            <div className={classes.quiz_container}>
+                <div>
+                    <span className={classes.active_question_no}>{addLeadingZero(activeQuestion + 1)}</span>
+                    <span className={classes.total_question}>/{addLeadingZero(questions.length)}</span>
+                </div>            
+                <h2>{question}</h2>
+                <ul>
+                    {answers.map((answer, index) => (
+                    <li 
+                        onClick={() => onAnswerSelected(index+1)} 
+                        key={answer}
+                        className={selectedAnswerIndex === index+1 ? classes.selected_answer : null}>
+                    {answer}
+                    </li>
+                    ))}
+                </ul>      
+                <div className={classes.flex_right}>
+                    <button onClick={onClickNext} disabled={selectedAnswerIndex === null}>
+                        {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
+                    </button>
+                </div>
+            </div> 
+        ):(
+            <div className={classes.result}>
+                <h3>Result</h3>
+                <p>
+                Total Question: <span>{questions.length}</span>
+                </p>
+                <p>
+                Total Score:<span> {result.score}</span>
+                </p>
+                <p>
+                Correct Answers:<span> {result.correctAnswers}</span>
+                </p>
+                <p>
+                Wrong Answers:<span> {result.wrongAnswers}</span>
+                </p>
             </div>
-        </div>
+        )}
         </>
     )
 
