@@ -22,6 +22,7 @@ import StoryPage from "./pages/StoryPage";
 import SaynetePage from "./pages/SaynetePage";
 import StudyPage from './pages/StudyPage';
 import QuizPage from './pages/QuizPage';
+import QuizPlayPage from './pages/QuizPlayPage';
 import LessonPage from './pages/LessonPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
@@ -67,6 +68,7 @@ root.render(
               <Route path="saynete_page/:id" element={<SaynetePage />} />
               <Route path="study_page/:id" element={<StudyPage />} />
               <Route path="quiz_page/:id" element={<QuizPage />} />
+              <Route path="quiz_play_page/:id" element={<QuizPlayPage />} />
               <Route path="decks/:id" element={<Decks />} />
               <Route path="scenes/:id" element={<Scenes />} />
               <Route path="*" element={
