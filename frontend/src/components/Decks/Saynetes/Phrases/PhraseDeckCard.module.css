@@ -60,5 +60,7 @@
 .marked__item{
   /* #4abebd; */
   background-color: #f8f899;
+  border: 1px;
+  border-color: brown;
   font-weight: 800;
 }

@@ -72,7 +72,7 @@ const StudyDeckPhraseWords = ({tp_phrase_and_words}) => {
           </div> 
         <div>
           {vk_phrase.map((elem) =>
-              vk_words.indexOf(elem) !== -1 ? (
+              vk_words.indexOf(elem) >0 && elem !== ', ' ? (
                 <span key={elem} id={elem} onClick={handleClick}>
                   <mark className={classes.marked__item} id={elem}>{get_kw_by_rec_id({ elem })}</mark>
                 </span>

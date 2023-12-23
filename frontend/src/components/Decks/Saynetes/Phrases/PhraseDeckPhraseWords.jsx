@@ -83,7 +83,6 @@ const PhraseDeckPhraseWords = ({phrase}) => {
           )
         )}         
     </div>
- 
     </>
   )
 }

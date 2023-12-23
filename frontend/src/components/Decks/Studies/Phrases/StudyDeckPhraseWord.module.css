@@ -61,4 +61,7 @@
   /* #4abebd; */
   background-color: #f8f899;
   font-weight: 800;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: rgb(206, 163, 5);  
 }
