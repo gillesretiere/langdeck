@@ -32,7 +32,7 @@ const PhraseDeckPhraseWordPopper = ({word, callbackModal}) => {
                     >
                 </Box>  
                 <Button className={classes.button1} variant="contained" color="primary" fullWidth sx={{ pt:1, borderRadius: "0px 0px 0px 16px", backgroundColor: "hsl(30, 122%, 54%)"}}>
-                    Translate
+                    Translated
                 </Button>                
             </div>
             <div className={classes.word_nutri_notes}>

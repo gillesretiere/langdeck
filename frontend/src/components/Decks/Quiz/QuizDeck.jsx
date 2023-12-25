@@ -1,6 +1,5 @@
 import React, { useContext, useState} from 'react';
 import classes from "./QuizDeck.module.css";
-import QuizDeckList from './QuizDeckList';
 import QuizDeckCardHeader from './QuizDeckCardHeader';
 import DeckContext from "../../../context/DeckContext";
 
@@ -13,7 +12,6 @@ const QuizDeck = ({deck}) => {
             <div className={classes.quiz__container}>
                 {deck && <QuizDeckCardHeader quiz={deck.scene}/>}
             </div>
-            {deck && <QuizDeckList deck={deck.scene} />}       
         </div>
     </div>
   )

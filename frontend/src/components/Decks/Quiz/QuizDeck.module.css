@@ -1,6 +1,6 @@
 
 .quiz__wrapper {
-    min-height: 100vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -31,6 +31,7 @@
 .quiz_card__illustration > img {
   display:block;
   max-width: 32rem;
+  max-height: 32rem;
   border-top-left-radius: 0.0rem;
   border-bottom-left-radius: 0.0rem;
   align-items: center;
@@ -40,6 +41,12 @@
 .quiz_card__illustration {
   align-items:start;
   justify-content: center; 
+}
+
+.quiz_card__go_button {
+  display:flex;
+  align-items: center;
+  justify-content: center;  
 }
 
 .quiz_card__details{

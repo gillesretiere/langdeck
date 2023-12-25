@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from "./QuizDeck.module.css";
+import QuizHome from "./QuizHome";
 
 const QuizDeckCardHeader = ({quiz}) => {if (quiz) {
   const {tp_quiz} = quiz; 
@@ -19,7 +20,11 @@ const QuizDeckCardHeader = ({quiz}) => {if (quiz) {
           </div>       
           <div className={`${classes.quiz_card__synopsis__translated}`}>
               {tp_quiz[0].quiz_summary_translation}
-          </div>                  
+          </div>        
+          <div className={`${classes.quiz_card__go_button}`}>
+          <QuizHome quiz={tp_quiz[0]} />
+          </div>
+
       </div>            
     </div>           
   )

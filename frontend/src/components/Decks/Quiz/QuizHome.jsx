@@ -14,13 +14,11 @@ const QuizHome = ({quiz}) => {
     return (
         <div className={classes.quiz_container}> 
         {!showQuiz ? (
-            <div>
             <Link to={{pathname:`/quiz_play_page/${ctx.language_deck.language}`}} >
             <button onClick={clickHandler}>
                 J'y vais
             </button> 
             </Link>
-            </div>
         ):(
             <div>
                 <QuizComponent quiz={quiz}/>

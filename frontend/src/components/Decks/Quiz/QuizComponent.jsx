@@ -1,8 +1,11 @@
-import React,  { useState } from 'react'; 
+import React,  { useState, useContext } from 'react'; 
 import classes from "./QuizComponent.module.css";
+import { Link } from "react-router-dom";
+import DeckContext from "../../../context/DeckContext";
 
 const QuizComponent = ({quiz}) => {
     console.log(quiz);
+    let ctx = useContext(DeckContext);
 
     const questions = quiz.quiz_form_translation.questions;
     const [activeQuestion, setActiveQuestion] = useState(0)
@@ -87,6 +90,13 @@ const QuizComponent = ({quiz}) => {
                 <p>
                 Wrong Answers:<span> {result.wrongAnswers}</span>
                 </p>
+                <Link to={{pathname:`/lesson_page/${ctx.language_deck.language}`}} >
+                    <div className={classes.quiz_container}>
+                        <button >
+                            OK
+                        </button>     
+                    </div>           
+                </Link>
             </div>
         )}
         </>
