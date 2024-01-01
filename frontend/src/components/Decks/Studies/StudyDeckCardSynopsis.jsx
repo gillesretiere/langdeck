@@ -2,7 +2,7 @@ import React from 'react'
 
 const StudyDeckCardSynopsis = ({study}) => {
   return (
-    <div>StudyDeckCardSynopsis</div>
+    <div>{study.tp_summary_translation}</div>
   )
 }
 

@@ -31,6 +31,8 @@ body {
   --serif-primary-font : miller-text, serif;
   --primary-color: #FA7F08;
   --secondary-color: #1f2023;
+  --alt-primary-color: #727272;
+  --alt-secondary-color: #6F6F6F;
   --color-bg-alu: hsl(190, 10%, 80%);  
   ;
 }

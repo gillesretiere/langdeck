@@ -1,7 +1,6 @@
 import React, { useContext, useState} from 'react';
 import classes from "./StudyDeck.module.css";
 import StudyDeckCardHeader from './StudyDeckCardHeader';
-import StudyDeckCardSynopsis from "./StudyDeckCardSynopsis";
 import StudyHome from './StudyHome';
 
 const StudyDeck = ({deck}) => {
@@ -11,7 +10,6 @@ const StudyDeck = ({deck}) => {
         <div className={classes.study__grid}>
             <div className={classes.study__container}>
                 {deck && <StudyDeckCardHeader study={deck.scene}/>}
-                <StudyDeckCardSynopsis study={deck.scene}/>                
             </div>
             <div className={`${classes.study_card__go_button}`}>
               <StudyHome deck={deck} />
