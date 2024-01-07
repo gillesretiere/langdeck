@@ -88,3 +88,11 @@ class StoryDeck(MongoBaseModel):
 class StoryDeckDB(StoryDeck):
     pass
 
+
+# themes (decks)
+class ThemesDeck(MongoBaseModel):
+    language: str = Field(..., min_length=3, max_length=3)
+    themes : Optional[Any]
+
+class ThemesDeckDB(ThemesDeck):
+    pass

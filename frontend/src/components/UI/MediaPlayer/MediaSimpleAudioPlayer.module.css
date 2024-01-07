@@ -5,3 +5,12 @@
     justify-content: center;
     transform: scale(1.8);
 }
+
+.svg_icons_big {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(3.8);
+    color: var(--primary-color);
+}

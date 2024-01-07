@@ -4,11 +4,11 @@ import uvicorn
 from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
 from routers.language_deck import router as language_deck_router
-from routers.story_deck import router as story_deck_router
 from routers.scene_deck import router as scene_deck_router
 from routers.saynete import router as saynete_router
 from routers.lang_deck_router import router as lang_deck_router
 from routers.story_deck_router import router as story_deck_router
+from routers.themes_deck_router import router as themes_deck_router
 
 
 HOST = config('HOST', cast=str)
@@ -56,11 +56,11 @@ async def shutdown_db_client():
     app.mongodb_client.close()
 
 app.include_router(language_deck_router, prefix="/language-deck", tags=["language deck"])
-app.include_router(story_deck_router, prefix="/story-deck", tags=["story deck"])
 app.include_router(scene_deck_router, prefix="/scene-deck", tags=["scene deck"])
 app.include_router(saynete_router, prefix="/saynete", tags=["saynete"])
 app.include_router(lang_deck_router, prefix="/langdeck", tags=["langdeck"])
 app.include_router(story_deck_router, prefix="/storydeck", tags=["storydeck"])
+app.include_router(themes_deck_router, prefix="/themesdeck", tags=["themes deck"])
 
 if __name__ == "__main__":
     uvicorn.run("__main__:app",host=HOST,port=8000, reload=True)

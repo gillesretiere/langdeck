@@ -25,6 +25,8 @@ import QuizPage from './pages/QuizPage';
 import QuizPlayPage from './pages/QuizPlayPage';
 import StudyPlayPage from './pages/StudyPlayPage';
 import LessonPage from './pages/LessonPage';
+import ThemePage from './pages/ThemePage';
+import UnitPage from './pages/UnitPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -73,6 +75,8 @@ root.render(
               <Route path="study_play_page/:id" element={<StudyPlayPage />} />
               <Route path="decks/:id" element={<Decks />} />
               <Route path="scenes/:id" element={<Scenes />} />
+              <Route path="theme_page/:id" element={<ThemePage />} />
+              <Route path="unit_page/:id" element={<UnitPage />} />
               <Route path="*" element={
                 <main style={{ padding: "1rem" }}>
                   <p>There's nothing here!</p>
