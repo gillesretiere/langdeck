@@ -5,8 +5,9 @@ import DeckContext from "../../../context/DeckContext";
 
 const ThemeDeckCard = ({theme, img})  => {
     let params = useContext(DeckContext);
-    // console.log (params);
+    //console.log (params);
     // console.log (theme);
+    const lang_img = params.deck.lang_flag_icon;
     const linkHandler = (event) => {
       params.deck = {theme};
     };
@@ -20,7 +21,7 @@ const ThemeDeckCard = ({theme, img})  => {
             <div className={`${classes.card__title__flag}`}>
               <div className={`${classes.card__subtitle}`}>{theme.theme_translation}</div>
               <div className={`${classes.card__language__img}` } id="flag">
-                <img src={img} alt="flag Icon" />
+                <img src={lang_img} alt="flag Icon" />
               </div>            
             </div>
           </div>

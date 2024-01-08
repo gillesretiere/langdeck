@@ -4,8 +4,8 @@ import DeckContext from "../context/DeckContext";
 import UnitDeckList from '../components/Decks/Units/UnitDeckList';
 
 const UnitPage = () => {
-    let ctx = useContext(DeckContext);
-
+    
+  let ctx = useContext(DeckContext);
   return (
     <Layout>
         <div>Unit Page</div>

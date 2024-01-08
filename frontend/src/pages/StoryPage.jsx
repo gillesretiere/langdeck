@@ -24,7 +24,7 @@ const StoryPage = () => {
     return data;
   };
 
-
+  console.log(decks);
   useEffect(()=>{
     fetch(`${BASE_URL}/${id}`)
         .then(response=>response.json())
