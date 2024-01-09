@@ -36,8 +36,6 @@ const ThemePage = () => {
         .then()        
   },[]) 
 
-  
-  
   const setValueHandler = (newValue) => {
     setValue(newValue);
   };
