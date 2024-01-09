@@ -6,11 +6,10 @@ import StudyComponent from '../components/Decks/Studies/StudyComponent';
 
 const StudyPlayPage = () => {
     let ctx = useContext(DeckContext);
-    
     return (
         <div>
             <Layout>
-                <StudyComponent deck={ctx.deck}></StudyComponent>
+                <StudyComponent deck={ctx.study}></StudyComponent>
             </Layout>
         </div>
     )

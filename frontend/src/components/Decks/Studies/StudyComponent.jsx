@@ -7,7 +7,7 @@ import MediaSimpleAudioPlayerBig from '../../UI/MediaPlayer/MediaSimpleAudioPlay
 
 
 const StudyComponent = ({deck}) => {
-  const phrases = deck.scene.tps;
+  const phrases = deck.tp_phrases;
 
   const [hideImage, setHideImage] = useState(false);
   const [hideImageLabel, setHideImageLabel] = useState("Cacher l'image");

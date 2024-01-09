@@ -7,6 +7,8 @@ import ThemeDeck from '../components/Decks/Themes/ThemeDeck';
 
 import Layout from '../components/UI/Layout';
 
+import classes from "./Pages.module.css";
+
 const BASE_URL = "http://51.91.8.112:8000/themesdeck";
 
 
@@ -46,7 +48,7 @@ const ThemePage = () => {
 
   return (
     <Layout>
-        <div>ThemePage</div>
+        <div className={classes.page__title}>Sélectionnez un thème</div>
         {decks && <AutoComplete options={decks.themes.map(a => a.theme_name)} value={value} inputValue={inputValue} setValue={setValueHandler} setInputValue={setInputValueHandler}/>}
         <div>
             {decks && <ThemeDeck themes={decks.themes.filter(({theme_name}) => theme_name.toLowerCase().startsWith(inputValue))} img={decks.lang_flag_icon}/>}

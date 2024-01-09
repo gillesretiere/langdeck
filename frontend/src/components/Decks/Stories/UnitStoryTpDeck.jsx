@@ -7,9 +7,12 @@ const UnitStoryTpDeck = ({unit_story, lang_img}) => {
     let ctx = useContext(DeckContext);
     let {story_name, story_translation,story_lesson_header, tps } = unit_story;
     let tp = tps[0];
+    
+    ctx.tp_aka_study=tp;
+
     return (
         <>
-            <div>
+        <div className={`${classes.card__container}`}>
             <Link to={{pathname:`/study_page/${ctx.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
@@ -26,7 +29,7 @@ const UnitStoryTpDeck = ({unit_story, lang_img}) => {
                     </div>
                 </div>                    
             </Link>     
-            </div>  
+        </div>  
         </>
     )
 }

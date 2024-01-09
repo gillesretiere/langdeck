@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const StudyHome = ({deck}) => {
     let ctx = useContext(DeckContext);
-    ctx.study = deck.scene;
+    ctx.study = deck;
     return (
         <div className={classes.study_container}> 
             <Link to={{pathname:`/study_play_page/${ctx.language_deck.language}`}} >

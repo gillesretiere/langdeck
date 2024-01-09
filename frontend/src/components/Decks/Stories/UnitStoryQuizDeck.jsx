@@ -7,9 +7,10 @@ const UnitStoryQuizDeck = ({unit_story, lang_img}) => {
     let ctx = useContext(DeckContext);
     let {story_name, story_translation,story_lesson_header, quiz } = unit_story;
     let Quiz = quiz[0];
+    ctx.quiz = Quiz;
     return (
         <>
-            <div>
+        <div className={`${classes.card__container}`}>
             <Link to={{pathname:`/quiz_page/${ctx.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
@@ -26,7 +27,7 @@ const UnitStoryQuizDeck = ({unit_story, lang_img}) => {
                     </div>
                 </div>                    
             </Link>     
-            </div>  
+        </div>  
         </>
     )
 }

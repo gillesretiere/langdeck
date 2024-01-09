@@ -10,6 +10,7 @@ const ThemeDeckCard = ({theme, img})  => {
     const lang_img = params.deck.lang_flag_icon;
     const linkHandler = (event) => {
       params.deck = {theme};
+      params.theme=theme;
     };
   
   return (

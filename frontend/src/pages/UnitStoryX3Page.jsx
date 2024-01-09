@@ -11,7 +11,6 @@ const UnitStoryX3Page = () => {
   const lang_img = ctx.language_deck.lang_flag_icon;
   return (
     <Layout>
-        <div>Unit Story X3 Page</div>
         <UnitStoryX3Deck unit_story={ctx.story.unit_story} lang_img={lang_img}></UnitStoryX3Deck>
     </Layout>
   )

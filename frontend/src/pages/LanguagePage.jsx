@@ -8,6 +8,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import Layout from '../components/UI/Layout';
 import LanguageDeck from '../components/Decks/Languages/LanguageDeck.jsx';
 import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
+import pg_classes from "./Pages.module.css";
 
 const BASE_URL = "http://51.91.8.112:8000/langdeck";
 
@@ -39,7 +40,9 @@ const LanguagePage = () => {
 
   return (
     <Layout>
-      <div>LanguageDeck</div>
+      <div className={pg_classes.page__title}>Sélectionnez un deck d'apprentissage</div>
+      <div className={pg_classes.page__subtitle}>1 deck=1 langue + 1 thème </div>
+      <div className={pg_classes.page__subtitle}>1. Sélectionnez une langue </div>
       <div className={`${classes.search__language}`}>
       <Autocomplete
           disablePortal

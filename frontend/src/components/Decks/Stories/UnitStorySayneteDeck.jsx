@@ -6,9 +6,10 @@ import DeckContext from "../../../context/DeckContext";
 const UnitStorySayneteDeck = ({saynete, lang_img}) => {
     let ctx = useContext(DeckContext);
     let {story_name, story_translation,story_lesson_header, } = saynete;
+    ctx.saynete = saynete;
 
     return (
-        <div>
+        <div className={`${classes.card__container}`}>
         <Link to={{pathname:`/saynete_page/${ctx.language_deck.language}`}} >
             <div className={`${classes.card__wrapper}`}>
                 <div className={`${classes.card__header}`}>

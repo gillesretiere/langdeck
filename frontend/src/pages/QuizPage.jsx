@@ -9,8 +9,8 @@ const QuizPage = (props) => {
 
     return (
       <Layout>
-        <div>QuizPage</div>
-        <QuizDeck deck={ctx.deck}/>
+        <div>Quiz Page</div>
+        <QuizDeck deck={ctx.quiz}/>
       </Layout>
     )
 }

@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import Layout from '../components/UI/Layout';
 import DeckContext from "../context/DeckContext";
 import UnitStoryDeckList from '../components/Decks/Stories/UnitStoryDeckList';
+import classes from "./Pages.module.css";
 
 const UnitStoryPage = () => {
     
@@ -11,7 +12,8 @@ const UnitStoryPage = () => {
   const lang_img = ctx.language_deck.lang_flag_icon;
   return (
     <Layout>
-        <div>Unit Story Page</div>
+        <div className={classes.page__title}>Sélectionnez une leçon</div>
+        <div className={classes.page__subtitle}>1 leçon = 1 saynète, 1 renforcement et 1 quiz </div>
         <UnitStoryDeckList unit={ctx.unit} img={lang_img}></UnitStoryDeckList>
     </Layout>
   )
