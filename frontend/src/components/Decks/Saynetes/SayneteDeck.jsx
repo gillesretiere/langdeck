@@ -3,9 +3,11 @@ import classes from "./SayneteDeck.module.css";
 import SayneteDeckList from './SayneteDeckList';
 import SayneteDeckCardHeader from './SayneteDeckCardHeader';
 import SayneteDeckCardSynopsis from "./SayneteDeckCardSynopsis";
+import SayneteStart from './SayneteStart';
 
 const SayneteDeck = ({deck}) => {
-  console.log(deck);
+  let story=deck;
+  let saynete_phrases = deck.phrases;
   return (
     <div className={classes.scene__wrapper}>
         <div className={classes.scene__grid}>
@@ -13,7 +15,10 @@ const SayneteDeck = ({deck}) => {
                 {deck && <SayneteDeckCardHeader scene={deck}/>}
                 <SayneteDeckCardSynopsis scene={deck}/>                
             </div>
-            {deck && <SayneteDeckList scene={deck} />}       
+            <div className={`${classes.saynete_card__go_button}`}>
+              <SayneteStart deck={saynete_phrases} />
+            </div>
+            {/*{deck && <SayneteDeckList scene={deck} />}   */}    
         </div>
     </div>
   )

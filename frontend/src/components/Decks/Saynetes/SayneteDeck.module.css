@@ -164,3 +164,9 @@
   color:black;
 
 }
+
+.saynete_card__go_button {
+  display:flex;
+  align-items: center;
+  justify-content: center;  
+}

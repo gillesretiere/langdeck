@@ -10,15 +10,15 @@ const StudyComponent = ({deck}) => {
   const phrases = deck.tp_phrases;
 
   const [hideImage, setHideImage] = useState(false);
-  const [hideImageLabel, setHideImageLabel] = useState("Cacher l'image");
+  const [hideImageLabel, setHideImageLabel] = useState("Cacher l'illustration");
   const [activePhrase, setActivePhrase] = useState(0);
 
   const handleClick = ({event}) => {
     setHideImage (!hideImage);
     if (hideImage) {
-      setHideImageLabel ("Cacher l'image");
+      setHideImageLabel ("Cacher l'illustration");
     } else {
-      setHideImageLabel ("Afficher l'image");
+      setHideImageLabel ("Afficher l'illustration");
     }
   }
   const onClickNext = () => {

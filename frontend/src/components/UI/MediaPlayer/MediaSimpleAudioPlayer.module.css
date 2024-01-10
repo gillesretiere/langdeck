@@ -14,3 +14,12 @@
     transform: scale(3.8);
     color: var(--primary-color);
 }
+
+.svg_icons_med_tr {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(2.8);
+    color: #808080;
+}
