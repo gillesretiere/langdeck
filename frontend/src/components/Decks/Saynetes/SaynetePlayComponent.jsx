@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import MediaSimpleAudioPlayerBig from '../../UI/MediaPlayer/MediaSimpleAudioPlayerBig';
 import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedTr';
+import SayneteDeckPlayHighlightWords from "./Phrases/SayneteDeckPlayHighlightWords";
+
 
 const SaynetePlayComponent = ({deck}) => {
 
@@ -45,6 +47,7 @@ const SaynetePlayComponent = ({deck}) => {
                           <div className={classes.phrase_num}>{phrase_position}</div>
                             <div className={classes.audio__wrapper_fr}>
                               <div className={classes.text__audio__wrapper}>{phrase}</div>
+                              <SayneteDeckPlayHighlightWords phrase={deck[activePhrase]}></SayneteDeckPlayHighlightWords>
                               <div className={classes.icon__audio__wrapper}><MediaSimpleAudioPlayerBig media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerBig></div>
                             </div>                             
                             <div className={classes.audio__wrapper}>

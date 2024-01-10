@@ -18,7 +18,7 @@ const PhraseDeckPhraseWordPopper2 = ({word, callbackModal}) => {
     callbackModal();
   }
 
-
+  console.log({word});
   return (
     <>
         <Box 
@@ -40,12 +40,12 @@ const PhraseDeckPhraseWordPopper2 = ({word, callbackModal}) => {
           }
 
           <div className={classes.container}>
-            <Button color="primary" className={classes.button1} onClick={handleClick} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
+            <Button color="secondary" className={classes.button2} onClick={handleClick} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
             Translate
             </Button> 
             <Button color="secondary" className={classes.button2} onClick={closeButtonClickHandler} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 16px 0px", }}>
             OK
-            </Button> 
+            </Button>   
           </div>
 
                  
