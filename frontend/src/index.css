@@ -34,6 +34,8 @@ body {
   --alt-primary-color: #727272;
   --alt-secondary-color: #6F6F6F;
   --color-bg-alu: hsl(190, 10%, 80%);  
+  --blue-theme-primary-color: #96C2DB;
+  --blue-theme-secondary-color: #E5EDF1;
   ;
 }
 @media (prefers-color-scheme: dark) {

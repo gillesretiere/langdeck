@@ -49,7 +49,16 @@ const theme = createTheme({
     },    
     black: {
       main: '#000000',
-    }    
+    },
+    blue_primary:{
+      main: '#96C2DB',
+    },
+    blue_secondary:{
+      main: '#E5EDF1',
+    },
+    blue_tertiary:{
+      main: '#6d9ab3',
+    },
   },
   props: {
     MuiTooltip: {

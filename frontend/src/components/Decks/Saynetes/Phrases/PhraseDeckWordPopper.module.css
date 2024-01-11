@@ -127,6 +127,44 @@ h2 {
     font-size: 1.2em;
   }
 
+  .word__popper__wrapper_tr {
+    display:flex;
+    width: auto;
+    height:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    margin:0rem;
+    padding: 0.5rem;
+    background-color: var(--blue-theme-secondary-color);
+    filter: grayscale(10%);
+    color: #111439;
+    font-family : var(--secondary-font);
+    font-size: 0.8em;
+}
+
+.word__popper__wrapper__notes {
+  display:flex;
+  max-width: 20rem;
+  height:100%;
+  text-align:justify;
+  justify-content: center;
+  align-items: flex-end;
+  margin:0rem;
+  padding: 0.5rem;
+  background-color: var(--blue-theme-secondary-color);
+  color: #111439;
+  font-family : var(--secondary-font);
+  font-size: 0.7em;  
+  font-weight: 400;
+}
+
+.word__popper__wrapper__notes img {
+  display:inline-block;
+  padding: 20px;
+  width:5rem;
+}
+
 .word__audio__wrapper {
   display:flex;
   width:auto;

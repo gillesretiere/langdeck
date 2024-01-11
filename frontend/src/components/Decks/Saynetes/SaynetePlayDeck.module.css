@@ -24,11 +24,12 @@ display: grid;
   width:auto;
   text-align:center;
   justify-content: center;
-  color: #ffffff;
+  color: #111439;
   font-family: var(--serif-secondary-font);
   font-weight: 800;
   font-size:1.3rem;    
-  background-color: #b0c4b1;
+  /*background-color: #b0c4b1;*/
+  background-color: white;
   border-radius: 12px 12px 0px 0px;
 }
 
@@ -39,8 +40,10 @@ display: grid;
   text-align:center;
   justify-content: center;
   padding-bottom: 2rem;
-  background-color: #dedbd2;
-  color: #808080;  
+  /*background-color: #dedbd2;*/
+  background-color: var(--blue-theme-secondary-color);
+  /*color: #808080;  */
+  color:#111439;
   border-radius: 0px 0px 12px 12px;
   
 }

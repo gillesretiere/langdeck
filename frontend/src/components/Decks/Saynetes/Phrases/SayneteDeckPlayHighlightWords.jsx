@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Popper from "@mui/material/Popper";
 import PhraseDeckPhraseWordPopper from "./PhraseDeckPhraseWordPopper";
 import PhraseDeckPhraseWordPopper2 from "./PhraseDeckPhraseWordPopper2";
+import SayneteDeckPlayPopper from "./SayneteDeckPlayPopper";
 import classes from "./PhraseDeckCard.module.css";
 
 
@@ -69,7 +70,7 @@ const SayneteDeckPlayHighlightWords = ({phrase}) => {
                 }
               ]}
             >
-            <PhraseDeckPhraseWordPopper2 word={wordElement} callbackModal={callbackModal}/>
+            <SayneteDeckPlayPopper word={wordElement} callbackModal={callbackModal}/>
           
           </Popper>
         </div> 

@@ -62,7 +62,7 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar 
         position="static"
-        color="primary">
+        color="blue_primary">
         <Toolbar>
             <IconButton
             size="large"
