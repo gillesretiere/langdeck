@@ -2,6 +2,9 @@ import React, { useState, useContext } from 'react';
 import classes from "./SaynetePlayDeck.module.css";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import MediaSimpleAudioPlayerBig from '../../UI/MediaPlayer/MediaSimpleAudioPlayerBig';
 import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedTr';
 import SayneteDeckPlayHighlightWords from "./Phrases/SayneteDeckPlayHighlightWords";
@@ -46,22 +49,38 @@ const SaynetePlayComponent = ({deck}) => {
                         <div className={classes.card__container}>
                           <div className={classes.phrase_num}>{phrase_position}</div>
                             <div className={classes.audio__wrapper_fr}>
-                              <div className={classes.text__audio__wrapper}>{phrase}</div>
+                              <div className={classes.icon__audio__wrapper}><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerMedTr></div>
                               <SayneteDeckPlayHighlightWords phrase={deck[activePhrase]}></SayneteDeckPlayHighlightWords>
-                              <div className={classes.icon__audio__wrapper}><MediaSimpleAudioPlayerBig media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerBig></div>
                             </div>                             
                             <div className={classes.audio__wrapper}>
+  
+                            <Box sx={{ display: 'flex' }}  justifyContent="space-between" alignItems='center'>
+                              <IconButton color="white" fullWidth="true" m={1} className={classes.mui_button} variant="contained" size="small" onClick={onClickPrevious} disabled={activePhrase === 0}>
+                                <ArrowBackIosIcon/>
+                              </IconButton>    
                               <div className={classes.text__audio__wrapper}>{phrase_translation}</div>
-                              <div className={classes.icon__audio__wrapper}><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url}></MediaSimpleAudioPlayerMedTr></div>
-                            </div>              
+                              <IconButton color="white" fullWidth="true" m={1} className={classes.mui_button} variant="contained" size="small" onClick={onClickNext} disabled={activePhrase === deck.length - 1}>
+                                <ArrowForwardIosIcon/>
+                              </IconButton> 
+                                                                                
+                            </Box>
+
+                                                                                
+                              {/*<div className={classes.icon__audio__wrapper}><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url}></MediaSimpleAudioPlayerMedTr></div>*/}
+                            </div>       
+                                 
                         </div>
                         <div className={classes.flex_right}>
-                          <Button className={classes.mui_button} variant="outlined" size="small" onClick={onClickPrevious} disabled={activePhrase === 0}>
+                        <Box color="secondary" m={1}>
+                          <Button color="tertiary" fullWidth="true" m={1} className={classes.mui_button} variant="outlined" size="small" onClick={onClickPrevious} disabled={activePhrase === 0}>
                               Précédent
-                          </Button>                             
-                          <Button className={classes.mui_button} variant="outlined" size="small" onClick={onClickNext} disabled={activePhrase === deck.length - 1}>
+                          </Button>  
+                        </Box>                           
+                        <Box m={1}>
+                          <Button color="secondary" fullWidth="true" m={1} className={classes.mui_button} variant="contained" size="small" onClick={onClickNext} disabled={activePhrase === deck.length - 1}>
                               Suivant
                           </Button>                                     
+                        </Box>                           
 
                         </div>  
                     </Box>   

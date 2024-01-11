@@ -73,7 +73,7 @@ const SayneteDeckPlayHighlightWords = ({phrase}) => {
           
           </Popper>
         </div> 
-      <div>
+      <div className={classes.text__audio__wrapper}>
         {vk_phrase.map((elem) =>
             vk_words.indexOf(elem) !== -1 ? (
               <span key={elem} id={elem} onClick={handleClick}>

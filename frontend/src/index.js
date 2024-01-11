@@ -36,14 +36,20 @@ import CssBaseline from '@mui/material/CssBaseline';
 const theme = createTheme({
   palette: {
     primary: {
-      type: 'light',
-      main: 'hsl(179, 62%, 43%);',
-      dark: '#CC00CC',
+      main: '#dedbd2',
     },
     secondary: {
-      main: '#4abebd',
+      main: '#b0c4b1',
     },
-
+    tertiary: {
+      main: '#edafb8',
+    },
+    white: {
+      main: '#ffffff',
+    },    
+    black: {
+      main: '#000000',
+    }    
   },
   props: {
     MuiTooltip: {
