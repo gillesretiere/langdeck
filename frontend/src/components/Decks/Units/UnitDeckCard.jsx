@@ -7,12 +7,13 @@ import DeckContext from "../../../context/DeckContext";
 const UnitDeckCard = ({unit}) => {
     console.log(unit);
     let params = useContext(DeckContext);
-    const lang_img = params.language_deck.lang_flag_icon;
+    const lang_img = params.current_deck.language_deck.lang_flag_icon;
     console.log(params);
     const {lesson, lesson_translation, lesson_language, lesson_illustration, } = unit;
 
     const linkHandler = (event) => {
         params.unit = unit;
+        params.current_deck.unit_deck = unit;
       };
         
     return (

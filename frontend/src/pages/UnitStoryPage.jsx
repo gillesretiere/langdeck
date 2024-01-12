@@ -9,7 +9,7 @@ const UnitStoryPage = () => {
     
   let ctx = useContext(DeckContext);
   console.log(ctx);
-  const lang_img = ctx.language_deck.lang_flag_icon;
+  const lang_img = ctx.current_deck.language_deck.lang_flag_icon;
   return (
     <Layout>
         <div className={classes.page__title}>Sélectionnez une leçon</div>

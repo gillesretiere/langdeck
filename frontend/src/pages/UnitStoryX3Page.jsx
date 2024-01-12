@@ -8,7 +8,7 @@ const UnitStoryX3Page = () => {
     
   let ctx = useContext(DeckContext);
   console.log(ctx);
-  const lang_img = ctx.language_deck.lang_flag_icon;
+  const lang_img = ctx.current_deck.language_deck.lang_flag_icon;
   return (
     <Layout>
         <UnitStoryX3Deck unit_story={ctx.story.unit_story} lang_img={lang_img}></UnitStoryX3Deck>

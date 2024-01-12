@@ -9,7 +9,7 @@ const SayneteStart = ({deck}) => {
 
     return (
         <div className={classes.container}> 
-            <Link to={{pathname:`/saynete_play_page/${ctx.language_deck.language}`}} >
+            <Link to={{pathname:`/saynete_play_page/${ctx.current_deck.language_deck.language}`}} >
             <button>
                 J'y vais
             </button> 

@@ -9,7 +9,7 @@ const StudyHome = ({deck}) => {
     ctx.study = deck;
     return (
         <div className={classes.study_container}> 
-            <Link to={{pathname:`/study_play_page/${ctx.language_deck.language}`}} >
+            <Link to={{pathname:`/study_play_page/${ctx.current_deck.language_deck.language}`}} >
             <button>
                 J'y vais
             </button> 

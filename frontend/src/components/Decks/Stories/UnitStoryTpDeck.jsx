@@ -13,7 +13,7 @@ const UnitStoryTpDeck = ({unit_story, lang_img}) => {
     return (
         <>
         <div className={`${classes.card__container}`}>
-            <Link to={{pathname:`/study_page/${ctx.language_deck.language}`}} >
+            <Link to={{pathname:`/study_page/${ctx.current_deck.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
                         <div className={`${classes.card__title}`}>{tp.tp_name}</div>

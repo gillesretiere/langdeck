@@ -14,7 +14,7 @@ const QuizHome = ({quiz}) => {
     return (
         <div className={classes.quiz_container}> 
         {!showQuiz ? (
-            <Link to={{pathname:`/quiz_play_page/${ctx.language_deck.language}`}} >
+            <Link to={{pathname:`/quiz_play_page/${ctx.current_deck.language_deck.language}`}} >
             <button onClick={clickHandler}>
                 J'y vais
             </button> 

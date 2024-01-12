@@ -12,6 +12,7 @@ const UnitStoryDeckCard = ({unit_story, img}) => {
   // console.log (scene);
   const linkHandler = (event) => {
     params.story = {unit_story};
+    params.current_deck.story_deck = unit_story;
   };
 
   return (

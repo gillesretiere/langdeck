@@ -12,11 +12,11 @@ const SayneteDeckCardSynopsis = ({scene}) => {
     let params = useContext(DeckContext);
 
     const [translate, setTranslate] = useState(false);
-    const [language, setLanguage] = useState(params.language_deck.lang_name_native);
+    const [language, setLanguage] = useState(params.current_deck.language_deck.lang_name_native);
 
     const handleClick = ({event}) => {
         setTranslate (!translate);
-        setLanguage ( language === 'Français' ? (params.language_deck.lang_name_native):('Français'));
+        setLanguage ( language === 'Français' ? (params.current_deck.language_deck.lang_name_native):('Français'));
     }
 
   return (

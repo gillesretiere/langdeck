@@ -9,7 +9,7 @@ import classes from "./Pages.module.css";
 const UnitPage = () => {
     
   let ctx = useContext(DeckContext);
-  let lang_flag_icon = ctx.language_deck.lang_flag_icon;
+  let lang_flag_icon = ctx.current_deck.language_deck.lang_flag_icon;
   let theme = ctx.theme;
   return (
     <Layout>      

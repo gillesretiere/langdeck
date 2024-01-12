@@ -90,7 +90,7 @@ const QuizComponent = ({quiz}) => {
                 <p>
                 Wrong Answers:<span> {result.wrongAnswers}</span>
                 </p>
-                <Link to={{pathname:`/unit_story_x3_page/${ctx.language_deck.language}`}} >
+                <Link to={{pathname:`/unit_story_x3_page/${ctx.current_deck.language_deck.language}`}} >
                     <div className={classes.quiz_container}>
                         <button >
                             OK

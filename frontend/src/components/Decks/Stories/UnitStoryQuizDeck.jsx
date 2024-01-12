@@ -11,7 +11,7 @@ const UnitStoryQuizDeck = ({unit_story, lang_img}) => {
     return (
         <>
         <div className={`${classes.card__container}`}>
-            <Link to={{pathname:`/quiz_page/${ctx.language_deck.language}`}} >
+            <Link to={{pathname:`/quiz_page/${ctx.current_deck.language_deck.language}`}} >
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
                         <div className={`${classes.card__title}`}>{Quiz.quiz_name}</div>
