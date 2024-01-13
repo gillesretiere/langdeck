@@ -1,9 +1,8 @@
 .scene__wrapper {
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content:baseline;
     align-items: center;
-    background-color: white;
+    margin-left: 2rem;
   }
   
 .scene__container {

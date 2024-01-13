@@ -2,8 +2,9 @@
 .wrapper {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items:flex-start;
+    justify-content:baseline;
+    align-items: top;
+    margin-left: 4rem;
     /*background-color: #f9f9f9;*/
   }
 

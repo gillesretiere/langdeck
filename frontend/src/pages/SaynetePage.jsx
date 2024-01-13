@@ -9,7 +9,6 @@ const SaynetePage = (props) => {
 
     return (
       <Layout>
-        <div>SaynetePage</div>
         <SayneteDeck deck={ctx.saynete}/>
       </Layout>
     )

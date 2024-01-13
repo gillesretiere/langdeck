@@ -14,12 +14,7 @@ const UnitStorySayneteDeck = ({saynete, lang_img}) => {
             <div className={`${classes.card__wrapper}`}>
                 <div className={`${classes.card__header}`}>
                     <div className={`${classes.card__title}`}>{story_name}</div>
-                    <div className={`${classes.card__title__flag}`}>
-                        <div className={`${classes.card__subtitle}`}>{story_translation}</div>
-                        <div className={`${classes.card__language__img}` } id="flag">
-                            <img src={lang_img} alt="flag Icon" />
-                        </div>          
-                    </div>
+                    <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{story_translation}</div></div>
                 </div>
                 <div className={`${classes.card__img}`}>
                     <img src={story_lesson_header} alt="flag Icon" />

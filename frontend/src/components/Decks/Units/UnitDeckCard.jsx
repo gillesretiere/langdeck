@@ -20,15 +20,12 @@ const UnitDeckCard = ({unit}) => {
         <div className={`${classes.card__container}`}>
         <Link to={{pathname:`/unit_story_page/${lesson_language}`}} onClick={linkHandler}>
           <div className={`${classes.card__wrapper}`}>
-            <div className={`${classes.card__header}`}>
-              <div className={`${classes.card__title}`}>{lesson}</div>
-              <div className={`${classes.card__title__flag}`}>
-                <div className={`${classes.card__subtitle}`}>{lesson_translation}</div>
-                <div className={`${classes.card__language__img}` } id="flag">
-                  <img src={lang_img} alt="flag Icon" />
-                </div>            
-              </div>
-            </div>
+
+          <div className={`${classes.card__header}`}>
+            <div className={`${classes.card__title}`}>{lesson}</div>
+            <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{lesson_translation}</div></div>
+          </div>
+
             <div className={`${classes.card__img}`}>
               <img src={lesson_illustration} alt="flag Icon" />
             </div>

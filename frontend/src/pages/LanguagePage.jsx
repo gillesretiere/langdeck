@@ -16,8 +16,9 @@ const BASE_URL = "http://51.91.8.112:8000/langdeck";
 const LanguagePage = () => {
 
   const menuItems = useContext(appContext);
-  const [languages, setLanguages] = useState([])
-  const [isPending, setIsPending] = useState(true)
+  const [languages, setLanguages] = useState([]);
+  const [isPending, setIsPending] = useState(true);
+  const [autoComplete, setautoComplete] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('');
   const [value, setValue] = React.useState(languages[0]);
   const [inputValue, setInputValue] = React.useState('');
@@ -40,9 +41,9 @@ const LanguagePage = () => {
 
   return (
     <Layout>
+        {autoComplete && 
+        <>
       <div className={pg_classes.page__title}>Sélectionnez un deck d'apprentissage</div>
-      <div className={pg_classes.page__subtitle}>1 deck=1 langue + 1 thème </div>
-      <div className={pg_classes.page__subtitle}>1. Sélectionnez une langue </div>
       <div className={`${classes.search__language}`}>
       <Autocomplete
           disablePortal
@@ -60,6 +61,8 @@ const LanguagePage = () => {
           renderInput={(params) => <TextField {...params} label="Language" />}
         /> 
       </div>
+      </>
+      }
       <div>
         <LanguageDeck languages={
           languages.filter(({ lang_name_fr }) => lang_name_fr.toLowerCase().startsWith(inputValue))

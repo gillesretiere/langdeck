@@ -28,7 +28,7 @@
     text-align: center;
     margin-bottom: 0em;
     color: #141414;
-    background-color: var(--color-bg-softgrey);
+    /*background-color: var(--color-bg-softgrey);*/
 }
 
 .card__header{

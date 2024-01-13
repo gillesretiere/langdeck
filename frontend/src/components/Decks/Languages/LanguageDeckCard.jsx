@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import DeckContext from "../../../context/DeckContext";
-import classes from "./LanguageDeckCard.module.css";
+import classes from "../DeckCard.module.css";
 
 const LanguageDeckCard = ({language_deck}) => {
   const {language,lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon} = language_deck;
@@ -21,9 +21,9 @@ const LanguageDeckCard = ({language_deck}) => {
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{lang_name_fr}</div>
-            <div className={`${classes.card__subtitle}`}>{lang_name_native}</div>
+            <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{lang_name_native}</div></div>
           </div>
-          <div className={`${classes.card__img}`}>
+          <div className={`${classes.language__card__img}`}>
             <img src={lang_flag_icon} alt="flag Icon"/>
           </div>
         </div>

@@ -36,6 +36,10 @@ body {
   --color-bg-alu: hsl(190, 10%, 80%);  
   --blue-theme-primary-color: #96C2DB;
   --blue-theme-secondary-color: #E5EDF1;
+  --palette-blue-primary-color:#96C2DB;
+  --palette-blue-secondary-color:#E5EDF1;
+  --palette-blue-tertiary-color:#6d9ab3;
+  --palette-dark-blue: #111439;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   
 }

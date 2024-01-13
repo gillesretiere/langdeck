@@ -76,7 +76,7 @@ const SayneteDeckPlayHighlightWords = ({phrase}) => {
         </div> 
       <div className={classes.text__audio__wrapper}>
         {vk_phrase.map((elem) =>
-            vk_words.indexOf(elem) !== -1 ? (
+            vk_words.indexOf(elem) !== -1 && elem.length > 1 ? (
               <span key={elem} id={elem} onClick={handleClick}>
                 <mark className={classes.marked__item} id={elem}>{get_kw_by_rec_id({ elem })}</mark>
               </span>

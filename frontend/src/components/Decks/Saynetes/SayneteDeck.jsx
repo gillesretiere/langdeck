@@ -12,12 +12,12 @@ const SayneteDeck = ({deck}) => {
     <div className={classes.scene__wrapper}>
         <div className={classes.scene__grid}>
             <div className={classes.scene__container}>
-                {deck && <SayneteDeckCardHeader scene={deck}/>}
-                <SayneteDeckCardSynopsis scene={deck}/>                
+                {deck && <SayneteDeckCardHeader scene={deck}/>}       
+                <div className={`${classes.saynete_card__go_button}`}>
+                 <SayneteStart deck={saynete_phrases} />
+                </div>                 
             </div>
-            <div className={`${classes.saynete_card__go_button}`}>
-              <SayneteStart deck={saynete_phrases} />
-            </div>
+
             {/*{deck && <SayneteDeckList scene={deck} />}   */}    
         </div>
     </div>

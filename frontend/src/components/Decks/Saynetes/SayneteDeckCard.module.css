@@ -1,7 +1,7 @@
 .sketch__container {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;  
     padding: 0.75rem;
     background-color: white;
@@ -9,26 +9,27 @@
   }
   
   .sketch__title {
-    font-family : var(--primary-font);
-    font-size: 2.8rem;
+    display:flex;
+    justify-content: left;      
+    font-family : var(--secondary-font);
+    font-size: 2.2rem;
     line-height: 1.4;
-    text-transform: uppercase;
     letter-spacing: -1px;
   }
   
   .sketch__title__fr {
     font-family: var(--serif-primary-font);
     text-transform: none;
-    color: var(--secondary-color);
+    color: inherit;
     font-weight: 500;
   }
   
   .sketch__title__translated {
-    font-family: var(--serif-primary-font);
+    font-family : var(--secondary-font);
     text-transform: none;   
-    color: var(--primary-color);
+    color: inherit;
     font-weight: 400;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
   }
   
   .sketch__note {
@@ -63,7 +64,7 @@
   }
   
   .sketch__details {
-    padding: 2.3rem;
+    padding: 0.3rem;
   }
   
   .sketch__deck__tags {

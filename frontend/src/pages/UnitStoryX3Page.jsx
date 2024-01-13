@@ -7,7 +7,6 @@ import UnitStoryX3Deck from '../components/Decks/Stories/UnitStoryX3Deck';
 const UnitStoryX3Page = () => {
     
   let ctx = useContext(DeckContext);
-  console.log(ctx);
   const lang_img = ctx.current_deck.language_deck.lang_flag_icon;
   return (
     <Layout>
