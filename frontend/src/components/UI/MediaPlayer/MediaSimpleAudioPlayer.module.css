@@ -18,10 +18,19 @@
 
 .svg_icons_med_tr {
     display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.8);
+    color: var(--palette-dark-blue);
+    margin-left: 1rem;
+}
+
+.svg_icons_med_fr {
+    display:flex;
     width: auto;
     text-align: center;
     justify-content: center;
-    transform: scale(2.8);
+    transform: scale(4.8);
     color: var(--primary-color);
 
 }

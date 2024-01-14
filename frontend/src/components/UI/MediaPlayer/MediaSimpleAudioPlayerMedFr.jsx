@@ -4,7 +4,7 @@ import classes from "./MediaSimpleAudioPlayer.module.css";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 
-const MediaSimpleAudioPlayerMedTr = ({media_url}) => {
+const MediaSimpleAudioPlayerMedFr = ({media_url}) => {
 
     const [isPlaying, setIsPlaying] = useState(false);
     useEffect(() => {
@@ -32,10 +32,10 @@ const MediaSimpleAudioPlayerMedTr = ({media_url}) => {
   return (
     <div>
       <a id="play-pause-button" onClick={togglePlay}>
-      { isPlaying ? <PauseCircleOutlineIcon className={classes.svg_icons_med_tr} /> : <PlayCircleOutlineIcon className={classes.svg_icons_med_tr} /> }
+      { isPlaying ? <PauseCircleOutlineIcon className={classes.svg_icons_med_fr} /> : <PlayCircleOutlineIcon className={classes.svg_icons_med_fr} /> }
       </a>
     </div>
   )
 }
 
-export default MediaSimpleAudioPlayerMedTr
+export default MediaSimpleAudioPlayerMedFr

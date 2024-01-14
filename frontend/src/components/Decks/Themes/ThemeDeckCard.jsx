@@ -11,7 +11,8 @@ const ThemeDeckCard = ({theme, img})  => {
     const linkHandler = (event) => {
       params.deck = {theme};
       params.theme=theme;
-      params.current_deck.theme_deck = theme;
+      params.current_deck.theme_deck=theme;
+
     };
   
   return (

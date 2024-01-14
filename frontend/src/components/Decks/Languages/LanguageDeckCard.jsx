@@ -10,9 +10,6 @@ const LanguageDeckCard = ({language_deck}) => {
   const handleClick = () => {
     params.deck=language_deck;
     params.current_deck.language_deck=language_deck;
-    params.current_deck.theme_deck='';
-    params.current_deck.story_deck='';
-    params.current_deck.unit_deck='';
   };
 
   return (

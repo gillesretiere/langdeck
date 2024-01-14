@@ -6,11 +6,14 @@ import IconButton from "@mui/material/IconButton";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import MediaSimpleAudioPlayerBig from '../../UI/MediaPlayer/MediaSimpleAudioPlayerBig';
+import MediaSimpleAudioPlayerMedFr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedFr';
 import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedTr';
 import SayneteDeckPlayHighlightWords from "./Phrases/SayneteDeckPlayHighlightWords";
+import DeckContext from "../../../context/DeckContext";
 
 
 const SaynetePlayComponent = ({deck}) => {
+    let ctx = useContext(DeckContext);
 
     const [hideImage, setHideImage] = useState(false);
     const [hideImageLabel, setHideImageLabel] = useState("Cacher l'illustration");
@@ -29,7 +32,9 @@ const SaynetePlayComponent = ({deck}) => {
         setActivePhrase((prev) => prev + 1)
       } else {
         setActivePhrase(0)
-      }        
+      }      
+      ctx.progression_1_state = activePhrase;
+      console.log(ctx);
     }
     const onClickPrevious = () => {
       if (activePhrase !== 0) {
@@ -37,6 +42,8 @@ const SaynetePlayComponent = ({deck}) => {
       } else {
         setActivePhrase(0)
       }        
+      ctx.progression_1_state = activePhrase  
+      console.log(ctx);
     }      
 
     const { phrase, phrase_translation, phrase_position, phrase_audio_url, phrase_audio_url_fr, } = deck[activePhrase];
@@ -50,14 +57,14 @@ const SaynetePlayComponent = ({deck}) => {
                           <div className={classes.phrase_num}></div>
                             <div className={classes.audio__wrapper_fr}>
                               <div className={classes.icon__audio__wrapper}>
-                                <MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerMedTr>
+                                <MediaSimpleAudioPlayerMedFr media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerMedFr>
                               </div>
                                 <Box sx={{ display: 'flex' }}  justifyContent="space-between" alignItems='center'>
-                                  <IconButton color="blue_tertiary" fullWidth="true" m={1} className={classes.mui_button} variant="contained" size="small" onClick={onClickPrevious} disabled={activePhrase === 0}>
-                                    <ArrowBackIosIcon/>
+                                  <IconButton color="blue_tertiary" m={1} className={classes.mui_button} variant="contained" size="large" onClick={onClickPrevious} disabled={activePhrase === 0}>
+                                    <ArrowBackIosIcon fontSize="large"/>
                                   </IconButton>                                 
-                                  <IconButton color="blue_tertiary" fullWidth="true" m={1} className={classes.mui_button} variant="contained" size="small" onClick={onClickNext} disabled={activePhrase === deck.length - 1}>
-                                    <ArrowForwardIosIcon/>
+                                  <IconButton color="blue_tertiary" m={1} className={classes.mui_button} variant="contained" size="large" onClick={onClickNext} disabled={activePhrase === deck.length - 1}>
+                                    <ArrowForwardIosIcon fontSize="large"/>
                                   </IconButton> 
                                 </Box>                                
                                 <SayneteDeckPlayHighlightWords phrase={deck[activePhrase]}></SayneteDeckPlayHighlightWords>
@@ -65,7 +72,10 @@ const SaynetePlayComponent = ({deck}) => {
                             <div className={classes.audio__wrapper}>
     
                               <Box sx={{ display: 'flex' }}  justifyContent="center" alignItems='center'>
-                                <div className={classes.text__audio__wrapper}>{phrase_translation}</div>
+                                <div className={classes.text__audio__wrapper}>
+                                  <div>{phrase_translation}</div>
+                                  <div className='flex items-center'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url}></MediaSimpleAudioPlayerMedTr> </div>                            
+                                </div>  
                               </Box>
 
                                                                                   
