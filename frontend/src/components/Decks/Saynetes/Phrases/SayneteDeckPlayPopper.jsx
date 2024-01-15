@@ -29,12 +29,20 @@ const SayneteDeckPlayPopper = ({word, callbackModal}) => {
   return (
     <>
         <Box 
-          sx={{ width:'100%', border: 0, borderRadius: '16px', boxShadow: 8, m:0, pt:1, px:0, bgcolor: "background.paper" }} >
+          sx={{ width:'auto', border: 0, borderRadius: '16px', boxShadow: 8, m:0, pt:1, px:0, bgcolor: "background.paper" }} >
           {/* audio */}
           { showNote ? (
             <>
-            <div className={classes.word__popper__wrapper}>{word.word}</div>
-            <div className={classes.word__popper__wrapper__notes} >{word.word_notes}</div>
+            <Box sx={{ textAlign:'left'}}>
+            <div className={classes.word_wrapper_fr}>
+              <div className={classes.word_fr}>{word.word} : </div>
+              <div className={classes.note_fr}>&nbsp;{word.word_notes}</div>
+            </div>
+            <div className={classes.note_wrapper_fr}>
+              <div className={classes.word_fr}>{word.word_translation} : </div>
+              <div className={classes.note_fr}>&nbsp;{word.word_notes_translation}</div>
+            </div>
+            </Box>            
                 {
                 word.word_nutri_notes && false && 
                 <ReadMoreIcon color="primary" onClick={handleShowNutriNoteClick}/>

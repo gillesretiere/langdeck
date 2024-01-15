@@ -190,6 +190,30 @@ h2 {
 .button4 {
   background-color: hsl(11, 78%, 44%);
 }
+.word_wrapper_fr{
+  max-width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+}
+
+.note_wrapper_fr{
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+  background-color: var(--blue-theme-secondary-color);
+}
+
+
+.word_fr {
+  font-size: 0.7em;
+  font-weight: 800;
+}
+
+.note_fr {
+  font-size: 0.7em;
+  font-weight: 400;
+}
 
 @media screen and (min-width: 620px) {
   .container {

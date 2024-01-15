@@ -18,7 +18,8 @@ const UnitStoryQuizDeck = ({unit_story, lang_img}) => {
                         <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{Quiz.quiz_translation}</div></div>
                     </div>
                     <div className={`${classes.card__img}`}>
-                        <img src={Quiz.quiz_lesson_header} alt="flag Icon" />
+                        {/*<img src={Quiz.quiz_lesson_header} alt="flag Icon" />*/}
+                        <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1705337896/langdeck/assets/images/saynetes/langdeck-lesson-header-3.png' alt="flag Icon" />
                     </div>
                 </div>                    
             </Link>     
