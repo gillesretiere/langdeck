@@ -22,20 +22,19 @@ const UnitStoryDeckCard = ({unit_story, img}) => {
         <Link to={{pathname:`/unit_story_x3_page/${language}`}} onClick={linkHandler}>
           <div className={`${classes.card__wrapper}`}>
 
-          <div className={`${classes.card__header}`}>
-            <div className={`${classes.card__title}`}>{story_name}</div>
-            <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{story_translation}</div></div>
-          </div>
+            <div className={`${classes.card__header}`}>
+              <div className={`${classes.card__title}`}>{story_name}</div>
+              <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{story_translation}</div></div>
+            </div>
             <div className={classes.image_container}>
               <div className={`${classes.card__img}`}>
                 <img src={story_illustration} alt="flag Icon" />
-                  <div className={classes.image_icon}>
+                  <div className={classes.image_icon_2}>
                     <IconButton color="white" variant="contained" size="large">
                       <PlayCircleOutlineIcon fontSize="large"/>
                     </IconButton>
                   </div>     
               </div>
-         
             </div>
 
           </div>          

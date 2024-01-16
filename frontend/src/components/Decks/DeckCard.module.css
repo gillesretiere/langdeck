@@ -212,3 +212,11 @@ p.card__desc__btn {
     opacity: 0.6;
     text-align: center;
 }
+
+.image_icon_2 {
+    position: absolute;
+    transform: scale(2.8);
+    opacity: 0.9;
+    text-align: center;
+}
+  
