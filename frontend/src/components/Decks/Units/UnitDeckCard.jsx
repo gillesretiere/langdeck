@@ -25,7 +25,6 @@ const UnitDeckCard = ({unit}) => {
             <div className={`${classes.card__title}`}>{lesson}</div>
             <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{lesson_translation}</div></div>
           </div>
-
             <div className={`${classes.card__img}`}>
               <img src={lesson_illustration} alt="flag Icon" />
             </div>

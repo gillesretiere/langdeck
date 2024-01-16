@@ -198,3 +198,17 @@
 p.card__desc__btn {
     flex-grow: 1;
 }
+
+.image_container {
+    position: relative;
+    width: 100%;
+}
+
+.image_icon {
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+    transform: scale(2.8);
+    opacity: 0.6;
+    text-align: center;
+}
