@@ -1,7 +1,7 @@
 from fastapi.middleware.cors import CORSMiddleware
 from decouple import config
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from motor.motor_asyncio import AsyncIOMotorClient
 from routers.language_deck import router as language_deck_router
 from routers.scene_deck import router as scene_deck_router
@@ -46,6 +46,48 @@ allow_methods=["*"],
 allow_headers=["*"],
 )
 
+class ConnectionsManager:
+    def __init__ (self):
+        self.active_connection: list[WebSocket] = []
+        self.client_ids: list[str] = []
+
+    async def connect(self, websocket: WebSocket, client_id: str):
+        await websocket.accept()
+        self.active_connection.append(websocket)
+        self.client_ids.append(client_id)
+        await self.broadcast (f"Client #{client_id} has joined the chat", client_ids=self.client_ids)
+        
+
+    async def disconnect(self, websocket: WebSocket, client_id: str):
+        self.active_connection.remove(websocket)
+        self.client_ids.remove(client_id)
+        await self.broadcast (f"Client #{client_id} has left the chat", client_ids=self.client_ids)
+
+    async def send_personal_message (self, message: str, client_ids: list[str], websocket: WebSocket):
+        await websocket.send_json({"message": message, "client_ids": client_ids})
+
+    async def broadcast (self, message: str, client_ids: list[str]):
+        for connection in self.active_connections:
+            await connection.send_json ({"message": message, "client_ids": client_ids})
+        
+manager = ConnectionsManager()
+
+@app.websocket("/ws/{client_id}")
+async def websocket_endpoint (websocket: WebSocket, client_id: str):
+    # connect
+    await manager.connect(websocket, client_id)
+    try:
+        while True:
+            data = await websocket.receive_text()
+            # send personnal message
+            await manager.send_personal_message (message=f"You wrote {data}", client_ids=manager.client_ids, websocket=websocket)
+            await manager.broadcast (message = f"Client ID {client_id} says : {data},  ", client_ids=manager.client_ids)
+            # broadcast
+    except WebSocketDisconnect:
+        # disconnect
+        await manager.disconnect (websocket=websocket, client_id=client_id)
+        print ("disconnected")
+
 @app.on_event("startup")
 async def startup_db_client():
     app.mongodb_client = AsyncIOMotorClient(DB_URL)
@@ -62,5 +104,7 @@ app.include_router(lang_deck_router, prefix="/langdeck", tags=["langdeck"])
 app.include_router(story_deck_router, prefix="/storydeck", tags=["storydeck"])
 app.include_router(themes_deck_router, prefix="/themesdeck", tags=["themes deck"])
 
+
+        
 if __name__ == "__main__":
     uvicorn.run("__main__:app",host=HOST,port=8000, reload=True)
