@@ -34,3 +34,14 @@
     color: var(--primary-color);
 
 }
+
+.svg_icons_advanced {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(3.8);
+    opacity: 0.7;
+    color: white;
+
+}

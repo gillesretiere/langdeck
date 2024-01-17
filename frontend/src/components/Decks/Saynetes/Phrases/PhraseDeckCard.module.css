@@ -68,8 +68,10 @@
 
 .text__audio__wrapper{
   color:#111439;
-  padding: 2rem; 
   font-family: var(--serif-secondary-font);
   font-weight: 400;
   font-size:1.4rem;  
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
