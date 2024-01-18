@@ -35,6 +35,10 @@ origins = [
 "http://"+WWW_DOMAIN+":8080",
 "http://"+WWW_DOMAIN+":8000",
 "http://"+WWW_DOMAIN+":3000",
+"ws://"+WWW_DOMAIN+":8000",
+"ws://"+DOMAIN+":8000",
+"ws://"+HOST+":8000",
+
 ]
 
 app = FastAPI()
@@ -71,6 +75,9 @@ class ConnectionsManager:
             await connection.send_json ({"message": message, "client_ids": client_ids})
         
 manager = ConnectionsManager()
+
+
+
 
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint (websocket: WebSocket, client_id: str):
