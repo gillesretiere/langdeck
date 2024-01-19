@@ -36,7 +36,6 @@ const CurrentDecks = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <div className={classes.decks__container}>
-                {ctx.current_deck.language_deck && 
                     <Link to={`/`} onClick={clickHandlerOne}>
                     <div className={classes.decks__wrapper__lang}>
                         <img src={ctx.current_deck.language_deck.lang_flag_icon}/>
@@ -50,7 +49,6 @@ const CurrentDecks = () => {
                         </Box>
                     </div>
                     </Link>
-                }
                 {ctx.current_deck.theme_deck && 
                     <Link to={`/theme_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerTwo}>
                     <div className={classes.decks__wrapper}>
