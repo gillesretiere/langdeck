@@ -1,0 +1,116 @@
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
+from decouple import config
+import uvicorn
+
+from motor.motor_asyncio import AsyncIOMotorClient
+"""
+
+from routers.language_deck import router as language_deck_router
+from routers.scene_deck import router as scene_deck_router
+from routers.saynete import router as saynete_router
+from routers.lang_deck_router import router as lang_deck_router
+from routers.story_deck_router import router as story_deck_router
+from routers.themes_deck_router import router as themes_deck_router
+
+
+HOST = config('HOST', cast=str)
+DOMAIN = config('DOMAIN', cast=str)
+WWW_DOMAIN = config('WWW_DOMAIN', cast=str)
+DB_URL = config('DB_URL', cast=str)
+DB_NAME = config('DB_NAME', cast=str)
+
+# used by frontend calls
+origins = [
+"http://localhost",
+"http://localhost:8080",
+"http://localhost:3000",
+"http://localhost:8000",
+"http://"+HOST,
+"http://"+HOST+":8080",
+"http://"+HOST+":8000",
+"http://"+HOST+":3000",
+"http://"+DOMAIN,
+"http://"+DOMAIN+":8080",
+"http://"+DOMAIN+":8000",
+"http://"+DOMAIN+":3000",
+"http://"+WWW_DOMAIN,
+"http://"+WWW_DOMAIN+":8080",
+"http://"+WWW_DOMAIN+":8000",
+"http://"+WWW_DOMAIN+":3000",
+"ws://"+WWW_DOMAIN+":8000",
+"ws://"+DOMAIN+":8000",
+"ws://"+HOST+":8000",
+
+]
+"""
+app = FastAPI()
+
+"""
+app.add_middleware(
+CORSMiddleware,
+allow_origins=origins,
+allow_credentials=True,
+allow_methods=["*"],
+allow_headers=["*"],
+)
+"""
+
+
+
+
+html = """
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+    </head>
+    <body>
+        <h1>WebSocket Chat</h1>
+        <form action="" onsubmit="sendMessage(event)">
+            <input type="text" id="messageText" autocomplete="off"/>
+            <button>Send</button>
+        </form>
+        <ul id='messages'>
+        </ul>
+        <script>
+            var ws = new WebSocket("ws://http://51.91.8.112:8000/ws");
+            ws.onmessage = function(event) {
+                var messages = document.getElementById('messages')
+                var message = document.createElement('li')
+                var content = document.createTextNode(event.data)
+                message.appendChild(content)
+                messages.appendChild(message)
+            };
+            function sendMessage(event) {
+                var input = document.getElementById("messageText")
+                ws.send(input.value)
+                input.value = ''
+                event.preventDefault()
+            }
+        </script>
+    </body>
+</html>
+"""
+
+
+@app.get("/")
+async def get():
+    return HTMLResponse(html)
+
+customers = []
+@app.websocket("/ws")
+async def websocket_endpoint (websocket: WebSocket):
+    # connect
+    customers.append(websocket)
+    await websocket.accept()
+    while True:
+        data = await websocket.receive_text()
+        print (data)
+        for customer in customers:
+            await customer.send_text(f"Message text was: {data}")
+
+        
+if __name__ == "__main__":
+    uvicorn.run("__main__:app",host="51.91.8.112",port=8000, reload=True)

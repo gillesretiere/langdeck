@@ -1,7 +1,10 @@
+
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from decouple import config
 import uvicorn
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+
 from motor.motor_asyncio import AsyncIOMotorClient
 from routers.language_deck import router as language_deck_router
 from routers.scene_deck import router as scene_deck_router
@@ -38,7 +41,6 @@ origins = [
 "ws://"+WWW_DOMAIN+":8000",
 "ws://"+DOMAIN+":8000",
 "ws://"+HOST+":8000",
-
 ]
 
 app = FastAPI()
@@ -52,18 +54,19 @@ allow_headers=["*"],
 
 class ConnectionsManager:
     def __init__ (self):
-        self.active_connection: list[WebSocket] = []
+        self.active_connections: list[WebSocket] = []
         self.client_ids: list[str] = []
 
     async def connect(self, websocket: WebSocket, client_id: str):
+        print ("cnx pending for " + client_id)
         await websocket.accept()
-        self.active_connection.append(websocket)
+        self.active_connections.append(websocket)
         self.client_ids.append(client_id)
         await self.broadcast (f"Client #{client_id} has joined the chat", client_ids=self.client_ids)
         
 
     async def disconnect(self, websocket: WebSocket, client_id: str):
-        self.active_connection.remove(websocket)
+        self.active_connections.remove(websocket)
         self.client_ids.remove(client_id)
         await self.broadcast (f"Client #{client_id} has left the chat", client_ids=self.client_ids)
 
@@ -72,26 +75,37 @@ class ConnectionsManager:
 
     async def broadcast (self, message: str, client_ids: list[str]):
         for connection in self.active_connections:
-            await connection.send_json ({"message": message, "client_ids": client_ids})
+            # await connection.send_json ({"message": message, "client_ids": client_ids})
+            await connection.send_text (message)
         
 manager = ConnectionsManager()
 
 
-
+@app.websocket("/ws")
+async def websocket_endpoint (websocket: WebSocket):
+    # connect
+    await websocket.accept()
+    while True:
+        data = await websocket.receive_text()
+        await websocket.send_text(f"Message text was: {data}")
 
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint (websocket: WebSocket, client_id: str):
     # connect
     await manager.connect(websocket, client_id)
     try:
+        data = f"DATA Hallo {client_id}"
         while True:
-            data = await websocket.receive_text()
+            #data = await websocket.receive_text()
             # send personnal message
-            await manager.send_personal_message (message=f"You wrote {data}", client_ids=manager.client_ids, websocket=websocket)
+            # print ("cnx okay for " + client_id)
+            #await manager.send_personal_message (message=f"You wrote {data}", client_ids=manager.client_ids, websocket=websocket)
             await manager.broadcast (message = f"Client ID {client_id} says : {data},  ", client_ids=manager.client_ids)
+
             # broadcast
-    except WebSocketDisconnect:
+    except WebSocketDisconnect as e :
         # disconnect
+        print (str(e))
         await manager.disconnect (websocket=websocket, client_id=client_id)
         print ("disconnected")
 
@@ -110,8 +124,6 @@ app.include_router(saynete_router, prefix="/saynete", tags=["saynete"])
 app.include_router(lang_deck_router, prefix="/langdeck", tags=["langdeck"])
 app.include_router(story_deck_router, prefix="/storydeck", tags=["storydeck"])
 app.include_router(themes_deck_router, prefix="/themesdeck", tags=["themes deck"])
-
-
         
 if __name__ == "__main__":
     uvicorn.run("__main__:app",host=HOST,port=8000, reload=True)
