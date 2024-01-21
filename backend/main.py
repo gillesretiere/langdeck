@@ -58,7 +58,7 @@ class ConnectionsManager:
         self.client_ids: list[str] = []
 
     async def connect(self, websocket: WebSocket, client_id: str):
-        print ("cnx pending for " + client_id)
+        # print ("cnx pending for " + client_id)
         await websocket.accept()
         self.active_connections.append(websocket)
         self.client_ids.append(client_id)
@@ -75,37 +75,25 @@ class ConnectionsManager:
 
     async def broadcast (self, message: str, client_ids: list[str]):
         for connection in self.active_connections:
-            # await connection.send_json ({"message": message, "client_ids": client_ids})
-            await connection.send_text (message)
+            # await connection.send_text (message)
+            await connection.send_json ({"message": message, "client_ids": client_ids})
         
 manager = ConnectionsManager()
-
-
-@app.websocket("/ws")
-async def websocket_endpoint (websocket: WebSocket):
-    # connect
-    await websocket.accept()
-    while True:
-        data = await websocket.receive_text()
-        await websocket.send_text(f"Message text was: {data}")
 
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint (websocket: WebSocket, client_id: str):
     # connect
     await manager.connect(websocket, client_id)
     try:
-        data = f"DATA Hallo {client_id}"
         while True:
-            #data = await websocket.receive_text()
+            data = await websocket.receive_text()
             # send personnal message
-            # print ("cnx okay for " + client_id)
-            #await manager.send_personal_message (message=f"You wrote {data}", client_ids=manager.client_ids, websocket=websocket)
+            await manager.send_personal_message (message=f"You wrote {data}", client_ids=manager.client_ids, websocket=websocket)
+            # broadcast
             await manager.broadcast (message = f"Client ID {client_id} says : {data},  ", client_ids=manager.client_ids)
 
-            # broadcast
     except WebSocketDisconnect as e :
         # disconnect
-        print (str(e))
         await manager.disconnect (websocket=websocket, client_id=client_id)
         print ("disconnected")
 
