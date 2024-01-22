@@ -1,10 +1,7 @@
-import React, { useState, useContext, useEffect, useRef } from 'react';
-import DeckContext from "../../../context/DeckContext";
+import React, { useState, useEffect, useRef } from 'react';
+
 
 const Chat = ({userName}) => {
-    let ctx = useContext(DeckContext);
-
-    console.log (ctx.current_deck.language_deck.language);
 
     const [ws, setWs] = useState([]);
     const [messages, setMessages] = useState([]);
@@ -13,24 +10,13 @@ const Chat = ({userName}) => {
     const inputRef = useRef(null);
 
     const sendMessage = (event) => {
-       let data = {
-            "message": "some message",
-            "language": "some language",
-            "question": "question",
-            "question_tr" : "question traduite",
-            "reponses" : "vk réponses",
-            "reponses_tr" : "vk réponses traduites",
-        };  
-        data.message = inputRef.current.value;
-        data.language = ctx.current_deck.language_deck.language;
-        //ws.send(inputRef.current.value);
-        ws.send(JSON.stringify(data));
+        ws.send(inputRef.current.value);
         inputRef.current.value = "";
     }
 
     console.log (userName);
     useEffect ( () => {
-        let socket = new WebSocket(`ws://51.91.8.112:8000/ws/a/${userName}`);
+        let socket = new WebSocket(`ws://51.91.8.112:8000/ws/${userName}`);
 
         setWs (socket);
         socket.onmessage = function (event) {

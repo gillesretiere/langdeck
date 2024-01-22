@@ -95,7 +95,26 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
     except WebSocketDisconnect as e :
         # disconnect
         await manager.disconnect (websocket=websocket, client_id=client_id)
-        print ("disconnected")
+        print (f"{client_id} has disconnected")
+
+@app.websocket("/ws/a/{client_id}")
+async def websocket_endpoint (websocket: WebSocket, client_id: str):
+    # connect
+    await manager.connect(websocket, client_id)
+    try:
+        while True:
+            data = await websocket.receive_json()
+            msg = data["message"]
+            language = data["language"]
+            # send personnal message
+            await manager.send_personal_message (message=f"You wrote {msg} in {language}", client_ids=manager.client_ids, websocket=websocket)
+            # broadcast
+            await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
+
+    except WebSocketDisconnect as e :
+        # disconnect
+        await manager.disconnect (websocket=websocket, client_id=client_id)
+        print (f"{client_id} has disconnected")
 
 @app.on_event("startup")
 async def startup_db_client():
