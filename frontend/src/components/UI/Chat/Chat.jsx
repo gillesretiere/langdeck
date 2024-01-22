@@ -4,7 +4,7 @@ import DeckContext from "../../../context/DeckContext";
 const Chat = ({userName}) => {
     let ctx = useContext(DeckContext);
 
-    console.log (ctx.current_deck.language_deck.language);
+    console.log (ctx.current_deck.story_deck.story_desc_translation);
 
     const [ws, setWs] = useState([]);
     const [messages, setMessages] = useState([]);
@@ -23,6 +23,7 @@ const Chat = ({userName}) => {
         };  
         data.message = inputRef.current.value;
         data.language = ctx.current_deck.language_deck.language;
+        data.question_tr = ctx.current_deck.story_deck.story_desc_translation;
         //ws.send(inputRef.current.value);
         ws.send(JSON.stringify(data));
         inputRef.current.value = "";

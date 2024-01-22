@@ -77,7 +77,15 @@ class ConnectionsManager:
         for connection in self.active_connections:
             # await connection.send_text (message)
             await connection.send_json ({"message": message, "client_ids": client_ids})
-        
+
+    async def send_question_tr (self, message: str, client_ids: list[str], websocket: WebSocket):
+        await websocket.send_json({"message": message, "client_ids": client_ids})            
+
+    async def broadcast_tr (self, message: str, client_ids: list[str]):
+        for connection in self.active_connections:
+            # await connection.send_text (message)
+            await connection.send_json ({"message": message, "client_ids": client_ids})
+
 manager = ConnectionsManager()
 
 @app.websocket("/ws/{client_id}")
@@ -106,10 +114,13 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             data = await websocket.receive_json()
             msg = data["message"]
             language = data["language"]
+            question_tr = data["question_tr"]
             # send personnal message
             await manager.send_personal_message (message=f"You wrote {msg} in {language}", client_ids=manager.client_ids, websocket=websocket)
+            await manager.send_question_tr (message=f"Question : {question_tr}", client_ids=manager.client_ids, websocket=websocket)
             # broadcast
             await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
+            await manager.broadcast_tr (message = f"Question : {question_tr}", client_ids=manager.client_ids)
 
     except WebSocketDisconnect as e :
         # disconnect

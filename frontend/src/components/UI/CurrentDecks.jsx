@@ -6,6 +6,7 @@ import classes from "./Layout.module.css";
 
 const CurrentDecks = () => {
     let ctx = useContext(DeckContext);
+
     console.log(ctx);
 
     const clickHandlerOne = () => {
