@@ -96,3 +96,11 @@ class ThemesDeck(MongoBaseModel):
 
 class ThemesDeckDB(ThemesDeck):
     pass
+
+# chats (conversations)
+class ChatsDeck(MongoBaseModel):
+    language: str = Field(..., min_length=3, max_length=3)
+    chats : Optional[Any]
+
+class ChatsDeckDB(ChatsDeck):
+    pass

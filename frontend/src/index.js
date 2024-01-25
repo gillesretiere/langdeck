@@ -33,7 +33,7 @@ import UnitStoryPage from './pages/UnitStoryPage';
 import UnitStoryX3Page from './pages/UnitStoryX3Page';
 import ConversationPage from './pages/ConversationPage';
 import DuoPage from './pages/DuoPage';
-import DuoStartPage from './components/Duo/DuoStartPage';
+import DuoStartPage from './pages/DuoStartPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
 
