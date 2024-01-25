@@ -1,5 +1,4 @@
 import React from 'react';
-import UnitStorySayneteDeckList from "./UnitStorySayneteDeckList";
 import UnitStorySayneteDeck from "./UnitStorySayneteDeck";
 import UnitStoryTpDeck from "./UnitStoryTpDeck";
 import UnitStoryQuizDeck from "./UnitStoryQuizDeck";
