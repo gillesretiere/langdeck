@@ -32,6 +32,11 @@ const CurrentDecks = () => {
         ctx.current_deck.progression_1='';      
     }
 
+    const clickHandlerChat = () => {
+        console.log('clicked');
+        ctx.current_deck.chat_step_deck='';      
+    }
+
 
     console.log(ctx)
     return (
@@ -112,6 +117,38 @@ const CurrentDecks = () => {
                     </div>
                     </Link>
                 }      
+
+                {ctx.current_deck.chat_deck && 
+                    <Link to={`/duo_start_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerChat}>
+                    <div className={classes.decks__wrapper__conversation}>
+                        <img src={ctx.current_deck.chat_deck.conversation_illustration}/>
+                        <Box>
+                            <div className={classes.decks__wrapper__text}>
+                                <h1>{ctx.current_deck.chat_deck.conversation}</h1>
+                            </div>
+                            <div className={classes.decks__wrapper__text}>
+                                <h2>{ctx.current_deck.chat_deck.conversation_translation}</h2>
+                            </div>
+                        </Box>                            
+                    </div>
+                    </Link>
+                }                 
+
+                {ctx.current_deck.chat_step_deck && 
+                    <Link to={`/duo_step_page/${ctx.current_deck.language_deck.language}`}>
+                    <div className={classes.decks__wrapper__conversation}>
+                        <img src={ctx.current_deck.chat_deck.conversation_illustration}/>
+                        <Box>
+                            <div className={classes.decks__wrapper__text}>
+                                <h1>{ctx.current_deck.chat_step_deck.step}</h1>
+                            </div>
+                            <div className={classes.decks__wrapper__text}>
+                                <h2>{ctx.current_deck.chat_step_deck.step_translation}</h2>
+                            </div>
+                        </Box>                            
+                    </div>
+                    </Link>
+                }              
 
             </div>
 
