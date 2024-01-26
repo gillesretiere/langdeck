@@ -13,10 +13,6 @@ const DuoChatStepDeckCard = ({step}) => {
         ctx.current_deck.chat_step_deck=step;
     };
 
-    const clickHandler = () => {
-        ctx.current_deck.chat_step_deck=step;
-        console.log('clicked');
-    }    
     return (
         <div className={`${classes.card__container}`}>
             <Link to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={linkHandler}>
@@ -27,20 +23,22 @@ const DuoChatStepDeckCard = ({step}) => {
                     </div>
                     {step.options && step.options.map(
                         (el) => {
-                            return (<DuoChatStepOptionDeck key={el.option_rec_id} option={el} />)
+                            return (<DuoChatStepOptionDeck key={el.option_rec_id} option={el} translate='false'/>)
                         }
                         )
                     }
                  
                 </div>          
             </Link>     
+            {/* 
             <div className={classes.button__wrapper}>
                 <Box className={classes.mui_button} >
                     <Button color="blue_primary" m={1} variant="contained" size="small" to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={clickHandler}>
                         Démarrer
                     </Button> 
                 </Box>  
-            </div>    
+            </div>   
+            */} 
         </div>
     )
 }
