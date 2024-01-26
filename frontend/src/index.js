@@ -34,6 +34,7 @@ import UnitStoryX3Page from './pages/UnitStoryX3Page';
 import ConversationPage from './pages/ConversationPage';
 import DuoPage from './pages/DuoPage';
 import DuoStartPage from './pages/DuoStartPage';
+import DuoStepPage from './pages/DuoStepPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -105,6 +106,7 @@ root.render(
               <Route path="conversation_page/:id" element={<ConversationPage />} />
               <Route path="/duo/" element={<DuoPage />} />
               <Route path="/duo_start_page/:id" element={<DuoStartPage />} />
+              <Route path="/duo_step_page/:id" element={<DuoStepPage />} />
               <Route path="*" element={
                 <main style={{ padding: "1rem" }}>
                   <p>There's nothing here!</p>

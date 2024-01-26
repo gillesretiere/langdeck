@@ -36,7 +36,7 @@ const DuoStartPage = () => {
         <div>
             {decks && <DuoChatDeck chats={decks.chats} img={decks.lang_flag_icon}/>}
         </div>        
-  </Layout>
+    </Layout>
   )
 }
 
