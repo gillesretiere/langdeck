@@ -44,32 +44,59 @@ const CurrentDecks = () => {
             <div className={classes.decks__container}>
                     <Link to={`/`} onClick={clickHandlerOne}>
                     <div className={classes.decks__wrapper__lang}>
-                        <img src={ctx.current_deck.language_deck.lang_flag_icon}/>
+                        {ctx.current_deck.language_deck?(
+                            <img src={ctx.current_deck.language_deck.lang_flag_icon}/>
+                        ):(
+                            <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1706344723/Letter-L.png'/>
+
+                        )}
                         <Box>
                         <div className={classes.decks__wrapper__text}>
-                            <h1>{ctx.current_deck.language_deck.lang_name_fr}</h1>
+                            {ctx.current_deck.language_deck?(
+                                <h1>{ctx.current_deck.language_deck.lang_name_fr}</h1>
+                            ):(
+                                <h1>Choisis une langue</h1>
+                            )}
                         </div>
                         <div className={classes.decks__wrapper__text}>
-                            <h2>{ctx.current_deck.language_deck.lang_name_native}</h2>
+                            {ctx.current_deck.language_deck?(
+                                <h2>{ctx.current_deck.language_deck.lang_name_native}</h2>
+                            ):(
+                                 <h2>parmi cette liste</h2>
+                            )}
                         </div>
                         </Box>
                     </div>
                     </Link>
-                {ctx.current_deck.theme_deck && 
+                    {ctx.current_deck.language_deck && 
+
                     <Link to={`/theme_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerTwo}>
                     <div className={classes.decks__wrapper}>
-                        <img src={ctx.current_deck.theme_deck.theme_illustration}/>
+                        {ctx.current_deck.theme_deck?(
+                            <img src={ctx.current_deck.theme_deck.theme_illustration}/>
+                        ):(
+                            <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1706346044/LettreD.png'/>
+                        )
+                        }
                         <Box>
                             <div className={classes.decks__wrapper__text}>
-                                <h1>{ctx.current_deck.theme_deck.theme_name}</h1>
+                                {ctx.current_deck.theme_deck?(
+                                    <h1>{ctx.current_deck.theme_deck.theme_name}</h1>
+                                ):(
+                                    <h1>Choisis un deck</h1>
+                                )}
                             </div>
                             <div className={classes.decks__wrapper__text}>
-                                <h2>{ctx.current_deck.theme_deck.theme_translation}</h2>
+                                {ctx.current_deck.theme_deck?(
+                                    <h2>{ctx.current_deck.theme_deck.theme_translation}</h2>
+                                    ):(
+                                    <h1>Choose a deck</h1>
+                                )}                                
                             </div>
                         </Box>                        
                     </div>
                     </Link>
-                }           
+                }
                 {ctx.current_deck.unit_deck && 
                     <Link to={`/unit_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerThree}>
                     <div className={classes.decks__wrapper}>
