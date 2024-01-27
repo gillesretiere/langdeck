@@ -38,7 +38,7 @@
     
 }
 
-.decks__wrapper__progression_1 {
+.decks__wrapper__progression {
     /* 1. inner glow - for dark mode 👇 */
     display: flex; 
     flex-direction: row; 
@@ -58,10 +58,9 @@
     /*background-color: var(--blue-theme-primary-color);*/
     border-radius: 12px;
     padding: 0.5rem;
-    background: #334d50;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .decks__wrapper__saynete {
@@ -136,10 +135,48 @@
     border-radius: 12px;
     padding: 0.5rem;
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+
+.decks__wrapper__deck {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);    /* 1. inner glow - for dark mode 👇 */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+
+    margin: 0.5rem;
+    width: 188px;
+    /*height: 100%;*/
+    height: 56px;
+    border-radius: 12px;
+    padding: 0.5rem;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    background: #799F0C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ACBB78, #799F0C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ACBB78, #799F0C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+
+
+.decks__wrapper__orange {
     background: #FF8008;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+}
+
+.decks__wrapper__brown {
+    background: #334d50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .decks__wrapper__progression_1 img {
@@ -151,6 +188,19 @@
     margin-right: 15px;    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.decks__wrapper__progression img {
+    width: 2rem; 
+    height: 2rem;     
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 5px;    
+    margin-right: 15px;    
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 .decks__wrapper__saynete img {
     width: 2rem; 
@@ -173,7 +223,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.decks__wrapper img {
+.decks__wrapper__deck img {
     width: 2rem; 
     height: 2rem;     
     object-fit: cover;
@@ -230,8 +280,45 @@
     /*background-color: var(--blue-theme-primary-color);*/
     border-radius: 12px;
     padding: 0.5rem 1.5rem 0.5rem 0.5rem;
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #799F0C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ACBB78, #799F0C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ACBB78, #799F0C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+.decks__wrapper__conversation__step img {
+    width: 2rem; 
+    height: 2rem;     
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 5px;    
+    margin-right: 15px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.decks__wrapper__conversation__step {
+    /* 1. inner glow - for dark mode 👇 */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+
+    margin: 0.5rem;
+    /*height: 100%;*/
+    height: 56px;
+    /*background-color: var(--blue-theme-primary-color);*/
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }

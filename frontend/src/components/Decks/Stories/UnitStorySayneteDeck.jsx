@@ -11,7 +11,7 @@ const UnitStorySayneteDeck = ({saynete, lang_img}) => {
     ctx.saynete = saynete;
 
     return (
-        <div className={`${classes.card__container}`}>
+        <div className={`${classes.card__container__green}`}>
         <Link to={{pathname:`/saynete_page/${ctx.current_deck.language_deck.language}`}} >
             <div className={`${classes.card__wrapper}`}>
                 <div className={`${classes.card__header}`}>

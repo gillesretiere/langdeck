@@ -16,7 +16,7 @@ const ThemeDeckCard = ({theme, img})  => {
     };
   
   return (
-    <div className={`${classes.card__container}`}>
+    <div className={`${classes.card__container__green}`}>
       <Link to={{pathname:`/unit_page/${theme.language}`}} onClick={linkHandler}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>

@@ -68,10 +68,10 @@ const CurrentDecks = () => {
                         </Box>
                     </div>
                     </Link>
-                    {ctx.current_deck.language_deck && 
+                    {ctx.current_deck.language_deck && !ctx.current_deck.chat_mode &&
 
                     <Link to={`/theme_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerTwo}>
-                    <div className={classes.decks__wrapper}>
+                    <div className={classes.decks__wrapper__deck}>
                         {ctx.current_deck.theme_deck?(
                             <img src={ctx.current_deck.theme_deck.theme_illustration}/>
                         ):(
@@ -99,7 +99,7 @@ const CurrentDecks = () => {
                 }
                 {ctx.current_deck.unit_deck && 
                     <Link to={`/unit_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerThree}>
-                    <div className={classes.decks__wrapper}>
+                    <div className={classes.decks__wrapper__deck}>
                         <img src={ctx.current_deck.unit_deck.lesson_illustration}/>
                         <Box>
                             <div className={classes.decks__wrapper__text}>
@@ -115,7 +115,7 @@ const CurrentDecks = () => {
                 }    
                 {ctx.current_deck.story_deck && 
                     <Link to={`/unit_story_page/${ctx.current_deck.language_deck.language}`} onClick={clickHandlerFour}>
-                    <div className={classes.decks__wrapper__saynete}>
+                    <div className={classes.decks__wrapper__deck}>
                         <img src={ctx.current_deck.story_deck.story_illustration}/>
                         <Box>
                             <div className={classes.decks__wrapper__text}>
@@ -131,7 +131,7 @@ const CurrentDecks = () => {
 
                {ctx.current_deck.progression_1 && 
                     <Link to={`/unit_story_x3_page/${ctx.current_deck.language_deck.language}`}>
-                    <div className={classes.decks__wrapper__progression_1}>
+                    <div className={classes.decks__wrapper__progression}>
                         <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1705239636/langdeck/assets/images/one_10469300.png'/>
                         <Box>
                             <div className={classes.decks__wrapper__text}>
@@ -159,11 +159,11 @@ const CurrentDecks = () => {
                         </Box>                            
                     </div>
                     </Link>
-                }                 
+                }  
 
                 {ctx.current_deck.chat_step_deck && 
                     <Link to={`/duo_step_page/${ctx.current_deck.language_deck.language}`}>
-                    <div className={classes.decks__wrapper__conversation}>
+                    <div className={classes.decks__wrapper__conversation__step}>
                         <img src={ctx.current_deck.chat_deck.conversation_illustration}/>
                         <Box>
                             <div className={classes.decks__wrapper__text}>

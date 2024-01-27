@@ -7,6 +7,7 @@ const DuoChatDeckCard = ({conversation, img}) => {
     let ctx = useContext(DeckContext);
     const linkHandler = (event) => {
         ctx.current_deck.chat_deck=conversation;
+        ctx.current_deck.chat_mode = true;
     };
 
     return (

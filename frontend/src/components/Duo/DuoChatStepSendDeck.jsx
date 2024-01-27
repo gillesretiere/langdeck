@@ -14,6 +14,16 @@ const DuoChatStepSendDeck = () => {
 
     const [showChat, setShowChat] = useState(false);
 
+    const [mainLoggedIn, setMainLogin] = useState(false);
+    const [userName, setUserName] = useState("");
+
+    const mainLogin = () => {
+        setMainLogin (true);
+    }
+    const setUser = (event) => {
+        setUserName (event.target.value);
+    }
+
     const linkHandler = (event) => {
         ctx.current_deck.chat_step_deck=step;
     };
@@ -45,7 +55,7 @@ const DuoChatStepSendDeck = () => {
                         <div className={classes.button__wrapper}>
                             <Box className={classes.mui_button} >
                                 <Button color="blue_primary" m={1} variant="contained" size="small" onClick={clickHandler}>
-                                    Envoyer
+                                    Envoyer {userName}
                                 </Button> 
                             </Box>  
                         </div>   
@@ -70,7 +80,7 @@ const DuoChatStepSendDeck = () => {
                 </div>
             </div>
             <div>
-                {showChat && <DuoChat__init/>}
+                {showChat && <DuoChat__init mainLogin={mainLogin} onSetUserName={setUser}/>}
             </div>
 
         </div>

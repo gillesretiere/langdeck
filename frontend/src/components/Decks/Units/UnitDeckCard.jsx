@@ -17,7 +17,7 @@ const UnitDeckCard = ({unit}) => {
       };
         
     return (
-        <div className={`${classes.card__container}`}>
+        <div className={`${classes.card__container__green}`}>
         <Link to={{pathname:`/unit_story_page/${lesson_language}`}} onClick={linkHandler}>
           <div className={`${classes.card__wrapper}`}>
 

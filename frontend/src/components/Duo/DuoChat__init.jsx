@@ -4,9 +4,10 @@ import DeckContext from "../../context/DeckContext";
 import DuoChat__chat from "./DuoChat__chat";
 import DuoChat__login from "./DuoChat__login";
 
-const DuoChat__init = () => {
+const DuoChat__init = ({mainLogin, onSetUserName}) => {
     const [loggedIn, setLogin] = useState(false);
     const [userName, setUserName] = useState("");
+
 
     const login = () => {
         setLogin (true);
