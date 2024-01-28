@@ -103,8 +103,8 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
 
     except WebSocketDisconnect as e :
         # disconnect
-        await manager.disconnect (websocket=websocket, client_id=client_id)
-        print (f"{client_id} has disconnected")
+        manager.disconnect (websocket=websocket, client_id=client_id)
+        await manager.broadcast(f"Client #{client_id} left the chat")
 
 @app.websocket("/ws/a/{client_id}")
 async def websocket_endpoint (websocket: WebSocket, client_id: str):
@@ -116,6 +116,8 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             msg = data["message"]
             language = data["language"]
             question_tr = data["question_tr"]
+
+            
             # send personnal message
             await manager.send_personal_message (message=f"You wrote {msg} in {language}", client_ids=manager.client_ids, websocket=websocket)
             await manager.send_question_tr (message=f"Question : {question_tr}", client_ids=manager.client_ids, websocket=websocket)
@@ -125,8 +127,9 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
 
     except WebSocketDisconnect as e :
         # disconnect
-        await manager.disconnect (websocket=websocket, client_id=client_id)
-        print (f"{client_id} has disconnected")
+        manager.disconnect (websocket=websocket, client_id=client_id)
+        await manager.broadcast(f"Client #{client_id} left the chat")
+
 
 @app.on_event("startup")
 async def startup_db_client():

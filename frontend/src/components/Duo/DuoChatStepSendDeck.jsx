@@ -6,6 +6,8 @@ import DuoChat__init from './DuoChat__init';
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import DuoChat__chat from "./DuoChat__chat";
+import DuoChat__login from "./DuoChat__login";
 
 const DuoChatStepSendDeck = () => {
     let ctx = useContext(DeckContext);
@@ -14,12 +16,14 @@ const DuoChatStepSendDeck = () => {
 
     const [showChat, setShowChat] = useState(false);
 
-    const [mainLoggedIn, setMainLogin] = useState(false);
-    const [userName, setUserName] = useState("");
+    const [loggedIn, setLogin] = useState(false);
+    const [userName, setUserName] = useState("SuperUser");
 
-    const mainLogin = () => {
-        setMainLogin (true);
+
+    const login = () => {
+        setLogin (true);
     }
+
     const setUser = (event) => {
         setUserName (event.target.value);
     }
@@ -55,7 +59,7 @@ const DuoChatStepSendDeck = () => {
                         <div className={classes.button__wrapper}>
                             <Box className={classes.mui_button} >
                                 <Button color="blue_primary" m={1} variant="contained" size="small" onClick={clickHandler}>
-                                    Envoyer {userName}
+                                    Envoyer
                                 </Button> 
                             </Box>  
                         </div>   
@@ -79,8 +83,12 @@ const DuoChatStepSendDeck = () => {
                     </div>              
                 </div>
             </div>
-            <div>
-                {showChat && <DuoChat__init mainLogin={mainLogin} onSetUserName={setUser}/>}
+            <div className={classes.chat_sender_container}>
+                <div className={`${classes.card__container}`}>
+                {userName &&
+                    <DuoChat__chat userName={userName} msg={step.step}></DuoChat__chat>
+                }
+                </div>
             </div>
 
         </div>

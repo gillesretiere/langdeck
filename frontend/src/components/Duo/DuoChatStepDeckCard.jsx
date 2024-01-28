@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext, } from 'react';
 import classes from "./DuoChatDeck.module.css";
 import { Link } from "react-router-dom";
 import DeckContext from "../../context/DeckContext";
 import DuoChatStepOptionDeck from './DuoChatStepOptionDeck';
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 
 const DuoChatStepDeckCard = ({step}) => {
 
@@ -30,15 +28,6 @@ const DuoChatStepDeckCard = ({step}) => {
                  
                 </div>          
             </Link>     
-            {/* 
-            <div className={classes.button__wrapper}>
-                <Box className={classes.mui_button} >
-                    <Button color="blue_primary" m={1} variant="contained" size="small" to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={clickHandler}>
-                        Démarrer
-                    </Button> 
-                </Box>  
-            </div>   
-            */} 
         </div>
     )
 }
