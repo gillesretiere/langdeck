@@ -6,6 +6,7 @@ const Chat = ({userName}) => {
     const [ws, setWs] = useState([]);
     const [messages, setMessages] = useState([]);
     const [clients, setClients] = useState([]);
+    const [options, setOptions] = useState([]);
     const [inputData, setInputData] = useState ("");
     const inputRef = useRef(null);
 
@@ -24,7 +25,7 @@ const Chat = ({userName}) => {
             setMessages ((prevMessages) => [...prevMessages, userData.message]);
             let client_ids = [...userData.client_ids];
             setClients(client_ids);
-
+            setOptions (userData.options);
         };
     }, []);
 
@@ -32,7 +33,7 @@ const Chat = ({userName}) => {
         <>
             <div className='flex mt-20 rounded border-2 border-gray-400'>
                 <div className='bg-white border-r-2 bg-green-400'>
-                    <h2>Teilnehmer : {clients.length}</h2>
+                    <h2>Connexions : {clients.length}</h2>
                     {clients.map ((client, index) => {
                         return (
                             <p key={index} className='text-white pt-2'>
@@ -43,18 +44,21 @@ const Chat = ({userName}) => {
                 </div>
                 <div className='p-4 bg-white h-fit rounded'>
                     <h2 className='text-xl mb-4'>
-                        Hallo {userName} Viel Spass beim Chatten
+                        Bonjour {userName}
                     </h2>
                     <input ref={inputRef} type="text" className='p-3 w-full bg-gray-500 text-white' />
                     <button className='bg-red-400 w-full p-2 mt-2 rounded text-white' onClick={sendMessage}>
-                        Send
+                        Envoyer
                     </button>
                     <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
                         {messages.map ((message, index) => {
                             return <li key={index}>{message}</li>;
                         }
                         )}
-
+                        {options && options.map ((option, index) => {
+                            return <li key={index}>{option.option_translation}</li>;
+                        }
+                        )}
                     </ul>
 
                 </div>

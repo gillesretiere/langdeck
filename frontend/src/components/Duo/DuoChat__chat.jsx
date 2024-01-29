@@ -4,7 +4,7 @@ import DeckContext from "../../context/DeckContext";
 
 const DuoChat__chat = ({userName, msg}) => {
     let ctx = useContext(DeckContext);
-
+    
     console.log (ctx.current_deck);
     console.log({msg});
 

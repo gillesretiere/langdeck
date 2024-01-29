@@ -1,11 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, } from 'react';
 import DeckContext from "../context/DeckContext";
 import Layout from '../components/UI/Layout';
 import DuoChatStepDeck from '../components/Duo/DuoChatStepDeck';
 
+
 const DuoStepPage = () => {
     let ctx = useContext(DeckContext);
+
     let conversation = ctx.current_deck.chat_deck;
+    console.log(conversation);
 
     return (
         <Layout>

@@ -15,11 +15,13 @@ const DuoChatDeckCard = ({conversation, img}) => {
             <Link to={{pathname:`/duo_step_page/${conversation.conversation_language}`}} onClick={linkHandler}>
             <div className={`${classes.card__wrapper}`}>
                 <div className={`${classes.card__header}`}>
-                <div className={`${classes.card__title}`}>{conversation.conversation}</div>
-                <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{conversation.conversation_translation}</div></div>
+                    <div className={`${classes.card__title}`}>{conversation.conversation}</div>
+                    <div className={`${classes.card__sub__header}`}>
+                        <div className={`${classes.card__subtitle}`}>{conversation.conversation_translation}</div>
+                    </div>
                 </div>
                 <div className={`${classes.card__img}`}>
-                <img src={conversation.conversation_illustration} alt="flag Icon" />
+                    <img src={conversation.conversation_illustration} alt="flag Icon" />
                 </div>
             </div>          
             </Link>        

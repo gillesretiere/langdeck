@@ -14,7 +14,6 @@ from routers.story_deck_router import router as story_deck_router
 from routers.themes_deck_router import router as themes_deck_router
 from routers.chat_deck_router import router as chat_deck_router
 
-
 HOST = config('HOST', cast=str)
 DOMAIN = config('DOMAIN', cast=str)
 WWW_DOMAIN = config('WWW_DOMAIN', cast=str)
@@ -79,13 +78,22 @@ class ConnectionsManager:
             # await connection.send_text (message)
             await connection.send_json ({"message": message, "client_ids": client_ids})
 
+    async def broadcast_option (self, message: str, option: str, client_ids: list[str]):
+        for connection in self.active_connections:
+            # await connection.send_text (message)
+            await connection.send_json ({"message": message, "option": option, "client_ids": client_ids})
+
+
+    async def send_message_received (self, message: str, client_ids: list[str], websocket: WebSocket):
+        await websocket.send_json({"message_received": message, "client_ids": client_ids}) 
+
     async def send_question_tr (self, message: str, client_ids: list[str], websocket: WebSocket):
         await websocket.send_json({"message": message, "client_ids": client_ids})            
 
-    async def broadcast_tr (self, message: str, client_ids: list[str]):
+    async def broadcast_tr (self, message: str, options: list[str], client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
-            await connection.send_json ({"message": message, "client_ids": client_ids})
+            await connection.send_json ({"message": message,"options": options, "client_ids": client_ids})
 
 manager = ConnectionsManager()
 
@@ -97,9 +105,9 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
         while True:
             data = await websocket.receive_text()
             # send personnal message
-            await manager.send_personal_message (message=f"You wrote {data}", client_ids=manager.client_ids, websocket=websocket)
+            await manager.send_personal_message (message=f"Vous avez répondu :  {data}", client_ids=manager.client_ids, websocket=websocket)
             # broadcast
-            await manager.broadcast (message = f"Client ID {client_id} says : {data},  ", client_ids=manager.client_ids)
+            await manager.broadcast_option (message = f"{client_id} says : {data},  ", option=data, client_ids=manager.client_ids)
 
     except WebSocketDisconnect as e :
         # disconnect
@@ -115,15 +123,18 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             data = await websocket.receive_json()
             msg = data["message"]
             language = data["language"]
+            question = data["question"]
             question_tr = data["question_tr"]
-
+            options = data["options"]
+            
             
             # send personnal message
-            await manager.send_personal_message (message=f"You wrote {msg} in {language}", client_ids=manager.client_ids, websocket=websocket)
-            await manager.send_question_tr (message=f"Question : {question_tr}", client_ids=manager.client_ids, websocket=websocket)
+            await manager.send_personal_message (message=f"Message envoyé : {msg} ; question : {question} ; traduction : {question_tr}"  , client_ids=manager.client_ids, websocket=websocket)
+            #await manager.send_question_tr (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
+            #await manager.send_message_received (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
             # broadcast
-            await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
-            await manager.broadcast_tr (message = f"Question : {question_tr}", client_ids=manager.client_ids)
+            # await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
+            await manager.broadcast_tr (message = f"Question posée : {question_tr}", options=options, client_ids=manager.client_ids)
 
     except WebSocketDisconnect as e :
         # disconnect
