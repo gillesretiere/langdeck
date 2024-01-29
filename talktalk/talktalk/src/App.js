@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
     <h1 className="bg-slate-500 text-white textcenter">
-      Questionnaire Bilingue Supervisé</h1>
+      Questionnaire Bilingue Simplifié</h1>
       <Conversation/>
     </div>
   );

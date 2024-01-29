@@ -17,6 +17,7 @@ const DuoChatStepSendDeck = () => {
     const [messages, setMessages] = useState([]);
     const [sentMessage, setSentMessage] = useState('');
     const [receivedMessage, setReceivedMessage] = useState('');
+    const [selectedOption, setSelectedOption] = useState([]);
     const [clients, setClients] = useState([]);
     const inputRef = useRef(null);
 
@@ -49,6 +50,11 @@ const DuoChatStepSendDeck = () => {
         ctx.current_deck.chat_step_deck=step;
     };
 
+    const getOptionFr = (option) => {
+        var result = ctx.current_deck.chat_step_deck.options.find(item => item.step_translation === option);
+        return result;
+    }
+
     useEffect ( () => {
         let socket = new WebSocket(`ws://51.91.8.112:8000/ws/a/${userName}`);
         setWs (socket);
@@ -56,6 +62,7 @@ const DuoChatStepSendDeck = () => {
             let userData = JSON.parse(event.data);
             setMessages ((prevMessages) => [...prevMessages, userData.message]);
             setReceivedMessage (userData.option);
+            setSelectedOption (getOptionFr(userData.option));
             let client_ids = [...userData.client_ids];
             setClients(client_ids);
         };
@@ -104,12 +111,17 @@ const DuoChatStepSendDeck = () => {
                             </>):(<></>)
                             }
                             </div>
-                            {step.options && step.options.map(
-                                (el) => {
-                                    return (<DuoChatStepOptionDeck key={el.option_rec_id} option={el} translate='true' />)
-                                }
-                                )
-                            }
+                            {receivedMessage ? (
+                                <>
+                                <div className={`${classes.option__wrapper}`}>
+                                    <div className={`${classes.option}`}>
+                                    {receivedMessage}{selectedOption}
+                                    </div>
+                                </div>
+                                </>
+                            ):(
+                                <></>
+                            )}
                     
                         </div>          
                     </div>   

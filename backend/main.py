@@ -126,8 +126,6 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             question = data["question"]
             question_tr = data["question_tr"]
             options = data["options"]
-            
-            
             # send personnal message
             await manager.send_personal_message (message=f"Message envoyé : {msg} ; question : {question} ; traduction : {question_tr}"  , client_ids=manager.client_ids, websocket=websocket)
             #await manager.send_question_tr (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
