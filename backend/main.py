@@ -89,10 +89,10 @@ class ConnectionsManager:
     async def send_question_tr (self, message: str, client_ids: list[str], websocket: WebSocket):
         await websocket.send_json({"message": message, "client_ids": client_ids})            
 
-    async def broadcast_tr (self, message: str, options: list[str], client_ids: list[str]):
+    async def broadcast_tr (self, message: str, question_tr: str, options: list[str], audio: str, client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
-            await connection.send_json ({"message": message,"options": options, "client_ids": client_ids})
+            await connection.send_json ({"message": message,"question_tr": question_tr, "options": options, "audio": audio, "client_ids": client_ids})
 
 manager = ConnectionsManager()
 
@@ -125,13 +125,15 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             question = data["question"]
             question_tr = data["question_tr"]
             options = data["options"]
+            audio = data["audio"]
+            
             # send personnal message
             await manager.send_personal_message (message=f"Message envoyé : {msg} ; question : {question} ; traduction : {question_tr}"  , client_ids=manager.client_ids, websocket=websocket)
             #await manager.send_question_tr (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
             #await manager.send_message_received (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
             # broadcast
             # await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
-            await manager.broadcast_tr (message = f"Question posée : {question_tr}", options=options, client_ids=manager.client_ids)
+            await manager.broadcast_tr (message = f"Question posée : {question_tr}", question_tr=question_tr, options=options, audio=audio, client_ids=manager.client_ids)
 
 
     except WebSocketDisconnect as e :

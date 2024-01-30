@@ -30,18 +30,21 @@ const DuoChatStepSendDeck = () => {
              "question_tr" : "question traduite",
              "reponses" : "vk réponses",
              "reponses_tr" : "vk réponses traduites",
+             "audio" : "audio",
              "options:" : [],
          };  
          data.message = inputRef.current.value;
          data.language = ctx.current_deck.language_deck.language;
          data.question = ctx.current_deck.chat_step_deck.step;
          data.question_tr = ctx.current_deck.chat_step_deck.step_translation;
+         data.audio = ctx.current_deck.chat_step_deck.step_audio_url;
          data.options = ctx.current_deck.chat_step_deck.options && ctx.current_deck.chat_step_deck.options.map(
             (el) => {
                 return (el)
             }
             )
          //ws.send(inputRef.current.value);
+         console.log (data);
          ws.send(JSON.stringify(data));
          setSentMessage (data.question_tr);
          inputRef.current.value = "";
@@ -53,7 +56,6 @@ const DuoChatStepSendDeck = () => {
 
     const getOptionFr = (option) => {
         let result = ctx.current_deck.chat_step_deck.options.find(item => item.step_translation === option);
-        console.log (result);
         return result;
     }
 

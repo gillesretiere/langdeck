@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import classes from "./Layout.module.css";
 
 
-const Chat = ({userName}) => {
+const Chat = ({userName, }) => {
 
     const [ws, setWs] = useState([]);
     const [messages, setMessages] = useState([]);
