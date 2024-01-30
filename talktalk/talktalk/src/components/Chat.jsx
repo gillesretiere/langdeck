@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import classes from "./Layout.module.css";
 
 
 const Chat = ({userName}) => {
@@ -14,6 +15,7 @@ const Chat = ({userName}) => {
         ws.send(inputRef.current.value);
         inputRef.current.value = "";
     }
+
 
     console.log (userName);
     useEffect ( () => {
@@ -31,8 +33,9 @@ const Chat = ({userName}) => {
 
     return (
         <>
-            <div className='flex mt-20 rounded border-2 border-gray-400'>
-                <div className='bg-white border-r-2 bg-green-400'>
+        <div className={`${classes.card__container__blue}`}>
+
+                <div>
                     <h2>Connexions : {clients.length}</h2>
                     {clients.map ((client, index) => {
                         return (
@@ -42,14 +45,17 @@ const Chat = ({userName}) => {
                         );
                     })}
                 </div>
-                <div className='p-4 bg-white h-fit rounded'>
+                <div className='text-white'>
                     <h2 className='text-xl mb-4'>
                         Bonjour {userName}
                     </h2>
+                    <div className='bg-blue-400 p-10 mt-20 rounded-xl'>
+
                     <input ref={inputRef} type="text" className='p-3 w-full bg-gray-500 text-white' />
                     <button className='bg-red-400 w-full p-2 mt-2 rounded text-white' onClick={sendMessage}>
                         Envoyer
                     </button>
+                    </div>
                     <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
                         {messages.map ((message, index) => {
                             return <li key={index}>{message}</li>;

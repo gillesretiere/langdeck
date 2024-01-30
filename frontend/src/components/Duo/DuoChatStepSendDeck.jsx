@@ -2,6 +2,7 @@ import React, { useContext, useState, useRef, useEffect, } from 'react';
 import classes from "./DuoChatDeck.module.css";
 import DeckContext from "../../context/DeckContext";
 import DuoChatStepOptionDeck from './DuoChatStepOptionDeck';
+import DuoChatStepOptionDeck2 from './DuoChatStepOptionDeck2';
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -51,7 +52,8 @@ const DuoChatStepSendDeck = () => {
     };
 
     const getOptionFr = (option) => {
-        var result = ctx.current_deck.chat_step_deck.options.find(item => item.step_translation === option);
+        let result = ctx.current_deck.chat_step_deck.options.find(item => item.step_translation === option);
+        console.log (result);
         return result;
     }
 
@@ -82,7 +84,7 @@ const DuoChatStepSendDeck = () => {
                                 </div>
                                 {step.options && step.options.map(
                                     (el) => {
-                                        return (<DuoChatStepOptionDeck key={el.option_rec_id} option={el} translate='false' />)
+                                        return (<DuoChatStepOptionDeck2 key={el.option_rec_id} option={el} translate='false' />)
                                     }
                                     )
                                 }

@@ -2,7 +2,7 @@ import React from 'react';
 import classes from "./DuoChatDeck.module.css";
 
 
-const DuoChatStepOptionDeck = ({option, translate,}) => {
+const DuoChatStepOptionDeck2 = ({option, translate,}) => {
   let translated = translate;
   return (
     <div className={`${classes.option__wrapper}`}>
@@ -10,10 +10,10 @@ const DuoChatStepOptionDeck = ({option, translate,}) => {
           {(() => {
               if (translated === 'false'){
                   return (
-                      <><span>{option.option}</span></>
+                      <><span>{option.option}</span>&nbsp;<span className='p2 text-blue-600'>{option.option_translation}</span></>
                   )
               }
-              return <><span>{option.option_translation}</span></>;
+              return <><span>{option.option_translation}</span><span>{option.option}</span></>;
             })()}
 
       </div>
@@ -24,4 +24,4 @@ const DuoChatStepOptionDeck = ({option, translate,}) => {
   )
 }
 
-export default DuoChatStepOptionDeck
+export default DuoChatStepOptionDeck2

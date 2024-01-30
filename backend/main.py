@@ -63,7 +63,6 @@ class ConnectionsManager:
         self.active_connections.append(websocket)
         self.client_ids.append(client_id)
         await self.broadcast (f"Client #{client_id} has joined the chat", client_ids=self.client_ids)
-        
 
     async def disconnect(self, websocket: WebSocket, client_id: str):
         self.active_connections.remove(websocket)
@@ -134,11 +133,11 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             # await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
             await manager.broadcast_tr (message = f"Question posée : {question_tr}", options=options, client_ids=manager.client_ids)
 
+
     except WebSocketDisconnect as e :
         # disconnect
         manager.disconnect (websocket=websocket, client_id=client_id)
         await manager.broadcast(f"Client #{client_id} left the chat")
-
 
 @app.on_event("startup")
 async def startup_db_client():

@@ -1,6 +1,8 @@
 import React, { useState, } from "react";
 import Login from "./Login";
 import Chat from "./Chat";
+import ChatCardBox from "./ChatCardBox";
+import classes from "./Layout.module.css";
 
 const Conversation = () => {
     const [loggedIn, setLogin] = useState(false);
@@ -15,16 +17,16 @@ const Conversation = () => {
     }
 
     return (
-        <div className="bg-gray-100 h-screen">
+    <div className={`${classes.subContainer}`}>
             <div className='flex justify-center'>
                 {! loggedIn ? (
                     <Login onLogin={login} onSetUserName={setUser}></Login>
                 ) : (
-                    <Chat userName={userName}></Chat>
+                    <ChatCardBox userName={userName}></ChatCardBox>
                 )}
             </div>
+    </div>
 
-        </div>
     )
 }
 

@@ -1,12 +1,13 @@
 import './App.css';
 import Conversation from './components/Conversation';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-    <h1 className="bg-slate-500 text-white textcenter">
-      Questionnaire Bilingue Simplifié</h1>
-      <Conversation/>
+      <Layout>
+        <Conversation/>
+      </Layout>
     </div>
   );
   }
