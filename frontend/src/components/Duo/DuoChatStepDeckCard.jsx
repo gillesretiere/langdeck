@@ -4,16 +4,17 @@ import { Link } from "react-router-dom";
 import DeckContext from "../../context/DeckContext";
 import DuoChatStepOptionDeck from './DuoChatStepOptionDeck';
 
-const DuoChatStepDeckCard = ({step}) => {
+const DuoChatStepDeckCard = ({step, onSetStep}) => {
 
     let ctx = useContext(DeckContext);
     const linkHandler = (event) => {
         ctx.current_deck.chat_step_deck=step;
+        onSetStep(step);
     };
 
     return (
-        <div className={`${classes.card__container}`}>
-            <Link to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={linkHandler}>
+        <div className={`${classes.card__container}`} onClick={linkHandler}>
+            {/*<Link to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={linkHandler}>*/}
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>
                         <div className={`${classes.card__subtitle}`}>{step.num_step}</div>
@@ -25,9 +26,7 @@ const DuoChatStepDeckCard = ({step}) => {
                         }
                         )
                     }
-                 
                 </div>          
-            </Link>     
         </div>
     )
 }

@@ -10,7 +10,11 @@ const DuoChatStepOptionDeck2 = ({option, translate,}) => {
           {(() => {
               if (translated === 'false'){
                   return (
-                      <><span>{option.option}</span>&nbsp;<span className='p2 text-blue-600'>{option.option_translation}</span></>
+                      <>
+                      <span className='p2 text-xl text-white'>{option.option}</span>
+                      <span className='p2 text-xl text-gray-600'>&nbsp;|&nbsp;</span>
+                      <span className='p2 text-xl text-yellow-300'>{option.option_translation}</span>
+                      </>
                   )
               }
               return <><span>{option.option_translation}</span><span>{option.option}</span></>;

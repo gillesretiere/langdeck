@@ -8,10 +8,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import DuoChat__chat from "./DuoChat__chat";
 
-const DuoChatStepSendDeck = ({step}) => {
+const DuoChatStepSendDeck__2 = () => {
     let ctx = useContext(DeckContext);
     let conversation = ctx.current_deck.chat_deck;
-    /*let step = ctx.current_deck.chat_step_deck; */
+    let step = ctx.current_deck.chat_step_deck;
 
     const userName = "Admin";
     const [ws, setWs] = useState([]);
@@ -72,22 +72,12 @@ const DuoChatStepSendDeck = ({step}) => {
         <>
         <div className={classes. chat_container}>
                 <div className={classes.chat_sender_container}>
-                    <div className={`${classes.card__selected__step__container}`} onClick={linkHandler}>
+                    <div className={`${classes.card__container}`}>
+                        <Link to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={linkHandler}>
                             <div className={`${classes.card__wrapper}`}>
                                 <div className={`${classes.card__header}`}>
-                                    {step ? (
-                                        <>
-                                        <div className={`${classes.card__subtitle}`}>{step.num_step}</div>
-                                        <div className={`${classes.card__title}`}>{step.step}
-                                        <span className={classes.card__title__tr}>{step.step_translation}</span>
-                                        </div>
-                                        </>
-                                    ):(
-                                        <>
-                                        <div className={`${classes.card__subtitle}`}>&nbsp;</div>
-                                        <div className={`${classes.card__title}`}>en attente de sélection</div>
-                                        </>
-                                    ) }
+                                    <div className={`${classes.card__subtitle}`}>{step.num_step}</div>
+                                    <div className={`${classes.card__title}`}>{step.step}</div>
                                 </div>
                                 {step.options && step.options.map(
                                     (el) => {
@@ -97,6 +87,7 @@ const DuoChatStepSendDeck = ({step}) => {
                                 }
                         
                             </div>          
+                        </Link>      
                         <div className={classes.button__wrapper}>
                             <Box className={classes.mui_button} >
                                 <input ref={inputRef} type="text" className='p-3 m-2 w-full bg-gray-500 text-white' placeholder="Votre message"/>
@@ -108,42 +99,36 @@ const DuoChatStepSendDeck = ({step}) => {
                     </div>
                 </div>         
 
-                <div className={classes.chat_receiver_container}>
-                    <div className={`${classes.card__receiver__container}`}>
+                <div className={classes.chat_sender_container}>
+                    <div className={`${classes.card__container}`}>
                         <div className={`${classes.card__wrapper}`}>
                             <div className={`${classes.card__header}`}>
-                                <div className={`${classes.card__title}`}><span className='text-xl'></span>Conversation</div>
-                            </div>
-                            <div>
                             {sentMessage ?(
-                            <>  
-                                <div className='p-2 mx-8 font-semibold text-white text-left'><span className='text-xl'>&rarr;</span>
-                                {step.step}<span className='text-xl text-gray-600'>&nbsp;|&nbsp;</span>
-                                <span className='font-semibold text-yellow-300'>{step.step_translation}</span>
-                                </div>
+                            <>
+                                <div className={`${classes.card__subtitle}`}>{step.num_step}</div>
+                                <div className={`${classes.card__title}`}>{step.step_translation}</div>
                             </>):(<></>)
                             }
                             </div>
-                            <div>
-                                {receivedMessage ? (
-                                    <>
-                                    <div className='p-2 mx-8 font-semibold text-xl text-white text-right'>
-                                        {selectedOption}
-                                        <span className='text-xl'>&larr;</span>
+                            {receivedMessage ? (
+                                <>
+                                <div className={`${classes.option__wrapper}`}>
+                                    <div className={`${classes.option}`}>
+                                    {receivedMessage}{selectedOption}
                                     </div>
-                                    </>
-                                ):(
-                                    <></>
-                                )}                
-                            </div>
+                                </div>
+                                </>
+                            ):(
+                                <></>
+                            )}
+                    
                         </div>          
                     </div>   
                 </div>   
-            </div>  
+         </div>  
   
-                <div className='ml-5'>Détail de la conversation</div>
-                {receivedMessage && receivedMessage}
-                <div className='ml-5'>
+                <div>{receivedMessage && receivedMessage}</div>
+                <div>
                     <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
                         {messages.map ((message, index) => {
                             return <li key={index}>{message}</li>;
@@ -155,4 +140,4 @@ const DuoChatStepSendDeck = ({step}) => {
     )
 }
 
-export default DuoChatStepSendDeck
+export default DuoChatStepSendDeck__2
