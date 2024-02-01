@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import classes from "./Layout.module.css";
 import ChatOptionPicker from "./ChatOptionPicker";
+import MediaPlayer from './MediaPlayer';
 
 
 const ChatCardBox = ({userName, onSetResponse}) => {
@@ -17,7 +18,7 @@ const ChatCardBox = ({userName, onSetResponse}) => {
 
     const sendMessageHandler = (event) => {
         ws.send(respondedOption);
-        inputRef.current.value = "";
+        // inputRef.current.value = "";
     }
 
     const setResponse = (event) => {
@@ -44,27 +45,37 @@ const ChatCardBox = ({userName, onSetResponse}) => {
         <div className={`${classes.card__container__blue}`}>
             <div className={`${classes.card__wrapper}`}>
                 <div className={`${classes.card__header}`}>
-                    <div className={`${classes.card__subtitle}`}>Bonjour {userName}</div>
-                    <div className={`${classes.card__subtitle}`}>{audio}</div>
-                    <div className={`${classes.card__title}`}>{question_tr}</div>
-                    <div className={`${classes.card__subtitle}`}>{respondedOption}</div>
+                    {/*<div className={`${classes.card__subtitle}`}>Bonjour {userName}</div>
+                    <div className={`${classes.card__subtitle}`}>{audio}</div>*/}
+                    {question_tr ? (
+                         <div className={`${classes.card__title}`}>
+                            <span><MediaPlayer media_url={audio}/></span>{question_tr}
+                         </div>
+                    ):(
+                        <div className={`${classes.card__title}`}>&nbsp;
+                        </div>
+                    )
+                    }
+                    {/*<div className={`${classes.card__subtitle}`}>{respondedOption}</div>*/}
                 </div>
                 {options && options.map(
                     (option, index) => {
-                    return (<ChatOptionPicker key={index} option={option} onSetResponse={setResponse}></ChatOptionPicker>)
+                    return (<ChatOptionPicker key={index} option={option} audio={audio} onSetResponse={setResponse}></ChatOptionPicker>)
                 }             
                 )}
             </div>
             <div className={classes.button__wrapper}>
                 <div>
-                    <input ref={inputRef} type="text" className='p-3 m-2 w-full bg-gray-500 text-white' placeholder="Votre message"/>
-                    <button color="blue_primary" m={2} variant="contained" size="small" onClick={sendMessageHandler}>
+                    {/*<input ref={inputRef} type="text" className='p-3 m-3 w-full bg-gray-500 text-white' placeholder="Votre message"/>*/}
+                
+                    <button className='bg-blue-500 m-4 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded' onClick={sendMessageHandler}>
                         Envoyer
                     </button> 
+                    <div>{respondedOption}</div>
                 </div>  
             </div>   
             <div className={classes.log_box}>
-            <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
+            <ul className='p-2 text-gray-500 text-xs text-left mt-4 bg-gray-200'>
                 {messages.slice(-5).map ((message, index) => {
                     return <li key={index}>{index} {message}</li>;
                 }

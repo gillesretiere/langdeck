@@ -7,6 +7,23 @@
     color: var(--primary-color);
 }
 
+.svg_icons_tiny {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0.2rem;
+    transform: scale(1.0);
+    color: var(--primary-color);
+}
+
+.svg_icons_tiny_white {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(0.7);
+    color: white;
+}
+
 .svg_icons_big {
     display:flex;
     width: auto;

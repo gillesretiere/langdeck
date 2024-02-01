@@ -16,7 +16,6 @@ const Chat = ({userName, }) => {
         inputRef.current.value = "";
     }
 
-
     console.log (userName);
     useEffect ( () => {
         let socket = new WebSocket(`ws://51.91.8.112:8000/ws/${userName}`);

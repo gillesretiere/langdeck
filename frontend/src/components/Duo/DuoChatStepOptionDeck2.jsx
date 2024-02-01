@@ -1,19 +1,29 @@
 import React from 'react';
 import classes from "./DuoChatDeck.module.css";
+import MediaTinyAudioPlayerW from '../UI/MediaPlayer/MediaTinyAudioPlayerW';
 
 
 const DuoChatStepOptionDeck2 = ({option, translate,}) => {
   let translated = translate;
   return (
-    <div className={`${classes.option__wrapper}`}>
+    <div className={`${classes.option__wrapper__tr}`}>
       <div className={`${classes.option}`}>
           {(() => {
               if (translated === 'false'){
                   return (
                       <>
-                      <span className='p2 text-xl text-white'>{option.option}</span>
-                      <span className='p2 text-xl text-gray-600'>&nbsp;|&nbsp;</span>
-                      <span className='p2 text-xl text-yellow-300'>{option.option_translation}</span>
+                      <div className='text-left text-white'>
+                        <span className={classes.media__player}>
+                          <MediaTinyAudioPlayerW media_url={option.option_audio_url_fr}></MediaTinyAudioPlayerW>
+                        </span>
+                        {option.option}
+                      </div>
+                      <div className='text-left text-yellow-300'>
+                        <span className={classes.media__player}>
+                          <MediaTinyAudioPlayerW media_url={option.option_audio_url}></MediaTinyAudioPlayerW>
+                        </span>
+                        {option.option_translation}
+                      </div>
                       </>
                   )
               }

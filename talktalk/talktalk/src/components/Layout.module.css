@@ -86,7 +86,7 @@
     flex:1;
     width: 100%;
     background-color: white;
-
+    min-height: 5rem;
     color: inherit;
     align-items: left;
     text-align: left;
@@ -110,8 +110,11 @@
 
 .card__title {
     font-family : var(--secondary-font);
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 600;  
+    height:5rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
     align-items:center;
     padding: 0.2rem 0.5rem 0rem 0.5rem;
     color: var(--palette-dark-blue);
@@ -129,7 +132,7 @@
 .option__wrapper {
     display: flex;
     width:100%;
-    height: 1em;
+    height: 4rem;
     align-items:center;
     text-align: center;
     justify-content:space-between;
@@ -141,9 +144,14 @@
 
 .option {
     font-family : var(--secondary-font);
-    font-size: 0.7rem;
-    font-weight: 100;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
+
+.option__wrapper:hover {
+    background-color:greenyellow;
+}
+
 
 .button__wrapper {
     display: flex;
@@ -167,4 +175,42 @@
     justify-content: center;
     max-height: 5rem;
     margin-top: auto;
+}
+
+.svg_icons {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1.8);
+    color: red;
+}
+
+.svg_icons_tiny {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0.2rem;
+    transform: scale(1.0);
+    color: black;
+}
+
+.svg_icons_tiny_white {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    margin-right: 1rem;
+    transform: scale(1.1);
+    color: white;
+}
+
+.svg_icons_big {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(3.8);
+    margin-left: 2rem;
+    margin-right: 3rem;
+    color: var(--primary-color);
 }

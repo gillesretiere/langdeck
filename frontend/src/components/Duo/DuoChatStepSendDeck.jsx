@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import DuoChat__chat from "./DuoChat__chat";
+import MediaTinyAudioPlayer from '../UI/MediaPlayer/MediaTinyAudioPlayer';
 
 const DuoChatStepSendDeck = ({step}) => {
     let ctx = useContext(DeckContext);
@@ -77,10 +78,20 @@ const DuoChatStepSendDeck = ({step}) => {
                                 <div className={`${classes.card__header}`}>
                                     {step ? (
                                         <>
-                                        <div className={`${classes.card__subtitle}`}>{step.num_step}</div>
-                                        <div className={`${classes.card__title}`}>{step.step}
-                                        <span className={classes.card__title__tr}>{step.step_translation}</span>
+                                        <div className={`${classes.card__title}`}>
+                                            <span className={classes.media__player}>
+                                                <MediaTinyAudioPlayer media_url={step.step_audio_url_fr}></MediaTinyAudioPlayer>
+                                            </span>
+                                            {step.step}
                                         </div>
+                                        <div className={classes.card__title__tr}>
+                                            <span className={classes.media__player}>
+                                                <MediaTinyAudioPlayer media_url={step.step_audio_url}></MediaTinyAudioPlayer>
+                                            </span>
+                                            {step.step_translation}
+                                        </div>
+                                        
+                                        
                                         </>
                                     ):(
                                         <>
@@ -99,10 +110,12 @@ const DuoChatStepSendDeck = ({step}) => {
                             </div>          
                         <div className={classes.button__wrapper}>
                             <Box className={classes.mui_button} >
-                                <input ref={inputRef} type="text" className='p-3 m-2 w-full bg-gray-500 text-white' placeholder="Votre message"/>
-                                <Button color="blue_primary" m={2} variant="contained" size="small" onClick={sendMessageHandler}>
-                                    Envoyer
-                                </Button> 
+                                <div className='flex'>
+                                    <input ref={inputRef} type="text" className='p-3 m-2 w-full bg-gray-500 text-white' placeholder="Votre message"/>
+                                    <Button   sx={{margin:1, padding:2, width: 200}} color="white" m={2} variant="outlined" size="small" onClick={sendMessageHandler}>
+                                        Envoyer
+                                    </Button> 
+                                </div>
                             </Box>  
                         </div>
                     </div>
@@ -119,7 +132,7 @@ const DuoChatStepSendDeck = ({step}) => {
                             <>  
                                 <div className='p-2 mx-8 font-semibold text-white text-left'><span className='text-xl'>&rarr;</span>
                                 {step.step}<span className='text-xl text-gray-600'>&nbsp;|&nbsp;</span>
-                                <span className='font-semibold text-yellow-300'>{step.step_translation}</span>
+                                <span className='font-semibold text-yellow-300'>[ {step.step_translation} ]</span>
                                 </div>
                             </>):(<></>)
                             }
@@ -127,30 +140,29 @@ const DuoChatStepSendDeck = ({step}) => {
                             <div>
                                 {receivedMessage ? (
                                     <>
-                                    <div className='p-2 mx-8 font-semibold text-xl text-white text-right'>
+                                    <div className='p-2 mx-8 font-semibold text-white text-right'>
                                         {selectedOption}
+                                        <span className='font-semibold text-yellow-300'>   [ {selectedOption} ]</span>
                                         <span className='text-xl'>&larr;</span>
                                     </div>
                                     </>
                                 ):(
-                                    <></>
+                                    <>...</>
                                 )}                
                             </div>
                         </div>          
                     </div>   
                 </div>   
             </div>  
-  
-                <div className='ml-5'>Détail de la conversation</div>
-                {receivedMessage && receivedMessage}
-                <div className='ml-5'>
-                    <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
-                        {messages.map ((message, index) => {
-                            return <li key={index}>{message}</li>;
-                        }
-                        )}
-                    </ul>                                 
-                </div>                     
+                <div className='ml-5 pl-5'>Détail de la conversation</div>
+                    <div className='ml-5'>
+                        <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
+                            {messages.map ((message, index) => {
+                                return <li key={index}>{message}</li>;
+                            }
+                            )}
+                        </ul>                                 
+                    </div>                    
                 </>
     )
 }
