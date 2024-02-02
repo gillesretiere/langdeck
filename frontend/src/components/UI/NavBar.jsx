@@ -85,7 +85,6 @@ const NavBar = () => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
             </Typography>
             
-            <DarkLightModeToggle></DarkLightModeToggle>
             <Button color="inherit">Login</Button>
 
             {/* more icon menu (settings...) */ }
