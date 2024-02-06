@@ -5,11 +5,10 @@ import MediaPlayerOption from './MediaPlayerOption';
 
 const ChatOptionPicker = ({option, audio, onSetResponse}) => {
     const [selected, setSelected] = useState('');
-    console.log (option);
+
     const clickHandler = (event) => {
         event.preventDefault();
         setSelected (event.target.getAttribute("value"));
-        console.log(selected);
     }
     return (
         <div className={`${classes.option__wrapper}`} value={`${option.option}`} id="option" onClick={onSetResponse}>

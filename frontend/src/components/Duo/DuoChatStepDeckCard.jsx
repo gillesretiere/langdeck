@@ -13,7 +13,7 @@ const DuoChatStepDeckCard = ({step, onSetStep}) => {
     };
 
     return (
-        <div className={`${classes.card__container}`} onClick={linkHandler}>
+        <div className={`${classes.card__container__orange}`} onClick={linkHandler}>
             {/*<Link to={{pathname:`/duo_step_send_page/${step.step_language}`}} onClick={linkHandler}>*/}
                 <div className={`${classes.card__wrapper}`}>
                     <div className={`${classes.card__header}`}>

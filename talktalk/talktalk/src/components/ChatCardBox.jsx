@@ -18,7 +18,6 @@ const ChatCardBox = ({userName, onSetResponse}) => {
 
     const sendMessageHandler = (event) => {
         ws.send(respondedOption);
-        // inputRef.current.value = "";
     }
 
     const setResponse = (event) => {

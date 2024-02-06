@@ -7,25 +7,14 @@ import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 const MediaPlayerOption = ({media_url}) => {
 
     const [isPlaying, setIsPlaying] = useState(false);
-    useEffect(() => {
-        if (isPlaying) {
-          console.log("Playing");
-        } else {
-            console.log("En Pause");
-
-        }
-      }, [isPlaying, audio]);
 
     var audio = new Audio(
         media_url
     );
 
     function togglePlay() {
-        return audio.paused ? audio.play() : audio.pause();
-    };
-    function togglePlay2() {
-        setIsPlaying((prev) => !prev);
-
+      setIsPlaying(!isPlaying);
+      return audio.paused ? audio.play() : audio.pause();
     };
 
 

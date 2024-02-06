@@ -13,7 +13,7 @@ const DuoLanguageDeckCard = ({language_deck}) => {
   };
 
   return (
-    <div className={`${classes.card__container}`}>
+    <div className={`${classes.card__container__blue}`}>
       <Link onClick={handleClick} to={`/duo_start_page/${language}`}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>

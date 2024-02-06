@@ -32,6 +32,7 @@ const DuoChatStepOptionDeck2 = ({option, translate,}) => {
 
       </div>
       <div className={`${classes.num_goto_step}`}>
+        <span className='text-black'>&rarr; </span>
         {option.num_goto_step}
       </div>
     </div>
