@@ -65,7 +65,7 @@
 .saynete__phrase__grid__container {
   display: flex;
   align-items: flex-start;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 1.6rem 1rem 1rem;
   box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
     /* 2. shadow ring 👇 */
@@ -98,14 +98,14 @@
   flex: 1;
   align-self: stretch;
   justify-content: left;
-  align-items: start;
+  align-items: flex-start;
   font-family: var(--primary-font);
   font-weight: 200;
   font-size: 3.0rem;  
 }
 
 .saynete__phrase__grid__sidebar_note {
-  align-items:start;
+  align-items: flex-start;
   justify-content:space-around;
   font-family: var(--primary-font);
   font-weight: 200;

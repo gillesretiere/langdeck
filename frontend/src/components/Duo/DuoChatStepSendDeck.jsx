@@ -46,6 +46,7 @@ const DuoChatStepSendDeck = ({step}) => {
             )
          //ws.send(inputRef.current.value);
          console.log (data);
+         setSelectedOption([]);
          ws.send(JSON.stringify(data));
          setSentMessage (data.question_tr);
          inputRef.current.value = "";
@@ -55,7 +56,21 @@ const DuoChatStepSendDeck = ({step}) => {
         ctx.current_deck.chat_step_deck=step;
     };
 
+    const getOptionItem = (answeredOption) => {
+        // récupère la traduction de l'option à partir de la réponse renvoyée (en français)
+        const index = step.options.findIndex ( (item) => item.option===answeredOption);
+        if (index===-1) {
+            setSelectedOption([]);
+            setSentMessage ('');
+            return "";
+        } else {
+            return step.options[index].option_translation;
+        }
+    };
+
     useEffect ( () => {
+        setSelectedOption([]);
+        setSentMessage ('');
         let socket = new WebSocket(`ws://51.91.8.112:8000/ws/a/${userName}`);
         setWs (socket);
         socket.onmessage = function (event) {
@@ -67,7 +82,6 @@ const DuoChatStepSendDeck = ({step}) => {
             setClients(client_ids);
         };
     }, []);
-
 
     return (
         <>
@@ -142,8 +156,16 @@ const DuoChatStepSendDeck = ({step}) => {
                                     <>
                                     <div className='p-2 mx-8 font-semibold text-white text-right'>
                                         {selectedOption}
-                                        <span className='font-semibold text-yellow-300'>   [ {selectedOption} ]</span>
-                                        <span className='text-xl'>&larr;</span>
+                                        {selectedOption.length > 0?(
+                                            <>
+                                            <span className='font-semibold text-green-300'>   [ {getOptionItem(selectedOption)} ]</span>
+                                            <span className='text-xl'>&larr;</span>
+                                            </>
+                                        ):(
+                                            <span className='font-semibold text-yellow-300'></span>
+
+                                        )}
+
                                     </div>
                                     </>
                                 ):(

@@ -110,6 +110,7 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
 
     except WebSocketDisconnect as e :
         # disconnect
+        print (str(e))
         manager.disconnect (websocket=websocket, client_id=client_id)
         await manager.broadcast(f"Client #{client_id} left the chat")
 
@@ -136,10 +137,12 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             await manager.broadcast_tr (message = f"Question posée : {question_tr}", question_tr=question_tr, options=options, audio=audio, client_ids=manager.client_ids)
 
 
+
     except WebSocketDisconnect as e :
         # disconnect
-        manager.disconnect (websocket=websocket, client_id=client_id)
-        await manager.broadcast(f"Client #{client_id} left the chat")
+        print (str(e))
+        #await manager.broadcast(f"Client #{client_id} left the chat")
+        #manager.disconnect (websocket=websocket, client_id=client_id)
 
 @app.on_event("startup")
 async def startup_db_client():

@@ -40,6 +40,12 @@ const DuoChatCnx = ({userName, setConnection}) => {
             let client_ids = [...userData.client_ids];
             setClients(client_ids);
         };
+
+        socket.onerror = function(err) {
+            console.error('Socket encountered error: ', err.message, 'Closing socket');
+            socket.close();
+        };
+
     }, []);
 
     return (

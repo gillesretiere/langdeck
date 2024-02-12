@@ -120,7 +120,7 @@
   flex: 1;
   align-self: stretch;
   justify-content: left;
-  align-items: start;
+  align-items: flex-start;
   font-family: var(--primary-font);
   font-weight: 200;
   font-size: 3.0rem;  
