@@ -45,7 +45,6 @@ const DuoChatStepSendDeck = ({step}) => {
             }
             )
          //ws.send(inputRef.current.value);
-         console.log (data);
          setSelectedOption([]);
          ws.send(JSON.stringify(data));
          setSentMessage (data.question_tr);

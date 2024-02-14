@@ -1,0 +1,23 @@
+nohup: ignoring input
+INFO:     Started server process [468027]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://51.91.8.112:4455 (Press CTRL+C to quit)
+INFO:     ('91.205.106.236', 53373) - "WebSocket /ws/Admin" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('91.205.106.236', 53387) - "WebSocket /ws/Admin" [accepted]
+/home/gre/projects/langdeck/venv/src/guided-chat-backend/main.py:44: RuntimeWarning: coroutine 'WebSocket.close' was never awaited
+  connection.close()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('91.205.106.236', 53437) - "WebSocket /ws/Admin" [accepted]
+INFO:     connection open
+/home/gre/projects/langdeck/venv/src/guided-chat-backend/main.py:53: RuntimeWarning: coroutine 'WebSocket.close' was never awaited
+  connection.close()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+INFO:     connection closed
+INFO:     ('91.205.106.236', 53447) - "WebSocket /ws/Admin" [accepted]
+INFO:     connection open
+INFO:     connection closed

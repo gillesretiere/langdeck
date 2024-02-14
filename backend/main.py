@@ -59,10 +59,22 @@ class ConnectionsManager:
 
     async def connect(self, websocket: WebSocket, client_id: str):
         # print ("cnx pending for " + client_id)
-        await websocket.accept()
-        self.active_connections.append(websocket)
-        self.client_ids.append(client_id)
+        for soc in self.active_connections:
+            print (soc)
+        for cid in self.client_ids:
+            print (cid)
+            
+        if websocket not in self.active_connections:
+            self.active_connections.append(websocket)
+            print (f"Just added cnx {websocket}")
+            await websocket.accept()
+
+        if client_id not in self.client_ids:
+            print (f"Just added cid {client_id}")
+            self.client_ids.append(client_id)
+
         await self.broadcast (f"Client #{client_id} has joined the chat", client_ids=self.client_ids)
+
 
     async def disconnect(self, websocket: WebSocket, client_id: str):
         self.active_connections.remove(websocket)
@@ -75,12 +87,18 @@ class ConnectionsManager:
     async def broadcast (self, message: str, client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
-            await connection.send_json ({"message": message, "client_ids": client_ids})
+            try:
+                await connection.send_json ({"message": message, "client_ids": client_ids})
+            except RuntimeError:
+                break
 
     async def broadcast_option (self, message: str, option: str, client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
-            await connection.send_json ({"message": message, "option": option, "client_ids": client_ids})
+            try:
+                await connection.send_json ({"message": message, "option": option, "client_ids": client_ids})
+            except RuntimeError:
+                break
 
 
     async def send_message_received (self, message: str, client_ids: list[str], websocket: WebSocket):
@@ -92,7 +110,12 @@ class ConnectionsManager:
     async def broadcast_tr (self, message: str, question_tr: str, options: list[str], audio: str, client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
-            await connection.send_json ({"message": message,"question_tr": question_tr, "options": options, "audio": audio, "client_ids": client_ids})
+            print(client_ids)
+            try:
+                await connection.send_json ({"message": message,"question_tr": question_tr, "options": options, "audio": audio, "client_ids": client_ids})
+            except RuntimeError:
+                break
+
 
 manager = ConnectionsManager()
 
@@ -111,8 +134,8 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
     except WebSocketDisconnect as e :
         # disconnect
         print (str(e))
-        manager.disconnect (websocket=websocket, client_id=client_id)
-        await manager.broadcast(f"Client #{client_id} left the chat")
+        await manager.disconnect (websocket=websocket, client_id=client_id)
+        #await manager.broadcast(f"Client #{client_id} left the chat")
 
 @app.websocket("/ws/a/{client_id}")
 async def websocket_endpoint (websocket: WebSocket, client_id: str):
@@ -136,13 +159,11 @@ async def websocket_endpoint (websocket: WebSocket, client_id: str):
             # await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
             await manager.broadcast_tr (message = f"Question posée : {question_tr}", question_tr=question_tr, options=options, audio=audio, client_ids=manager.client_ids)
 
-
-
     except WebSocketDisconnect as e :
         # disconnect
         print (str(e))
         #await manager.broadcast(f"Client #{client_id} left the chat")
-        #manager.disconnect (websocket=websocket, client_id=client_id)
+        await manager.disconnect (websocket=websocket, client_id=client_id)
 
 @app.on_event("startup")
 async def startup_db_client():
