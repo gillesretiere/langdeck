@@ -6,6 +6,7 @@ import uvicorn
 # async routing with mongodb
 from motor.motor_asyncio import AsyncIOMotorClient
 from routers.root import router as root_router
+from routers.tschat import router as tschat_router
 # for accessing .env variables
 from decouple import config
 
@@ -34,6 +35,7 @@ async def shutdown_db_client():
     app.mongodb_client.close()
 
 app.include_router(root_router, prefix="/root", tags=["root"])
+app.include_router(tschat_router, prefix="/tschat", tags=["tschat"])
 
 if __name__ == "__main__":
     uvicorn.run(app=app, host="51.91.8.112", port=4455)

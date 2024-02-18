@@ -37,3 +37,10 @@ class LanguageDeckBase(MongoBaseModel):
 
 class LanguageDeckDB(LanguageDeckBase):
     pass
+
+class TSChatBase (MongoBaseModel):
+    language: str = Field(..., min_length=3, max_length=3)
+    chats : Optional[Any]
+
+class TSChatDB (TSChatBase):
+    pass
