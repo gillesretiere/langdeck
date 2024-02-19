@@ -16,10 +16,24 @@ WWW_DOMAIN = config('WWW_DOMAIN', cast=str)
 DB_URL = config('DB_URL', cast=str)
 DB_NAME = config('DB_NAME', cast=str)
 
+# used by frontend calls
+origins = [
+    "http://localhost:3000",
+    "http://localhost:4455",
+    "http://"+HOST+":4455",
+    "http://"+HOST+":3000",
+    "http://"+DOMAIN+":4455",
+    "http://"+DOMAIN+":3000",
+    "http://"+WWW_DOMAIN+":4455",
+    "http://"+WWW_DOMAIN+":3000",
+    "ws://"+WWW_DOMAIN+":4455",
+    "ws://"+DOMAIN+":4455",
+]
+
 app = FastAPI()
 app.add_middleware(
 CORSMiddleware,
-allow_origins=["*"],
+allow_origins=origins,
 allow_credentials=True,
 allow_methods=["*"],
 allow_headers=["*"],
@@ -38,4 +52,4 @@ app.include_router(root_router, prefix="/root", tags=["root"])
 app.include_router(tschat_router, prefix="/tschat", tags=["tschat"])
 
 if __name__ == "__main__":
-    uvicorn.run(app=app, host="51.91.8.112", port=4455)
+    uvicorn.run(app=app, host=HOST, port=4455)
