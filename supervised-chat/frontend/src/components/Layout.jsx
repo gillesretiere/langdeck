@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import classes from "./Layout.module.css";
 
 const Layout = ({children}) => {
   return (
-    <div>
+    <div className={`${classes.container} min-h-screen bg-gray-50`}>
         <Header />
-        <div>{children}</div>
+        <div className={`${classes.layout} min-h-full bg-blue-50`}>{children}</div>
         <Footer />
     </div>
   )
