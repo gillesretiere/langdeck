@@ -1,0 +1,43 @@
+.container {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    padding: 15px 45px;
+    background-color: #DDD6FE;
+    min-width: 200px;
+    margin: 20px 0;
+  }
+
+.card_img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%
+}
+
+.card-name {
+    margin: 15px 0 5px;
+}
+
+h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.card__container__blue {
+    text-align: center;
+    padding: 45px 45px;
+    width: 25rem;
+    margin: 5px;
+    min-height: 240px;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border-radius: 12px;
+}
