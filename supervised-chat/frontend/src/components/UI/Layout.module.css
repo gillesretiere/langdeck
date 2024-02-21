@@ -1,7 +1,4 @@
 .layout {
-    /*
-    flex-1 min-h-full flex flex-col flex-grow align-baseline mt-2 pt-0
-    */
     display: flex;
     flex: 1 1 0%; 
     flex-direction: column; 

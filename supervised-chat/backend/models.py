@@ -40,6 +40,10 @@ class LanguageDeckDB(LanguageDeckBase):
 
 class TSChatBase (MongoBaseModel):
     language: str = Field(..., min_length=3, max_length=3)
+    lang_name_fr: str = Field(...,  min_length=3)
+    lang_name_en: str = Field(...,  min_length=3)
+    lang_name_native: str = Field(...,  min_length=3)
+    lang_flag_icon: str = Field(..., min_length=3)
     chats : Optional[Any]
 
 class TSChatDB (TSChatBase):

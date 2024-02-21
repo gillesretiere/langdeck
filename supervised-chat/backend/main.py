@@ -22,10 +22,13 @@ origins = [
     "http://localhost:4455",
     "http://"+HOST+":4455",
     "http://"+HOST+":3000",
+    "http://"+HOST+":3002",
     "http://"+DOMAIN+":4455",
     "http://"+DOMAIN+":3000",
+    "http://"+DOMAIN+":3002",
     "http://"+WWW_DOMAIN+":4455",
     "http://"+WWW_DOMAIN+":3000",
+    "http://"+WWW_DOMAIN+":3002",
     "ws://"+WWW_DOMAIN+":4455",
     "ws://"+DOMAIN+":4455",
 ]

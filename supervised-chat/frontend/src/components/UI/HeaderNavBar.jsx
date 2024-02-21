@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../assets/logo-langdeck-w_fpt-v1.png';
+import logo from '../../assets/logo-langdeck-w_fpt-v1.png';
 
 const HeaderNavBar = () => {
   return (
