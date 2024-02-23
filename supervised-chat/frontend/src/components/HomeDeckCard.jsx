@@ -1,40 +1,31 @@
 import React from 'react';
 import classes from "./HomeDeck.module.css";
-import Box from "@mui/material/Box";
-import ToggleOffIcon from '@mui/icons-material/ToggleOff';
-import ToggleOnIcon from '@mui/icons-material/ToggleOn';
+import BookmarkAddedTwoToneIcon from '@mui/icons-material/BookmarkAddedTwoTone';
+import BookmarkAddTwoToneIcon from '@mui/icons-material/BookmarkAddTwoTone';
+import AdjustIcon from '@mui/icons-material/Adjust';
 
-const HomeDeckCard = ({on}) => {
+const HomeDeckCard = ({on, language}) => {
     return (
         <div className={classes.card_container}>
-            <div className={classes.card_header}>
-
             {on==true ? (
-                <Box
-                display="flex"
-                alignItems="center"
-                justifyContent='right'
-
-              >
-                  <div>Choisir une langue</div>  
-                  <div><ToggleOnIcon sx={{ fontSize: 40 }}/></div>
-              </Box>
+              <>
+                {language ? (
+                  <div className={classes.card_header}>{language}<BookmarkAddedTwoToneIcon /></div>
+                ):(
+                  <div className={classes.card_header}>{language}&nbsp;<AdjustIcon /></div>
+                )}
+                <div className={`${classes.card__img__bw}`}>
+                  <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708698583/langdeck/assets/images/rzrbgshhsdwu5a3reztj.jpg'></img>
+                </div>
+              </>
             ):(
-                <Box
-                display="flex"
-                alignItems="center"
-                justifyContent='right'
-
-              >
-                  <div>Choisir une langue</div>  
-                  <div><ToggleOffIcon sx={{ fontSize: 40 }}/></div>
-              </Box>         
+              <>
+                <div className={classes.card_header}>Choisir une langue<BookmarkAddTwoToneIcon /></div>
+                <div className={`${classes.card__img}`}>
+                  <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708698583/langdeck/assets/images/rzrbgshhsdwu5a3reztj.jpg'></img>
+                </div>
+              </>
             )}
-            </div>
-
-          <div className={`${classes.card__img}`}>
-            <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708698583/langdeck/assets/images/rzrbgshhsdwu5a3reztj.jpg'></img>
-          </div>
           <div className={classes.card_footer}></div>
         </div>
     )

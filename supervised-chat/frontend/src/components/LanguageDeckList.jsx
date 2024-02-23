@@ -2,7 +2,7 @@ import React from 'react';
 import List from '@mui/material/List';
 import LanguageDeckItem from './LanguageDeckItem';
 
-const LanguageDeckList = ({deck}) => {
+const LanguageDeckList = ({deck, onSetLanguage}) => {
 
     return (
         <div>
@@ -10,7 +10,7 @@ const LanguageDeckList = ({deck}) => {
                 {deck && deck.map(
                     (el) => {
                         return (
-                            <LanguageDeckItem key={el._id} card={el}/>
+                            <LanguageDeckItem key={el._id} card={el} onSetLanguage={onSetLanguage}/>
                             )
                     }
                 )}   

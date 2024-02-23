@@ -7,13 +7,16 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
 
-const LanguageDeckItem = ({card}) => {
+const LanguageDeckItem = ({card, onSetLanguage}) => {
 
     const {lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon, } = card;
+    const onSetItem = () => {
+        onSetLanguage(lang_name_fr)
+    }
 
     return (
         <div>
-            <ListItem alignItems="flex-start">
+            <ListItem alignItems="flex-start" onClick={onSetItem}>
                 <ListItemAvatar>
                 <Avatar alt="Remy Sharp" src={lang_flag_icon} />
                 </ListItemAvatar>
