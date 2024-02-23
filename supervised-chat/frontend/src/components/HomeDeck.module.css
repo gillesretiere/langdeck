@@ -67,7 +67,16 @@ h3, p {
 
 .right_container {
     width: 50%;
-    background-color: rgb(187, 245, 184);
+    background-color: rgb(57, 54, 57);
+}
+
+.deck_base_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #56bcf3;
+    width: 100vw;
+    height:30vh;
 }
 
 .container {
@@ -76,6 +85,6 @@ h3, p {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100vw;
-    height: 80vh;
+    height: 55vh;
     background-color: #E2F5FF;
 }
