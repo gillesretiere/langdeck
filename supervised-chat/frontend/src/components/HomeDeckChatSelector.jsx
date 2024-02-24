@@ -4,7 +4,7 @@ import BookmarkAddedTwoToneIcon from '@mui/icons-material/BookmarkAddedTwoTone';
 import BookmarkAddTwoToneIcon from '@mui/icons-material/BookmarkAddTwoTone';
 import AdjustIcon from '@mui/icons-material/Adjust';
 
-const ChatDeckCard = ({onSetSelected, on, language, chatDeck}) => {
+const HomeDeckChatSelector = ({onSetSelected, on, language, chatDeck}) => {
     return (
         <div className={classes.card_container} onClick={onSetSelected}>
             {on==true ? (
@@ -31,4 +31,4 @@ const ChatDeckCard = ({onSetSelected, on, language, chatDeck}) => {
     )
 }
 
-export default ChatDeckCard
+export default HomeDeckChatSelector

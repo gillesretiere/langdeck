@@ -12,7 +12,7 @@ const HomeDeckCard = ({onSetSelected, on, language}) => {
                 {language ? (
                   <div className={classes.card_header}>{language}<BookmarkAddedTwoToneIcon /></div>
                 ):(
-                  <div className={classes.card_header}>{language}&nbsp;<AdjustIcon /></div>
+                  <div className={classes.card_header}>{language}Choisir une langue<AdjustIcon /></div>
                 )}
                 <div className={`${classes.card__img__bw}`}>
                   <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708698583/langdeck/assets/images/rzrbgshhsdwu5a3reztj.jpg'></img>

@@ -2,27 +2,21 @@ import React from 'react';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 
 
-const LanguageDeckItem = ({card, onSetLanguage, onSetLanguageDict}) => {
+const ChatDeckItem = ({card, onSetChatDeck}) => {
 
-    const {language, lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon, } = card;
+    const {conversation, conversation_translation, } = card;
     const onSetItem = () => {
-        onSetLanguage(lang_name_fr);
-        onSetLanguageDict (card);
+        onSetChatDeck(conversation);
     }
 
     return (
         <div>
             <ListItem alignItems="flex-start" onClick={onSetItem}>
-                <ListItemAvatar>
-                <Avatar alt="Remy Sharp" src={lang_flag_icon} />
-                </ListItemAvatar>
                 <ListItemText
-                primary={lang_name_fr}
+                primary={conversation}
                 secondary={
                     <React.Fragment>
                     <Typography
@@ -31,7 +25,7 @@ const LanguageDeckItem = ({card, onSetLanguage, onSetLanguageDict}) => {
                         variant="body2"
                         color="text.primary"
                     >
-                        {lang_name_native}
+                        {conversation_translation}
                     </Typography>
                     </React.Fragment>
                 }
@@ -42,4 +36,4 @@ const LanguageDeckItem = ({card, onSetLanguage, onSetLanguageDict}) => {
     )
 }
 
-export default LanguageDeckItem
+export default ChatDeckItem

@@ -1,16 +1,15 @@
 import React from 'react';
 import List from '@mui/material/List';
-import LanguageDeckItem from './LanguageDeckItem';
+import ChatDeckItem from './ChatDeckItem';
 
-const LanguageDeckList = ({deck, onSetLanguage, onSetLanguageDict}) => {
-
+const ChatDeckList = ({deck, onSetChatDeck}) => {
     return (
         <div>
             <List sx={{ width: '100%', height: '100%', bgcolor: "#AFD9EE"    }}>
                 {deck && deck.map(
                     (el) => {
                         return (
-                            <LanguageDeckItem key={el._id} card={el} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>
+                            <ChatDeckItem key={el.num_conversation} card={el} onSetChatDeck={onSetChatDeck}/>
                             )
                     }
                 )}   
@@ -19,4 +18,4 @@ const LanguageDeckList = ({deck, onSetLanguage, onSetLanguageDict}) => {
     )
 }
 
-export default LanguageDeckList
+export default ChatDeckList
