@@ -1,16 +1,27 @@
 import React, {useState} from 'react';
 import classes from "./HomeDeck.module.css";
 import HomeDeckCard from './HomeDeckCard';
+import ChatDeckCard from './ChatDeckCard';
 import LanguageDeck from './LanguageDeck';
 
 const HomeDeck = ({startingDeck}) => {
-  const [selected, setSelected] = useState (false);
+  const [selectedLanguage, setSelectedLanguage] = useState (false);
+  const [selectedChatDeck, setSelectedChatDeck] = useState (false);
+  const [connected, setConnected] = useState (false);
   const [language, setLanguage] = useState ('');
+  const [chatDeck, setChatDeck] = useState ('');
 
-  const clickHandler = () => {
-    setSelected (!selected);
+  const clickHandlerLanguage = () => {
+    setSelectedLanguage (!selectedLanguage);
     if (language) {
       setLanguage ('');
+    }
+  }
+
+  const clickHandlerChatDeck = () => {
+    setSelectedChatDeck (!selectedChatDeck);
+    if (chatDeck) {
+      setChatDeck ('');
     }
   }
 
@@ -18,18 +29,24 @@ const HomeDeck = ({startingDeck}) => {
     setLanguage (item);
   }
 
+  const onSetChatDeck = (item) => {
+    setChatDeck (item);
+  }
+
   return (
     <>
     <div className={classes.container}>
-      <div className={classes.left_container}>
-        { selected && <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage}/>}
+      <div className={classes.deck_base_container}>
+        <HomeDeckCard onSetSelected={clickHandlerLanguage} on={selectedLanguage} language={language}/>
+        { selectedLanguage && !language && <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage}/>}
+        { language && !chatDeck && <ChatDeckCard onSetSelected={clickHandlerChatDeck} on={selectedChatDeck} language={language} chatDeck={chatDeck}/>}
+        { selectedChatDeck && !chatDeck && <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage}/>}
       </div>
-      <div className={classes.right_container}>
-        <div>Conversation {language}</div>
-      </div> 
-    </div>
-    <div className={classes.deck_base_container} onClick={clickHandler}>
-      <HomeDeckCard on={selected} language={language}/>
+      {connected && 
+        <div className={classes.right_container}>
+          <div>Conversation {language}</div>
+        </div> 
+      }
     </div>
     </>
   )

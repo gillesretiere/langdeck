@@ -4,7 +4,7 @@ import BookmarkAddedTwoToneIcon from '@mui/icons-material/BookmarkAddedTwoTone';
 import BookmarkAddTwoToneIcon from '@mui/icons-material/BookmarkAddTwoTone';
 import AdjustIcon from '@mui/icons-material/Adjust';
 
-const HomeDeckCard = ({onSetSelected, on, language}) => {
+const ChatDeckCard = ({onSetSelected, on, language, chatDeck}) => {
     return (
         <div className={classes.card_container} onClick={onSetSelected}>
             {on==true ? (
@@ -15,14 +15,14 @@ const HomeDeckCard = ({onSetSelected, on, language}) => {
                   <div className={classes.card_header}>{language}&nbsp;<AdjustIcon /></div>
                 )}
                 <div className={`${classes.card__img__bw}`}>
-                  <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708698583/langdeck/assets/images/rzrbgshhsdwu5a3reztj.jpg'></img>
+                  <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708773080/langdeck/assets/images/woman-texting-couch.jpg'></img>
                 </div>
               </>
             ):(
               <>
-                <div className={classes.card_header}>Choisir une langue<BookmarkAddTwoToneIcon /></div>
+                <div className={classes.card_header}>Choisir un deck de conversation<BookmarkAddTwoToneIcon /></div>
                 <div className={`${classes.card__img}`}>
-                  <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708698583/langdeck/assets/images/rzrbgshhsdwu5a3reztj.jpg'></img>
+                    <img src='https://res.cloudinary.com/dhc7ovnwk/image/upload/v1708773080/langdeck/assets/images/woman-texting-couch.jpg'></img>
                 </div>
               </>
             )}
@@ -31,4 +31,4 @@ const HomeDeckCard = ({onSetSelected, on, language}) => {
     )
 }
 
-export default HomeDeckCard
+export default ChatDeckCard
