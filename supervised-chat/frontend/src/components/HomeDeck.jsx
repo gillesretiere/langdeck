@@ -17,6 +17,8 @@ const HomeDeck = ({startingDeck}) => {
     setSelectedLanguage (!selectedLanguage);
     if (language) {
       setLanguage ('');
+      setSelectedChatDeck (false);
+      setChatDeck ('');
     }
   }
 
@@ -43,10 +45,11 @@ const HomeDeck = ({startingDeck}) => {
     <>
     <div className={classes.container}>
       <div className={classes.deck_base_container}>
-        <HomeDeckLanguageSelector onSetSelected={clickHandlerLanguage} on={selectedLanguage} language={language}/>
+        <HomeDeckLanguageSelector onSetSelected={clickHandlerLanguage} on={selectedLanguage} language={language} language_img={languageDict.lang_flag_icon}/>
         { selectedLanguage && !language && <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>}
         { language && <HomeDeckChatSelector onSetSelected={clickHandlerChatDeck} on={selectedChatDeck} language={language} chatDeck={chatDeck}/>}
         { selectedChatDeck && !chatDeck && <ChatDeck language={languageDict.language} startingDeck={startingDeck} onSetChatDeck={onSetChatDeck}/>}
+        { chatDeck && <div>Choisir une question</div>}
       </div>
       {connected && 
         <div className={classes.right_container}>
