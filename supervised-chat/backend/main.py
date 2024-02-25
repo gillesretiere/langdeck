@@ -31,6 +31,8 @@ origins = [
     "http://"+WWW_DOMAIN+":3002",
     "ws://"+WWW_DOMAIN+":4455",
     "ws://"+DOMAIN+":4455",
+    "ws://"+HOST+":4455",
+    "ws://"+HOST+":3002",
 ]
 
 app = FastAPI()
@@ -41,6 +43,101 @@ allow_credentials=True,
 allow_methods=["*"],
 allow_headers=["*"],
 )
+
+class ConnectionsManager:
+    def __init__ (self):
+        self.active_connections: list[WebSocket] = []
+        self.client_ids: list[str] = []
+
+    async def connect(self, websocket: WebSocket, client_id: str):
+        # print ("cnx pending for " + client_id)
+        for soc in self.active_connections:
+            print (soc)
+        for cid in self.client_ids:
+            print (cid)
+            
+        if websocket not in self.active_connections:
+            self.active_connections.append(websocket)
+            print (f"Just added cnx {websocket}")
+            await websocket.accept()
+
+        if client_id not in self.client_ids:
+            print (f"Just added cid {client_id}")
+            self.client_ids.append(client_id)
+
+        await self.broadcast (f"Client #{client_id} a rejoint la conversation!", client_ids=self.client_ids)
+
+
+    async def disconnect(self, websocket: WebSocket, client_id: str):
+        self.active_connections.remove(websocket)
+        self.client_ids.remove(client_id)
+        await self.broadcast (f"Client #{client_id} a quitté la conversation!", client_ids=self.client_ids)
+
+    async def send_personal_message (self, message: str, client_ids: list[str], websocket: WebSocket):
+        await websocket.send_json({"message": message, "client_ids": client_ids})
+
+    async def broadcast (self, message: str, client_ids: list[str]):
+        for connection in self.active_connections:
+            # await connection.send_text (message)
+            try:
+                await connection.send_json ({"message": message, "client_ids": client_ids})
+            except RuntimeError:
+                break
+
+    async def broadcast_option (self, message: str, option: str, client_ids: list[str]):
+        for connection in self.active_connections:
+            # await connection.send_text (message)
+            try:
+                await connection.send_json ({"message": message, "option": option, "client_ids": client_ids})
+            except RuntimeError:
+                break
+
+    async def send_message_received (self, message: str, client_ids: list[str], websocket: WebSocket):
+        await websocket.send_json({"message_received": message, "client_ids": client_ids}) 
+
+    async def send_question_tr (self, message: str, client_ids: list[str], websocket: WebSocket):
+        await websocket.send_json({"message": message, "client_ids": client_ids})            
+
+    async def broadcast_tr (self, message: str, question_tr: str, options: list[str], audio: str, client_ids: list[str]):
+        for connection in self.active_connections:
+            # await connection.send_text (message)
+            print(client_ids)
+            try:
+                await connection.send_json ({"message": message,"question_tr": question_tr, "options": options, "audio": audio, "client_ids": client_ids})
+            except RuntimeError:
+                break
+
+
+manager = ConnectionsManager()
+
+
+@app.websocket("/ws/a/{client_id}")
+async def websocket_endpoint (websocket: WebSocket, client_id: str):
+    # connect
+    await manager.connect(websocket, client_id)
+    try:
+        while True:
+            data = await websocket.receive_json()
+            msg = data["message"]
+            language = data["language"]
+            question = data["question"]
+            question_tr = data["question_tr"]
+            options = data["options"]
+            audio = data["audio"]
+            
+            # send personnal message
+            await manager.send_personal_message (message=f"Message envoyé : {msg} ; question : {question} ; traduction : {question_tr}"  , client_ids=manager.client_ids, websocket=websocket)
+            #await manager.send_question_tr (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
+            #await manager.send_message_received (message=question_tr, client_ids=manager.client_ids, websocket=websocket)
+            # broadcast
+            # await manager.broadcast (message = f"Client ID {client_id} says : {msg} in {language},  ", client_ids=manager.client_ids)
+            await manager.broadcast_tr (message = f"Question posée : {question_tr}", question_tr=question_tr, options=options, audio=audio, client_ids=manager.client_ids)
+
+    except WebSocketDisconnect as e :
+        # disconnect
+        print (str(e))
+        #await manager.broadcast(f"Client #{client_id} left the chat")
+        await manager.disconnect (websocket=websocket, client_id=client_id)
 
 @app.on_event("startup")
 async def startup_db_client():

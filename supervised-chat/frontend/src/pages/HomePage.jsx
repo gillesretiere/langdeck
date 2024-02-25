@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 import Layout from '../components/UI/Layout';
 import HomeDeck from '../components/HomeDeck';
+import HomeDeckCnxWS from '../components/HomeDeckCnxWS';
 
 /* route principale côté serveur FastAPI */
 const BASE_URL = "http://51.91.8.112:4455/tschat";
@@ -28,7 +29,7 @@ const HomePage = () => {
   return (
     <div>
         <Layout>
-          {startingDeck && <HomeDeck startingDeck={startingDeck}/>} 
+          {startingDeck && <HomeDeckCnxWS startingDeck={startingDeck}/>} 
         </Layout>
     </div>
   )
