@@ -110,6 +110,24 @@ class ConnectionsManager:
 
 manager = ConnectionsManager()
 
+@app.websocket("/ws/b/{client_id}")
+async def websocket_endpoint (websocket: WebSocket, client_id: str):
+    # connect
+    await manager.connect(websocket, client_id)
+    try:
+        while True:
+            data = await websocket.receive_text()
+            # send personnal message
+            await manager.send_personal_message (message=f"Vous avez répondu :  {data}", client_ids=manager.client_ids, websocket=websocket)
+            # broadcast
+            await manager.broadcast_option (message = f"{client_id} il dit que : {data},  ", option=data, client_ids=manager.client_ids)
+
+    except WebSocketDisconnect as e :
+        # disconnect
+        print (str(e))
+        await manager.disconnect (websocket=websocket, client_id=client_id)
+        #await manager.broadcast(f"Client #{client_id} left the chat")
+
 
 @app.websocket("/ws/a/{client_id}")
 async def websocket_endpoint (websocket: WebSocket, client_id: str):

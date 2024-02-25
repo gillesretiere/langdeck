@@ -7,7 +7,14 @@ const LanguageDeck = ({startingDeck, onSetLanguage, onSetLanguageDict}) => {
   return (
     <>
         <div className={classes.card_container}>
-          <div className={classes.card_header}>Choisir une langue</div>
+          <div className={classes.card_header}>
+            Choisir une langue
+            <div className={classes.dots}>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
           <LanguageDeckList deck={startingDeck} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>
           <div className={classes.card_footer}></div>
         </div>

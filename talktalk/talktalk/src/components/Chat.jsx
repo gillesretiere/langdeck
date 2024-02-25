@@ -18,7 +18,8 @@ const Chat = ({userName, }) => {
 
     console.log (userName);
     useEffect ( () => {
-        let socket = new WebSocket(`ws://51.91.8.112:8000/ws/${userName}`);
+        //let socket = new WebSocket(`ws://51.91.8.112:8000/ws/${userName}`);
+        let socket = new WebSocket(`ws://51.91.8.112:4455/ws/b/${userName}`);
 
         setWs (socket);
         socket.onmessage = function (event) {
