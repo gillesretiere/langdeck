@@ -8,7 +8,6 @@ backend/nohup.out
 backend/nohup.err
 frontend/nohup_react.out
 frontend/nohup_react.err
-
 frontend/save_pid.txt
 frontend/.nohup_react.out
 frontend/save_pid.txt
@@ -18,4 +17,5 @@ talktalk/talktalk/nohup.out
 frontend/nohup.out
 talktalk/talktalk/src/nohup.out
 frontend/src/nohup.out
+supervised-chat/backend/nohup.out
 supervised-chat/backend/nohup.out
