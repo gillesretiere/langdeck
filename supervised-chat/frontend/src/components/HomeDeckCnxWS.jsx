@@ -6,6 +6,8 @@ import LanguageDeck from './LanguageDeck';
 import ChatDeck from './ChatDeck';
 
 const HomeDeckCnxWS = ({startingDeck}) => {
+
+
   // web sockets
   const [ws, setWs] = useState([]);
   const [messages, setMessages] = useState([]);
@@ -17,8 +19,12 @@ const HomeDeckCnxWS = ({startingDeck}) => {
   const [languageDict, setLanguageDict] = useState ({});
   const [language, setLanguage] = useState ('');
   const [chatDeck, setChatDeck] = useState ('');
+  const [availableLanguages, setAvailableLanguages] = useState ([]);
 
   const userName = "Gilles";
+  const dictLanguages = new Set(startingDeck.map(x => x.language));
+  setAvailableLanguages([...dictLanguages]);
+
 
   const sendMessage = (event) => {
     let data = {};  
@@ -43,7 +49,7 @@ const HomeDeckCnxWS = ({startingDeck}) => {
         let client_ids = [...userData.client_ids];
         setClients(client_ids);
     };
-}, [connected, ]);
+}, []);
 
   const clickHandlerLanguage = () => {
     setSelectedLanguage (!selectedLanguage);
@@ -51,6 +57,16 @@ const HomeDeckCnxWS = ({startingDeck}) => {
       setLanguage ('');
       setSelectedChatDeck (false);
       setChatDeck ('');
+    } else {
+      // on appelle les ws pour la question/réponse
+      let data = {};  
+      data.message = "Bonjour";
+      data.language = "unknown";
+      data.question_tr = "Choose a language";
+      data.question = "Choisir une langue";
+      data.options = availableLanguages;
+      data.audio = "audio";
+      console.log(data);
     }
   }
 
