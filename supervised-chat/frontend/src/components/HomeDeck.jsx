@@ -4,10 +4,14 @@ import HomeDeckLanguageSelector from './HomeDeckLanguageSelector';
 import HomeDeckChatSelector from './HomeDeckChatSelector';
 import LanguageDeck from './LanguageDeck';
 import ChatDeck from './ChatDeck';
+import ChatRoom from './ChatRoom';
+
 
 const HomeDeck = ({startingDeck}) => {
   // web sockets
-
+  const [ws, setWs] = useState([]);
+  const [messages, setMessages] = useState([]);
+  const [availableLanguages, setAvailableLanguages] = useState ([]);
   const [selectedLanguage, setSelectedLanguage] = useState (false);
   const [selectedChatDeck, setSelectedChatDeck] = useState (false);
   const [connected, setConnected] = useState (false);
@@ -21,6 +25,18 @@ const HomeDeck = ({startingDeck}) => {
       setLanguage ('');
       setSelectedChatDeck (false);
       setChatDeck ('');
+    } else {
+      // on appelle les ws pour la question/réponse
+      const dictLanguages = new Set(startingDeck.map(x => x.language));
+      setAvailableLanguages([...dictLanguages]);
+      let data = {};  
+      data.message = "Bonjour";
+      data.language = "unknown";
+      data.question_tr = "Choose a language";
+      data.question = "Choisir une langue";
+      data.options = [...dictLanguages];
+      data.audio = "audio";
+      console.log(ws);
     }
   }
 
@@ -43,12 +59,25 @@ const HomeDeck = ({startingDeck}) => {
     setChatDeck (item);
   }
 
+  const onSetMessages = (item) => {
+    setMessages (item);
+  }
+
+  const onSetConnection = (item) => {
+    setWs (item);
+  }
+
   return (
     <>
     <div className={classes.container}>
       <div className={classes.deck_base_container}>
         <HomeDeckLanguageSelector onSetSelected={clickHandlerLanguage} on={selectedLanguage} language={language} language_img={languageDict.lang_flag_icon}/>
-        { selectedLanguage && !language && <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>}
+        { selectedLanguage && !language && 
+          <>
+          <ChatRoom onSetMessages={onSetMessages} onSetConnection={onSetConnection}/>
+          <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>
+          </>
+        }
         { language && <HomeDeckChatSelector onSetSelected={clickHandlerChatDeck} on={selectedChatDeck} language={language} chatDeck={chatDeck}/>}
         { selectedChatDeck && !chatDeck && <ChatDeck language={languageDict.language} startingDeck={startingDeck} onSetChatDeck={onSetChatDeck}/>}
         { chatDeck && <div>Choisir une question</div>}
@@ -58,6 +87,13 @@ const HomeDeck = ({startingDeck}) => {
           <div>Conversation {language}</div>                  
         </div> 
       }
+                  <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
+                        {messages.map ((message, index) => {
+                            return <li key={index}>{message}</li>;
+                        }
+                        )}
+
+                    </ul>  
     </div>
     </>
   )
