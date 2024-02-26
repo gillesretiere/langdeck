@@ -36,7 +36,8 @@ const HomeDeck = ({startingDeck}) => {
       data.question = "Choisir une langue";
       data.options = [...dictLanguages];
       data.audio = "audio";
-      console.log(ws);
+
+
     }
   }
 
@@ -63,8 +64,24 @@ const HomeDeck = ({startingDeck}) => {
     setMessages (item);
   }
 
+  const sendMessage = (event) => {
+    const dictLanguages = new Set(startingDeck.map(x => x.language));
+    setAvailableLanguages([...dictLanguages]);
+    let data = {};  
+    data.message = "Bonjour";
+    data.language = "unknown";
+    data.question_tr = "Choose a language";
+    data.question = "Choisir une langue";
+    data.options = [...dictLanguages];
+    data.audio = "audio";
+    ws.send(JSON.stringify(data));
+ }
+
+
   const onSetConnection = (item) => {
     setWs (item);
+    setConnected (true);
+
   }
 
   return (
@@ -74,7 +91,7 @@ const HomeDeck = ({startingDeck}) => {
         <HomeDeckLanguageSelector onSetSelected={clickHandlerLanguage} on={selectedLanguage} language={language} language_img={languageDict.lang_flag_icon}/>
         { selectedLanguage && !language && 
           <>
-          <ChatRoom onSetMessages={onSetMessages} onSetConnection={onSetConnection}/>
+          <ChatRoom options={availableLanguages} onSetMessages={onSetMessages} onSetConnection={onSetConnection}/>
           <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>
           </>
         }
@@ -84,16 +101,17 @@ const HomeDeck = ({startingDeck}) => {
       </div>
       {connected && 
         <div className={classes.right_container}>
-          <div>Conversation {language}</div>                  
-        </div> 
-      }
-                  <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
+          <div>Conversation {language}</div>    
+          <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
                         {messages.map ((message, index) => {
                             return <li key={index}>{message}</li>;
                         }
                         )}
 
-                    </ul>  
+                    </ul>                
+        </div> 
+      }
+
     </div>
     </>
   )
