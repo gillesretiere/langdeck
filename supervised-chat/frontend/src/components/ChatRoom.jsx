@@ -26,18 +26,18 @@ const ChatRoom = ({options, onSetMessages, onSetConnection}) => {
         data.language = "unknown";
         data.question_tr = "Choose a language";
         data.question = "Choisir une langue";
-        data.options = options;
-        data.audio = "audio";        
+        console.log(options);
+        data.audio = "http://res.cloudinary.com/dhc7ovnwk/video/upload/v1706194213/langdeck/assets/audio/ai/dut/recRHxizdSZgCmVWW-dut.mp3";        
         ws.send(JSON.stringify(data));
       };     
 
       ws.onmessage = function (event) {
         let userData = JSON.parse(event.data);
         setMessages ((prevMessages) => [...prevMessages, userData.message]);
-        onSetMessages (messages);
-        console.log (messages);
+        onSetMessages (userData.message);
+        console.log (userData);
     };
-      return () => connection.disconnect();
+      return;
     }, [cnx]);
 
     return (

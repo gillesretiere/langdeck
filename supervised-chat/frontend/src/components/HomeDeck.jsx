@@ -61,11 +61,13 @@ const HomeDeck = ({startingDeck}) => {
   }
 
   const onSetMessages = (item) => {
-    setMessages (item);
+    console.log(item);
+    setMessages ((prevMessages) => [...prevMessages,item]);
   }
 
   const sendMessage = (event) => {
     const dictLanguages = new Set(startingDeck.map(x => x.language));
+    console.log(dictLanguages);
     setAvailableLanguages([...dictLanguages]);
     let data = {};  
     data.message = "Bonjour";
@@ -103,7 +105,7 @@ const HomeDeck = ({startingDeck}) => {
         <div className={classes.right_container}>
           <div>Conversation {language}</div>    
           <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
-                        {messages.map ((message, index) => {
+                        {messages && messages.map ((message, index) => {
                             return <li key={index}>{message}</li>;
                         }
                         )}

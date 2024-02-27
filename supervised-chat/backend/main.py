@@ -74,14 +74,21 @@ class ConnectionsManager:
         await self.broadcast (f"Client #{client_id} a quitté la conversation!", client_ids=self.client_ids)
 
     async def send_personal_message (self, message: str, client_ids: list[str], websocket: WebSocket):
-        await websocket.send_json({"message": message, "client_ids": client_ids})
+        try:
+            await websocket.send_json({"message": message, "client_ids": client_ids})
+            print (message)
+        except RuntimeError as e:
+            print (str(e))
+            pass
 
     async def broadcast (self, message: str, client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
             try:
                 await connection.send_json ({"message": message, "client_ids": client_ids})
-            except RuntimeError:
+                print (message)
+            except RuntimeError as e:
+                print (str(e))
                 break
 
     async def broadcast_option (self, message: str, option: str, client_ids: list[str]):
@@ -101,7 +108,7 @@ class ConnectionsManager:
     async def broadcast_tr (self, message: str, question_tr: str, options: list[str], audio: str, client_ids: list[str]):
         for connection in self.active_connections:
             # await connection.send_text (message)
-            print(client_ids)
+            print(options)
             try:
                 await connection.send_json ({"message": message,"question_tr": question_tr, "options": options, "audio": audio, "client_ids": client_ids})
             except RuntimeError:
