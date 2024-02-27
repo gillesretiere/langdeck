@@ -101,18 +101,13 @@ const HomeDeck = ({startingDeck}) => {
         { selectedChatDeck && !chatDeck && <ChatDeck language={languageDict.language} startingDeck={startingDeck} onSetChatDeck={onSetChatDeck}/>}
         { chatDeck && <div>Choisir une question</div>}
       </div>
-      {connected && 
-        <div className={classes.right_container}>
-          <div>Conversation {language}</div>    
-          <ul className='p-2 text-gray-500 text-left mt-4 bg-gray-200'>
-                        {messages && messages.map ((message, index) => {
-                            return <li key={index}>{message}</li>;
-                        }
-                        )}
-
-                    </ul>                
-        </div> 
-      }
+      <div className={classes.deck_flow_container}>
+        {connected && 
+           <ul className='p-2 text-white text-left mt-4'>
+           {messages && <li>{messages[messages.length - 1]}</li>}
+       </ul>       
+        }
+      </div>
 
     </div>
     </>

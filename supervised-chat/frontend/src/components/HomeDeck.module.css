@@ -125,9 +125,19 @@ h3, p {
     flex-direction: row;
     justify-content: left;
     background-color: #56bcf3;
-    width: 100vw;
+    width: 75vw;
     height:70vh;
 }
+
+.deck_flow_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color:rgb(33, 33, 33);
+    width: 25vw;
+    height:70vh;
+}
+
 
 .container {
     display: flex;

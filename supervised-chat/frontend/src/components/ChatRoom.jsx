@@ -20,7 +20,6 @@ const ChatRoom = ({options, onSetMessages, onSetConnection}) => {
       console.log(ws);
 
       ws.onopen = function () {
-        alert("connected");
         let data = {};  
         data.message = "Bonjour";
         data.language = "unknown";
@@ -33,7 +32,9 @@ const ChatRoom = ({options, onSetMessages, onSetConnection}) => {
                   ]
         console.log(options);
         data.options = options;
-        data.audio = "http://res.cloudinary.com/dhc7ovnwk/video/upload/v1706194213/langdeck/assets/audio/ai/dut/recRHxizdSZgCmVWW-dut.mp3";        
+        data.audio = "http://res.cloudinary.com/dhc7ovnwk/video/upload/v1706194213/langdeck/assets/audio/ai/dut/recRHxizdSZgCmVWW-dut.mp3";      
+        setMessages ((prevMessages) => [...prevMessages, data.question]);
+        onSetMessages (data.question);
         ws.send(JSON.stringify(data));
       };     
 
