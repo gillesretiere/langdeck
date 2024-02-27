@@ -37,7 +37,6 @@ const ChatCardBox = ({userName, onSetResponse}) => {
             setOptions (userData.options);
             setQuestion_tr (userData.question_tr);
             setAudio (userData.audio);
-            console.log (userData.options);
         };
     }, []);
 
@@ -59,11 +58,7 @@ const ChatCardBox = ({userName, onSetResponse}) => {
                     }
                     {/*<div className={`${classes.card__subtitle}`}>{respondedOption}</div>*/}
                 </div>
-                {options && options.map (
-                    (option, index) => {
-                        return (<h1>{option}</h1>)
-                    }   
-                )}
+
                 {options && options.map(
                     (option, index) => {
                     return (<ChatOptionPicker key={index} option={option} audio={audio} onSetResponse={setResponse}>{option}</ChatOptionPicker>)
