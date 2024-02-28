@@ -17,7 +17,6 @@ const ChatRoom = ({options, onSetMessages, onSetConnection}) => {
       const connection = CreateConnection(onSetWs);
       connection.connect();
       onSetConnection (ws);
-      console.log(ws);
 
       ws.onopen = function () {
         let data = {};  
@@ -30,7 +29,6 @@ const ChatRoom = ({options, onSetMessages, onSetConnection}) => {
                    {"option":"Allemand", "option_translation":"Deutsch", "option_audio_url":"http://res.cloudinary.com/dhc7ovnwk/video/upload/v1706194213/langdeck/assets/audio/ai/dut/recRHxizdSZgCmVWW-dut.mp3"},
                    {"option":"Italien", "option_translation":"Italiano", "option_audio_url":"http://res.cloudinary.com/dhc7ovnwk/video/upload/v1706194213/langdeck/assets/audio/ai/dut/recRHxizdSZgCmVWW-dut.mp3"},
                   ]
-        console.log(options);
         data.options = options;
         data.audio = "http://res.cloudinary.com/dhc7ovnwk/video/upload/v1706194213/langdeck/assets/audio/ai/dut/recRHxizdSZgCmVWW-dut.mp3";      
         setMessages ((prevMessages) => [...prevMessages, data.question]);
@@ -42,7 +40,6 @@ const ChatRoom = ({options, onSetMessages, onSetConnection}) => {
         let userData = JSON.parse(event.data);
         setMessages ((prevMessages) => [...prevMessages, userData.option]);
         onSetMessages (userData.option);
-        console.log (userData);
     };
       return;
     }, [cnx]);

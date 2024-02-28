@@ -8,7 +8,6 @@ const BASE_URL = "http://51.91.8.112:4455/tschat";
 const ChatDeck = ({language, startingDeck, onSetChatDeck}) => {
 
     const [chatDeck, setChatDeck] = useState ('');
-
     const fromJSON = (json) => {
         let data = json;
         return data.chats;

@@ -5,7 +5,7 @@ import HomeDeckChatSelector from './HomeDeckChatSelector';
 import LanguageDeck from './LanguageDeck';
 import ChatDeck from './ChatDeck';
 import ChatRoom from './ChatRoom';
-
+import QuestionDeck from './QuestionDeck';
 
 const HomeDeck = ({startingDeck}) => {
   // web sockets
@@ -61,13 +61,13 @@ const HomeDeck = ({startingDeck}) => {
   }
 
   const onSetMessages = (item) => {
-    console.log(item);
+
     setMessages ((prevMessages) => [...prevMessages,item]);
   }
 
   const sendMessage = (event) => {
     const dictLanguages = new Set(startingDeck.map(x => x.language));
-    console.log(dictLanguages);
+
     setAvailableLanguages([...dictLanguages]);
     let data = {};  
     data.message = "Bonjour";
@@ -97,9 +97,21 @@ const HomeDeck = ({startingDeck}) => {
           <LanguageDeck startingDeck={startingDeck} onSetLanguage={onSetLanguage} onSetLanguageDict={onSetLanguageDict}/>
           </>
         }
-        { language && <HomeDeckChatSelector onSetSelected={clickHandlerChatDeck} on={selectedChatDeck} language={language} chatDeck={chatDeck}/>}
-        { selectedChatDeck && !chatDeck && <ChatDeck language={languageDict.language} startingDeck={startingDeck} onSetChatDeck={onSetChatDeck}/>}
-        { chatDeck && <div>Choisir une question</div>}
+        {/* language && <HomeDeckChatSelector onSetSelected={clickHandlerChatDeck} on={selectedChatDeck} language={language} chatDeck={chatDeck}/> */}
+        { language && !chatDeck && <ChatDeck language={languageDict.language} startingDeck={startingDeck} onSetChatDeck={onSetChatDeck}/>}
+        { language && chatDeck && 
+                <>
+                <div className={classes.card_container}>
+                  <div className={classes.card_header}>{chatDeck.conversation}</div>
+                  <div className={`${classes.card__img__ok}`}>
+                      <img src={chatDeck.conversation_illustration} alt=""></img>
+                  </div>   
+                  <div className={classes.card_footer}></div>
+                </div>
+            </>
+        }
+
+        { chatDeck && <QuestionDeck ws={ws} chatDeck={chatDeck} language={languageDict.language}/>}
       </div>
       <div className={classes.deck_flow_container}>
         {connected && 

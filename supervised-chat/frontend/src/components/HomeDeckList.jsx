@@ -11,7 +11,6 @@ import classes from "./HomeDeck.module.css";
 
 
 const HomeDeckList = ({deck}) => {
-
     return (
         <div>
             <List sx={{ width: '100%', height: '100%', bgcolor: "#AFD9EE"    }}>

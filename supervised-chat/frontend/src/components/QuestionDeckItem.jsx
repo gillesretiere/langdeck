@@ -5,17 +5,14 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 
 
-const ChatDeckItem = ({card, onSetChatDeck}) => {
-    const {conversation, conversation_translation, } = card;
-    const onSetItem = () => {
-        onSetChatDeck(card);
-    }
+const QuestionDeckItem = ({card}) => {
+    const {step, step_translation, options} = card;
 
     return (
         <div>
-            <ListItem alignItems="flex-start" onClick={onSetItem}>
+            <ListItem alignItems="flex-start">
                 <ListItemText
-                primary={conversation}
+                primary={step}
                 secondary={
                     <React.Fragment>
                     <Typography
@@ -24,7 +21,7 @@ const ChatDeckItem = ({card, onSetChatDeck}) => {
                         variant="body2"
                         color="text.primary"
                     >
-                        {conversation_translation}
+                        {step_translation}
                     </Typography>
                     </React.Fragment>
                 }
@@ -35,4 +32,4 @@ const ChatDeckItem = ({card, onSetChatDeck}) => {
     )
 }
 
-export default ChatDeckItem
+export default QuestionDeckItem

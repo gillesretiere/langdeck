@@ -6,12 +6,12 @@ export function CreateConnection (onSetWs) {
       connect() {
         let userName = "Gilles";
         let socket = new WebSocket(`ws://51.91.8.112:4455/ws/a/${userName}`);
-        console.log (socket);
+        // console.log (socket);
         onSetWs(socket);
-        console.log({userName} + ' ✅ Connecting to "' + socket + '" room...');
+        // console.log({userName} + ' ✅ Connecting to "' + socket + '" room...');
       },
       disconnect() {
-        console.log('Gilles ❌ Disconnected from room');
+       //  console.log('Gilles ❌ Disconnected from room');
       }
     };
   }
