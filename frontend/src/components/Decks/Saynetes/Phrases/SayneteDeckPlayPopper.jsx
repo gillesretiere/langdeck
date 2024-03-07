@@ -29,19 +29,15 @@ const SayneteDeckPlayPopper = ({word, callbackModal}) => {
   return (
     <>
         <Box 
-          sx={{ width:'auto', border: 0, borderRadius: '16px', boxShadow: 8, m:0, pt:1, px:0, bgcolor: "background.paper" }} >
+          sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m:0, pt:1, px:0, bgcolor: "background.paper" }} >
           {/* audio */}
           { showNote ? (
             <>
-            <Box sx={{ textAlign:'left'}}>
-            <div className={classes.word_wrapper_fr}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign:'left', maxWidth:'70vw', p:2}}>
               <div className={classes.word_fr}>{word.word} : </div>
               <div className={classes.note_fr}>&nbsp;{word.word_notes}</div>
-            </div>
-            <div className={classes.note_wrapper_fr}>
               <div className={classes.word_fr}>{word.word_translation} : </div>
-              <div className={classes.note_fr}>&nbsp;{word.word_notes_translation}</div>
-            </div>
+              <div className={classes.note_fr}>&nbsp;{word.word_notes_translation}</div>              
             </Box>            
                 {
                 word.word_nutri_notes && false && 
@@ -64,14 +60,14 @@ const SayneteDeckPlayPopper = ({word, callbackModal}) => {
           )
           }
 
-          <div className={classes.container}>
-            <Button color="blue_tertiary" onClick={handleClick} variant="contained" fullWidth endIcon={<ReadMoreIcon />} sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
-            Plus
-            </Button> 
-            <Button color="blue_primary" onClick={closeButtonClickHandler} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 16px 0px", }}>
-            OK
-            </Button>   
-          </div>
+            <Box sx={{display: 'flex'}}>
+              <Button color="blue_tertiary" onClick={handleClick} variant="contained" fullWidth endIcon={<ReadMoreIcon />} sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
+              Plus
+              </Button> 
+              <Button color="blue_primary" onClick={closeButtonClickHandler} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 16px 0px", }}>
+              OK
+              </Button>   
+            </Box>
 
                  
 

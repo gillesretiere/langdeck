@@ -206,13 +206,14 @@ h2 {
 
 
 .word_fr {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 800;
 }
 
 .note_fr {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 620px) {

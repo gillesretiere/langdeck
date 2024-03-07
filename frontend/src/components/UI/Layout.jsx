@@ -7,7 +7,7 @@ const Layout = ({children}) => {
   return (
     <div className={classes.container}>
         <Header />
-        <CurrentDecks />
+        {/*<CurrentDecks />*/}
         <div className={classes.layout}>{children}</div>
         <Footer/>
     </div>
