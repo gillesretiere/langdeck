@@ -13,10 +13,10 @@ const UnitStoryX3Deck = ({unit_story, lang_img}) => {
         <div className={`${classes.card__list}`}>
             <UnitStorySayneteDeck saynete={unit_story} lang_img={lang_img}></UnitStorySayneteDeck>
             {/*<UnitStorySplitSayneteDeck saynete={unit_story} lang_img={lang_img}></UnitStorySplitSayneteDeck>*/}
-            <UnitStoryConversationDeck saynete={unit_story} lang_img={lang_img}></UnitStoryConversationDeck>
+            {/*<UnitStoryConversationDeck saynete={unit_story} lang_img={lang_img}></UnitStoryConversationDeck>*/}
             {/*<UnitStorySayneteDeckList saynetes={phrases} lang_img={lang_img}></UnitStorySayneteDeckList>*/}
             {/*<UnitStoryTpDeck unit_story={unit_story} lang_img={lang_img}></UnitStoryTpDeck>*/}
-            <UnitStoryQuizDeck unit_story={unit_story} lang_img={lang_img}></UnitStoryQuizDeck>
+            {/*<UnitStoryQuizDeck unit_story={unit_story} lang_img={lang_img}></UnitStoryQuizDeck>*/}
         </div>
     )
 }
