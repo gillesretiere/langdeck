@@ -26,12 +26,13 @@ display: grid;
   display:flex;
   flex-direction: column;
   width:auto;
-  text-align:center;
-  justify-content: center;
+  text-align:left;
+  justify-content: left;
   color: #111439;
-  font-family: var(--serif-secondary-font);
-  font-weight: 800;
-  font-size:1.3rem;    
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size:1.5rem;    
+  padding-left:1rem;
   /*background-color: #b0c4b1;*/
   background-color: white;
   border-radius: 12px 12px 0px 0px;
@@ -96,7 +97,7 @@ display: grid;
   0 3.5px 6px hsla(230, 13%, 9%, 0.09);
 
   width: 100%;
-  max-width: 40rem;
+  max-width: 30rem;
   /*height: 100%;*/
   min-height: 240px;
   background-color: white;
@@ -112,4 +113,16 @@ display: grid;
 .mui_button {
   margin: 0.2rem;
   padding: 0.2rem;
+}
+
+.phrase_position {
+  font-family: var(--serif-secondary-font);
+  font-weight: 600;
+  font-size:1.0rem;  
+}
+
+.phrase_translation {
+  font-family: var(--serif-secondary-font);
+  font-weight: 600;
+  font-size:0.7rem;  
 }

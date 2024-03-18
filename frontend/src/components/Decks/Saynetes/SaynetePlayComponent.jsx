@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import MediaSimpleAudioPlayerBig from '../../UI/MediaPlayer/MediaSimpleAudioPlayerBig';
-import MediaSimpleAudioPlayerMedFr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedFr';
+import MediaSimpleAudioPlayerTiny from '../../UI/MediaPlayer/MediaSimpleAudioPlayerTiny';
 import MediaAdvancedAudioPlayer from '../../UI/MediaPlayer/MediaAdvancedAudioPlayer';
 import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedTr';
 import SayneteDeckPlayHighlightWords from "./Phrases/SayneteDeckPlayHighlightWords";
@@ -45,7 +45,7 @@ const SaynetePlayComponent = ({deck}) => {
       ctx.progression_1_state = activePhrase  
     }      
 
-    const { phrase, phrase_translation, phrase_position, phrase_audio_url, phrase_audio_url_fr, story_illustration} = deck[activePhrase];
+    const { phrase, phrase_translation, phrase_position, phrase_audio_url, phrase_audio_url_fr, story_illustration, phrase_illustration,} = deck[activePhrase];
 
     return (
         <div className={classes.wrapper}>
@@ -56,23 +56,30 @@ const SaynetePlayComponent = ({deck}) => {
                           <div className={classes.phrase_num}></div>
                             <div className={classes.audio__wrapper_fr}>
                               <div className={classes.icon__audio__wrapper}>
-                                <MediaAdvancedAudioPlayer media_url={phrase_audio_url_fr} illustration={story_illustration}></MediaAdvancedAudioPlayer>
+                                <MediaAdvancedAudioPlayer media_url={phrase_audio_url_fr} illustration={phrase_illustration}></MediaAdvancedAudioPlayer>
                               </div>
-                                <Box sx={{ display: 'flex' }}  justifyContent="space-between" alignItems='center'>
+                                <Box sx={{ display: 'flex' }}  justifyContent="space-around" alignItems='center'>
                                   <IconButton color="blue_tertiary" m={1} className={classes.mui_button} variant="contained" size="large" onClick={onClickPrevious} disabled={activePhrase === 0}>
                                     <ArrowBackIosIcon fontSize="large"/>
-                                  </IconButton>                                 
+                                  </IconButton>  
+                                  <Box sx={{ display: 'flex' }}  justifyContent="space-between" alignItems='center'>
+                                    <div className={classes.phrase_position}>{phrase_position}</div>        
+                                  </Box>
                                   <IconButton color="blue_tertiary" m={1} className={classes.mui_button} variant="contained" size="large" onClick={onClickNext} disabled={activePhrase === deck.length - 1}>
                                     <ArrowForwardIosIcon fontSize="large"/>
                                   </IconButton> 
-                                </Box>                                
-                                <SayneteDeckPlayHighlightWords phrase={deck[activePhrase]}></SayneteDeckPlayHighlightWords>
+                                </Box>      
+                                <Box sx={{ display: 'flex' }}  justifyContent="center" alignItems='center'>
+                                  <SayneteDeckPlayHighlightWords phrase={deck[activePhrase]}></SayneteDeckPlayHighlightWords>
+                                  {/*<MediaSimpleAudioPlayerTiny media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerTiny>*/}                          
+                                </Box>                          
+
                             </div>                             
                             <div className={classes.audio__wrapper}>
     
                               <Box sx={{ display: 'flex' }}  justifyContent="center" alignItems='center'>
                                 <div className={classes.text__audio__wrapper}>
-                                  <div>{phrase_translation}</div>
+                                  <div className={classes.phrase_translation}>{phrase_translation}</div>
                                   <div className='flex items-center'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url}></MediaSimpleAudioPlayerMedTr> </div>                            
                                 </div>  
                               </Box>
