@@ -82,7 +82,7 @@ display: grid;
   padding: 0.2rem 3.2rem 0.2rem 3.2rem; 
   font-family: var(--serif-secondary-font);
   font-weight: 600;
-  font-size:1.1rem;  
+  font-size:1.0rem;  
 }
 
 .card__container {

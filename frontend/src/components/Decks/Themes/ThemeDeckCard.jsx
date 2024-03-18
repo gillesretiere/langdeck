@@ -24,7 +24,7 @@ const ThemeDeckCard = ({theme, img})  => {
             <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{theme.theme_translation}</div></div>
           </div>
           <div className={`${classes.card__img}`}>
-            <img src={theme.theme_illustration} alt="flag Icon" />
+            <img src={theme.theme_illustration} alt="theme image" />
           </div>
         </div>          
       </Link>        

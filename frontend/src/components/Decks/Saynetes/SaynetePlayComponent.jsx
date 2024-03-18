@@ -15,7 +15,6 @@ import DeckContext from "../../../context/DeckContext";
 
 const SaynetePlayComponent = ({deck}) => {
     let ctx = useContext(DeckContext);
-    console.log(deck);
 
     const [hideImage, setHideImage] = useState(false);
     const [hideImageLabel, setHideImageLabel] = useState("Cacher l'illustration");

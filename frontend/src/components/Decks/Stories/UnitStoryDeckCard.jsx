@@ -8,20 +8,21 @@ import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 
 
 const UnitStoryDeckCard = ({unit_story, img}) => {
-  let params = useContext(DeckContext);
+  let ctx = useContext(DeckContext);
   const {language, story_name, story_translation, story_illustration} = unit_story;
   // console.log (params);
   // console.log (scene);
   const linkHandler = (event) => {
-    params.story = {unit_story};
-    params.current_deck.story_deck = unit_story;
+    ctx.story = {unit_story};
+    ctx.current_deck.story_deck = unit_story;
+    ctx.saynete = unit_story;
+    ctx.saynete_phrases = unit_story.phrases;
   };
 
   return (
       <div className={`${classes.card__container__green}`}>
-        <Link to={{pathname:`/unit_story_x3_page/${language}`}} onClick={linkHandler}>
+        <Link to={{pathname:`/saynete_play_page/${language}`}} onClick={linkHandler} >
           <div className={`${classes.card__wrapper}`}>
-
             <div className={`${classes.card__header}`}>
               <div className={`${classes.card__title}`}>{story_name}</div>
               <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{story_translation}</div></div>

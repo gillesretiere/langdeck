@@ -7,6 +7,8 @@ import SaynetePlayComponent from '../components/Decks/Saynetes/SaynetePlayCompon
 const SaynetePlayPage = () => {
     let ctx = useContext(DeckContext);
     let deck = ctx.saynete_phrases;
+    ctx.current_deck.progression_1=deck;
+
     return (
         <div>
             <Layout>
