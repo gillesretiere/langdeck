@@ -35,7 +35,7 @@ const MediaAdvancedAudioPlayerMedFr = ({media_url, illustration}) => {
 
         <div className={classes.image_container}>
             <div className={`${classes.media__card__img}`}>
-            <img src={illustration} alt="flag Icon" />
+            <img src={illustration} alt="phrase illustration"/>
                 <div className={classes.image_icon_2}>
                 <IconButton color="white" variant="contained" size="large">
                 <a id="play-pause-button" onClick={togglePlay}>
