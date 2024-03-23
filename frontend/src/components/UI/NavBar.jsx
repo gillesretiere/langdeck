@@ -64,15 +64,7 @@ const NavBar = () => {
         position="static"
         color="blue_primary">
         <Toolbar>
-            <IconButton
-            size="large"
-            edge="start"
-            color="secondary"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            >
-            <MenuIcon />
-            </IconButton>
+
             <Link to="/">
                 <Box
                 component="img"
@@ -82,52 +74,7 @@ const NavBar = () => {
                 src={logo}>
                 </Box>
             </Link>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, px:1 }}>
-            </Typography>
-            
-            <Button color="inherit">Login</Button>
-
-            {/* more icon menu (settings...) */ }
-            <Box sx={{ flexGrow: 0 }}>
-                <Tooltip title="Open settings">
-                <IconButton
-                    size="large"
-                    aria-label="display more actions"
-                    edge="end"
-                    color="inherit"
-                    onClick={handleOpenUserMenu}
-                >
-                    <MoreIcon />
-                </IconButton>                   
-                </Tooltip>
-                <Menu
-                    sx={{ mt: '45px' }}
-                    id="menu-appbar"
-                    anchorEl={anchorElUser}
-                    anchorOrigin={{
-                        vertical: 'top',
-                        horizontal: 'right',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'right',
-                    }}
-                    open={Boolean(anchorElUser)}
-                    onClose={handleCloseUserMenu}
-                    >
-                    <MenuItem key="switchdarklightmode" onClick={handleCloseUserMenu}>
-                    <Box sx={{ flexGrow: 1 }}>
-                    <Link to={{pathname:`/duo/`}}><div><h1>Duo</h1></div></Link>
-                    </Box>                      
-                    </MenuItem>
-                    {settings.map((setting) => (
-                        <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                        <Typography textAlign="center">{setting}</Typography>
-                        </MenuItem>
-                    ))}
-                </Menu>
-            </Box>                        
+                    
         </Toolbar>
       </AppBar>
     </Box>

@@ -48,7 +48,7 @@ const theme = createTheme({
       main: '#b0c4b1',
     },
     tertiary: {
-      main: '#edafb8',
+      main: '#FA7F08',
     },
     white: {
       main: '#ffffff',

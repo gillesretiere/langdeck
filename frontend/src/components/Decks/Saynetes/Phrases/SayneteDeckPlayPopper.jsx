@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import classes from "./PhraseDeckWordPopper.module.css";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import ReadMoreIcon from '@mui/icons-material/ReadMore';
 import MediaSimpleAudioPlayer from '../../../UI/MediaPlayer/MediaSimpleAudioPlayer';
-import PopperWordNotes from '../../../UI/Popper/PopperWordNotes';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 
 const SayneteDeckPlayPopper = ({word, callbackModal}) => {
   const [visible, setVisible] = React.useState(false);
@@ -33,23 +33,40 @@ const SayneteDeckPlayPopper = ({word, callbackModal}) => {
           {/* audio */}
           { showNote ? (
             <>
-            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign:'left', minWidth:'14rem', maxWidth:'18rem', p:2}}>
-              <div className={classes.word_fr}>{word.word} : </div>
-              <div className={classes.note_fr}>&nbsp;{word.word_notes}</div>
-              <div className={classes.word_fr}>{word.word_translation} : </div>
-              <div className={classes.note_fr}>&nbsp;{word.word_notes_translation}</div>              
-            </Box>            
+            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign:'left', minWidth:'14rem', maxWidth:'18rem', p:0}}>
+              <div className={classes.word_notes_fr}>
+                <div className={classes.word_fr}>{word.word} : </div>
+                <div className={classes.note_fr}>{word.word_notes}</div>
                 {
                 word.word_nutri_notes && false && 
-                <ReadMoreIcon color="primary" onClick={handleShowNutriNoteClick}/>
+                <MoreHorizOutlinedIcon color="primary" onClick={handleShowNutriNoteClick}/>
+                }
+                {
+                    word.word_nutri_notes && 
+                    <div className={classes.word__popper__wrapper__notes__fr} >
+                      <InfoOutlinedIcon color="tertiary"/>&nbsp;
+                        {word.word_nutri_notes}
+                    </div>
+                }                    
+              </div>
+              <div className={classes.word_notes_tr}>
+                <div className={classes.word_tr}>{word.word_translation} : </div>
+                <div className={classes.note_tr}>{word.word_notes_translation}</div>      
+                {
+                word.word_nutri_notes && false && 
+                <MoreHorizOutlinedIcon color="primary" onClick={handleShowNutriNoteClick}/>
                 }
                 {
                     word.word_nutri_notes && 
                     <div className={classes.word__popper__wrapper__notes} >
-                    <img src="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1704986790/langdeck/nutrition-plan.png"/>
-                        {word.word_nutri_notes}
+                      <InfoOutlinedIcon color="tertiary"/>&nbsp;
+                        {word.word_nutri_notes_translation}
                     </div>
-                }
+                }                      
+              </div>
+  
+            </Box>            
+
             </>
           ):(
             <>
@@ -61,11 +78,11 @@ const SayneteDeckPlayPopper = ({word, callbackModal}) => {
           }
 
             <Box sx={{display: 'flex'}}>
-              <Button color="blue_tertiary" onClick={handleClick} variant="contained" fullWidth endIcon={<ReadMoreIcon />} sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
-              ?
+              <Button color="blue_tertiary" onClick={handleClick} variant="contained" fullWidth endIcon={<MoreHorizOutlinedIcon />} sx={{ pt:1, borderRadius: "0px 0px 0px 16px", }}>
+              &nbsp;
               </Button> 
               <Button color="blue_primary" onClick={closeButtonClickHandler} variant="contained" fullWidth sx={{ pt:1, borderRadius: "0px 0px 16px 0px", }}>
-              OK
+              Compris
               </Button>   
             </Box>
 

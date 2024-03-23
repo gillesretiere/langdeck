@@ -123,7 +123,7 @@ h2 {
     background-color: white;
     filter: grayscale(40%);
     color: black;
-    font-family : var(--secondary-font);
+    font-family : var(--serif-secondary-font);
     font-size: 1.2em;
   }
 
@@ -139,25 +139,25 @@ h2 {
     background-color: var(--blue-theme-secondary-color);
     filter: grayscale(10%);
     color: #111439;
-    font-family : var(--secondary-font);
+    font-family : var(--serif-secondary-font);
     font-size: 0.8em;
 }
 
 .word__popper__wrapper__notes {
-  display:flex;
-  max-width: 20rem;
-  height:100%;
-  text-align:justify;
-  justify-content: center;
-  align-items: flex-end;
-  margin:0rem;
   padding: 0.5rem;
   background-color: var(--blue-theme-secondary-color);
-  color: #111439;
-  font-family : var(--secondary-font);
-  font-size: 0.7em;  
+  font-family : var(--serif-secondary-font);
+  font-size: 0.9em;  
   font-weight: 400;
 }
+.word__popper__wrapper__notes__fr {
+  padding: 0.5rem;
+  background-color: white;
+  font-family : var(--serif-secondary-font);
+  font-size: 0.8em;  
+  font-weight: 400;
+}
+
 
 .word__popper__wrapper__notes img {
   display:inline-block;
@@ -210,10 +210,29 @@ h2 {
   font-weight: 800;
 }
 
+.word_tr {
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
 .note_fr {
   font-size: 0.9em;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+.word_notes_fr {
+  font-family : var(--serif-secondary-font);
+  font-size: 1.0rem;  
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.word_notes_tr {
+  font-family : var(--serif-secondary-font);
+  font-size: 0.8em;
+  background-color: var(--blue-theme-secondary-color);
+  padding: 1rem;
 }
 
 @media screen and (min-width: 620px) {
