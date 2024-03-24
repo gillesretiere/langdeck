@@ -36,6 +36,7 @@ import DuoPage from './pages/DuoPage';
 import DuoStartPage from './pages/DuoStartPage';
 import DuoStepPage from './pages/DuoStepPage';
 import DuoStepSendPage from './pages/DuoStepSendPage';
+import LandingPage from './pages/LandingPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -88,7 +89,7 @@ root.render(
         <AuthProvider>
           <CssBaseline />
             <Routes>
-              <Route path="/" element={<LanguagePage />} />
+              <Route path="/" element={<LandingPage />} />
               <Route path="story_page/:id" element={<StoryPage />} />
               <Route path="lesson_page/:id" element={<LessonPage />} />
               <Route path="saynete_page/:id" element={<SaynetePage />} />
@@ -109,6 +110,7 @@ root.render(
               <Route path="/duo_start_page/:id" element={<DuoStartPage />} />
               <Route path="/duo_step_page/:id" element={<DuoStepPage />} />
               <Route path="/duo_step_send_page/:id" element={<DuoStepSendPage />} />
+              <Route path="/language_page" element={<LanguagePage />} />
               
               <Route path="*" element={
                 <main style={{ padding: "1rem" }}>
