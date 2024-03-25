@@ -7,7 +7,13 @@ module.exports = {
     extend: {
       colors: {
         'regal-blue': '#243c5a',
-      },      
+        'primary-orange': '#f56814',
+        'primary-blue':'#8ed0f0',
+      },     
+      backgroundImage: {
+        hero: "url('assets/images/collection-background.svg')",
+        card: "url('assets/images/thumbnail-background.svg')",
+      },       
     },
   },
   plugins: [],

@@ -2,6 +2,7 @@
 import Button from "../components/UI/Hero/Button";
 import { arrowRight } from "../assets/icons";
 import { bigPicture } from "../assets/images";
+import { womanLaptop } from "../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./sections.module.css";
@@ -9,7 +10,7 @@ import appClasses from "../index.css";
 
 
 const Hero = () => {
-    const [bigPictureImg, setBigPictureImg] = useState(bigPicture);
+    const [womanLaptopImg,setWomanLaptopImg] = useState(bigPicture);
     return (
         <section
         id="home"
@@ -24,7 +25,7 @@ const Hero = () => {
             Les Saynètes
             </span>
             <br />
-            <span className={`text-[color:var(--primary-color)] inline-block mt-3 font-bold ${classes.landing_page_title}`}>
+            <span className={`text-primary-orange inline-block mt-3 font-bold ${classes.landing_page_title}`}>
             Le diabète{" "}
             </span>{" "}
             </div>
@@ -32,13 +33,13 @@ const Hero = () => {
             Petites histoires thématiques pour sensibiliser sur le diabète, l'alimentation et la pratique d'exercices physiques, à l'usage des non francophones.
             </p>
             <Link to={{pathname:`/language_page/`}}>
-                <Button label="Vers les saynètes" iconURL={arrowRight} backgroundColor={`bg-[#FA7F08]`} />
+                <Button label="Vers les saynètes" iconURL={arrowRight} backgroundColor="bg-primary-orange" textColor="text-white"/>
             </Link>
         </div>
 
         <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
             <img
-            src={bigPictureImg}
+            src={womanLaptopImg}
             alt="saynete collection"
             height={500}
             width={610}

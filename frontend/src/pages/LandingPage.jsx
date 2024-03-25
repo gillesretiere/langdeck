@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from "../components/UI/Hero/Nav";
 import {
-    Hero
+    Hero, AvailableLanguages, AvailableSaynetes
 } from "../sections";
 
 const LandingPage = () => {
@@ -11,6 +11,12 @@ const LandingPage = () => {
         <section className="xl:padding-l wide:padding-r padding-b">
             <Hero />
         </section>
+        <section className="xl:padding-l wide:padding-r padding-b">
+            <AvailableLanguages />
+        </section>
+        <section className="xl:padding-l wide:padding-r padding-b">
+            <AvailableSaynetes />
+        </section>        
     </main>
   )
 }
