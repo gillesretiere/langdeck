@@ -2,7 +2,7 @@
 import Button from "../components/UI/Hero/Button";
 import { arrowRight } from "../assets/icons";
 import { bigPicture } from "../assets/images";
-import { womanLaptop } from "../assets/images";
+import { womanLaptop2 } from "../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./sections.module.css";
@@ -41,8 +41,8 @@ const Hero = () => {
             <img
             src={womanLaptopImg}
             alt="saynete collection"
-            height={500}
-            width={610}
+            height={400}
+            width={500}
             className="object-contain relative z-10"
             />
         </div>

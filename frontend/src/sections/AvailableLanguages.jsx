@@ -21,35 +21,36 @@ const AvailableLanguages = () => {
   return (
     <section id="languages" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
       <div className="flex flex-col">
-        <h2 className="text-4xl font-palanquin font-bold">
-          Les <span className={`text-primary-orange`}>langues</span> disponibles
-        </h2>
-        <p className={`lg:max-w-lg mt-2 font-montserrat text-slate-gray ${classes.landing_page_title}`}>
-          Les saynètes sont proposées en version bilingue et sont traduites par des traducteurs-interprètes professionnels.
-          De nouvelles langues seront régulièrement ajoutées.
-        </p>
+        <div className="flex flex-col">
+          <h2 className="text-4xl font-palanquin font-bold">
+            Les <span className={`text-primary-orange`}>langues</span> disponibles
+          </h2>
+          <p className={`lg:max-w-lg mt-2 font-montserrat text-slate-gray ${classes.landing_page_title}`}>
+            Les saynètes sont proposées en version bilingue et sont traduites par des traducteurs-interprètes professionnels.
+            De nouvelles langues seront régulièrement ajoutées.
+          </p>
+        </div>
+        <div className='p-2'>
+        <TrackVisibility partialVisibility once>
+          {({ isVisible }) => (
+            <div
+              className={`mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 ${
+                isVisible ?  "" : ""
+              }`}
+            >
+              {languages.map((language, index) => (
+                <AvailableLanguagesCard
+                  key={language.lang_name_fr}
+                  lang={language}
+                  {...language}
+                  isLast={index === languages.length - 1}
+                />
+              ))}
+            </div>
+          )}
+        </TrackVisibility>
+        </div>
       </div>
-      <div className='p-20'>
-      <TrackVisibility partialVisibility once>
-        {({ isVisible }) => (
-          <div
-            className={`mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 ${
-              isVisible ?  "" : ""
-            }`}
-          >
-            {languages.map((language, index) => (
-              <AvailableLanguagesCard
-                key={language.lang_name_fr}
-                lang={language}
-                {...language}
-                isLast={index === languages.length - 1}
-              />
-            ))}
-          </div>
-        )}
-      </TrackVisibility>
-      </div>
-
     </section>
   );
 };
