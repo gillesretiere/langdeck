@@ -2,6 +2,7 @@
 import Button from "../components/UI/Hero/Button";
 import { arrowRight } from "../assets/icons";
 import { bigPicture } from "../assets/images";
+import { femDoctor } from "../assets/images";
 import { womanLaptop2 } from "../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -10,18 +11,16 @@ import appClasses from "../index.css";
 
 
 const Hero = () => {
-    const [womanLaptopImg,setWomanLaptopImg] = useState(bigPicture);
+    const [womanLaptopImg,setWomanLaptopImg] = useState(femDoctor);
     return (
         <section
         id="home"
         className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
         >
-        <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-36">
-            <p className="text-xl font-[family:var(--serif-secondary-font)] text-[color:var(--secondary-color)]">
-            
-            </p>
+        <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-30">
+
             <div className={`mt-10 text-8xl max-sm:text-[68px] max-sm:leading-[82px] font-normal ${classes.landing_page_title}`}>
-            <span className="xl:bg-white xl:whitespace-nowrap relative z-10 xl:pr-10 max-sm::p-0 text-4xl">
+            <span className="xl:bg-white xl:whitespace-nowrap relative z-10 xl:pr-10 max-sm::p-0 text-6xl">
             Les Saynètes
             </span>
             <br />
@@ -33,7 +32,7 @@ const Hero = () => {
             Petites histoires thématiques pour sensibiliser sur le diabète, l'alimentation et la pratique d'exercices physiques, à l'usage des non francophones.
             </p>
             <Link to={{pathname:`/language_page/`}}>
-                <Button label="Vers les saynètes" iconURL={arrowRight} backgroundColor="bg-primary-orange" textColor="text-white"/>
+                <Button label="Vers les saynètes" iconURL={arrowRight} backgroundColor="bg-primary-green" textColor="text-white"/>
             </Link>
         </div>
 

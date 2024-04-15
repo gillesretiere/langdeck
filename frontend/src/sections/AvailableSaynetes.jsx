@@ -9,7 +9,7 @@ const AvailableSaynetes = () => {
     <section id="saynetes" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
       <div className="flex flex-col">
         <div className="flex flex-col">
-          <h2 className="text-4xl font-palanquin font-bold">
+          <h2 className="text-4xl font-palanquin font-bold text-primary-green">
             Les <span className={`text-primary-orange`}>saynètes</span> disponibles <span className={`text-slate-gray`}>et à venir</span>
           </h2>
           <p className={`lg:max-w-lg mt-2 font-montserrat text-slate-gray ${classes.landing_page_title}`}>

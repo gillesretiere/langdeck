@@ -22,7 +22,7 @@ const AvailableLanguages = () => {
     <section id="languages" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
       <div className="flex flex-col">
         <div className="flex flex-col">
-          <h2 className="text-4xl font-palanquin font-bold">
+          <h2 className="text-4xl font-palanquin font-bold text-primary-green">
             Les <span className={`text-primary-orange`}>langues</span> disponibles
           </h2>
           <p className={`lg:max-w-lg mt-2 font-montserrat text-slate-gray ${classes.landing_page_title}`}>
@@ -38,7 +38,7 @@ const AvailableLanguages = () => {
                 isVisible ?  "" : ""
               }`}
             >
-              {languages.map((language, index) => (
+              {languages.filter(item=>item.language!="fre").map((language, index) => (
                 <AvailableLanguagesCard
                   key={language.lang_name_fr}
                   lang={language}

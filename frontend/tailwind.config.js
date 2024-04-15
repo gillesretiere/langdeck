@@ -12,8 +12,9 @@ module.exports = {
       },      
       colors: {
         'regal-blue': '#243c5a',
-        'primary-orange': '#f56814',
+        'primary-orange': '#FA9D1C',
         'primary-blue':'#8ed0f0',
+        'primary-green':'#3AAE5A',
         "slate-gray": "#6D6D6D",
       },     
       backgroundImage: {
