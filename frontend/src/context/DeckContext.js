@@ -5,7 +5,7 @@ const DeckContext = React.createContext({
     current_deck : {language_deck :'', theme_deck : '', unit_theme : '', story_deck:'', progression_1:''},
     progression_1_state : '0',
     available_languages : {'fre': false, 'dut': false, 'eng':true, 'ger': false, 'rus':true, 'ams':true, 'rom':true},
-    available_stories : {'rec7lQw6DtIJP45dn': true, 'rec4nBx7PmDA3Y7Ji': true},
+    available_stories : {'rec7lQw6DtIJP45dn': true, 'rec4nBx7PmDA3Y7Ji': true, 'reclNHMgbbYroSaNq': true},
 });
 
 export default DeckContext;
