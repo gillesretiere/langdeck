@@ -269,8 +269,16 @@ p.card__desc__btn {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0rem;
+    border-radius: 24px 24px 0px 0px;
+
+
     /*background-color: var(--blue-theme-primary-color);*/
+  }
+
+  .media__card__img img {
+    border-radius: 24px 24px 0px 0px;
+
   }
 
 .card__img__warhol__effect {
