@@ -37,9 +37,9 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    transform: scale(1.6);
-    color: white;
-    margin-left: 1rem;
+    transform: scale(1.9);
+    color: var(--primary-color);
+    margin: 1rem;
 }
 
 .svg_icons_tiny {

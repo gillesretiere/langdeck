@@ -10,7 +10,7 @@ import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPl
 import PhrasePlayer from "./Phrases/PhrasePlayer";
 import DeckContext from "../../../context/DeckContext";
 
-const SaynetePlayCardDesktop = ({deck}) => {
+const SaynetePlayCardDesktop = ({deck, media_type}) => {
   let ctx = useContext(DeckContext);
   const [activePhrase, setActivePhrase] = useState(0);
 
@@ -56,9 +56,17 @@ const SaynetePlayCardDesktop = ({deck}) => {
               </Box>
 
               <Box sx={{ display: 'flex' }}  justifyContent="center" alignItems='center'>
-                <div className={classes.phrase__wrapper}>
+              {media_type==='desktop' && 
+                <div className={classes.phrase__wrapper__desktop}>
+                  <PhrasePlayer phrase={deck[activePhrase]}></PhrasePlayer>
+                  <div className='flex items-center'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerMedTr> </div>                            
+                </div>
+              }
+              {media_type==='landscape' && 
+                <div className={classes.phrase__wrapper__landscape}>
                   <PhrasePlayer phrase={deck[activePhrase]}></PhrasePlayer>
                 </div>
+              }              
               </Box>              
               <Box sx={{ display: 'flex' }}  justifyContent="center" alignItems='center'>
                 <div className={classes.phrase__wrapper__tr}>

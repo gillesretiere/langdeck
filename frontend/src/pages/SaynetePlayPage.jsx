@@ -25,9 +25,9 @@ const SaynetePlayPage = () => {
         <div>
             <Layout>
             {isDesktopOrLaptop && 
-                <SaynetePlayCardDesktop deck={deck}></SaynetePlayCardDesktop>}
+                <SaynetePlayCardDesktop deck={deck} media_type={'desktop'}></SaynetePlayCardDesktop>}
             {isTabletOrMobile && isLandcsape &&
-                <SaynetePlayCardTabletOrMobileLandscape deck={deck}></SaynetePlayCardTabletOrMobileLandscape>}
+                <SaynetePlayCardDesktop deck={deck} media_type={'landscape'}></SaynetePlayCardDesktop>}
             {isTabletOrMobile && isPortrait &&
                 <SaynetePlayCardTabletOrMobilePortrait deck={deck}></SaynetePlayCardTabletOrMobilePortrait>}                
             </Layout>

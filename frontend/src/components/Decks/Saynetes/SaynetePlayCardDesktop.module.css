@@ -47,15 +47,34 @@
     font-size: 1.9rem;  
 }
 
-.phrase__wrapper{
+.phrase__wrapper__desktop{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    text-align:center;
+    align-items: center;
+    justify-content: center;     
     min-width: 50vw;
     max-width: 50vw;
     padding: 2rem 10rem; 
 }
 
-.phrase__wrapper__tr{
+.phrase__wrapper__landscape{
+    min-width: 50vw;
     max-width: 50vw;
-    padding: 2rem 10rem; 
+    padding: 2rem 2.5rem; 
+}
+
+.phrase__wrapper__tr{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    text-align:center;
+    align-items: center;
+    justify-content: center;    
+    max-width: 50vw;
+    padding: 2rem 2.5rem; 
+    color:darkred;
 }
 
 .phrase_translation {
