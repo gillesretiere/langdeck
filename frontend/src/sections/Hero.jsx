@@ -4,6 +4,7 @@ import { arrowRight } from "../assets/icons";
 import { bigPicture } from "../assets/images";
 import { femDoctor } from "../assets/images";
 import { womanLaptop2 } from "../assets/images";
+import { saynetes_casting } from "../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./sections.module.css";
@@ -15,33 +16,33 @@ const Hero = () => {
     return (
         <section
         id="home"
-        className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+        className="flex xl:flex-row flex-col min-h-screen gap-1 max-container"
         >
-        <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-30">
+        <div className="relative xl:w-2/5 flex flex-col items-start w-full max-xl:padding-x pt-5">
 
-            <div className={`mt-10 text-8xl max-sm:text-[68px] max-sm:leading-[82px] font-normal ${classes.landing_page_title}`}>
-            <span className="xl:bg-white xl:whitespace-nowrap relative z-10 xl:pr-10 max-sm::p-0 text-6xl">
+            <div className={`text-8xl max-sm:text-[68px] max-sm:leading-[82px] font-normal ${classes.landing_page_title}`}>
+            <span className="text-purple-800 tracking-tight relative z-10 xl:pr-10 max-sm::p-0 font-bold text-4xl">
             Les Saynètes
             </span>
             <br />
-            <span className={`text-primary-orange inline-block mt-3 font-bold ${classes.landing_page_title}`}>
-            Le diabète{" "}
-            </span>{" "}
+            <span className={`text-gray-800 tracking-tight leading-none inline-block font-bold ${classes.landing_page_title}`}>
+            Le diabète
+            </span>
             </div>
-            <p className={`text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm ${classes.landing_page_title}`}>
+            <p className={`text-slate-gray text-lg mt-1 mb-5 leading-none sm:max-w-sm ${classes.landing_page_title}`}>
             Petites histoires thématiques pour sensibiliser sur le diabète, l'alimentation et la pratique d'exercices physiques, à l'usage des non francophones.
             </p>
             <Link to={{pathname:`/language_page/`}}>
-                <Button label="Vers les saynètes" iconURL={arrowRight} backgroundColor="bg-primary-green" textColor="text-white"/>
+                <Button label="Vers les saynètes" iconURL={arrowRight} textColor="text-white" className={`bg-blue-500`} />
             </Link>
         </div>
 
-        <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+        <div className="relative flex-1 flex justify-center items-centerxl:min-h-screen bg-primary bg-cover bg-center">
             <img
-            src={womanLaptopImg}
+            src={saynetes_casting}
             alt="saynete collection"
-            height={400}
-            width={500}
+            height={500}
+            width={600}
             className="object-contain relative z-10"
             />
         </div>
