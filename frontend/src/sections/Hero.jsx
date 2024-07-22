@@ -16,9 +16,9 @@ const Hero = () => {
     return (
         <section
         id="home"
-        className="flex xl:flex-row flex-col min-h-screen gap-1 max-container"
+        className="flex xl:flex-row lg:flex-row md:flex-col flex-col min-h-screen gap-1 max-container"
         >
-        <div className="relative xl:w-2/5 flex flex-col items-start w-full max-xl:padding-x pt-5">
+        <div className="relative xl:w-2/5 flex flex-col items-start max-xl:padding-x pt-5">
 
             <div className={`text-8xl max-sm:text-[68px] max-sm:leading-[82px] font-normal ${classes.landing_page_title}`}>
             <span className="text-purple-800 tracking-tight relative z-10 xl:pr-10 max-sm::p-0 font-bold text-4xl">
@@ -37,7 +37,7 @@ const Hero = () => {
             </Link>
         </div>
 
-        <div className="relative flex-1 flex justify-center items-centerxl:min-h-screen bg-primary bg-cover bg-center">
+        <div className="relative flex-1 flex justify-center items-center xl:min-h-screen lg:min-h-screen bg-primary bg-cover bg-center">
             <img
             src={saynetes_casting}
             alt="saynete collection"
