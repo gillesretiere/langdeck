@@ -16,12 +16,12 @@ const Hero = () => {
     return (
         <section
         id="home"
-        className="flex xl:flex-row lg:flex-row md:flex-col flex-col min-h-screen gap-1 max-container"
+        className="flex xl:flex-row lg:flex-row md:flex-col flex-col min-h-screen gap-1 mt-10 max-container"
         >
         <div className="relative xl:w-2/5 flex flex-col items-start max-xl:padding-x pt-5">
 
             <div className={`text-8xl max-sm:text-[68px] max-sm:leading-[82px] font-normal ${classes.landing_page_title}`}>
-            <span className="text-purple-800 tracking-tight relative z-10 xl:pr-10 max-sm::p-0 font-bold text-4xl">
+            <span className="text-special-orange tracking-tight relative z-10 xl:pr-10 max-sm::p-0 font-bold text-4xl">
             Les Saynètes
             </span>
             <br />
@@ -33,7 +33,7 @@ const Hero = () => {
             Petites histoires thématiques pour sensibiliser sur le diabète, l'alimentation et la pratique d'exercices physiques, à l'usage des non francophones.
             </p>
             <Link to={{pathname:`/language_page/`}}>
-                <Button label="Vers les saynètes" iconURL={arrowRight} textColor="text-white" className={`bg-blue-500`} />
+                <Button label="Vers les saynètes" iconURL={arrowRight} textColor="text-white" backgroundColor="bg-special-orange" borderColor="bg-special-orange" className={`${classes.landing_page_button}`}/>
             </Link>
         </div>
 

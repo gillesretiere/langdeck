@@ -5,7 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="bg-white padding-x py-8 absolute z-10 w-full" >
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <HomeIcon color="tertiary"/>
@@ -16,7 +16,7 @@ const Nav = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-400"
+                className="font-neue_haas_grotesk_display leading-normal text-lg text-slate-800"
               >
                 {item.label}
               </a>
