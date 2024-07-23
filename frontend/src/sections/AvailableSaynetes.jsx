@@ -9,12 +9,15 @@ const AvailableSaynetes = () => {
     <section id="saynetes" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
       <div className="flex flex-col">
         <div className="flex flex-col">
-          <h2 className="text-4xl font-palanquin font-bold text-primary-green">
-            Les <span className={`text-primary-orange`}>saynètes</span> disponibles <span className={`text-slate-gray`}>et à venir</span>
+           <h1 className={`text-5xl font-bold text-gray-800  ${classes.landing_page_title}`}>
+           Les saynètes
+          </h1>          
+          <h2 className={`text-4xl font-bold text-special-orange  ${classes.landing_page_title}`}>
+            Un projet éducatif et thérapeutique bilingue original
           </h2>
-          <p className={`lg:max-w-lg mt-2 font-montserrat text-slate-gray ${classes.landing_page_title}`}>
-            Les saynètes sont proposées en version bilingue et sont traduites par des traducteurs-interprètes professionnels.
-            De nouvelles langues seront régulièrement ajoutées.
+          <p className={`lg:max-w-lg mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
+            Créées en partenariat avec des professionels de chaque domaine, les saynètes sont déclinées en plusieurs formats ou supports : application Web et Mobile, livret au format A3.
+            La version numérique inclut une gestion de mots-clés avec définition des mots et des phrases à retenir.
           </p>
         </div>
         <div className='p-2'>

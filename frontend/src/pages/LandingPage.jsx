@@ -6,7 +6,7 @@ import {
 
 const LandingPage = () => {
   return (
-    <main className="relative bg-special-gris-clair">
+    <main className="relative bg-white">
         <Nav />
         <section className="xl:padding-l wide:padding-r padding-b">
             <Hero />

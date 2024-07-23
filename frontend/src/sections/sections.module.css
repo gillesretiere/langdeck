@@ -7,3 +7,6 @@
   font-size: 3.0em;
 }
 
+.landing_page_languages_title {
+  font-family : var(--primary-font);
+}

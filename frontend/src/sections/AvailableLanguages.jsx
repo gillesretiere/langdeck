@@ -19,22 +19,37 @@ const AvailableLanguages = () => {
   }, [])
 
   return (
-    <section id="languages" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
+    <section id="languages" className="w-full flex xl:flex-row flex-col min-h-screen justify-between gap-10 max-container">
       <div className="flex flex-col">
         <div className="flex flex-col">
-          <h2 className="text-4xl font-palanquin font-bold text-primary-green">
-            Les <span className={`text-primary-orange`}>langues</span> disponibles
+          <h1 className={`text-5xl font-bold text-gray-800  ${classes.landing_page_title}`}>
+            Disponibles en plusieurs langues
+          </h1>          
+          <h2 className={`text-4xl font-bold text-special-orange  ${classes.landing_page_title}`}>
+            Supports éducatifs audio bilingues
           </h2>
-          <p className={`lg:max-w-lg mt-2 font-montserrat text-slate-gray ${classes.landing_page_title}`}>
-            Les saynètes sont proposées en version bilingue et sont traduites par des traducteurs-interprètes professionnels.
+          <p className={`lg:max-w-lg mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
+            Les saynètes sont traduites par des interprètes professionnels spécialisés.
             De nouvelles langues seront régulièrement ajoutées.
+            L'objectif est de promouvoir l'apprentisssage de la langue française et ainsi de permettre une meilleure autonomie des patients allophones. 
           </p>
         </div>
+        <div className="relative flex-1 flex justify-center items-center bg-primary bg-cover bg-center mt-5">
+            <img
+            src="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1668002865/langdeck/carte-monde-nuages_de_mots_header.png"
+            alt="saynete collection"
+            height={300}
+            className="object-contain relative z-10"
+            />
+        </div>        
+        <h2 className={`text-3xl font-normal text-special-orange mt-5  ${classes.landing_page_title}`}>
+            Les langues déjà disponibles :
+          </h2>        
         <div className='p-2'>
         <TrackVisibility partialVisibility once>
           {({ isVisible }) => (
             <div
-              className={`mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 ${
+              className={`mt-1 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-1 ${
                 isVisible ?  "" : ""
               }`}
             >
