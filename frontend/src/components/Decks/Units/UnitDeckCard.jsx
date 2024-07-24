@@ -8,6 +8,7 @@ const UnitDeckCard = ({unit}) => {
 
     let params = useContext(DeckContext);
     const lang_img = params.current_deck.language_deck.lang_flag_icon;
+    const theme_img="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1721837184/langdeck/assets/images/saynetes/A%20-%20Themes/theme_diabete_1.png";
 
     const {lesson, lesson_translation, lesson_language, lesson_illustration, } = unit;
     const linkHandler = (event) => {
@@ -24,8 +25,9 @@ const UnitDeckCard = ({unit}) => {
             <div className={`${classes.card__title}`}>{lesson}</div>
             <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{lesson_translation}</div></div>
           </div>
-            <div className={`${classes.card__img}`}>
-              <img src={lesson_illustration} alt="flag Icon" />
+            <div className={`${classes.card__img__v2}`}>
+                          {/*<img src={lesson_illustration} alt="flag Icon" />*/}
+              <img className="w-full" src={theme_img} />    
             </div>
           </div>          
         </Link>        

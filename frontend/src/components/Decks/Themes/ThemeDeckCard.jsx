@@ -8,6 +8,7 @@ const ThemeDeckCard = ({theme, img})  => {
     //console.log (params);
     // console.log (theme);
     const lang_img = params.deck.lang_flag_icon;
+    const theme_img="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1721834227/langdeck/assets/images/saynetes/A%20-%20Themes/Firefly_Book_cover_about_health_medical_matter_41746.png";
     const linkHandler = (event) => {
       params.deck = {theme};
       params.theme=theme;
@@ -23,8 +24,9 @@ const ThemeDeckCard = ({theme, img})  => {
             <div className={`${classes.card__title}`}>{theme.theme_name}</div>
             <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{theme.theme_translation}</div></div>
           </div>
-          <div className={`${classes.card__img}`}>
-            <img src={theme.theme_illustration} alt="theme image" />
+          <div className={`w-full ${classes.card__img__v2}`}>
+            {/*<img src={theme.theme_illustration} alt="theme image" />*/}
+            <img className="w-full" src={theme_img} />
           </div>
         </div>          
       </Link>        
