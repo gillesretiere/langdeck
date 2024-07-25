@@ -41,8 +41,8 @@ const Hero = () => {
             <img
             src={saynetes_casting}
             alt="saynete collection"
-            height={500}
-            width={600}
+            height={700}
+            width={800}
             className="object-contain relative z-10"
             />
         </div>
