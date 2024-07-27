@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import classes from "../DeckCard.module.css";
 import { Link } from "react-router-dom";
+import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedTr';
+import PhraseWordsPlayer from "./Phrases/PhraseWordsPlayer";
 import DeckContext from "../../../context/DeckContext";
 
 const SaynetePlayerCard = ({deck, img}) => {
 
-  const {phrase, phrase_translation, phrase_audio, phrase_illustration, phrase_position, phrase_related_story, phrase_language} = deck;
+  const {phrase, phrase_translation, phrase_audio, phrase_audio_url_fr, phrase_audio_url, phrase_illustration, phrase_position, phrase_related_story, phrase_language} = deck;
   let ctx = useContext(DeckContext);
 
   const linkHandler = (event) => {
@@ -28,12 +30,14 @@ const SaynetePlayerCard = ({deck, img}) => {
                 <img src={phrase_illustration} alt="flag Icon" />
               </div>
             </div>
-            <div className='h-56 grid grid-cols-2 gap-1 place-content-stretch'>
+            <div className='inline-grid grid-cols-[50px_auto] gap-3 mx-2 mb-4'>
             {/* <!-- Two columns --> */}
-                <div className="text-left h-12 px-3">{phrase}</div>
-                <div className="text-left h-12 px-3">{phrase_translation}</div>
+                  <div className='flex items-start'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerMedTr> </div>                            
+                  <div className="text-left"><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
+                  <div className='flex items-start'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url}></MediaSimpleAudioPlayerMedTr> </div>                            
+                  <div className="text-left">{phrase_translation}</div>
+                </div>
             </div>
-          </div>          
         </Link>        
       </div>        
     </>
