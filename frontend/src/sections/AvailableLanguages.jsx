@@ -22,13 +22,13 @@ const AvailableLanguages = () => {
     <section id="languages" className="w-full flex xl:flex-row flex-col min-h-screen justify-between gap-10 max-container">
       <div className="flex flex-col">
         <div className="flex flex-col">
-          <h1 className={`text-5xl font-bold text-gray-800  ${classes.landing_page_title}`}>
+           <h1 className={`text-4xl font-semibold text-gray-800  ${classes.landing_page_title}`}>
             Disponibles en plusieurs langues
           </h1>          
-          <h2 className={`text-4xl font-bold text-special-orange  ${classes.landing_page_title}`}>
+          <h2 className={`text-2xl font-normal tracking-wide text-special-orange  ${classes.landing_page_title}`}>
             Supports éducatifs audio bilingues
           </h2>
-          <p className={`lg:max-w-lg mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
+          <p className={`lg:max-w-lg mt-2 text-sm font-normal text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
             Les saynètes sont traduites par des interprètes professionnels spécialisés.
             De nouvelles langues seront régulièrement ajoutées.
             L'objectif est de promouvoir l'apprentisssage de la langue française et ainsi de permettre une meilleure autonomie des patients allophones. 
@@ -42,7 +42,7 @@ const AvailableLanguages = () => {
             className="object-contain relative z-10"
             />
         </div>        
-        <h2 className={`text-3xl font-normal text-special-orange mt-5  ${classes.landing_page_title}`}>
+        <h2 className={`text-2xl font-normal text-special-orange mt-5  ${classes.landing_page_title}`}>
             Les langues déjà disponibles :
           </h2>        
         <div className='p-2'>

@@ -16,7 +16,7 @@ const AvailableSaynetes = () => {
             Un projet éducatif et thérapeutique bilingue original
           </h2>
           <p className={`lg:max-w-lg text-sm font-normal mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
-            Créées en partenariat avec des professionels de chaque domaine, les saynètes sont déclinées en plusieurs formats ou supports : application Web et Mobile, livret au format A3.
+            Créées en partenariat avec des professionels de chaque domaine, les saynètes sont déclinées en plusieurs formats ou supports : application Web et Mobile, livret au format A5.
             La version numérique inclut une gestion de mots-clés avec définition des mots et des phrases à retenir.
           </p>
         </div>

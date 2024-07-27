@@ -20,21 +20,16 @@ const UnitStoryDeckCard = ({unit_story, img}) => {
   };
 
   return (
-      <div className={`${classes.card__container__green}`}>
-        <Link to={{pathname:`/saynete_play_page/${language}`}} onClick={linkHandler} >
+      <div className={`h-100 mx-1 ${classes.card__container__white}`}>
+        <Link to={{pathname:`/saynete_player_page/${language}`}} onClick={linkHandler} >
           <div className={`${classes.card__wrapper}`}>
             <div className={`${classes.card__header}`}>
               <div className={`${classes.card__title}`}>{story_name}</div>
               <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{story_translation}</div></div>
             </div>
             <div className={classes.image_container}>
-              <div className={`${classes.card__img}`}>
+              <div className={`h-64 mb-4 w-full ${classes.card__img}`}>
                 <img src={story_illustration} alt="flag Icon" />
-                  <div className={classes.image_icon_2}>
-                    <IconButton color="white" variant="contained" size="large">
-                      <PlayCircleOutlineIcon fontSize="large"/>
-                    </IconButton>
-                  </div>     
               </div>
             </div>
 

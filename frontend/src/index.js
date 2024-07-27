@@ -26,6 +26,7 @@ import QuizPage from './pages/QuizPage';
 import QuizPlayPage from './pages/QuizPlayPage';
 import StudyPlayPage from './pages/StudyPlayPage';
 import SaynetePlayPage from './pages/SaynetePlayPage';
+import SaynetePlayerPage from './pages/SaynetePlayerPage';
 import LessonPage from './pages/LessonPage';
 import ThemePage from './pages/ThemePage';
 import UnitPage from './pages/UnitPage';
@@ -99,6 +100,7 @@ root.render(
               <Route path="quiz_play_page/:id" element={<QuizPlayPage />} />
               <Route path="study_play_page/:id" element={<StudyPlayPage />} />
               <Route path="saynete_play_page/:id" element={<SaynetePlayPage />} />
+              <Route path="saynete_player_page/:id" element={<SaynetePlayerPage />} />
               <Route path="decks/:id" element={<Decks />} />
               <Route path="scenes/:id" element={<Scenes />} />
               <Route path="theme_page/:id" element={<ThemePage />} />

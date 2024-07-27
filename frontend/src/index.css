@@ -34,7 +34,7 @@ here padding is included in box-sizing but not margin which is extra-sizing
 
 html {
   font-family: sans-serif;
-  background: #1f1f1f;
+  background: #ffffff;
 }
 
 body {
@@ -104,7 +104,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-  --color-background: #1f2023;
+  --color-background: #ffffff;
   --color-foreground: #efefef;
   }
 }

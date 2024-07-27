@@ -85,6 +85,22 @@
 }
 
 
+.card__container__white {
+    /* 1. inner glow - for dark mode 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+    /*height: 100%;*/
+    min-height: 260px;
+    background: white;  /* fallback for old browsers */
+    border-radius: 12px;
+}
+
+
 .card__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -158,8 +174,6 @@
 
 .card__img {
     display:flex;
-    width:100%;
-    height: 8em;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -319,4 +333,19 @@ p.card__desc__btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+}
+
+.phrase__card__container__white {
+    /* 1. inner glow - for dark mode 👇 */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+    /*height: 100%;*/
+    min-height: 480px;
+    background: white;  /* fallback for old browsers */
+    border-radius: 12px;
 }
