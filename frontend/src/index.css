@@ -46,6 +46,8 @@ body {
   --serif-secondary-font : ff-nexus-mix, sans-serif;
   --primary-color: #FA7F08;
   --secondary-color: #1f2023;
+  --text-fr-color: #1f2023;
+  --text-tr-color: #0091ff;
   --alt-primary-color: #727272;
   --alt-secondary-color: #6F6F6F;
   --color-bg-alu: hsl(190, 10%, 80%);  

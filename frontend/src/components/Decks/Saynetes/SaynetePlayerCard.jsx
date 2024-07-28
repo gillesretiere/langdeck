@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import classes from "../DeckCard.module.css";
 import { Link } from "react-router-dom";
-import MediaSimpleAudioPlayerMedTr from '../../UI/MediaPlayer/MediaSimpleAudioPlayerMedTr';
+import AudioPlayer from '../../UI/MediaPlayer/AudioPlayer';
 import PhraseWordsPlayer from "./Phrases/PhraseWordsPlayer";
 import DeckContext from "../../../context/DeckContext";
 
@@ -21,21 +21,18 @@ const SaynetePlayerCard = ({deck, img}) => {
       <div className={`h-100 mx-1 ${classes.phrase__card__container__white}`}>
         <Link to={{pathname:`/saynete_player_page/${phrase_language}`}} onClick={linkHandler} >
           <div className={`${classes.card__wrapper}`}>
-            <div className={`${classes.card__header}`}>
-              <div className={`${classes.card__title}`}>{phrase_related_story}</div>
-              <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{phrase_position}</div></div>
-            </div>
+
             <div className={classes.image_container}>
-              <div className={`h-64 mb-4 w-full ${classes.card__img}`}>
+              <div className={`h-64 sm:h-80 md:h-80 lg:h-80 xl:h-80 2xl:h-96 mb-4 w-full ${classes.card__img}`}>
                 <img src={phrase_illustration} alt="flag Icon" />
               </div>
             </div>
             <div className='inline-grid grid-cols-[50px_auto] gap-3 mx-2 mb-4'>
             {/* <!-- Two columns --> */}
-                  <div className='flex items-start'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url_fr}></MediaSimpleAudioPlayerMedTr> </div>                            
-                  <div className="text-left"><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
-                  <div className='flex items-start'><MediaSimpleAudioPlayerMedTr media_url={phrase_audio_url}></MediaSimpleAudioPlayerMedTr> </div>                            
-                  <div className="text-left">{phrase_translation}</div>
+                  <div className='flex items-start'><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>                            
+                  <div className="text-left "><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
+                  <div className='flex items-start'><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>                            
+                  <div className="text-left text-blue-600">{phrase_translation}</div>
                 </div>
             </div>
         </Link>        

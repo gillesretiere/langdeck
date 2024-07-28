@@ -1,0 +1,17 @@
+.volume_up_fr {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.1);
+    color: var(--text-fr-color);
+    margin: 1rem;
+}
+
+.volume_up_tr {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.1);
+    color: rgb(37 99 235);
+    margin: 1rem;
+}
