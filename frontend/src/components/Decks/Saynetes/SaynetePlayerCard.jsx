@@ -27,12 +27,12 @@ const SaynetePlayerCard = ({deck, img}) => {
                 <img src={phrase_illustration} alt="flag Icon" />
               </div>
             </div>
-            <div className='inline-grid grid-cols-[50px_auto] gap-3 mx-2 mb-4'>
+            <div className='inline-grid grid-cols-[250px_auto] gap-3 mx-2 mb-4'>
             {/* <!-- Two columns --> */}
-                  <div className='flex items-start'><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>                            
-                  <div className="text-left text-md font-semibold tracking-wide leading-normal pr-4"><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
+                  <div className={`flex items-start ${classes.card__text__fr}`}><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
+                  <div className=''><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>                            
+                  <div className={`${classes.card__text__tr}`}>{phrase_translation}</div>
                   <div className='flex items-start'><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>                            
-                  <div className="text-left text-blue-600 font-semibold text-md tracking-wide leading-normal pr-4">{phrase_translation}</div>
                 </div>
             </div>
         </Link>        

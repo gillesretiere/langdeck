@@ -25,7 +25,7 @@ const Hero = () => {
                 Les Saynètes
                 </span>            
             </div>
-            <div className="text-special-orange tracking-tight leading-none relative z-10 xl:pr-10 max-sm:p-0 font-bold text-3xl">
+            <div className="text-special-orange tracking-tight leading-none relative z-10 xl:pr-10 max-sm:p-0 font-bold text-3xl my-2">
             Projet éducatif et <br/> thérapeutique bilingue
             </div>
 

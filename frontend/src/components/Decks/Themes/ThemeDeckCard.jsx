@@ -8,7 +8,6 @@ const ThemeDeckCard = ({theme, img})  => {
     //console.log (params);
     // console.log (theme);
     const lang_img = params.deck.lang_flag_icon;
-    const theme_img="https://res.cloudinary.com/dhc7ovnwk/image/upload/v1722063407/langdeck/assets/images/saynetes/Card%20Design/vecteezy_colorful-wave-abstract-gradient-background_17129866_1024.png";
     const linkHandler = (event) => {
       params.deck = {theme};
       params.theme=theme;
@@ -25,8 +24,7 @@ const ThemeDeckCard = ({theme, img})  => {
             <div className={`${classes.card__sub__header}`}><div className={`${classes.card__subtitle}`}>{theme.theme_translation}</div></div>
           </div>
           <div className={`w-full ${classes.card__img__v2}`}>
-            {/*<img src={theme.theme_illustration} alt="theme image" />*/}
-            <img className="w-full" src={theme_img} />
+            <img src={theme.theme_illustration} alt="theme image" />
           </div>
         </div>          
       </Link>        

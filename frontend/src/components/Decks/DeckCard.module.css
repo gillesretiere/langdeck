@@ -167,6 +167,7 @@
 .card__img > img {
     width: auto; 
     height: 100%;    
+    aspect-ratio: 1/1;
     margin:1rem; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -177,7 +178,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     /*background-color: var(--blue-theme-primary-color);*/
   }
 
@@ -348,4 +349,24 @@ p.card__desc__btn {
     min-height: 480px;
     background: white;  /* fallback for old browsers */
     border-radius: 12px;
+}
+
+.card__text__fr {
+    display: flex;
+    font-size: 1.0rem;
+    font-family: var(--primary-font);
+    font-weight:600;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align:left;
+}
+
+.card__text__tr {
+    display: flex;
+    font-size: 0.8rem;
+    font-family: var(--primary-font);
+    font-weight:500;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align:left;
 }
