@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import DeckContext from "../../../context/DeckContext";
-import classes from "../DeckCard.module.css";
+import classes from "../GridDeckCard.module.css";
 
 const LanguageDeckCard = ({language_deck}) => {
   const {language,lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon} = language_deck;
@@ -22,6 +22,17 @@ const LanguageDeckCard = ({language_deck}) => {
           </div>
           <div className={`${classes.language__card__img}`}>
             <img src={lang_flag_icon} alt="flag Icon"/>
+          </div>
+          <div className={`flex flex-col`}>
+            <div className={`inline-grid grid-cols-[40%_3fr] gap-0.5 bg-white text-left`}>
+              <div>&nbsp;</div>
+              <div className={`${classes.card__description_title}`}>We have a high degree of professionalism...<br/>Projects are widely spread.</div>
+            </div>
+            <div className={`inline-grid grid-cols-[40%_1fr_2fr] gap-0.5 bg-white ${classes.card__footer}`}>
+              <div className={`${classes.card__description}`}>&nbsp;</div>
+              <div className={`${classes.card__description}`}>responsable désigné, sur quoi et</div>
+              <div className={`${classes.card__description}`}>Une fois un responsable désigné, sur quoi et avec quelle date butoir.</div>
+            </div>
           </div>
         </div>
       </Link>

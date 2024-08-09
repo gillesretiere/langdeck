@@ -17,3 +17,6 @@ INFO:     165.154.120.223:53088 - "GET /robots.txt HTTP/1.1" 404 Not Found
 INFO:     165.154.120.223:53090 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
 INFO:     106.75.137.241:47218 - "POST /token HTTP/1.1" 404 Not Found
 INFO:     185.242.226.49:40448 - "GET / HTTP/1.1" 404 Not Found
+INFO:     106.75.65.201:34228 - "GET / HTTP/1.1" 404 Not Found
+INFO:     106.75.130.42:1468 - "GET / HTTP/1.1" 404 Not Found
+INFO:     106.75.130.42:1472 - "GET /favicon.ico HTTP/1.1" 404 Not Found

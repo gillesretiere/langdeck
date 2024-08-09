@@ -168,8 +168,9 @@
     width: auto; 
     height: 100%;    
     aspect-ratio: 1/1;
-    margin:1rem; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:1em; 
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
 
 }
 
@@ -178,7 +179,19 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 0.2rem;
+    margin-top: 2.0rem;
+    @media (min-width: 640px) { 
+        padding: 0.5em;
+    }
+        @media (min-width: 768px) { 
+            padding: 0.5em;
+        }
+        @media (min-width: 1024px) { 
+            padding: 0.5em;
+        }
+        @media (min-width: 1280px) { 
+            padding: 1em;
+        }
     /*background-color: var(--blue-theme-primary-color);*/
   }
 
