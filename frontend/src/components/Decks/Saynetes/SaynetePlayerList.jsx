@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import DeckContext from "../../../context/DeckContext";
-import classes from "../DeckCard.module.css";
+import classes from "../PhraseDeckGrid.module.css";
 import SaynetePlayerCard from "./SaynetePlayerCard";
 
 const SaynetePlayerList = ({phrase_deck, img}) => {
