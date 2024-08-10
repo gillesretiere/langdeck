@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./ThemeDeckCard.module.css";
+import classes from "../ThemeDeckGrid.module.css";
 import ThemeDeckCard from './ThemeDeckCard';
 
 const ThemeDeckList = ({themes, img}) => {

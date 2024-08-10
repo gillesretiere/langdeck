@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import DeckContext from "../../../context/DeckContext";
 
 import LanguageDeckCard from "./LanguageDeckCard";
-import classes from "../GridDeckCard.module.css";
+import classes from "../LanguageDeckGrid.module.css";
 
 const LanguageDeckList = ({languages}) => {
     let params = useContext(DeckContext);
@@ -16,7 +16,7 @@ const LanguageDeckList = ({languages}) => {
         }
     }    
     return (
-        <div className={`${classes.language__grid}`}>
+        <div className={`${classes.card__list}`}>
             {languages && languages.filter(item => arr.includes(item.language)).map(
                 (el) => {
                     return (<LanguageDeckCard key={el._id} language_deck={el} />)

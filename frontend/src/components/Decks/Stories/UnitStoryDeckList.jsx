@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import DeckContext from "../../../context/DeckContext";
-import classes from "../DeckCard.module.css";
+import classes from "../StoryDeckGrid.module.css";
 
 import UnitStoryDeckCard from './UnitStoryDeckCard';
 

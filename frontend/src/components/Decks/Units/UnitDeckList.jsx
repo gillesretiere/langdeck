@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import classes from "../DeckCard.module.css";
+import classes from "../ThemeDeckGrid.module.css";
 import { Link } from "react-router-dom";
 import DeckContext from "../../../context/DeckContext";
 import UnitDeckCard from './UnitDeckCard';
