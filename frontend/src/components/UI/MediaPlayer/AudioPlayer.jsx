@@ -33,7 +33,7 @@ const AudioPlayer = ({media_url, language}) => {
   return (
     <div>
       <a id="play-pause-button" onClick={togglePlay}>
-      { language==="fr" ? <VolumeUpOutlinedIcon className={classes.volume_up_fr} /> : <VolumeUpOutlinedIcon className={classes.volume_up_tr} /> }
+      { language==="fr" ? <VolumeUpOutlinedIcon className={classes.volume_up_tr} /> : <VolumeUpOutlinedIcon className={classes.volume_up_tr} /> }
       </a>
     </div>
   )

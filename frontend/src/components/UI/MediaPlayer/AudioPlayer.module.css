@@ -10,8 +10,10 @@
 .volume_up_tr {
     display:flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     transform: scale(1.1);
-    color: rgb(37 99 235);
-    margin: 1rem;
+    color: darkgray;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }

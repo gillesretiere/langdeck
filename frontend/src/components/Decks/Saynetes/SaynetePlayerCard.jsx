@@ -29,16 +29,18 @@ const SaynetePlayerCard = ({ deck, img }) => {
             <div className={`flex flex-col`}>
               <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
                 <div className={`${classes.card__description_title}`}><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
-                <div className=''><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>  
+                <div className={`${classes.card__description_icon}`}><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>  
               </div>
+              
               <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
                 <div className={`${classes.card__description_title}`}><div className={`${classes.card__text__tr}`}>{phrase_translation}</div></div>
                 <div className=''><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>  
-              </div>              
-              <div className={`inline-grid grid-cols-[40%_1fr_2fr] gap-0.5 bg-white ${classes.card__footer}`}>
+              </div>        
+              <div><hr></hr></div>      
+              <div className={`inline-grid grid-cols-[40%_2fr_1fr] gap-0.5 bg-white ${classes.card__footer}`}>
                 <div className={`${classes.card__description_subtitle}`}>&nbsp;</div>
-                <div className={`${classes.card__description_subtitle}`}>Select this card if you are an Arabic speaker.</div>
-                <div className={`${classes.card__description_subtitle}`}>إذا كنت من المتحدثين باللغة العربية ولا تعرف كيفية مخاطبة من حولك باللغة الفرنسية، فاختر هذه البطاقة.</div>
+                <div className={`${classes.card__description_subtitle}`}>{phrase_related_story}</div>
+                <div className={`${classes.card__description_subtitle}`}>{phrase_position}</div>
               </div>
             </div>
             {/*
