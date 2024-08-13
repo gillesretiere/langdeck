@@ -20,7 +20,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
-import logo from '../../assets/logo-langdeck-w_fpt-v1.png';
+/* import logo from '../../assets/logo-langdeck-w_fpt-v1.png'; */
+import logo from '../../assets/images/langdeck-logo-2024-v1-256.png';
+
 import DarkLightModeToggle from "../../components/DarkLightModeToggle"
 
 const pages = ['Products', 'Pricing', 'Blog'];

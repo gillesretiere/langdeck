@@ -26,21 +26,18 @@ const SaynetePlayerCard = ({ deck, img }) => {
               <img src={phrase_illustration} alt="flag Icon" />
             </div>
 
-            <div className={`flex flex-col`}>
+
+            <div className={`flex flex-col mb-3`}>
+            <div className={`${classes.card__description_folio}`}>{phrase_position}</div>
+            <div><hr></hr></div>
               <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
                 <div className={`${classes.card__description_title}`}><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
-                <div className={`${classes.card__description_icon}`}><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>  
+                <div className={`${classes.card__description_icon}`}><AudioPlayer media_url={phrase_audio_url_fr} language="fr"></AudioPlayer> </div>
               </div>
-              
+
               <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
                 <div className={`${classes.card__description_title}`}><div className={`${classes.card__text__tr}`}>{phrase_translation}</div></div>
-                <div className=''><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>  
-              </div>        
-              <div><hr></hr></div>      
-              <div className={`inline-grid grid-cols-[40%_2fr_1fr] gap-0.5 bg-white ${classes.card__footer}`}>
-                <div className={`${classes.card__description_subtitle}`}>&nbsp;</div>
-                <div className={`${classes.card__description_subtitle}`}>{phrase_related_story}</div>
-                <div className={`${classes.card__description_subtitle}`}>{phrase_position}</div>
+                <div className=''><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>
               </div>
             </div>
             {/*
@@ -51,9 +48,11 @@ const SaynetePlayerCard = ({ deck, img }) => {
                     <div className='flex items-start'><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>                            
                 </div>
               */}
+
           </div>
 
         </Link>
+
       </div>
     </>
   )
