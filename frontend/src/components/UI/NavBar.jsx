@@ -20,8 +20,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
-/* import logo from '../../assets/logo-langdeck-w_fpt-v1.png'; */
-import logo from '../../assets/images/langdeck-logo-2024-v1-256.png';
+import { LGDK_LOGO_GREY, HM_LOGO_RED } from "../../assets/images";
+
 
 import DarkLightModeToggle from "../../components/DarkLightModeToggle"
 
@@ -73,7 +73,7 @@ const NavBar = () => {
                 display="flex"
                 sx={{ height: 54, flexGrow: 0}}
                 alt="Logo"
-                src={logo}>
+                src={LGDK_LOGO_GREY}>
                 </Box>
             </Link>
                     

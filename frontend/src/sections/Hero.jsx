@@ -1,9 +1,6 @@
 
 import Button from "../components/UI/Hero/Button";
 import { arrowRight } from "../assets/icons";
-import { bigPicture } from "../assets/images";
-import { femDoctor } from "../assets/images";
-import { womanLaptop2 } from "../assets/images";
 import { saynetes_casting } from "../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -12,7 +9,6 @@ import appClasses from "../index.css";
 
 
 const Hero = () => {
-    const [womanLaptopImg,setWomanLaptopImg] = useState(femDoctor);
     return (
         <section
         id="home"

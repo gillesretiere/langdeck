@@ -21,3 +21,4 @@ INFO:     106.75.65.201:34228 - "GET / HTTP/1.1" 404 Not Found
 INFO:     106.75.130.42:1468 - "GET / HTTP/1.1" 404 Not Found
 INFO:     106.75.130.42:1472 - "GET /favicon.ico HTTP/1.1" 404 Not Found
 INFO:     87.236.176.234:49013 - "GET / HTTP/1.1" 404 Not Found
+INFO:     101.36.97.74:54398 - "GET / HTTP/1.1" 404 Not Found
