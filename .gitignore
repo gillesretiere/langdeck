@@ -19,3 +19,5 @@ talktalk/talktalk/src/nohup.out
 frontend/src/nohup.out
 supervised-chat/backend/nohup.out
 supervised-chat/backend/nohup.out
+nohup.err
+nohup.out
