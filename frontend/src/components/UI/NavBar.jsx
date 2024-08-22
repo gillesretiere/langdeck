@@ -79,7 +79,7 @@ const NavBar = () => {
             <div className={`ml-4`}>
               Les Saynètes
             </div>            
-            <div className={`ml-2 font-semibold`}>
+            <div className={`ml-2 font-bold `}>
               Le diabète
             </div>
 
