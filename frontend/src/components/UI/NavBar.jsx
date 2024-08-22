@@ -20,7 +20,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
-import { LGDK_LOGO_GREY, HM_LOGO_RED } from "../../assets/images";
+import { LGDK_LOGO_NOTEXT, HM_LOGO_RED } from "../../assets/images";
 
 
 import DarkLightModeToggle from "../../components/DarkLightModeToggle"
@@ -73,10 +73,16 @@ const NavBar = () => {
                 display="flex"
                 sx={{ height: 54, flexGrow: 0}}
                 alt="Logo"
-                src={LGDK_LOGO_GREY}>
+                src={LGDK_LOGO_NOTEXT}>
                 </Box>
             </Link>
-                    
+            <div className={`ml-4`}>
+              Les Saynètes
+            </div>            
+            <div className={`ml-2 font-semibold`}>
+              Le diabète
+            </div>
+
         </Toolbar>
       </AppBar>
     </Box>

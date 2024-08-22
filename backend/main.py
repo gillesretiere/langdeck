@@ -38,6 +38,8 @@ origins = [
 "http://"+WWW_DOMAIN+":8080",
 "http://"+WWW_DOMAIN+":8000",
 "http://"+WWW_DOMAIN+":3000",
+"https://"+WWW_DOMAIN+":8000",
+"https://"+WWW_DOMAIN+":3000",
 "ws://"+WWW_DOMAIN+":8000",
 "ws://"+DOMAIN+":8000",
 "ws://"+HOST+":8000",
