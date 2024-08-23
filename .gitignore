@@ -21,3 +21,4 @@ supervised-chat/backend/nohup.out
 supervised-chat/backend/nohup.out
 nohup.err
 nohup.out
+backend/save_pid.txt
