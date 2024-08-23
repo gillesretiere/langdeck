@@ -22,3 +22,5 @@ supervised-chat/backend/nohup.out
 nohup.err
 nohup.out
 backend/save_pid.txt
+frontend/package-lock.json
+frontend/package.json
