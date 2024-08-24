@@ -20,7 +20,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import MenuItem from '@mui/material/MenuItem';
 import Popover from '@mui/material/Popover';
-import { LGDK_LOGO_NOTEXT, HM_LOGO_RED } from "../../assets/images";
+import { LGDK_LOGO_NOTEXT, LGDK_LOGO } from "../../assets/images";
 
 
 import DarkLightModeToggle from "../../components/DarkLightModeToggle"
@@ -79,7 +79,7 @@ const NavBar = () => {
             <div className={`ml-4`}>
               Les Saynètes
             </div>            
-            <div className={`ml-2 font-bold text-red-700`}>
+            <div className={`ml-2 font-bold text-cyan-700`}>
               Le diabète
             </div>
 

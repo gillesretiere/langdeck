@@ -24,3 +24,4 @@ nohup.out
 backend/save_pid.txt
 frontend/package-lock.json
 frontend/package.json
+frontend/src/nohup_react.err
