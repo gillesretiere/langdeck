@@ -8,8 +8,10 @@ import ThemeDeck from '../components/Decks/Themes/ThemeDeck';
 import Layout from '../components/UI/Layout';
 
 import classes from "./Pages.module.css";
+import { BACKEND_BASE_URL } from '../assets/constants';
 
-const BASE_URL = "http://51.91.8.112:8000/themesdeck";
+
+const BASE_URL = BACKEND_BASE_URL + "themesdeck";
 
 
 const ThemePage = () => {

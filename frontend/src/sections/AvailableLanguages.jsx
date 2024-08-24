@@ -2,9 +2,10 @@ import React, { useState, useEffect, } from 'react';
 import TrackVisibility from "react-on-screen";
 import AvailableLanguagesCard from '../components/Decks/Languages/AvailableLanguagesCard';
 import classes from "./sections.module.css";
+import { BACKEND_BASE_URL } from '../assets/constants';
 
 
-const BASE_URL = "http://51.91.8.112:8000/langdeck";
+const BASE_URL = BACKEND_BASE_URL + "langdeck";
 
 const AvailableLanguages = () => {
 

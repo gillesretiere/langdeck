@@ -15,13 +15,13 @@ const Apropos = () => {
           <h2 className={`text-2xl font-normal tracking-wide text-special-orange  ${classes.landing_page_title}`}>
           Un projet collaboratif en partenariat
           </h2>
-          <p className={`lg:max-w-lg text-sm font-normal mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
-          <ul class="sm:max-w-sm lg:max-w-lg list-disc pl-5">
+          <div className={`lg:max-w-lg text-sm font-normal mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
+          <ul className="sm:max-w-sm lg:max-w-lg list-disc pl-5">
             <li>Diététiciennes expertes de DAC44 (Dispositif d'Appui à la Coordination de Loire-Atlantique) : élaboration du contenu des saynètes, dialogues comportant les messages à visée thérapeutique</li>
             <li>Interprètes/traductrices ASAMLA (Interprétariat et Médiation pour l'Intégration) : traduction des saynètes en 5 langues : arabe, russe, roumain, anglais, turc.</li>
             <li>Consultant Informatique (Hammer & Marteau): Web design, mise en page des livrets, illustrations, audio, traitement des données. </li>
           </ul>
-          </p>
+          </div>
         </div>
         <div className='p-2'>
         <TrackVisibility partialVisibility once>

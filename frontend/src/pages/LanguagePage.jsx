@@ -9,8 +9,9 @@ import Layout from '../components/UI/Layout';
 import LanguageDeck from '../components/Decks/Languages/LanguageDeck.jsx';
 import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
 import pg_classes from "./Pages.module.css";
+import { BACKEND_BASE_URL } from '../assets/constants';
 
-const BASE_URL = "http://51.91.8.112:8000/langdeck";
+const BASE_URL = BACKEND_BASE_URL + "langdeck";
 
 
 const LanguagePage = () => {
