@@ -1,13 +1,13 @@
-import Hero from "./Hero";
-import AvailableLanguages from "./AvailableLanguages";
-import AvailableSaynetes from "./AvailableSaynetes";
+import HomeDisplaySection from "./HomeDisplaySection";
+import AvailLanguagesDisplaySection from "./AvailLanguagesDisplaySection";
+import AvailSaynetesDisplaySection from "./AvailSaynetesDisplaySection";
 import Services from "./Services";
-import Apropos from "./Apropos";
+import ResumeSection from "./ResumeSection";
 
 export {
-  Hero,
-  AvailableLanguages,
-  AvailableSaynetes,
+  HomeDisplaySection,
+  AvailLanguagesDisplaySection,
+  AvailSaynetesDisplaySection,
   Services,
-  Apropos,
+  ResumeSection,
 };

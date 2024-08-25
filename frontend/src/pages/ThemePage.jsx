@@ -1,20 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect, useContext, } from 'react';
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from 'react';
-
 import AutoComplete from '../components/UI/AutoComplete';
 import ThemeDeck from '../components/Decks/Themes/ThemeDeck';
-
 import Layout from '../components/UI/Layout';
-
 import classes from "./Pages.module.css";
-import { BACKEND_BASE_URL } from '../assets/constants';
-
-
-const BASE_URL = BACKEND_BASE_URL + "themesdeck";
-
+import DeckContext from "../context/DeckContext";
 
 const ThemePage = () => {
+
+  let deckContext = useContext(DeckContext);
+  const BASE_URL = deckContext.public_urls['vps_prod'] + deckContext.url_paths['availableThemes'];
 
   const {id} = useParams();
   const [decks, setDecks] = useState ('');

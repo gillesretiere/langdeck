@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, } from 'react';
+
 import { appContext } from "../App";
 
 import TextField from '@mui/material/TextField';
@@ -9,12 +9,13 @@ import Layout from '../components/UI/Layout';
 import LanguageDeck from '../components/Decks/Languages/LanguageDeck.jsx';
 import classes from "../components/Decks/Languages/LanguageDeckList.module.css";
 import pg_classes from "./Pages.module.css";
-import { BACKEND_BASE_URL } from '../assets/constants';
 
-const BASE_URL = BACKEND_BASE_URL + "langdeck";
-
+import DeckContext from "../context/DeckContext";
 
 const LanguagePage = () => {
+
+  let deckContext = useContext(DeckContext);
+  const BASE_URL = deckContext.public_urls['vps_prod'] + deckContext.url_paths['availableLanguages'];
 
   const menuItems = useContext(appContext);
   const [languages, setLanguages] = useState([]);

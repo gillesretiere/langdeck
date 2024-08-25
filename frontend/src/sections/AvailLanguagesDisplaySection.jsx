@@ -1,14 +1,14 @@
-import React, { useState, useEffect, } from 'react';
+import React, { useState, useEffect, useContext, } from 'react';
 import TrackVisibility from "react-on-screen";
 import AvailableLanguagesCard from '../components/Decks/Languages/AvailableLanguagesCard';
 import classes from "./sections.module.css";
-import { BACKEND_BASE_URL } from '../assets/constants';
+import DeckContext from "../context/DeckContext";
 
+const AvailLanguagesDisplaySection = () => {
 
-const BASE_URL = BACKEND_BASE_URL + "langdeck";
-
-const AvailableLanguages = () => {
-
+  let deckContext = useContext(DeckContext);
+  const BASE_URL = deckContext.public_urls['vps_prod'] + deckContext.url_paths['availableLanguages'];
+  
   const [languages, setLanguages] = useState([]);
 
   useEffect(() => {
@@ -71,4 +71,4 @@ const AvailableLanguages = () => {
   );
 };
 
-export default AvailableLanguages;
+export default AvailLanguagesDisplaySection;

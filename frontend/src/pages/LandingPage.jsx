@@ -1,7 +1,7 @@
 import React from 'react'
-import Nav from "../components/UI/Hero/Nav";
+import Nav from "../components/UI/HomeSection/Nav";
 import {
-    Hero, AvailableLanguages, AvailableSaynetes, Apropos,
+    HomeDisplaySection, AvailLanguagesDisplaySection, AvailSaynetesDisplaySection, ResumeSection,
 } from "../sections";
 
 const LandingPage = () => {
@@ -9,16 +9,16 @@ const LandingPage = () => {
     <main className="relative bg-white">
         <Nav />
         <section className="xl:padding-l wide:padding-r padding-b">
-            <Hero />
+            <HomeDisplaySection />
         </section>
         <section className="xl:padding-l wide:padding-r padding-b">
-            <AvailableLanguages />
+            <AvailLanguagesDisplaySection />
         </section>
         <section className="xl:padding-l wide:padding-r padding-b">
-            <AvailableSaynetes />
+            <AvailSaynetesDisplaySection />
         </section>        
         <section className="xl:padding-l wide:padding-r padding-b">
-            <Apropos />
+            <ResumeSection />
         </section>                
     </main>
   )

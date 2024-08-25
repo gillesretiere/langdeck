@@ -4,7 +4,7 @@ import ServiceCard from "../components/ServiceCard";
 import TrackVisibility from "react-on-screen";
 import classes from "./sections.module.css";
 
-const Apropos = () => {
+const ResumeSection = () => {
   return (
     <section id="apropos" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
       <div className="flex flex-col">
@@ -43,4 +43,4 @@ const Apropos = () => {
   )
 }
 
-export default Apropos
+export default ResumeSection

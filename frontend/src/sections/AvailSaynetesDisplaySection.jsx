@@ -4,7 +4,7 @@ import TrackVisibility from "react-on-screen";
 import AvailableSaynetesCard from '../components/Decks/Saynetes/AvailableSaynetesCard';
 import classes from "./sections.module.css";
 
-const AvailableSaynetes = () => {
+const AvailSaynetesDisplaySection = () => {
   return (
     <section id="saynetes" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
       <div className="flex flex-col">
@@ -45,4 +45,4 @@ const AvailableSaynetes = () => {
   )
 }
 
-export default AvailableSaynetes
+export default AvailSaynetesDisplaySection

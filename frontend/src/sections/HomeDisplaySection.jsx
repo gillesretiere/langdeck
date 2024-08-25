@@ -1,5 +1,5 @@
 
-import Button from "../components/UI/Hero/Button";
+import Button from "../components/UI/HomeSection/Button";
 import { arrowRight } from "../assets/icons";
 import { saynetes_casting } from "../assets/images";
 import { useState } from "react";
@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import classes from "./sections.module.css";
 import appClasses from "../index.css";
 
-
-const Hero = () => {
+/* Affichage d'accueil (Home On Display) */
+const HomeDisplaySection = () => {
     return (
         <section
         id="home"
@@ -21,7 +21,7 @@ const Hero = () => {
                 Les Saynètes
                 </span>            
             </div>
-            <div className="text-special-orange tracking-tight leading-none relative z-10 xl:pr-10 max-sm:p-0 font-bold text-3xl my-2">
+            <div className={`text-special-orange tracking-tight leading-none relative z-10 xl:pr-10 max-sm:p-0 font-bold text-3xl my-2 ${classes.landing_page_title}`}>
             Projet éducatif et <br/> thérapeutique bilingue
             </div>
 
@@ -47,4 +47,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default HomeDisplaySection;

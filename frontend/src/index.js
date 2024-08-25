@@ -12,9 +12,6 @@ import '@fontsource/roboto/700.css';
 
 import { AuthProvider } from './context/AuthProvider';
 
-import reportWebVitals from './reportWebVitals';
-
-import Languages from "./pages/Languages";
 import Decks from "./pages/Decks";
 import Scenes from "./pages/Scenes";
 import LandingPage from './pages/LandingPage';
@@ -55,17 +52,17 @@ const theme = createTheme({
     },
     white: {
       main: '#ffffff',
-    },    
+    },
     black: {
       main: '#000000',
     },
-    blue_primary:{
+    blue_primary: {
       main: '#96C2DB',
     },
-    blue_secondary:{
+    blue_secondary: {
       main: '#E5EDF1',
     },
-    blue_tertiary:{
+    blue_tertiary: {
       main: '#6d9ab3',
     },
   },
@@ -74,57 +71,57 @@ const theme = createTheme({
       arrow: true,
     },
   },
-    typography: {
-      fontFamily: 'neue-haas-grotesk-display',
-      fontWeigthLigth: 400,
-      fontWeigthRegular: 500,
-      fontWeigthMedium: 600,
-      fontWeigthBold: 700,
-    }
+  typography: {
+    fontFamily: 'neue-haas-grotesk-display',
+    fontWeigthLigth: 400,
+    fontWeigthRegular: 500,
+    fontWeigthMedium: 600,
+    fontWeigthBold: 700,
+  }
 
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <AuthProvider>
-          <CssBaseline />
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/language_page" element={<LanguagePage />} />
-              <Route path="theme_page/:id" element={<ThemePage />} />
-              <Route path="unit_page/:id" element={<UnitPage />} />
-              <Route path="unit_story_page/:id" element={<UnitStoryPage />} />
-              <Route path="saynete_play_page/:id" element={<SaynetePlayPage />} />
-              <Route path="story_page/:id" element={<StoryPage />} />
-              <Route path="lesson_page/:id" element={<LessonPage />} />
-              <Route path="saynete_page/:id" element={<SaynetePage />} />
-              <Route path="split_saynete_page/:id" element={<SplitSaynetePage />} />
-              <Route path="study_page/:id" element={<StudyPage />} />
-              <Route path="quiz_page/:id" element={<QuizPage />} />
-              <Route path="quiz_play_page/:id" element={<QuizPlayPage />} />
-              <Route path="study_play_page/:id" element={<StudyPlayPage />} />
-              <Route path="saynete_player_page/:id" element={<SaynetePlayerPage />} />
-              <Route path="decks/:id" element={<Decks />} />
-              <Route path="scenes/:id" element={<Scenes />} />
-              <Route path="unit_story_x3_page/:id" element={<UnitStoryX3Page />} />
-              <Route path="conversation_page/:id" element={<ConversationPage />} />
-              <Route path="/duo/" element={<DuoPage />} />
-              <Route path="/duo_start_page/:id" element={<DuoStartPage />} />
-              <Route path="/duo_step_page/:id" element={<DuoStepPage />} />
-              <Route path="/duo_step_send_page/:id" element={<DuoStepSendPage />} />
-              
-              <Route path="*" element={
-                <main style={{ padding: "1rem" }}>
-                  <p>There's nothing here!</p>
-                </main>
-              }
-              />
-            </Routes>
-        </AuthProvider>
-      </BrowserRouter>
-    </ThemeProvider>
+  <ThemeProvider theme={theme}>
+    <BrowserRouter>
+      <AuthProvider>
+        <CssBaseline />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/language_page" element={<LanguagePage />} />
+          <Route path="theme_page/:id" element={<ThemePage />} />
+          <Route path="unit_page/:id" element={<UnitPage />} />
+          <Route path="unit_story_page/:id" element={<UnitStoryPage />} />
+          <Route path="saynete_play_page/:id" element={<SaynetePlayPage />} />
+          <Route path="story_page/:id" element={<StoryPage />} />
+          <Route path="lesson_page/:id" element={<LessonPage />} />
+          <Route path="saynete_page/:id" element={<SaynetePage />} />
+          <Route path="split_saynete_page/:id" element={<SplitSaynetePage />} />
+          <Route path="study_page/:id" element={<StudyPage />} />
+          <Route path="quiz_page/:id" element={<QuizPage />} />
+          <Route path="quiz_play_page/:id" element={<QuizPlayPage />} />
+          <Route path="study_play_page/:id" element={<StudyPlayPage />} />
+          <Route path="saynete_player_page/:id" element={<SaynetePlayerPage />} />
+          <Route path="decks/:id" element={<Decks />} />
+          <Route path="scenes/:id" element={<Scenes />} />
+          <Route path="unit_story_x3_page/:id" element={<UnitStoryX3Page />} />
+          <Route path="conversation_page/:id" element={<ConversationPage />} />
+          <Route path="/duo/" element={<DuoPage />} />
+          <Route path="/duo_start_page/:id" element={<DuoStartPage />} />
+          <Route path="/duo_step_page/:id" element={<DuoStepPage />} />
+          <Route path="/duo_step_send_page/:id" element={<DuoStepSendPage />} />
+
+          <Route path="*" element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+          />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
