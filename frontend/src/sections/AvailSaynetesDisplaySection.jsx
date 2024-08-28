@@ -7,12 +7,12 @@ import classes from "./sections.module.css";
 const AvailSaynetesDisplaySection = () => {
   return (
     <section id="saynetes" className="w-full flex xl:flex-row flex-col justify-between min-h-screen gap-10 max-container">
-      <div className="flex flex-col">
-        <div className="flex flex-col">
+      <div className="flex flex-col items-start max-xl:padding-x pt-5">
+        <div>
            <h1 className={`text-4xl font-semibold text-gray-800  ${classes.landing_page_title}`}>
            Les saynètes
           </h1>          
-          <h2 className={`text-2xl font-normal tracking-wide text-special-orange  ${classes.landing_page_title}`}>
+          <h2 className={`text-2xl font-normal tracking-wide text-primary-orange  ${classes.landing_page_title}`}>
             Un projet éducatif et thérapeutique bilingue original
           </h2>
           <p className={`lg:max-w-lg text-sm font-normal mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>

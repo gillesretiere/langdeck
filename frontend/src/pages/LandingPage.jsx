@@ -6,20 +6,22 @@ import {
 
 const LandingPage = () => {
   return (
-    <main className="relative bg-white">
+    <main className="relative">
         <Nav />
-        <section className="xl:padding-l wide:padding-r padding-b">
+        <section className="xl:padding-l wide:padding-r padding-b bg-white">
             <HomeDisplaySection />
         </section>
-        <section className="xl:padding-l wide:padding-r padding-b">
+        <section className="xl:padding-l wide:padding-r padding-b bg-special-gris-clair">
             <AvailLanguagesDisplaySection />
         </section>
+
         <section className="xl:padding-l wide:padding-r padding-b">
             <AvailSaynetesDisplaySection />
-        </section>        
+        </section>   
+                {/*     
         <section className="xl:padding-l wide:padding-r padding-b">
             <ResumeSection />
-        </section>                
+        </section>  */}              
     </main>
   )
 }

@@ -12,7 +12,7 @@ const ResumeSection = () => {
            <h1 className={`text-4xl font-semibold text-gray-800  ${classes.landing_page_title}`}>
            &Agrave; propos du projet
           </h1>          
-          <h2 className={`text-2xl font-normal tracking-wide text-special-orange  ${classes.landing_page_title}`}>
+          <h2 className={`text-2xl font-normal tracking-wide text-primary-orange  ${classes.landing_page_title}`}>
           Un projet collaboratif en partenariat
           </h2>
           <div className={`lg:max-w-lg text-sm font-normal mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
