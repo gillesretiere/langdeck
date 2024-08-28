@@ -8,20 +8,19 @@ const LandingPage = () => {
   return (
     <main className="relative">
         <Nav />
-        <section className="xl:padding-l wide:padding-r padding-b bg-white">
+        <section className="xl:padding-l wide:padding-r padding-b bg-special-gris-clair">
             <HomeDisplaySection />
         </section>
-        <section className="xl:padding-l wide:padding-r padding-b bg-special-gris-clair">
+        <section className="xl:padding-l wide:padding-r padding-b bg-sky-blue">
             <AvailLanguagesDisplaySection />
         </section>
 
-        <section className="xl:padding-l wide:padding-r padding-b">
+        <section className="xl:padding-l wide:padding-r padding-b bg-primary-pale-orange">
             <AvailSaynetesDisplaySection />
         </section>   
-                {/*     
         <section className="xl:padding-l wide:padding-r padding-b">
             <ResumeSection />
-        </section>  */}              
+        </section>           
     </main>
   )
 }

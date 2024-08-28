@@ -3,6 +3,8 @@ import TrackVisibility from "react-on-screen";
 import AvailableLanguagesCard from '../components/Decks/Languages/AvailableLanguagesCard';
 import classes from "./sections.module.css";
 import DeckContext from "../context/DeckContext";
+import Button from "../components/UI/HomeSection/Button";
+import { Link } from "react-router-dom";
 import { language_section_description } from "../assets/constants";
 
 
@@ -29,7 +31,7 @@ const AvailLanguagesDisplaySection = () => {
     <section id="languages" className="flex xl:flex-row lg:flex-row md:flex-col flex-col min-h-screen gap-1 mt-10 max-container">
       <div className="flex flex-col items-start max-xl:padding-x pt-5">
         <div>
-          <h1 className={`text-6xl font-bold text-gray-800  ${classes.landing_page_title}`}>
+          <h1 className={`text-5xl font-bold tracking-tight text-gray-800  ${classes.landing_page_title}`}>
             {filteredTitles[0]["title"]}
           </h1>
           <h2 className={`text-4xl font-semibold tracking-wide text-primary-orange  ${classes.landing_page_title}`}>
@@ -49,9 +51,7 @@ const AvailLanguagesDisplaySection = () => {
             className="object-contain relative z-10"
           />
         </div>
-        <h2 className={`text-2xl font-normal text-primary-orange mt-5  ${classes.landing_page_title}`}>
-          {filteredTitles[0]["button_text"]}
-        </h2>
+
         <div className='p-2'>
           <TrackVisibility partialVisibility once>
             {({ isVisible }) => (
@@ -70,6 +70,11 @@ const AvailLanguagesDisplaySection = () => {
               </div>
             )}
           </TrackVisibility>
+        </div>
+        <div className='mt-8 p-2'>
+          <Link to={{ pathname: `/language_page/` }}>
+            <Button label={filteredTitles[0]["button_text"]} textColor="text-white" backgroundColor="bg-primary-orange" borderColor="bg-primary-orange" className={`${classes.landing_page_button}`} />
+          </Link>
         </div>
 
       </div>
