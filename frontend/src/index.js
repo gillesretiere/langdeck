@@ -23,7 +23,6 @@ import SaynetePlayPage from './pages/SaynetePlayPage';
 
 import StoryPage from "./pages/StoryPage";
 import SaynetePage from "./pages/SaynetePage";
-import SplitSaynetePage from "./pages/SplitSaynetePage";
 import StudyPage from './pages/StudyPage';
 import QuizPage from './pages/QuizPage';
 import QuizPlayPage from './pages/QuizPlayPage';
@@ -93,16 +92,16 @@ root.render(
           <Route path="theme_page/:id" element={<ThemePage />} />
           <Route path="unit_page/:id" element={<UnitPage />} />
           <Route path="unit_story_page/:id" element={<UnitStoryPage />} />
+          <Route path="saynete_player_page/:id" element={<SaynetePlayerPage />} />
+          {/* TO REMOVE BELOW */}
           <Route path="saynete_play_page/:id" element={<SaynetePlayPage />} />
           <Route path="story_page/:id" element={<StoryPage />} />
           <Route path="lesson_page/:id" element={<LessonPage />} />
           <Route path="saynete_page/:id" element={<SaynetePage />} />
-          <Route path="split_saynete_page/:id" element={<SplitSaynetePage />} />
           <Route path="study_page/:id" element={<StudyPage />} />
           <Route path="quiz_page/:id" element={<QuizPage />} />
           <Route path="quiz_play_page/:id" element={<QuizPlayPage />} />
           <Route path="study_play_page/:id" element={<StudyPlayPage />} />
-          <Route path="saynete_player_page/:id" element={<SaynetePlayerPage />} />
           <Route path="decks/:id" element={<Decks />} />
           <Route path="scenes/:id" element={<Scenes />} />
           <Route path="unit_story_x3_page/:id" element={<UnitStoryX3Page />} />

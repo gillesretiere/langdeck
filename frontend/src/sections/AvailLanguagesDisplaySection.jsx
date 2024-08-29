@@ -31,14 +31,12 @@ const AvailLanguagesDisplaySection = () => {
     <section id="languages" className="flex xl:flex-row lg:flex-row md:flex-col flex-col min-h-screen gap-1 mt-10 max-container">
       <div className="flex flex-col items-start max-xl:padding-x pt-5">
         <div>
-          <h1 className={`text-5xl font-bold tracking-tight text-gray-800  ${classes.landing_page_title}`}>
-            {filteredTitles[0]["title"]}
-          </h1>
-          <h2 className={`text-4xl font-semibold tracking-wide text-primary-orange  ${classes.landing_page_title}`}>
+
+          <h1 className={`text-5xl font-artifex_cf font-bold tracking-tight text-gray-900`}>
             {filteredTitles[0]["sub_title"]}
 
-          </h2>
-          <p className={`lg:max-w-lg mt-2 text-sm font-normal text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
+          </h1>
+          <p className={`lg:max-w-lg mt-2 text-sm font-semibold text-gray-500 tracking-wide leading-5 ${classes.landing_page_title}`}>
             {filteredTitles[0]["resume"]}
 
           </p>
@@ -53,6 +51,9 @@ const AvailLanguagesDisplaySection = () => {
         </div>
 
         <div className='p-2'>
+        <h1 className={`text-3xl font-artifex_cf font-bold tracking-tight text-gray-800 my-5`}>
+            {filteredTitles[0]["title"]}
+          </h1>
           <TrackVisibility partialVisibility once>
             {({ isVisible }) => (
               <div

@@ -21,7 +21,7 @@ const AvailSaynetesDisplaySection = () => {
           <h1 className={`text-5xl font-bold tracking-tight text-gray-800  ${classes.landing_page_title}`}>
             {filteredTitles[0]["title"]}
           </h1>
-          <h2 className={`text-4xl font-semibold tracking-wide text-primary-orange  ${classes.landing_page_title}`}>
+          <h2 className={`text-4xl font-semibold tracking-tight text-sky-blue  ${classes.landing_page_title}`}>
             {filteredTitles[0]["sub_title"]}
           </h2>
           <p className={`lg:max-w-lg text-sm font-normal mt-2 text-gray-900 tracking-wider leading-5 ${classes.landing_page_title}`}>
