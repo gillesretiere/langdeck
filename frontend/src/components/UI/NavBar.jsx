@@ -26,10 +26,10 @@ const NavBar = () => {
                 src={LGDK_LOGO_NOTEXT}>
                 </Box>
             </Link>
-            <div className={`ml-4`}>
+            <div className={`ml-4 font-secondary_font font-semibold`}>
               Les Saynètes
             </div>            
-            <div className={`ml-2 font-bold text-cyan-700`}>
+            <div className={`ml-2 font-secondary_font font-semibold text-primary-orange`}>
               Le diabète
             </div>
 

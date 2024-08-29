@@ -21,13 +21,13 @@ const HomeDisplaySection = () => {
             className="flex xl:flex-row lg:flex-row md:flex-col flex-col min-h-screen gap-1 mt-10 max-container"
         >
             <div className="relative xl:w-2/5 flex flex-col items-start max-xl:padding-x pt-5">
-                <div className={`text-3xl text-gray-800 mt-10 xl:mt-0 pl-1 font-artifex_cf`}>
+                <div className={`text-2xl sm:text-3xl text-gray-800 mt-10 xl:mt-0 font-artifex_cf`}>
                     {filteredTitles[0]["series"]}
                 </div>
-                <div className={`text-7xl max-sm:text-[68px] max-sm:leading-[82px] font-bold text-gray-800 tracking-tight ${classes.landing_page_title}`}>
+                <div className={`text-4xl sm:text-7xl font-bold text-gray-800 tracking-tight ${classes.landing_page_title}`}>
                     {filteredTitles[0]["title"]}
                 </div>
-                <div className={`text-3xl text-primary-orange tracking-tight leading-none relative z-10 xl:pr-10 pl-1 max-sm:p-0 font-bold my-2 ${classes.landing_page_title}`}>
+                <div className={`text-2xl sm:text-3xl text-primary-orange tracking-tight leading-none relative z-10 xl:pr-10 pl-1 max-sm:p-0 font-bold my-2 ${classes.landing_page_title}`}>
                     {filteredTitles[0]["sub_title"]}<br/>
                     {filteredTitles[0]["sub_title_2"]}
 
