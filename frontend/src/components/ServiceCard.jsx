@@ -2,7 +2,7 @@ const ServiceCard = ({ imgURL, label, subtext }) => {
     return (
       <div className="flex-1 w-full">
         <div className="w-[280px]">
-          <img src={imgURL} alt={label}/>
+          <img src={imgURL} alt={label} className="rounded-2xl"/>
         </div>
         <h3 className="mt-5 text-3xl leading-normal font-bold">
           {/* label */}

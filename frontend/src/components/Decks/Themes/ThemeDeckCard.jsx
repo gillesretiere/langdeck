@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import classes from "../ThemeDeckGrid.module.css";
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import DeckContext from "../../../context/DeckContext";
 
 const ThemeDeckCard = ({theme, img})  => {
@@ -8,6 +8,7 @@ const ThemeDeckCard = ({theme, img})  => {
     //console.log (params);
     // console.log (theme);
     const lang_img = params.deck.lang_flag_icon;
+
     const linkHandler = (event) => {
       params.deck = {theme};
       params.theme=theme;
