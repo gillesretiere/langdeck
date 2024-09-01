@@ -71,7 +71,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'neue-haas-grotesk-display',
+    fontFamily: 'articulat-cf',
     fontWeigthLigth: 400,
     fontWeigthRegular: 500,
     fontWeigthMedium: 600,

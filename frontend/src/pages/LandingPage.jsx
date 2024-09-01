@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from "../components/UI/HomeSection/Nav";
+import MenuNavigation from '../components/UI/HomeSection/MenuNavigation';
 import {
     HomeDisplaySection, AvailLanguagesDisplaySection, AvailSaynetesDisplaySection, ResumeSection,
 } from "../sections";
@@ -7,7 +8,7 @@ import {
 const LandingPage = () => {
   return (
     <main className="relative">
-        <Nav />
+        <MenuNavigation />
         <section className="xl:padding-l wide:padding-r padding-b bg-special-gris-clair">
             <HomeDisplaySection />
         </section>
