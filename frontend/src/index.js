@@ -37,8 +37,9 @@ import DuoStepPage from './pages/DuoStepPage';
 import DuoStepSendPage from './pages/DuoStepSendPage';
 
 import CssBaseline from '@mui/material/CssBaseline';
+import theme from './theme';
 
-const theme = createTheme({
+const old_theme = createTheme({
   palette: {
     primary: {
       main: '#dedbd2',

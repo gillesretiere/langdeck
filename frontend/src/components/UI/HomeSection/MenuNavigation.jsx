@@ -1,3 +1,5 @@
+// https://codesandbox.io/p/sandbox/material-ui-5-hamburger-menu-navigation-fms85m
+
 import React, { useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
@@ -30,9 +32,9 @@ import { navLinks } from "../../../assets/constants/index.js";
 const StyledSearch = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.secondary.main, 0.15),
+  backgroundColor: alpha(theme.palette.primary.light, 0.15),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.primary.main, 0.25)
+    backgroundColor: alpha(theme.palette.primary.light, 0.25)
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
@@ -112,7 +114,7 @@ const MenuNavigation = () => {
             sx={{
               display: {
                 xs: "none",
-                sm: "block"
+                md: "block"
               }
             }}
           >
@@ -128,7 +130,7 @@ const MenuNavigation = () => {
               mr: 2,
               display: {
                 xs: "block",
-                sm: "none"
+                md: "none"
               }
             }}
           >
@@ -151,7 +153,7 @@ const MenuNavigation = () => {
               sx={{
                 p: 2,
                 height: 1,
-                backgroundColor: "#f74216"
+                backgroundColor: "#f44336"
               }}
             >
               {/* when clicking the icon it calls the function toggleDrawer and closes the drawer by setting the variable open to false */}
@@ -162,14 +164,16 @@ const MenuNavigation = () => {
               <Divider sx={{ mb: 2 }} />
 
               <Box sx={{ mb: 2 }}>
-               {/* on itère sur les liens de navigations intrapage*/}
+               {/* on itère sur les liens de navigations intrapage : ajout du lien 
+               https://stackoverflow.com/questions/47206639/how-to-add-a-link-to-a-list-in-material-ui-1-0
+               */}
                 {navLinks.map(
                   (item) => (
                     <ListItemButton component="a" href={item.href} >
                       <ListItemIcon>
-                        <DescriptionIcon sx={{ color: "primary.main" }} />
+                        <DescriptionIcon sx={{ color: "primary.contrastText" }} />
                       </ListItemIcon>
-                      <ListItemText primary={item.label} sx={{ color: "primary.main" }} />
+                      <ListItemText primary={item.label} sx={{ color: "primary.contrastText" }} />
                     </ListItemButton>
                   )
                 )}
