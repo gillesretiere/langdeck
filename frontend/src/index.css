@@ -35,8 +35,8 @@ here padding is included in box-sizing but not margin which is extra-sizing
   --mui-palette-secondary-dark: #00aecb;
   --mui-palette-secondary-contrastText: #00626a;  
 
-  --mui-palette-triadic-main :'#e7f436';
-  --mui-palette-triadic-complementary :'#36f443';
+  --mui-palette-triadic-main :#e7f436;
+  --mui-palette-triadic-complementary :#36f443;
 }
 
 html {
