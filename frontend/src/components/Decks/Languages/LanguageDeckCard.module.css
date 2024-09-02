@@ -73,7 +73,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: var(--color-bg-softgrey);
+    background-color: var(--mui-palette-primary-main);
   }
 
   .card__sep{

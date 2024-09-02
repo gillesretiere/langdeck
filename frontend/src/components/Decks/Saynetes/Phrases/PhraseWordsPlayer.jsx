@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 import Popper from "@mui/material/Popper";
-import PhraseDeckPhraseWordPopper from "./PhraseDeckPhraseWordPopper";
-import PhraseDeckPhraseWordPopper2 from "./PhraseDeckPhraseWordPopper2";
 import SayneteDeckPlayPopper from "./SayneteDeckPlayPopper";
 import classes from "./PhrasePlayer.module.css";
 

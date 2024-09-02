@@ -39,48 +39,6 @@ import DuoStepSendPage from './pages/DuoStepSendPage';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 
-const old_theme = createTheme({
-  palette: {
-    primary: {
-      main: '#dedbd2',
-    },
-    secondary: {
-      main: '#b0c4b1',
-    },
-    tertiary: {
-      main: '#FA7F08',
-    },
-    white: {
-      main: '#ffffff',
-    },
-    black: {
-      main: '#000000',
-    },
-    blue_primary: {
-      main: '#96C2DB',
-    },
-    blue_secondary: {
-      main: '#E5EDF1',
-    },
-    blue_tertiary: {
-      main: '#6d9ab3',
-    },
-  },
-  props: {
-    MuiTooltip: {
-      arrow: true,
-    },
-  },
-  typography: {
-    fontFamily: 'articulat-cf',
-    fontWeigthLigth: 400,
-    fontWeigthRegular: 500,
-    fontWeigthMedium: 600,
-    fontWeigthBold: 700,
-  }
-
-});
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>

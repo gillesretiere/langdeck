@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from "../components/UI/HomeSection/Nav";
 import MenuNavigation from '../components/UI/HomeSection/MenuNavigation';
 import {
     HomeDisplaySection, AvailLanguagesDisplaySection, AvailSaynetesDisplaySection, ResumeSection,

@@ -12,18 +12,22 @@ const theme = createTheme({
     palette: {
         primary: {
             main: '#f44336',
-            dark: '#c62828',
             light: '#ef9a9a',
+            dark: '#c62828',
             contrastText: '#fff',
         },
         secondary: {
             main: '#00D2E9',
-            dark: '#00aecb',
             light: '#abecf5',
+            dark: '#00aecb',
             contrastText: '#00626a',
         },
         error: {
             main: red.A400,
+        },
+        triadic : {
+            main: '#e7f436',
+            complementary: '#36f443',
         },
 
         white: {
@@ -42,11 +46,20 @@ const theme = createTheme({
     },
 
     typography: {
-        fontFamily: 'articulat-cf',
-        fontWeigthLigth: 400,
-        fontWeigthRegular: 500,
-        fontWeigthMedium: 600,
-        fontWeigthBold: 700,
+        primary:{
+            fontFamily: 'articulat-cf',
+            fontWeigthLigth: 400,
+            fontWeigthRegular: 500,
+            fontWeigthMedium: 600,
+            fontWeigthBold: 700,
+        },
+        secondary :{
+            fontFamily: 'artifex-cf',
+            fontWeigthLigth: 400,
+            fontWeigthRegular: 500,
+            fontWeigthMedium: 600,
+            fontWeigthBold: 700,
+        },
     },
 
     /*
@@ -62,7 +75,8 @@ const theme = createTheme({
                 }
             }
         }
-    }
+    },
+    cssVariables: true,
 
 });
 

@@ -25,11 +25,18 @@ here padding is included in box-sizing but not margin which is extra-sizing
 }
 
 :root{
-  --bg-clr-1: #E7F8F8;
-  --card-clr-red: #F03E3E;
-  --card-clr-violet: #7950F2;
-  --card-clr-green: #12B886;
-  --text-clr: #333;
+  --mui-palette-primary-main: #f44336;
+  --mui-palette-primary-light: #ef9a9a;
+  --mui-palette-primary-dark: #c62828;
+  --mui-palette-primary-contrastText: #fff;  
+
+  --mui-palette-secondary-main: #00D2E9;
+  --mui-palette-secondary-light: #abecf5;
+  --mui-palette-secondary-dark: #00aecb;
+  --mui-palette-secondary-contrastText: #00626a;  
+
+  --mui-palette-triadic-main :'#e7f436';
+  --mui-palette-triadic-complementary :'#36f443';
 }
 
 html {
@@ -46,6 +53,7 @@ body {
   */
   --primary-font : articulat-cf, sans-serif;
   --secondary-font : artifex-cf, serif;
+
   --serif-primary-font : artifex-cf, serif;
   --serif-secondary-font : ff-nexus-mix, sans-serif;
   --primary-color: #FA7F08;

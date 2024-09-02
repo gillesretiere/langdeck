@@ -65,12 +65,12 @@ const SaynetePlayerCard = ({ deck, img }) => {
           <div className={`${classes.card__wrapper}`}>
 
             <div className={`${classes.card__img}`} onClick={linkHandler}>
-              <img src={phrase_illustration} alt="flag Icon" />
+              <img src={phrase_illustration} alt="Phrase illustration" />
             </div>
 
 
             <div className={`flex flex-col mb-3`}>
-              <div className={`${classes.card__description_folio}`}>{phrase_position}</div>
+              <div className={`text-black ${classes.card__description_folio}`}>{phrase_position}</div>
               <div><hr></hr></div>
               <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
                 <div className={`${classes.card__description_title}`}><PhraseWordsPlayer phrase={deck}></PhraseWordsPlayer></div>
@@ -78,7 +78,7 @@ const SaynetePlayerCard = ({ deck, img }) => {
               </div>
 
               <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
-                <div className={`${classes.card__description_title}`}><div className={`${classes.card__text__tr}`}>{phrase_translation}</div></div>
+                <div className={`text-secondary-contrastText ${classes.card__description_title}`}><div className={`${classes.card__text__tr}`}>{phrase_translation}</div></div>
                 <div className=''><AudioPlayer media_url={phrase_audio_url} language="tr"></AudioPlayer> </div>
               </div>
             </div>

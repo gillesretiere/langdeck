@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from "./NavBar"
+import NavBar from './NavBar/NavBar';
 
-const Header  = () => {
+const Header = () => {
     return (
         <NavBar />
     )
