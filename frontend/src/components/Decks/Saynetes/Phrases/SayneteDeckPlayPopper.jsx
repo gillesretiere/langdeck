@@ -52,11 +52,11 @@ const SayneteDeckPlayPopper = ({ word, callbackModal }) => {
   return (
     <>
       <Box
-        sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m: 0, pt: 1, px: 0, minWidth: '14rem', bgcolor: "background.paper" }} >
+        sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m: 0, pt: 1, px: 0, minWidth: '14rem', bgcolor: "analogous.light" }} >
         {/* audio */}
         {showNote ? (
           <>
-            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'left', minWidth: '14rem', maxWidth: '18rem', p: 0 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'left', minWidth: '14rem', maxWidth: '18rem', p: 0, bgcolor: "analogous.light" }}>
               <div className={classes.word_notes_fr}>
                 <div className={classes.word_fr}>{word.word} : </div>
                 <div className={classes.note_fr}>{word.word_notes}</div>

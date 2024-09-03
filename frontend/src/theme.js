@@ -22,11 +22,19 @@ const theme = createTheme({
             dark: '#00aecb',
             contrastText: '#00626a',
         },
+        analogous: {
+            main: '#f4a236',
+            light: '#fdf2e1',
+            dark: '#ed8720',
+            contrastText: '#d65116',
+        },        
         error: {
             main: red.A400,
         },
         triadic : {
             main: '#e7f436',
+            light: '#fdfee8',
+            dark: '#b6b21d',
             complementary: '#36f443',
         },
 

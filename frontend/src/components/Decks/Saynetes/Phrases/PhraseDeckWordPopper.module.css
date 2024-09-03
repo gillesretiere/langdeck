@@ -128,11 +128,6 @@ h2 {
   align-items: flex-end;
   margin: 0.75rem;
   padding: 0.25rem;
-  background-color: white;
-  filter: grayscale(40%);
-  color: black;
-  background-color: var(--mui-palette-triadic-main);
-  font-family: var(--serif-secondary-font);
   font-size: 1.2em;
 }
 
@@ -145,11 +140,7 @@ h2 {
   align-items: flex-end;
   margin: 0rem;
   padding: 0.5rem;
-  background-color: var(--blue-theme-secondary-color);
-  filter: grayscale(10%);
-  color: #111439;
-  font-family: var(--serif-secondary-font);
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .word__popper__wrapper__notes {
@@ -217,35 +208,36 @@ h2 {
 
 
 .word_fr {
-  font-size: 0.9em;
+  font-size: 1.0em;
   font-weight: 800;
   background-color: var(--mui-palette-triadic-main);
   padding: 10px;
 }
 
 .word_tr {
-  font-size: 0.9em;
+  background-color: var(--mui-palette-triadic-main);
+  padding: 10px;
+  font-size: 1.0em;
   font-weight: 800;
 }
 
 .note_fr {
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 1.0em;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
 .word_notes_fr {
-  font-family: var(--serif-secondary-font);
-  font-size: 1.0rem;
-  background-color: white;
+  font-family: var(--primary-font);
+  font-size: 1.0em;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .word_notes_tr {
-  font-family: var(--serif-secondary-font);
-  font-size: 0.8em;
-  background-color: var(--blue-theme-secondary-color);
+  font-family: var(--primary-font);
+  color: var(--mui-palette-secondary-contrastText);
+  font-size: 1.0em;
   padding: 1rem;
 }
 

@@ -8,6 +8,7 @@ const DeckContext = React.createContext({
     available_stories : {'rec7lQw6DtIJP45dn': true, 'rec4nBx7PmDA3Y7Ji': true, 'reclNHMgbbYroSaNq': true},
     public_urls : {'vps_prod':'http://51.195.103.17:8000/', },
     url_paths : {'availableLanguages':'langdeck', 'availableThemes':'themesdeck'},
+    drawer_navlinks : [],
 });
 
 export default DeckContext;

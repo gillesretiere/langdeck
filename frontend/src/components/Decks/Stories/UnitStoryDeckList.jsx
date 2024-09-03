@@ -15,6 +15,19 @@ const UnitStoryDeckList = ({unit, img}) => {
             arr.push(key);
         }
     } 
+    console.log(stories);
+    const newArray= stories.map(element => {
+        const obj = {};
+        return {
+            ...obj,
+            label:element.story_name,
+            url:`/saynete_player_page/${element.story_language}`,
+            icon:element.story_illustration,
+            action:'Choisir une saynète',
+        };
+    });
+    params.drawer_navlinks = newArray;    
+    console.log(params.drawer_navlinks);
 
     return (
         <div className={`${classes.card__list}`}>

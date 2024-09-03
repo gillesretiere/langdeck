@@ -6,7 +6,6 @@ import classes from "../LanguageDeckGrid.module.css";
 
 const LanguageDeckList = ({languages}) => {
     let params = useContext(DeckContext);
-
     var dict = params.available_languages;
     var arr = [];
     
@@ -15,6 +14,18 @@ const LanguageDeckList = ({languages}) => {
             arr.push(key);
         }
     }    
+    const newArray= languages.map(element => {
+        const obj = {};
+        return {
+            ...obj,
+            label:element.lang_name_fr,
+            url:`/theme_page/${element.language}`,
+            icon:element.lang_flag_icon,
+            action:'Choisir une langue',
+        };
+    });
+    params.drawer_navlinks = newArray;
+
     return (
         <div className={`${classes.card__list}`}>
             {languages && languages.filter(item => arr.includes(item.language)).map(

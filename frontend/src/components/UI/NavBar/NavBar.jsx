@@ -1,6 +1,6 @@
 // https://codesandbox.io/p/sandbox/material-ui-5-hamburger-menu-navigation-fms85m
 
-import React, { useState } from "react";
+import React, { useState, useContext, } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -26,6 +26,7 @@ import Button from "@mui/material/Button";
 
 import { LGDK_LOGO_NOTEXT_BLUE } from "../../../assets/images";
 import { navLinks, currentVersion, } from "../../../assets/constants/index.js";
+import DeckContext from "../../../context/DeckContext";
 
 
 
@@ -87,6 +88,10 @@ const search = (
 
 
 const NavBar = ({ props }) => {
+
+    let deckContext = useContext(DeckContext);
+    console.log(deckContext);
+
     //react useState hook to save the current open/close state of the drawer, normally variables dissapear afte the function was executed
     const [open, setState] = useState(false);
 
@@ -137,10 +142,7 @@ const NavBar = ({ props }) => {
                         sx={{
                             mr: 2,
                             color: "secondary.main",
-                            display: {
-                                xs: "block",
-                                md: "none"
-                            }
+                            display: "block",
                         }}
                     >
                         <MenuIcon />
@@ -176,14 +178,18 @@ const NavBar = ({ props }) => {
                                 {/* on itère sur les liens de navigations intrapage : ajout du lien 
                https://stackoverflow.com/questions/47206639/how-to-add-a-link-to-a-list-in-material-ui-1-0
                */}
-                                {navLinks.map(
+
+
+                                {deckContext.drawer_navlinks.map(
                                     (item) => (
-                                        <ListItemButton component="a" href={item.href} >
-                                            <ListItemIcon>
-                                                <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
-                                            </ListItemIcon>
-                                            <ListItemText primary={item.label} sx={{ color: "secondary.contrastText" }} />
-                                        </ListItemButton>
+                                        <>
+                                            <ListItemButton component="a" href={item.url}>
+                                                <ListItemIcon>
+                                                    <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
+                                                </ListItemIcon>
+                                                <ListItemText primary={item.label} sx={{ color: "secondary.contrastText" }} />
+                                            </ListItemButton>
+                                        </>
                                     )
                                 )}
                             </Box>

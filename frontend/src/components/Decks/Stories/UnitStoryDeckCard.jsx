@@ -18,7 +18,7 @@ const UnitStoryDeckCard = ({ unit_story, img }) => {
     ctx.saynete = unit_story;
     ctx.saynete_phrases = unit_story.phrases;
   };
-
+  console.log(language)
   return (
     <div className={`h-100 mx-1 ${classes.card__container}`}>
       <Link to={{ pathname: `/saynete_player_page/${language}` }} onClick={linkHandler} >
