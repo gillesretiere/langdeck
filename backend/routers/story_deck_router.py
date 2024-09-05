@@ -17,8 +17,9 @@ async def list_all_langdecks(request:Request, language_uid: Optional[str]=None)-
     return result
 
 #--- list one langdeck by language uid
-@router.get("/{uid}", response_description="List a langdeck by language uid")
-async def list_langdecks_by_language_id (request: Request, uid: str):
-    if (language := await request.app.mongodb["saynetes"].find_one({"language":uid})) is not None:
-        return StoryDeckDB(**language)
-    raise HTTPException (status_code=404, detail=f"language with uid {uid} not found.") 
+@router.get("/{uid}", response_description="List a theme by language uid")
+async def list_themes_by_language_id (request: Request, uid: str):
+    if (documents := await request.app.mongodb["themes_deck"].find_one({"language":uid[-3:]})) is not None:
+        print (documents)
+        return StoryDeckDB(**documents)
+    raise HTTPException (status_code=404, detail=f"theme_uid with uid {uid} not found.") 

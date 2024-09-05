@@ -17,7 +17,13 @@ function App() {
       <DeckContext.Provider
             value={{
               deck: '',
-              language: 'all'
+              language: 'all',
+              update: () => { // we added this callback
+                this.setDeck((props) => ({
+                    deck: props,
+                }));
+            },
+
             }}>
         return (
         <>

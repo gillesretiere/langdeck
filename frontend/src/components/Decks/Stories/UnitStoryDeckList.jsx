@@ -21,9 +21,10 @@ const UnitStoryDeckList = ({unit, img}) => {
         return {
             ...obj,
             label:element.story_name,
-            url:`/saynete_player_page/${element.story_language}`,
+            url:`/saynete_player_page/${element.story_translation_id}`,
             icon:element.story_illustration,
             action:'Choisir une saynète',
+            story:element,
         };
     });
     params.drawer_navlinks = newArray;    

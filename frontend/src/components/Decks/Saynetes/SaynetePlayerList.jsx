@@ -3,10 +3,10 @@ import DeckContext from "../../../context/DeckContext";
 import classes from "../PhraseDeckGrid.module.css";
 import SaynetePlayerCard from "./SaynetePlayerCard";
 
-const SaynetePlayerList = ({phrase_deck, img}) => {
+const SaynetePlayerList = ({phrase_deck, img, decks}) => {
 
     let params = useContext(DeckContext);
-    console.log(phrase_deck);
+    console.log(decks);
 
     return (
         <div className={`${classes.card__list}`}>

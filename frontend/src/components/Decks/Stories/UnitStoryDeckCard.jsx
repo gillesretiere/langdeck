@@ -9,7 +9,7 @@ import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 
 const UnitStoryDeckCard = ({ unit_story, img }) => {
   let ctx = useContext(DeckContext);
-  const { language, story_name, story_translation, story_illustration, story_desc, story_desc_translation, story_synopsis, story_synopsis_translation, } = unit_story;
+  const { language, story_name, story_translation, story_illustration, story_desc, story_desc_translation, story_synopsis, story_synopsis_translation, story_language,} = unit_story;
   // console.log (params);
   // console.log (scene);
   const linkHandler = (event) => {
@@ -18,10 +18,10 @@ const UnitStoryDeckCard = ({ unit_story, img }) => {
     ctx.saynete = unit_story;
     ctx.saynete_phrases = unit_story.phrases;
   };
-  console.log(language)
+  console.log(ctx)
   return (
     <div className={`h-100 mx-1 ${classes.card__container}`}>
-      <Link to={{ pathname: `/saynete_player_page/${language}` }} onClick={linkHandler} >
+      <Link to={{ pathname: `/saynete_player_page/${story_language}` }} onClick={linkHandler} >
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__header}`}>
             <div className={`${classes.card__title}`}>{story_name}</div>

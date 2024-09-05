@@ -76,6 +76,9 @@ class LangDeck(MongoBaseModel):
 class LangDeckDB(LangDeck):
     pass
 
+class Theme(MongoBaseModel):
+    theme_rec_id : str = Field(..., min_length=3,)
+    
 # saynetes decks
 class StoryDeck(MongoBaseModel):
     language: str = Field(..., min_length=3, max_length=3)
@@ -83,7 +86,7 @@ class StoryDeck(MongoBaseModel):
     lang_name_en: str = Field(..., min_length=3,)
     lang_name_fr: str = Field(..., min_length=3,)
     lang_flag_icon: str = Field(..., min_length=3,)
-    stories : Optional[Any]
+    themes : Optional[Any]
 
 class StoryDeckDB(StoryDeck):
     pass

@@ -1,6 +1,6 @@
 // https://codesandbox.io/p/sandbox/material-ui-5-hamburger-menu-navigation-fms85m
 
-import React, { useState, useContext, } from "react";
+import React, { useState, useContext, useEffect, } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -86,14 +86,19 @@ const search = (
     </StyledSearch>
 );
 
-
 const NavBar = ({ props }) => {
-
-    let deckContext = useContext(DeckContext);
-    console.log(deckContext);
-
     //react useState hook to save the current open/close state of the drawer, normally variables dissapear afte the function was executed
     const [open, setState] = useState(false);
+    const context = useContext(DeckContext);
+
+    React.useEffect(() => {
+        console.log(context);
+      }, [context]);
+
+    const linkHandler = (props) => {
+        alert(`${props.url}`);
+        context.deck = props;
+    };
 
     //function that is being called every time the drawer should open or close, the keys tab and shift are excluded so the user can focus between the elements with the keys
     const toggleDrawer = (open) => (event) => {
@@ -180,11 +185,13 @@ const NavBar = ({ props }) => {
                */}
 
 
-                                {deckContext.drawer_navlinks.map(
+                                {context.drawer_navlinks.map(
                                     (item) => (
                                         <>
-                                            <ListItemButton component="a" href={item.url}>
-                                                <ListItemIcon>
+                                            <ListItemButton component="a" href={`${item.url}`} onClick={() => {
+                                                linkHandler(item);
+                                            }}>
+                                                <ListItemIcon >
                                                     <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
                                                 </ListItemIcon>
                                                 <ListItemText primary={item.label} sx={{ color: "secondary.contrastText" }} />
