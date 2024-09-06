@@ -64,7 +64,7 @@ const SaynetePlayerCard = ({ deck, img }) => {
         <Link to={{ pathname: `/saynete_player_page/${phrase_language}` }} onClick={clickHandler} >
           <div className={`${classes.card__wrapper}`}>
 
-            <div className={`${classes.card__img}`} onClick={linkHandler}>
+            <div className={`${classes.card__img}`}>
               <img src={phrase_illustration} alt="Phrase illustration" />
             </div>
 

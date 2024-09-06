@@ -12,13 +12,14 @@ import classes from "./Pages.module.css";
 const SaynetePlayerPage = ({}) => {
 
   let deckContext = useContext(DeckContext);
+  /*
+  on récupère le story_translat°_id (st_id) à transmettre au routeur
+  */
   const location = useLocation();
-  const tid = location.pathname.split("/")[2];
-  console.log(tid);
-  const BASE_URL = deckContext.public_urls['vps_prod'] + deckContext.url_paths['availableStories'] + "/" + tid;
+  const st_id = location.pathname.split("/")[2];
+  const BASE_URL = deckContext.public_urls['vps_prod'] + deckContext.url_paths['availableStories'] + "/" + st_id;
 
   const [decks, setDecks] = useState ([]);
-  let ctx = useContext(DeckContext);
   const lang_img = deckContext.current_deck.language_deck.lang_flag_icon;
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const SaynetePlayerPage = ({}) => {
 
   return (
     <Layout>
-      <SaynetePlayerList phrase_deck={ctx.saynete_phrases} img={lang_img} decks={decks} ></SaynetePlayerList>
+      <SaynetePlayerList phrase_deck={deckContext.saynete_phrases} img={lang_img} decks={decks} id={st_id}></SaynetePlayerList>
     </Layout>
   )
 }

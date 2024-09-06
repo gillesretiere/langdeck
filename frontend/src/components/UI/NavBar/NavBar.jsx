@@ -91,12 +91,7 @@ const NavBar = ({ props }) => {
     const [open, setState] = useState(false);
     const context = useContext(DeckContext);
 
-    React.useEffect(() => {
-        console.log(context);
-      }, [context]);
-
     const linkHandler = (props) => {
-        alert(`${props.url}`);
         context.deck = props;
     };
 
