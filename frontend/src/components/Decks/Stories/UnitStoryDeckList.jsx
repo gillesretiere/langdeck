@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import DeckContext from "../../../context/DeckContext";
 import classes from "../StoryDeckGrid.module.css";
 
@@ -15,7 +15,12 @@ const UnitStoryDeckList = ({unit, img}) => {
             arr.push(key);
         }
     } 
-    console.log(stories);
+
+    useEffect (() => {
+        params.live_deck = stories;
+        params.deck["live_deck"] = stories;
+    },[stories]);
+
     const newArray= stories.map(element => {
         const obj = {};
         return {
@@ -24,11 +29,10 @@ const UnitStoryDeckList = ({unit, img}) => {
             url:`/saynete_player_page/${element.story_translation_id}`,
             icon:element.story_illustration,
             action:'Choisir une saynète',
-            story:element,
+            level:'story',
         };
     });
     params.drawer_navlinks = newArray;    
-    console.log(params.drawer_navlinks);
 
     return (
         <div className={`${classes.card__list}`}>

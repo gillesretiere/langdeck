@@ -12,6 +12,8 @@ import pg_classes from "./Pages.module.css";
 
 import DeckContext from "../context/DeckContext";
 
+import { languages_DB } from '../assets/languages/index.js';
+
 const LanguagePage = () => {
 
   let deckContext = useContext(DeckContext);
@@ -39,7 +41,7 @@ const LanguagePage = () => {
         setLanguages(json)
         setIsPending(false)
       })
-  }, [])
+  }, []);
 
   return (
     <Layout>
@@ -67,7 +69,7 @@ const LanguagePage = () => {
       }
       <div>
         <LanguageDeck languages={
-          languages.filter(({ lang_name_fr }) => lang_name_fr.toLowerCase().startsWith(inputValue))
+          languages_DB.filter(({ lang_name_fr }) => lang_name_fr.toLowerCase().startsWith(inputValue))
           } />
       </div>
     </Layout>

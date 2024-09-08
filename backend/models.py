@@ -69,7 +69,6 @@ class LangDeck(MongoBaseModel):
     lang_name_native: str = Field(..., min_length=3,)
     lang_name_en: str = Field(..., min_length=3,)
     lang_name_fr: str = Field(..., min_length=3,)
-    lang_countries_vk: Optional[Any]
     lang_country_ref: str = Field(..., min_length=2,)
     lang_flag_icon: str = Field(..., min_length=3,)
 

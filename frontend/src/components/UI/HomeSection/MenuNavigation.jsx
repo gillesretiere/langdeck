@@ -169,7 +169,7 @@ const MenuNavigation = () => {
                */}
                 {navLinks.map(
                   (item) => (
-                    <ListItemButton component="a" href={item.href} >
+                    <ListItemButton key={item.href} component="a" href={item.href} >
                       <ListItemIcon>
                         <DescriptionIcon sx={{ color: "primary.contrastText" }} />
                       </ListItemIcon>

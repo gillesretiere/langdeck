@@ -1,34 +1,39 @@
-import React, { useContext, useState, useEffect,  } from "react";
+import React, { useContext, useState, useEffect, } from "react";
 import DeckContext from "../../../context/DeckContext";
 import classes from "../PhraseDeckGrid.module.css";
 import SaynetePlayerCard from "./SaynetePlayerCard";
 
-const SaynetePlayerList = ({phrase_deck, img, decks, id}) => {
-
-    let params = useContext(DeckContext);
+const SaynetePlayerList = ({ img, id, stories }) => {
 
     const [phrases, setPhrases] = useState([]);
-
-    // console.log(`Thèmes = ${decks["themes"]}`);
-    const themes = decks["themes"];
+    const [navLinks, setNavLinks] = useState([]);
+    const context = useContext(DeckContext);
 
     useEffect(() => {
-        if (themes) {
-            themes.forEach(theme => {
-                const lessons = theme["lessons"];
-                lessons.forEach (lesson => {
-                    const stories = lesson["stories"];
-                    stories.forEach (story => {
-                        if (story["story_translation_id"] === id) {
-                            console.log (`Found  ${id} : ${story["story_translation_id"]}`);
-                            setPhrases(story["phrases"]);
-                        }
-                    });
-                });
-                
-            });
-        }
-    }, [themes]);
+        stories.forEach(story => {
+            if (story["story_translation_id"] === id) {
+                setPhrases(story["phrases"]);
+            }
+        });
+    }, [stories]);
+
+    useEffect(() => {
+
+        const newArray = phrases.map(element => {
+            const obj = {};
+            return {
+                ...obj,
+                label: `${element.phrase_position} - ${element.phrase}`,
+                url: `/theme_page/${element.phrase_related_story_rec_id}`,
+                icon: element.phrase_illustration,
+                action: 'Choisir une phrase',
+                level: 'phrase',
+            };
+        });
+        setNavLinks(newArray);
+        context.drawer_navlinks = newArray;
+
+    }, [phrases]);
 
 
 

@@ -22,6 +22,7 @@ const LanguageDeckList = ({languages}) => {
             url:`/theme_page/${element.language}`,
             icon:element.lang_flag_icon,
             action:'Choisir une langue',
+            level:'language',
         };
     });
     params.drawer_navlinks = newArray;

@@ -10,7 +10,8 @@ const UnitPage = () => {
   let ctx = useContext(DeckContext);
 
   let deck = ctx.deck.theme;
-  console.log(ctx.deck);
+
+  ctx.live_deck = deck.lessons;
   const navigate = useNavigate();
 
   // console.log(data);
@@ -19,16 +20,19 @@ const UnitPage = () => {
   */
   const [skipLevel, setSkipLevel] = useState(false);
   const [check, setCheck] = useState(null);
+  const [lessons, setLessons] = useState([]);
 
   useEffect(() => {
     if (deck.lessons.length === 1) {
       const unit = deck.lessons[0];
+      setLessons (deck.lessons);
       ctx.unit = unit;
       ctx.current_deck.unit_deck = unit;
+
       setSkipLevel (true);
       navigate(`/unit_story_page/${unit.language}`);
     }
-  }, [])
+  }, [lessons])
 
 
 

@@ -2,6 +2,7 @@
 
 import React, { useState, useContext, useEffect, } from "react";
 import { styled, alpha } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -9,7 +10,8 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 //drawer elements used
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
@@ -28,7 +30,13 @@ import { LGDK_LOGO_NOTEXT_BLUE } from "../../../assets/images";
 import { navLinks, currentVersion, } from "../../../assets/constants/index.js";
 import DeckContext from "../../../context/DeckContext";
 
-
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
 
 const StyledSearch = styled("div")(({ theme }) => ({
     position: "relative",
@@ -90,10 +98,6 @@ const NavBar = ({ props }) => {
     //react useState hook to save the current open/close state of the drawer, normally variables dissapear afte the function was executed
     const [open, setState] = useState(false);
     const context = useContext(DeckContext);
-
-    const linkHandler = (props) => {
-        context.deck = props;
-    };
 
     //function that is being called every time the drawer should open or close, the keys tab and shift are excluded so the user can focus between the elements with the keys
     const toggleDrawer = (open) => (event) => {
@@ -178,18 +182,41 @@ const NavBar = ({ props }) => {
                                 {/* on itère sur les liens de navigations intrapage : ajout du lien 
                https://stackoverflow.com/questions/47206639/how-to-add-a-link-to-a-list-in-material-ui-1-0
                */}
-
+               {
+                context.drawer_navlinks.level === 'phrase' ? (
+                    <Box sx={{ width: '100%' }}>
+                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                        <Grid item xs={6}>
+                            <Item>1</Item>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Item>2</Item>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Item>3</Item>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Item>4</Item>
+                        </Grid>
+                    </Grid>
+                </Box>
+                ):(
+                    <></>
+                )
+               }
 
                                 {context.drawer_navlinks.map(
                                     (item) => (
                                         <>
-                                            <ListItemButton component="a" href={`${item.url}`} onClick={() => {
-                                                linkHandler(item);
-                                            }}>
-                                                <ListItemIcon >
-                                                    <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
-                                                </ListItemIcon>
-                                                <ListItemText primary={item.label} sx={{ color: "secondary.contrastText" }} />
+                                        {item.level}
+                                            <ListItemButton key={`${item.url}`} component="div">
+                                                <Link to={{ pathname: `${item.url}` }} >
+
+                                                    <ListItemIcon >
+                                                        <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
+                                                        <ListItemText primary={item.label} sx={{ color: "secondary.contrastText", pl: 2 }} />
+                                                    </ListItemIcon>
+                                                </Link>
                                             </ListItemButton>
                                         </>
                                     )
@@ -221,7 +248,7 @@ const NavBar = ({ props }) => {
                     </Drawer>
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 }
 

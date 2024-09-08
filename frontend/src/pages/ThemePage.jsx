@@ -20,7 +20,6 @@ const ThemePage = () => {
 
   let params = useContext(DeckContext);
 
-
   const skipLevels = (json) => {
     let data = json;
     // console.log(data);
@@ -32,6 +31,7 @@ const ThemePage = () => {
       params.deck = { theme };
       params.theme = data.themes[0];
       params.current_deck.theme_deck = data.themes[0];
+      params.live_deck = data.themes;
       navigate(`/unit_page/${theme.language}`);
     }
 
@@ -46,7 +46,7 @@ const ThemePage = () => {
         setDecks(skipLevels(json));
       })
       .then()
-  }, [])
+  }, [decks]);
 
   const setValueHandler = (newValue) => {
     setValue(newValue);
