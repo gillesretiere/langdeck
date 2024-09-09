@@ -23,6 +23,11 @@ const SaynetePlayerPage = ({ }) => {
   return (
     <Layout>
       {stories &&
+      /*
+        <SaynetePlayerList img={lang_img} id={st_id} stories={stories}></SaynetePlayerList>
+        <Test id={st_id} stories={stories}></Test>
+      */
+        
         <SaynetePlayerList img={lang_img} id={st_id} stories={stories}></SaynetePlayerList>
       }
     </Layout>

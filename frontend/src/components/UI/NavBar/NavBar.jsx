@@ -36,7 +36,7 @@ const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-  }));
+}));
 
 const StyledSearch = styled("div")(({ theme }) => ({
     position: "relative",
@@ -88,7 +88,7 @@ const search = (
             <SearchIcon />
         </SearchIconWrapper>
         <StyledInputBase
-            placeholder="Suchen…"
+            placeholder="Rechercher..."
             inputProps={{ "aria-label": "search" }}
         />
     </StyledSearch>
@@ -168,7 +168,7 @@ const NavBar = ({ props }) => {
                             sx={{
                                 p: 2,
                                 height: 1,
-                                backgroundColor: "secondary.main"
+                                backgroundColor: "secondary.main",
                             }}
                         >
                             {/* when clicking the icon it calls the function toggleDrawer and closes the drawer by setting the variable open to false */}
@@ -178,72 +178,54 @@ const NavBar = ({ props }) => {
 
                             <Divider sx={{ mb: 2 }} />
 
-                            <Box sx={{ mb: 2 }}>
+                            <Box sx={{ mb: 2,}}>
                                 {/* on itère sur les liens de navigations intrapage : ajout du lien 
                https://stackoverflow.com/questions/47206639/how-to-add-a-link-to-a-list-in-material-ui-1-0
+
+               columnSpacing={{ xs: 1, sm: 2, md: 3 }}
                */}
-               {
-                context.drawer_navlinks.level === 'phrase' ? (
-                    <Box sx={{ width: '100%' }}>
-                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                        <Grid item xs={6}>
-                            <Item>1</Item>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <Item>2</Item>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <Item>3</Item>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <Item>4</Item>
-                        </Grid>
-                    </Grid>
-                </Box>
-                ):(
-                    <></>
-                )
-               }
-
-                                {context.drawer_navlinks.map(
-                                    (item) => (
+                                {
+                                    context.drawer_navlinks.length &&
+                                        context.drawer_navlinks[0].level === 'phrase' ? (
+                                        <Box sx={{ width: '100%', backgroundColor: "secondary.main" }}>
+                                            <Grid container style={{ overflowY: "scroll", }} sx={{maxHeight:{sm:'300px', md:'600px'} }} spacing={2}>
+                                                {context.drawer_navlinks.map(
+                                                    (item) => (
+                                                        <Grid item xs={12} sm={6} md={3}>
+                                                            <Item sx={{
+                                                                backgroundColor: "secondary.dark",
+                                                                "&:hover": {
+                                                                    backgroundColor: "secondary.light"
+                                                                },
+                                                            }}>{item.label}</Item>
+                                                        </Grid>
+                                                    ))}
+                                            </Grid>
+                                        </Box>
+                                    ) : (
                                         <>
-                                        {item.level}
-                                            <ListItemButton key={`${item.url}`} component="div">
-                                                <Link to={{ pathname: `${item.url}` }} >
+                                            {context.drawer_navlinks.map(
+                                                (item) => (
+                                                    <>
+                                                        <ListItemButton key={`${item.url}`} component="div">
+                                                            <Link to={{ pathname: `${item.url}` }} >
 
-                                                    <ListItemIcon >
-                                                        <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
-                                                        <ListItemText primary={item.label} sx={{ color: "secondary.contrastText", pl: 2 }} />
-                                                    </ListItemIcon>
-                                                </Link>
-                                            </ListItemButton>
+                                                                <ListItemIcon >
+                                                                    <DescriptionIcon sx={{ color: "secondary.contrastText" }} />
+                                                                    <ListItemText primary={item.label} sx={{ color: "secondary.contrastText", pl: 2 }} />
+                                                                </ListItemIcon>
+                                                            </Link>
+                                                        </ListItemButton>
+                                                    </>
+                                                )
+                                            )}
                                         </>
                                     )
-                                )}
-                            </Box>
+                                }
 
+
+                            </Box>
                             {search}
-
-                            <Box
-                                sx={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    position: "absolute",
-                                    bottom: "0",
-                                    left: "50%",
-                                    transform: "translate(-50%, 0)"
-                                }}
-                            >
-                                <Button variant="contained" sx={{
-                                    m: 1, width: 0.5, backgroundColor: "secondary.dark",
-                                }}>
-                                    Register
-                                </Button>
-                                <Button variant="outlined" sx={{ m: 1, width: 0.5 }}>
-                                    Login
-                                </Button>
-                            </Box>
                         </Box>
                     </Drawer>
                 </Toolbar>

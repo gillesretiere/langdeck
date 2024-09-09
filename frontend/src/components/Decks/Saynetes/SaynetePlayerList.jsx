@@ -10,11 +10,14 @@ const SaynetePlayerList = ({ img, id, stories }) => {
     const context = useContext(DeckContext);
 
     useEffect(() => {
-        stories.forEach(story => {
-            if (story["story_translation_id"] === id) {
-                setPhrases(story["phrases"]);
-            }
-        });
+        if (stories.length) {
+            stories.forEach(story => {
+                if (story["story_translation_id"] === id) {
+                    setPhrases(story["phrases"]);
+                }
+            });
+        }
+
     }, [stories]);
 
     useEffect(() => {
@@ -23,7 +26,7 @@ const SaynetePlayerList = ({ img, id, stories }) => {
             const obj = {};
             return {
                 ...obj,
-                label: `${element.phrase_position} - ${element.phrase}`,
+                label: `${element.phrase_position}`,
                 url: `/theme_page/${element.phrase_related_story_rec_id}`,
                 icon: element.phrase_illustration,
                 action: 'Choisir une phrase',
@@ -41,7 +44,15 @@ const SaynetePlayerList = ({ img, id, stories }) => {
         <div className={`${classes.card__list}`}>
             {phrases && phrases.map(
                 (el) => {
+                    {
+                        /* 
                     return (<SaynetePlayerCard key={el.phrase_rec_id} deck={el} img={img} />)
+                    return (<Test key={el.phrase_rec_id} deck={el} img={img} />)
+
+                        */
+                    }
+                    return (<SaynetePlayerCard key={el.phrase_rec_id} deck={el} img={img} />)
+
                 }
             )
             }

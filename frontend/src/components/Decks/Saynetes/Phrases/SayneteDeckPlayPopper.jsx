@@ -48,11 +48,11 @@ const SayneteDeckPlayPopper = ({ word, callbackModal }) => {
 
 
 
-  console.log({ word });
+  // console.log({ word });
   return (
     <>
       <Box
-        sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m: 0, pt: 1, px: 0, minWidth: '14rem', bgcolor: "analogous.light" }} >
+        sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m: 0, pt: 3, px: 0, minWidth: '14rem', bgcolor: "analogous.light" }} >
         {/* audio */}
         {showNote ? (
           <>
@@ -70,7 +70,7 @@ const SayneteDeckPlayPopper = ({ word, callbackModal }) => {
               </div>
               <div className={classes.word_notes_tr}>
                 <div className={classes.word_tr}>{word.word_translation} : </div>
-                <div className={classes.note_tr}>{word.word_notes_translation}</div>
+                <div className={classes.note_fr}>{word.word_notes_translation}</div>
                 {
                   word.word_nutri_notes &&
                   <div className={classes.word__popper__wrapper__notes} >

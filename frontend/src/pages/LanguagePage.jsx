@@ -69,7 +69,9 @@ const LanguagePage = () => {
       }
       <div>
         <LanguageDeck languages={
-          languages_DB.filter(({ lang_name_fr }) => lang_name_fr.toLowerCase().startsWith(inputValue))
+          languages_DB.filter(
+            ({ lang_name_fr, enabled }) => (lang_name_fr.toLowerCase().startsWith(inputValue) && enabled)
+          )
           } />
       </div>
     </Layout>
