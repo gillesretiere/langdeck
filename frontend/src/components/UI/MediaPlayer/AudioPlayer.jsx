@@ -8,6 +8,10 @@ import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 const AudioPlayer = ({media_url, language}) => {
 
     const [isPlaying, setIsPlaying] = useState(false);
+    const audio = new Audio(
+      media_url
+  );
+  
     useEffect(() => {
         if (isPlaying) {
           console.log("Playing");
@@ -15,11 +19,9 @@ const AudioPlayer = ({media_url, language}) => {
             console.log("En Pause");
 
         }
-      }, [isPlaying, audio]);
+      }, [isPlaying, media_url]);
 
-    var audio = new Audio(
-        media_url
-    );
+
 
     function togglePlay() {
         return audio.paused ? audio.play() : audio.pause();
