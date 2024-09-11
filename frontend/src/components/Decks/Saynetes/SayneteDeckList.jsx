@@ -3,7 +3,6 @@ import SayneteDeckCard from "./SayneteDeckCard";
 
 const SayneteDeckList = ({ scene }) => { if(scene) {
   const {phrases} = scene;
-  console.log (phrases);
   return (
     <div>
       {phrases && phrases.map((el) => {

@@ -3,8 +3,17 @@
     width: auto;
     text-align: center;
     justify-content: center;
-    transform: scale(1.8);
+    transform: scale(1.9);
     color: var(--mui-palette-analogous-dark);
+}
+
+.svg_icons_blue {
+    display:flex;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1.8);
+    color: var(--mui-palette-triadic-complementary);
 }
 
 .svg_icons_tiny {

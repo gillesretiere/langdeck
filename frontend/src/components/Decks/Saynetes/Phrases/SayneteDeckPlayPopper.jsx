@@ -85,16 +85,22 @@ const SayneteDeckPlayPopper = ({ word, callbackModal }) => {
           </>
         ) : (
           <>
-            <div className={classes.word__popper__wrapper}>{word.word}</div>
-            <div className={classes.word__audio__wrapper}><MediaSimpleAudioPlayer media_url={word.word_audio_url_fr}></MediaSimpleAudioPlayer></div>
-            <div className={classes.word__popper__wrapper_tr}>{word.word_translation}</div>
+            <div>
+              <div className={`${classes.word__popper__wrapper}`}>{word.word}</div>
+              <div className={classes.word__audio__wrapper}><MediaSimpleAudioPlayer media_url={word.word_audio_url_fr}></MediaSimpleAudioPlayer></div>
+            </div>
+            <div className={`bg-triadic-light`}>
+              <div className={`text-secondary-contrastText ${classes.word__popper__wrapper_tr}`}>{word.word_translation}</div>
+              <div className={classes.word__audio__wrapper}><MediaSimpleAudioPlayer media_url={word.word_audio_url}></MediaSimpleAudioPlayer></div>
+            </div>
+
           </>
         )
         }
 
         <Box sx={{ display: 'flex' }}>
           <StyledButtonMore onClick={handleClick} variant="contained" fullWidth sx={{ pt: 1, borderRadius: "0px 0px 0px 16px", }}>
-          <Typography variant="primary">
+            <Typography variant="primary">
               ?
             </Typography>
           </StyledButtonMore>
