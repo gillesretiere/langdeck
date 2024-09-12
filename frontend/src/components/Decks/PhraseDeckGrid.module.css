@@ -1,3 +1,4 @@
+
 .card__list {
     display: grid;
     gap: 1rem;
@@ -15,10 +16,11 @@
         0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
         0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
         0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+    background-color: white;
     width: 100%;
     min-height: 240px;
-    background-color: white;
     border-radius: 12px;
+    filter: brightness(50%);
 }
 
 .card__container:hover { 
@@ -146,6 +148,15 @@
     transform: scale(1.5);
 }
 
+.dim {
+ 
+    /* For Internet Explorer */
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, .3);
+
+    /* For other browsers */
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+    pointer-events: none;
+}
 
 /* sm : Extra small devices (phones, 640px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */

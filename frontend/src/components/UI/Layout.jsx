@@ -5,7 +5,7 @@ import classes from "./Layout.module.css";
 
 const Layout = ({children}) => {
   return (
-    <div className={classes.container}>
+    <div id="layout" className={classes.container}>
         <Header />
         {/*<CurrentDecks />*/}
         <div className={classes.layout}>{children}</div>

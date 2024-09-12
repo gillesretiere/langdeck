@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState,useRef, } from 'react';
 import classes from "../PhraseDeckGrid.module.css";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import AudioPlayer from '../../UI/MediaPlayer/AudioPlayer';
 import SimpleAudioPlayer from '../../UI/MediaPlayer/SimpleAudioPlayer';
 import PhraseWordsPlayer from "./Phrases/PhraseWordsPlayer";
@@ -12,8 +12,10 @@ import DeckContext from "../../../context/DeckContext";
 
 const SaynetePlayerCard = ({ deck, img }) => {
 
-  const { phrase, phrase_translation, phrase_audio, phrase_audio_url_fr, phrase_audio_url, phrase_illustration, phrase_position, phrase_related_story, phrase_related_story_rec_id, phrase_language, phrase_html_rec_id, phrase_html_kw, phrase_words_rec_id, words, } = deck;
+  const { phrase, phrase_rec_id, phrase_translation, phrase_audio, phrase_audio_url_fr, phrase_audio_url, phrase_illustration, phrase_position, phrase_related_story, phrase_related_story_rec_id, phrase_language, phrase_html_rec_id, phrase_html_kw, phrase_words_rec_id, words, } = deck;
   let ctx = useContext(DeckContext);
+
+  const ref = useRef (null);
 
   const [fullCard, setFullCard] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -30,7 +32,6 @@ const SaynetePlayerCard = ({ deck, img }) => {
   ]);
 
   useEffect(() => {
-    setFullCard(false);
     const vkUrl = phrase_audio.split('/');
     const localUrl = '../../../assets/audio/' + phrase_related_story_rec_id + '/' + phrase_language + '/' + vkUrl.pop();
     setLocalAudioTr(localUrl);
@@ -58,8 +59,23 @@ const SaynetePlayerCard = ({ deck, img }) => {
   const clickHandler = (event) => {
     setFullCard(!fullCard);
     setArrowRef(event.currentTarget);
+    if (!anchorEl) {
+      ref.current.style.zIndex = `9`;
+      ref.current.style.position = "relative";
+      ref.current.style.width = "110%";
+      // document.querySelectorAll('#card__container').forEach(element => element.style.filter = `brightness(50%)`);
+      // document.querySelectorAll(`not #${phrase_rec_id}`).forEach(element => element.style.filter = `brightness(50%)`);
+      ref.current.style.filter = `brightness(100%)`;
+      // document.getElementById(phrase_rec_id).style.filter = `brightness(100%)`;
+    } else {
+      // document.querySelectorAll(`div:not(#${phrase_rec_id})`).forEach(element => element.style.filter = `brightness(1)`);
+      // box.style.filter = `brightness(1)`;
+      ref.current.style.zIndex = `0`;
+      ref.current.style.filter = `brightness(50%)`;
+      ref.current.style.position = "relative";
+      ref.current.style.width = "100%";
+    }
     setAnchorEl(anchorEl ? null : event.currentTarget);
-    console.log(fullCard);
     return;
   };
 
@@ -70,6 +86,8 @@ const SaynetePlayerCard = ({ deck, img }) => {
 
   return (
     <>
+    <div id='card__container'>
+
       <Popper id={id}
         open={pop}
         anchorEl={anchorEl}
@@ -91,7 +109,7 @@ const SaynetePlayerCard = ({ deck, img }) => {
           </div>
         </Box>
       </Popper>
-      <div className={`${classes.card__container}`}>
+      <div id={phrase_rec_id} ref={ref} className={`${classes.card__container}`}>
         <div className={`${classes.card__wrapper}`}>
           <div className={`${classes.card__img}`} onClick={clickHandler}>
             <img src={phrase_illustration} alt="Phrase illustration" />
@@ -110,6 +128,7 @@ const SaynetePlayerCard = ({ deck, img }) => {
           </div>
         </div>
       </div>
+    </div>
     </>
   )
 }
