@@ -52,7 +52,7 @@ const SayneteDeckPlayPopper = ({ word, callbackModal }) => {
   return (
     <>
       <Box
-        sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m: 0, pt: 3, px: 0, minWidth: '14rem', bgcolor: "analogous.light" }} >
+        sx={{ border: 0, borderRadius: '16px', boxShadow: 8, m: 0, pt: 3, px: 0, minWidth: '18rem', bgcolor: "analogous.light" }} >
         {/* audio */}
         {showNote ? (
           <>
@@ -86,12 +86,12 @@ const SayneteDeckPlayPopper = ({ word, callbackModal }) => {
         ) : (
           <>
             <div>
-              <div className={`${classes.word__popper__wrapper}`}>{word.word}</div>
+              <div className={`bg-triadic-main ${classes.word__popper__wrapper}`}>{word.word}</div>
               <div className={classes.word__audio__wrapper}><MediaSimpleAudioPlayer media_url={word.word_audio_url_fr}></MediaSimpleAudioPlayer></div>
             </div>
-            <div className={`bg-triadic-light`}>
+            <div className={`bg-analogous-light`}>
               <div className={`text-secondary-contrastText ${classes.word__popper__wrapper_tr}`}>{word.word_translation}</div>
-              <div className={classes.word__audio__wrapper}><MediaSimpleAudioPlayer media_url={word.word_audio_url}></MediaSimpleAudioPlayer></div>
+              <div className={`mt-3 ${classes.word__audio__wrapper}`}><MediaSimpleAudioPlayer media_url={word.word_audio_url}></MediaSimpleAudioPlayer></div>
             </div>
 
           </>

@@ -60,9 +60,7 @@ const SaynetePlayerCard = ({ deck, img }) => {
     setFullCard(!fullCard);
     setArrowRef(event.currentTarget);
     if (!anchorEl) {
-      ref.current.style.zIndex = `9`;
       ref.current.style.position = "relative";
-      ref.current.style.width = "110%";
       // document.querySelectorAll('#card__container').forEach(element => element.style.filter = `brightness(50%)`);
       // document.querySelectorAll(`not #${phrase_rec_id}`).forEach(element => element.style.filter = `brightness(50%)`);
       ref.current.style.filter = `brightness(100%)`;
@@ -70,10 +68,8 @@ const SaynetePlayerCard = ({ deck, img }) => {
     } else {
       // document.querySelectorAll(`div:not(#${phrase_rec_id})`).forEach(element => element.style.filter = `brightness(1)`);
       // box.style.filter = `brightness(1)`;
-      ref.current.style.zIndex = `0`;
-      ref.current.style.filter = `brightness(50%)`;
+      ref.current.style.filter = `brightness(98%)`;
       ref.current.style.position = "relative";
-      ref.current.style.width = "100%";
     }
     setAnchorEl(anchorEl ? null : event.currentTarget);
     return;
@@ -103,11 +99,6 @@ const SaynetePlayerCard = ({ deck, img }) => {
           }
         ]}
       >
-        <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'left', minWidth: '14rem', maxWidth: '18rem', p: 0 }}>
-          <div>
-            <h1>Hey !</h1>
-          </div>
-        </Box>
       </Popper>
       <div id={phrase_rec_id} ref={ref} className={`${classes.card__container}`}>
         <div className={`${classes.card__wrapper}`}>
@@ -122,7 +113,7 @@ const SaynetePlayerCard = ({ deck, img }) => {
               <div className={`${classes.card__description_icon}`}><SimpleAudioPlayer media_url={phrase_audio_url_fr} language="fr"></SimpleAudioPlayer> </div>
             </div>
             <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
-              <div className={`text-secondary-contrastText ${classes.card__description_title}`}><div className={`${classes.card__text__tr}`}>{phrase_translation}</div></div>
+              <div className={`text-secondary-contrastText ${classes.card__description_title}`}><div className={`text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl`}>{phrase_translation}</div></div>
               <div className=''><SimpleAudioPlayer media_url={phrase_audio_url} language="tr"></SimpleAudioPlayer> </div>
             </div>
           </div>

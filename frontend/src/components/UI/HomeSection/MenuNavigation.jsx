@@ -23,9 +23,9 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
+import { navLinks, currentVersion, } from "../../../assets/constants/index.js";
 
-import { LGDK_LOGO } from "../../../assets/images";
-import { navLinks } from "../../../assets/constants/index.js";
+import { LGDK_LOGO_NOTEXT_BLUE, } from "../../../assets/images";
 
 
 
@@ -103,12 +103,16 @@ const MenuNavigation = () => {
     <AppBar position="static">
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 700 }}>
+          <Typography>
             <a href="/">
-              <img src={LGDK_LOGO} alt="logo" width={128} />
+              <img src={LGDK_LOGO_NOTEXT_BLUE} alt="logo" width={64} />
             </a>
           </Typography>
-
+          <Typography variant="secondary" sx={{ flexGrow: 1, fontWeight: 700, color: "secondary.contrastText" }}>
+            <div>
+              {currentVersion.product} | {currentVersion.subProduct}
+            </div>
+          </Typography>
           <Box
             component="div"
             sx={{

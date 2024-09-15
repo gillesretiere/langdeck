@@ -20,7 +20,7 @@
     width: 100%;
     min-height: 240px;
     border-radius: 12px;
-    filter: brightness(50%);
+    filter: brightness(98%);
 }
 
 .card__container:hover { 
@@ -145,7 +145,7 @@
 
 .card__img:hover>img {
     /* Transforming the image when container gets hovered */
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .dim {

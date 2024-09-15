@@ -5,7 +5,7 @@ import AvailableSaynetesCard from '../components/Decks/Saynetes/AvailableSaynete
 const StandBySaynetes = ({saynetes}) => {
     return (
         <>
-            <div className='text-xl sm:text-3xl font-artifex_cf font-bold tracking-tight text-gray-900 mt-5' >A l'étude</div>
+            <div className='text-xl sm:text-3xl font-artifex_cf font-bold tracking-tight text-gray-900 mt-5' >En prévision</div>
 
             <div className={`grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14`}
             >

@@ -68,7 +68,7 @@ const PhraseKeywordsPlayer = ({ wordDeck }) => {
                     <SayneteDeckPlayPopper word={wordElement} callbackModal={callbackModal} />
                 </Popper>
             </div>
-            <div>
+            <div className={`text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl`}>
                 {phraseKeywordID &&
                     phraseKeywordID.map((elem) =>
                         wordsId.indexOf(elem) !== -1 && elem.length > 1 ? (

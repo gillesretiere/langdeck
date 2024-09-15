@@ -19,7 +19,7 @@ const ResumeSection = () => {
           <ul className="sm:max-w-sm lg:max-w-lg list-disc pl-5">
             <li>Diététiciennes expertes de DAC44 (Dispositif d'Appui à la Coordination de Loire-Atlantique) : élaboration du contenu des saynètes, dialogues comportant les messages à visée thérapeutique</li>
             <li>Interprètes/traductrices ASAMLA (Interprétariat et Médiation pour l'Intégration) : traduction des saynètes en 5 langues : arabe, russe, roumain, anglais, turc.</li>
-            <li>Consultant Informatique (Hammer & Marteau): Web design, mise en page des livrets, illustrations, audio, traitement des données. </li>
+            <li>Consultant Informatique : Web design, mise en page des livrets, illustrations, audio, traitement des données. </li>
           </ul>
           </div>
         </div>

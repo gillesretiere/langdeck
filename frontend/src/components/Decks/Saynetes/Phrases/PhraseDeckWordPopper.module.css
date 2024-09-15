@@ -138,7 +138,7 @@ h2 {
   text-align: center;
   justify-content: center;
   align-items: flex-end;
-  margin: 0rem;
+  margin: 0.75rem;
   padding: 0.5rem;
   font-size: 1.2em;
 }
@@ -208,9 +208,9 @@ h2 {
 
 
 .word_fr {
+  /* background-color: var(--mui-palette-triadic-main); */
   font-size: 1.0em;
   font-weight: 800;
-  background-color: var(--mui-palette-triadic-main);
   padding-left: 1.0rem;
   padding-right: 1.0rem;
   padding-top: 0.4rem;
@@ -218,7 +218,7 @@ h2 {
 }
 
 .word_tr {
-  background-color: var(--mui-palette-triadic-main);
+  /* background-color: var(--mui-palette-triadic-main); */
   padding-left: 1.0rem;
   padding-right: 1.0rem;
   padding-top: 0.4rem;
@@ -249,6 +249,7 @@ h2 {
   font-size: 1.0em;
   padding-left: 0rem;
   padding-right: 0rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 620px) {
