@@ -1,9 +1,50 @@
+
 .card__list {
     display: grid;
     gap: 1rem;
     margin: 1rem 1.5rem 1rem 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* pas de min ; largeur max 350px => on ne couvre pas toute la largeur possible, ce qui est bien si il n'y a que quelques cartes (<5)*/
+        grid-template-columns: repeat(auto-fit, minmax(max-content, auto));
+
 }
+/* sm : Extra small devices (phones, 640px and down) 
+https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
+https://developer.mozilla.org/fr/docs/Web/CSS/@media/orientation
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (orientation: portrait) and (max-width: 640px) {
+    .card__list {
+        grid-template-columns: repeat(auto-fit, minmax(max-content, auto));
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 640px) {
+    .card__list {
+        grid-template-columns: repeat(auto-fit, minmax(40%, auto));
+    }
+}
+
+/* md : Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card__list {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 290px));
+    }
+}
+
+/* lg : Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .card__list {
+        grid-template-columns: repeat(auto-fit, minmax(290px,290px));
+    }
+}
+
+/* xl: Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+    .card__list {
+        grid-template-columns: repeat(auto-fit, minmax(0, 20%));
+    }
+}
+
+
 
 .card__container {
     /* effet d’ombre */
@@ -21,10 +62,10 @@
     background-color: white;
 }
 
-.card__container:hover { 
-    /* shadow effect on hover (whole card) */ 
-    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
-} 
+.card__container:hover {
+    /* shadow effect on hover (whole card) */
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
 
 
 .card__wrapper {
@@ -60,28 +101,25 @@
 
 .card__title {
     font-family: var(--primary-font);
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
     padding: 0.2rem 0.5rem 0rem 0.5rem;
-    color: var(--palette-dark-blue);
 }
 
 .card__subtitle {
     font-family: var(--primary-font);
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0rem 0.5rem 0rem 0.5rem;
-    color: var(--palette-dark-blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
 .card__description_title {
     font-family: var(--primary-font);
 
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     line-height: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 1.0rem 0.5rem 0.5rem 0.5rem;
-    color: var(--palette-dark-blue);
 }
 
 .card__description_subtitle {

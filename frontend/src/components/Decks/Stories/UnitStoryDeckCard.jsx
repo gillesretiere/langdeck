@@ -26,7 +26,7 @@ const UnitStoryDeckCard = ({ unit_story, img }) => {
             <div className={`${classes.card__title}`}>{story_name}</div>
             <div className={`${classes.card__subtitle}`}>{story_translation}</div>
           </div>
-          <div className={`${classes.card__img}`}>
+          <div className={`mt-2 ${classes.card__img}`}>
             <img src={story_illustration} alt="flag Icon" />
           </div>
           <div className={`flex flex-col`}>
