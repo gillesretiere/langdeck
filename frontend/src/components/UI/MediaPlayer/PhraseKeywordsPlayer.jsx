@@ -1,6 +1,7 @@
 import React, { useState, useEffect, } from "react";
 import Popper from "@mui/material/Popper";
 import SayneteDeckPlayPopper from "../../Decks/Saynetes/Phrases/SayneteDeckPlayPopper";
+import KeywordPopper from "../../Decks/Saynetes/Phrases/KeywordPopper";
 
 import classes from "./PhraseWordPlayer.module.css";
 
@@ -15,7 +16,7 @@ const PhraseKeywordsPlayer = ({ wordDeck }) => {
     const [wordElement, setWordElement] = useState(null);
     const [arrowRef, setArrowRef] = useState(null);
 
-    console.log(wordDeck);
+    // console.log(wordDeck);
     const callbackModal = () => {
         setAnchorEl(null);
      }
@@ -65,10 +66,10 @@ const PhraseKeywordsPlayer = ({ wordDeck }) => {
                         }
                     ]}
                 >
-                    <SayneteDeckPlayPopper word={wordElement} callbackModal={callbackModal} />
+                    <KeywordPopper word={wordElement} callbackModal={callbackModal} />
                 </Popper>
             </div>
-            <div className={`text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg`}>
+            <div className={`text-base sm:text-base md:text-base lg:text-base xl:text-base`}>
                 {phraseKeywordID &&
                     phraseKeywordID.map((elem) =>
                         wordsId.indexOf(elem) !== -1 && elem.length > 1 ? (

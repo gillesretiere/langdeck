@@ -24,7 +24,7 @@ const SimpleAudioPlayer = ({ media_url, language, }) => {
     return (
         <>
             {isReady &&
-                <PlayCircleOutlineIcon className={classes.volume_up_tr} onClick={togglePlay}></PlayCircleOutlineIcon>
+                <PlayCircleOutlineIcon onClick={togglePlay}></PlayCircleOutlineIcon>
             }
         </>
     )

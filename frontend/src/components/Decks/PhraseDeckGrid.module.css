@@ -1,4 +1,3 @@
-
 .card__list {
     display: grid;
     gap: 1rem;
@@ -18,23 +17,24 @@
         0 3.5px 6px hsla(230, 13%, 9%, 0.09);
     background-color: white;
     width: 100%;
-    min-height: 240px;
+    height: 100%;
     border-radius: 12px;
     filter: brightness(98%);
 }
 
-.card__container:hover { 
-    /* shadow effect on hover (whole card) */ 
-    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
-} 
+.card__container:hover {
+    /* shadow effect on hover (whole card) */
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
 
 .card__wrapper {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    margin-bottom: auto;
 }
 
 
@@ -52,14 +52,70 @@
     border-top-right-radius: 12px;
 }
 
+.card__container {
+
+    display: flex;
+    flex-direction: column;
+
+    /* effet d’ombre */
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+        /* 2. shadow ring 👇 */
+        0 0 0 1px hsla(230, 13%, 9%, 0.075),
+        /* 3. multiple soft shadows 👇 */
+        0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+        0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+        0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    filter: brightness(98%);
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+a {
+    margin-top: auto;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.wrapper {}
+
+.header {}
+
+
+.footer {
+    align-self: flex-end;
+}
+
+button {
+    background-color: #0891B2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+button {
+    align-self: flex-end;
+}
+
 .card__footer {
     display: flex;
-    flex: 1;
+    flex-wrap: wrap;
     align-items: flex-end;
     text-align: left;
     justify-content: right;
     border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px; 
+    border-bottom-right-radius: 12px;
+    margin-top: auto;
 }
 
 .card__title {
@@ -89,6 +145,7 @@
     border-left: none;
     border-right: none;
     border-color: lightgray;
+    margin-bottom: auto;
 }
 
 .card__description_icon {
@@ -128,7 +185,8 @@
     justify-content: center;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    overflow: hidden; /* Hide the overflowing of child elements */
+    overflow: hidden;
+    /* Hide the overflowing of child elements */
 }
 
 .card__img>img {
@@ -149,7 +207,7 @@
 }
 
 .dim {
- 
+
     /* For Internet Explorer */
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, .3);
 
@@ -172,12 +230,14 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
+
 /* lg : Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
     .card__list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
+
 /* xl: Extra large devices (large laptops and desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
     .card__list {

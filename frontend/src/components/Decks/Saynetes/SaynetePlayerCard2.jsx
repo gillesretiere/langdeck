@@ -8,12 +8,9 @@ import PhraseKeywordsPlayer from '../../UI/MediaPlayer/PhraseKeywordsPlayer';
 import Popper from "@mui/material/Popper";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import IconButton from '@mui/material/IconButton';
-import Stack from '@mui/material/Stack';
-import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import DeckContext from "../../../context/DeckContext";
 
-const SaynetePlayerCard = ({ deck, img }) => {
+const SaynetePlayerCard2= ({ deck, img }) => {
 
   const { phrase, phrase_rec_id, phrase_translation, phrase_audio, phrase_audio_url_fr, phrase_audio_url, phrase_illustration, phrase_position, phrase_related_story, phrase_related_story_rec_id, phrase_language, phrase_html_rec_id, phrase_html_kw, phrase_words_rec_id, words, } = deck;
   let ctx = useContext(DeckContext);
@@ -24,7 +21,6 @@ const SaynetePlayerCard = ({ deck, img }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [arrowRef, setArrowRef] = useState(null);
   const [localAudioTr, setLocalAudioTr] = useState('');
-  const [french, setFrench] = useState(true);
   const [wordDeck, setWordDeck] = useState([
     {
       phrase: '',
@@ -59,16 +55,6 @@ const SaynetePlayerCard = ({ deck, img }) => {
     ctx.saynete = phrase_related_story;
     ctx.saynete_phrases = deck;
   };
-
-
-  const languageToggler = (val) => {
-    console.log(val);
-    if (val === "FR") {
-      setFrench(true);
-    } else {
-      setFrench(false);
-    }
-  }
 
   const clickHandler = (event) => {
     setFullCard(!fullCard);
@@ -115,54 +101,33 @@ const SaynetePlayerCard = ({ deck, img }) => {
         >
         </Popper>
         <div id={phrase_rec_id} ref={ref} className={`${classes.card__container}`}>
-          <div className={`${classes.card__img}`} onClick={clickHandler}>
-            <img src={phrase_illustration} alt="Phrase illustration" />
+          <div className={`${classes.card__wrapper}`}>
+            <div className={`${classes.card__img}`} onClick={clickHandler}>
+              <img src={phrase_illustration} alt="Phrase illustration" />
+            </div>
+            <div className={`flex flex-col mb-3`}>
+              <div className={`inline-grid grid-cols-1 gap-0.5 bg-white text-left`}>
+                <div className={`${classes.card__description_title}`}><PhraseKeywordsPlayer wordDeck={wordDeck}></PhraseKeywordsPlayer></div>
+              </div>
+              <div><hr></hr></div>
+              <div className={`inline-grid grid-cols-[80%_1fr] gap-0.5 bg-white text-left`}>
+                <div className={`text-secondary-contrastText ${classes.card__description_title}`}><div className={`text-sm sm:text-sm md:text-md lg:text-lg xl:text-xl`}>{phrase_translation}</div></div>
+                <div className=''><SimpleAudioPlayer media_url={phrase_audio_url} language="tr"></SimpleAudioPlayer> </div>
+              </div>
+              <div className={`text-black ${classes.card__description_folio}`}>{phrase_position}</div>
+              <div className={`${classes.card__description_icon}`}><SimpleAudioPlayer media_url={phrase_audio_url_fr} language="fr"></SimpleAudioPlayer> </div>
+            </div>
+            <div className={`text-black ${classes.card__footer}`}>
+              <div>01</div>
+              <div className="self-end ...">02</div>
+              <div>03</div>
+            </div>
           </div>
-          <div className={`${classes.card__description_title}`}>
-            {french ? <>
-              <PhraseKeywordsPlayer wordDeck={wordDeck}></PhraseKeywordsPlayer>
-              </> : <div className={`text-base sm:text-base md:text-base lg:text-base xl:text-base`}>
-              {phrase_translation}
-              </div>}
-              
-          </div>
-          <Stack direction="row" spacing={3} sx={{
-            justifyContent: "space-between",
-            alignItems: "flex-end",
-            paddingLeft: 2,
-            paddingRight: 2,
-            marginTop: 3,
-            marginBottom: 1,
-          }}>
-            <IconButton color="grey" aria-label="position" sx={{
-              padding: 0,
-            }}>
-              <p>{phrase_position}</p>
-            </IconButton>
-            <IconButton color="grey" aria-label="play" sx={{
-              padding: 0,
-            }}>
-              <SimpleAudioPlayer media_url={french ? phrase_audio_url_fr : phrase_audio_url} language={french ? 'fr' : 'tr'}></SimpleAudioPlayer>
-            </IconButton>
-            <Button color="grey" variant={french ? 'contained' : 'outlined'} size="small" aria-label="FR" onClick={() => languageToggler('FR')} sx={{
-              padding: 0,
-            }}>
-              <p>fre</p>
-            </Button>
-            <Button color="grey" variant={french ? 'outlined' : 'contained'} size="small" aria-label="TR" onClick={() => languageToggler('TR')} sx={{
-              padding: 0,
-              alignItems: "center",
-            }}>
-              <p>{phrase_language}</p>
-            </Button>
-          </Stack>
-          {/* https://codesandbox.io/p/sandbox/material-ui-circular-button-group-m8nyk?file=%2Fsrc%2FApp.js */}
 
         </div>
-
       </div>
     </>
   )
 }
 
-export default SaynetePlayerCard
+export default SaynetePlayerCard2

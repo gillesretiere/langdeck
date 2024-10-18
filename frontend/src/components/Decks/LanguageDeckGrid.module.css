@@ -1,11 +1,11 @@
 
+
 .card__list {
     display: grid;
     gap: 1rem;
     margin: 1rem 1.5rem 1rem 1rem;
-    /* pas de min ; largeur max 350px => on ne couvre pas toute la largeur possible, ce qui est bien si il n'y a que quelques cartes (<5)*/
-        grid-template-columns: repeat(auto-fit, minmax(max-content, auto));
-
+    /* grid-template-columns: repeat(auto-fit, minmax(max-content, auto)); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 /* sm : Extra small devices (phones, 640px and down) 
 https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
@@ -40,7 +40,9 @@ https://developer.mozilla.org/fr/docs/Web/CSS/@media/orientation
 /* xl: Extra large devices (large laptops and desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
     .card__list {
-        grid-template-columns: repeat(auto-fit, minmax(0, 20%));
+        /* grid-template-columns: repeat(auto-fit, minmax(0, 20%)); */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
     }
 }
 

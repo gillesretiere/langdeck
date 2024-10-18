@@ -1,5 +1,5 @@
 import { red } from '@mui/material/colors';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, alpha, getContrastRatio } from '@mui/material/styles';
 
 /* A custom theme for this app
 https://mui.com/material-ui/customization/color/
@@ -7,6 +7,15 @@ https://m2.material.io/design/color/the-color-system.html#color-theme-creation
 https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
 
 */
+
+const violetBase = '#7F00FF';
+const violetMain = alpha(violetBase, 0.7);
+
+const greyBase = '#0D0D0D';
+const greyMain = alpha(greyBase, 0.7);
+
+const orangeBase = '#F28705';
+const orangeMain = alpha(orangeBase, 0.9);
 
 const theme = createTheme({
     palette: {
@@ -27,11 +36,11 @@ const theme = createTheme({
             light: '#fdf2e1',
             dark: '#ed8720',
             contrastText: '#d65116',
-        },        
+        },
         error: {
             main: red.A400,
         },
-        triadic : {
+        triadic: {
             main: '#e7f436',
             light: '#fdfee8',
             dark: '#b6b21d',
@@ -40,6 +49,32 @@ const theme = createTheme({
 
         white: {
             main: '#ffffff',
+        },
+
+        dark: {
+            main: '#404040',
+        },
+
+        grey: {
+            main: greyMain,
+            light: alpha(greyBase, 0.5),
+            dark: alpha(greyBase, 0.9),
+            contrastText: getContrastRatio(greyMain, '#fff') > 4.5 ? '#fff' : '#111',
+        },
+
+        violet: {
+            main: violetMain,
+            light: alpha(violetBase, 0.5),
+            dark: alpha(violetBase, 0.9),
+            contrastText: getContrastRatio(violetMain, '#fff') > 4.5 ? '#fff' : '#111',
+        },
+
+
+        orange: {
+            main: orangeMain,
+            light: alpha(orangeBase, 0.5),
+            dark: alpha(orangeBase, 0.9),
+            contrastText: getContrastRatio(orangeMain, '#fff') > 4.5 ? '#fff' : '#111',
         },
 
         blue_primary: {
@@ -54,14 +89,14 @@ const theme = createTheme({
     },
 
     typography: {
-        primary:{
+        primary: {
             fontFamily: 'articulat-cf',
             fontWeigthLigth: 400,
             fontWeigthRegular: 500,
             fontWeigthMedium: 600,
             fontWeigthBold: 700,
         },
-        secondary :{
+        secondary: {
             fontFamily: 'artifex-cf',
             fontWeigthLigth: 400,
             fontWeigthRegular: 500,
