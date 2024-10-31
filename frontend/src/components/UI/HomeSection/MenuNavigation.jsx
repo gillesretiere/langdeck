@@ -103,6 +103,7 @@ const MenuNavigation = () => {
     <AppBar position="static">
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
+          {/* 
           <Typography>
             <a href="/">
               <img src={LGDK_LOGO_NOTEXT_BLUE} alt="logo" width={64} />
@@ -113,6 +114,8 @@ const MenuNavigation = () => {
               {currentVersion.product} | {currentVersion.subProduct}
             </div>
           </Typography>
+          */}
+
           <Box
             component="div"
             sx={{

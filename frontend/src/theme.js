@@ -49,10 +49,18 @@ const theme = createTheme({
 
         white: {
             main: '#ffffff',
+            contrastText: '#111',
         },
 
         dark: {
             main: '#404040',
+        },
+
+        lightgrey: {
+            main: alpha(greyBase, 0.3),
+            light: alpha(greyBase, 0.5),
+            dark: alpha(greyBase, 0.9),
+            contrastText: getContrastRatio(greyMain, '#fff') > 4.5 ? '#fff' : '#111',
         },
 
         grey: {

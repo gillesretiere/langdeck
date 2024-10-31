@@ -11,6 +11,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
 https://developer.mozilla.org/fr/docs/Web/CSS/@media/orientation
 */
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (orientation: portrait) and (max-width: 640px) {
     .card__list {
         grid-template-columns: repeat(auto-fit, minmax(max-content, auto));
@@ -18,28 +19,30 @@ https://developer.mozilla.org/fr/docs/Web/CSS/@media/orientation
 }
 @media only screen and (orientation: landscape) and (max-width: 640px) {
     .card__list {
-        grid-template-columns: repeat(auto-fit, minmax(40%, auto));
+        grid-template-columns: auto auto;
     }
 }
 
 /* md : Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .card__list {
-        grid-template-columns: repeat(auto-fit, minmax(290px, 290px));
+        grid-template-columns: auto auto;
     }
 }
 
 /* lg : Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
     .card__list {
-        grid-template-columns: repeat(auto-fit, minmax(290px,290px));
+        grid-template-columns: auto auto;
     }
 }
 
 /* xl: Extra large devices (large laptops and desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
     .card__list {
-        grid-template-columns: repeat(auto-fit, minmax(0, 20%));
+        /* grid-template-columns: repeat(auto-fit, minmax(0, 20%)); */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
     }
 }
 
@@ -146,6 +149,6 @@ https://developer.mozilla.org/fr/docs/Web/CSS/@media/orientation
     align-items: center;
     /* border-radius: 9999px; */
     /* width: auto;*/
-    height: 10rem;
+
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }

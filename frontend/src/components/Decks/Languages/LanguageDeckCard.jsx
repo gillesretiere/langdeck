@@ -5,9 +5,11 @@ import classes from "../LanguageDeckGrid.module.css";
 import { languages } from '../../../assets/constants';
 
 const LanguageDeckCard = ({ language_deck }) => {
-  const { language, lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon } = language_deck;
+  const { language, lang_name_fr, lang_name_en, lang_name_native, lang_flag_icon, lang_alpha2, } = language_deck;
   const params = useContext(DeckContext);
   const vk_card_info = languages.filter(elem => elem.language === language);
+
+  // console.log (language_deck);
 
   const handleClick = () => {
     params.deck = language_deck;

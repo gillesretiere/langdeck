@@ -21,7 +21,7 @@ const NavBar = () => {
                 <Box
                 component="img"
                 display="flex"
-                sx={{ height: 54, flexGrow: 0}}
+                sx={{ height: 32, flexGrow: 0}}
                 alt="Logo"
                 src={LGDK_LOGO_NOTEXT}>
                 </Box>
@@ -30,7 +30,7 @@ const NavBar = () => {
               Les Saynètes
             </div>            
             <div className={`ml-2 font-secondary_font font-semibold text-primary-orange`}>
-              Le diabète
+              Le Diabète
             </div>
 
         </Toolbar>

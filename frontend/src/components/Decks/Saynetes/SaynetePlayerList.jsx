@@ -1,13 +1,49 @@
-import React, { useContext, useState, useEffect, } from "react";
+import React, { useContext, useState, useEffect, useRef, } from "react";
 import DeckContext from "../../../context/DeckContext";
 import classes from "../PhraseDeckGrid.module.css";
 import SaynetePlayerCard from "./SaynetePlayerCard";
+import SaynetePlayCardFull from "./SaynetePlayCardFull";
 
 const SaynetePlayerList = ({ img, id, stories }) => {
 
     const [phrases, setPhrases] = useState([]);
+    const [currentPhrase, setCurrentPhrase] = useState(null);
+    const [currentCardId, setCurrenCardId] = useState(null);
     const [navLinks, setNavLinks] = useState([]);
+    const [fullCard, setFullCard] = useState(false);
+    const boxRef = useRef(null);
     const context = useContext(DeckContext);
+
+    
+
+    const callbackFunction = (ref) => {
+        setFullCard(!fullCard);
+        if (fullCard) {
+            setCurrenCardId(null);
+        } else {
+            setCurrenCardId(ref.current.getAttribute("id"));
+        }
+        context.currentCardId = ref.current.getAttribute("id");
+        // console.log(phrases);
+        var phr = null;
+        if (phrases.length) {
+            phrases.forEach(phrase => {
+                if (phrase["phrase_rec_id"] === ref.current.getAttribute("id")) {
+                    phr = phrase;
+                    setCurrentPhrase(phrase);
+                }
+            });
+        }
+        /*
+        console.log(phr);
+        console.log(fullCard);
+        */
+
+    }
+
+    const clickHandler = (event) => {
+        console.log(event.currentTarget.getAttribute("id"));
+    }
 
     useEffect(() => {
         if (stories.length) {
@@ -16,6 +52,7 @@ const SaynetePlayerList = ({ img, id, stories }) => {
                     setPhrases(story["phrases"]);
                 }
             });
+
         }
 
     }, [stories]);
@@ -31,32 +68,52 @@ const SaynetePlayerList = ({ img, id, stories }) => {
                 icon: element.phrase_illustration,
                 action: 'Choisir une phrase',
                 level: 'phrase',
+                phrase_rec_id: `${element.phrase_rec_id}`,
             };
         });
         setNavLinks(newArray);
         context.drawer_navlinks = newArray;
-
+        if (phrases.length) {
+            phrases.forEach(phrase => {
+                if (phrase["phrase_rec_id"] === currentCardId) {
+                    setCurrentPhrase(phrase);
+                }
+            });
+            setCurrenCardId(newArray["phrase_rec_id"]);
+        }
     }, [phrases]);
 
 
 
     return (
-        <div className={`${classes.card__list}`}>
-            {phrases && phrases.map(
-                (el) => {
-                    {
-                        /* 
-                    return (<SaynetePlayerCard key={el.phrase_rec_id} deck={el} img={img} />)
-                    return (<Test key={el.phrase_rec_id} deck={el} img={img} />)
+        <>
+            {currentCardId ? <SaynetePlayCardFull key={currentCardId} phrases={phrases} currentPhrase={currentPhrase} callbackFunction={callbackFunction} /> :
+                <>
+                    <div className={`${classes.card__list}`}>
+                        {phrases && phrases.map(
+                            (el) => {
+                                {
+                                    /* 
+                                return (<SaynetePlayerCard key={el.phrase_rec_id} deck={el} img={img} />)
+                                return (<Test key={el.phrase_rec_id} deck={el} img={img} />)
+            
+                                    */
+                                }
+                                return (
+                                    <>
+                                        <SaynetePlayerCard key={el.phrase_rec_id} deck={el} callbackFunction={callbackFunction} />
+                                    </>
+                                )
 
-                        */
-                    }
-                    return (<SaynetePlayerCard key={el.phrase_rec_id} deck={el} img={img} />)
-
-                }
-            )
+                            }
+                        )
+                        }
+                    </div>
+                </>
             }
-        </div>
+
+        </>
+
     )
 }
 

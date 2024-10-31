@@ -117,11 +117,11 @@ const NavBar = ({ props }) => {
                 <Toolbar>
                     <Typography >
                         <a href="/">
-                            <img src={LGDK_LOGO_NOTEXT_BLUE} alt="logo" width="64" />
+                            <img src={LGDK_LOGO_NOTEXT_BLUE} alt="logo" width="32" />
                         </a>
                     </Typography>
-                    <Typography variant="secondary" sx={{ flexGrow: 1, fontWeight: 700, color: "secondary.contrastText" }}>
-                        <div>
+                    <Typography variant="primary" sx={{ flexGrow: 1, fontWeight: 200, color: "dark.main" }}>
+                        <div className="ml-2">
                             {currentVersion.product} | {currentVersion.subProduct}
                         </div>
                     </Typography>

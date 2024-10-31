@@ -75,24 +75,23 @@ const KeywordPopper = ({ word, callbackModal }) => {
               </div>
             </>}
 
-          <Stack direction="row" spacing={3} sx={{
-            justifyContent: "space-between",
+          <Stack direction="row" spacing={1} sx={{
+            justifyContent: "flex-end",
             alignItems: "flex-end",
-            paddingLeft: 2,
-            paddingRight: 2,
+            paddingLeft: 1,
+            paddingRight: 1,
             marginTop: 3,
             marginBottom: 1,
           }}>
-            <Button color="grey" variant={french ? 'contained' : 'outlined'} size="small" aria-label="FR" onClick={() => languageToggler('FR')} sx={{
+            <Button color={french ? 'grey' : 'white'} variant='contained' size="small" aria-label="FR" onClick={() => languageToggler('FR')} sx={{
               padding: 0,
             }}>
               <p>fre</p>
             </Button>
-            <Button color="grey" variant={french ? 'outlined' : 'contained'} size="small" aria-label="TR" onClick={() => languageToggler('TR')} sx={{
+            <Button color={french ? 'white' : 'grey'} variant='contained' size="small" aria-label="TR" onClick={() => languageToggler('TR')} sx={{
               padding: 0,
-              alignItems: "center",
             }}>
-              <p>rom</p>
+              <p>{word.word_language}</p>
             </Button>
           </Stack>
         </Box>
