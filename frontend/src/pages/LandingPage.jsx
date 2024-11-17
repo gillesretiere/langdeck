@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <main className="relative">
         <MenuNavigation />
-        <section className="xl:padding-l wide:padding-r padding-b bg-special-gris-clair">
+        <section className="xl:padding-l wide:padding-r padding-b ">
             <HomeDisplaySection />
         </section>
         <section className="xl:padding-l wide:padding-r padding-b bg-sky-blue">

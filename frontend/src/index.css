@@ -47,7 +47,7 @@ here padding is included in box-sizing but not margin which is extra-sizing
 
 html {
   font-family: sans-serif;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 body {
@@ -124,13 +124,12 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-  --color-background: #ffffff;
   --color-foreground: #efefef;
   }
 }
 
 .App-header {
-  background-color: var(--color-background);
+  /*background-color: var(--color-background);*/
   color: var(--color-foreground);
 }
 

@@ -29,11 +29,11 @@ const LanguageDeckCard = ({ language_deck }) => {
                 <img src={lang_flag_icon} alt="flag Icon" />
               </div>
               <div className={`flex flex-col`}>
-                <div className={`inline-grid grid-cols-[40%_3fr] gap-0.5 bg-white text-left`}>
+                <div className={`inline-grid grid-cols-[40%_3fr] gap-0.5 text-left`}>
                   <div>&nbsp;</div>
                   <div className={`${classes.card__description_title}`}>{vk_card_info[0]['card_info']}</div>
                 </div>
-                <div className={`inline-grid grid-cols-[40%_1fr_2fr] gap-0.5 bg-white ${classes.card__footer}`}>
+                <div className={`inline-grid grid-cols-[40%_1fr_2fr] gap-0.5 ${classes.card__footer}`}>
                   <div className={`${classes.card__description_subtitle}`}>&nbsp;</div>
                   <div className={`${classes.card__description_subtitle}`}>{vk_card_info[0].card_info_en}</div>
                   <div className={`${classes.card__description_subtitle}`}>{vk_card_info[0].card_info_fr}</div>

@@ -31,7 +31,7 @@ module.exports = {
         'regal-blue': '#243c5a',
         'primary-orange': '#f44336',
         'primary-pink': 'rgb(255,96,134)',
-        'primary-light-orange': 'rgb(255,117,28)',
+        'primary-light-orange': 'rgb(249,92,56)',
         'primary-light-green': 'rgb(135,198,174)',
         'primary-pale-orange': '#BFB8AA',
         'sky-blue': ' #D2E8E3',

@@ -1,5 +1,6 @@
 import { red } from '@mui/material/colors';
 import { createTheme, alpha, getContrastRatio } from '@mui/material/styles';
+import { dark } from '@mui/material/styles/createPalette';
 
 /* A custom theme for this app
 https://mui.com/material-ui/customization/color/
@@ -19,14 +20,17 @@ const orangeMain = alpha(orangeBase, 0.9);
 
 const theme = createTheme({
     palette: {
+        mode: 'light',
         primary: {
-            main: '#f44336',
+            /* f44336 */
+            main: '#fff',
             light: '#ef9a9a',
             dark: '#c62828',
             contrastText: '#fff',
         },
         secondary: {
-            main: '#00D2E9',
+            /* 00D2E9 */
+            main: '#f48fb1',
             light: '#abecf5',
             dark: '#00aecb',
             contrastText: '#00626a',
@@ -121,7 +125,7 @@ const theme = createTheme({
         MuiAppBar: {
             styleOverrides: {
                 colorPrimary: {
-                    backgroundColor: "white",
+                    /* backgroundColor: "white",*/
                     color: "#f74216",
                 }
             }
