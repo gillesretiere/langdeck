@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: space-between;
-  background: #2c303a;
+  /* background: #2c303a;*/
   gap: 1em;
   border-radius: 12px;
   max-height: max-content;
@@ -48,35 +48,35 @@
 }
 
 .card_header {
-  background: var(--mayaBlue);
+  /* background: var(--mayaBlue); */
   height: 100px;
   padding: 16px;
   transition: .3s var(--transition-easing);
 }
 
 .card_middle .card_header {
-  background: #2c303a;
+  /* background: #2c303a; */
   height:100%;
   max-height:max-content;
 
 }
 
 .card_border .card_header {
-  background: black;
+  /* background: black; */
   height: 32rem;
   display: grid;
 }
 
 .card_body {
   padding: 16px;
-  color: white;
+  /* color: white; */
   font-size: x-large;
 }
 
 .card_block {
   font-family: var(--primary-font);
-  background: rgba(0, 155, 241, 0.26);
-  color: white;
+  /*background: rgba(0, 155, 241, 0.26);*/
+  /* color: white; */
   font-size: medium;
   text-align: center;
   height: 32px;
@@ -92,7 +92,8 @@
 }
 
 .card_stack {
-  color: white;
+  color: black;
+  margin : 0px;
 }
 
 .card__img {
@@ -105,7 +106,7 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   overflow: hidden;
-  background-color: #009EF5;
+  /* background-color: #009EF5;*/
   /* Hide the overflowing of child elements */
 }
 

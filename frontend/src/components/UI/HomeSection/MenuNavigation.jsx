@@ -27,8 +27,6 @@ import { navLinks, currentVersion, } from "../../../assets/constants/index.js";
 
 import { LGDK_LOGO_NOTEXT_BLUE, } from "../../../assets/images";
 
-
-
 const StyledSearch = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
@@ -115,19 +113,6 @@ const MenuNavigation = () => {
             </div>
           </Typography>
           */}
-
-          <Box
-            component="div"
-            sx={{
-              display: {
-                xs: "none",
-                md: "block"
-              }
-            }}
-          >
-            {search}
-          </Box>
-
           <IconButton
             edge="start"
             color="inherit"
@@ -137,12 +122,25 @@ const MenuNavigation = () => {
               mr: 2,
               display: {
                 xs: "block",
-                md: "none"
+                /* md: "none", hidden if device >= md */
               }
             }}
           >
             <MenuIcon />
           </IconButton>
+          <Box
+            component="div"
+            sx={{
+              display: {
+                xs: "none",
+                md: "block",
+              }
+            }}
+          >
+            {search}
+          </Box>
+
+
 
           {/* The outside of the drawer */}
           <Drawer
@@ -187,7 +185,16 @@ const MenuNavigation = () => {
               </Box>
 
               {search}
-              {/*
+
+              <Button
+                sx={[
+                  (theme) => ({
+                    color: '#fff',
+                      backgroundColor: theme.palette.primary.main,
+                    }),
+                ]}
+              > Change </Button>
+                {/*
               <Box
                 sx={{
                   display: "flex",

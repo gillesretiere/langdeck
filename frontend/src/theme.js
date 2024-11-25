@@ -18,7 +18,11 @@ const greyMain = alpha(greyBase, 0.7);
 const orangeBase = '#F28705';
 const orangeMain = alpha(orangeBase, 0.9);
 
+
 const theme = createTheme({
+    colorSchemes: {
+        dark: true,
+    },
     palette: {
         mode: 'light',
         primary: {
@@ -30,7 +34,7 @@ const theme = createTheme({
         },
         secondary: {
             /* 00D2E9 */
-            main: '#f48fb1',
+            main: '#00D2E9',
             light: '#abecf5',
             dark: '#00aecb',
             contrastText: '#00626a',

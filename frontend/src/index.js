@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, useColorScheme } from '@mui/material/styles';
 
 import './index.css';
 
@@ -41,7 +41,7 @@ import theme from './theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme} defaultMode="dark">
     <BrowserRouter>
       <AuthProvider>
         <CssBaseline />
