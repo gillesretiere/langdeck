@@ -17,3 +17,7 @@
     margin-top: 1rem;
     margin-left: 1rem;
 }
+
+.big_button {
+    transform: scale(3.7);
+}

@@ -79,3 +79,8 @@
 .card_block:hover {
   cursor: pointer;
 }
+
+.card_play_button {
+    text-align: center;
+    color:coral;
+}

@@ -114,7 +114,7 @@ const SaynetePlayerCard = ({ deck, callbackFunction, }) => {
   return (
     <>
       {flipCard ?
-        <SaynetePlayerMonoCard phrase={phrase} callbackModal={callbackModal}></SaynetePlayerMonoCard>
+        <SaynetePlayerMonoCard phrase={deck} callbackModal={callbackModal}></SaynetePlayerMonoCard>
         :
         <div id='card__container'>
 
