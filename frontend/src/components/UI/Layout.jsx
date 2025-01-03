@@ -1,6 +1,6 @@
 import Header from "./Header"
 import Footer from "./Footer"
-import CurrentDecks from "./CurrentDecks"
+
 import classes from "./Layout.module.css";
 
 const Layout = ({children}) => {

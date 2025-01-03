@@ -1,9 +1,9 @@
 import React from 'react'
-import NavBar from './NavBar/NavBar';
+import HomeAppBar from './Navigation/HomeAppBar';
 
 const Header = () => {
     return (
-        <NavBar />
+        <HomeAppBar />
     )
 }
 export default Header

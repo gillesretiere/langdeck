@@ -1,37 +1,18 @@
-import React, { useState } from 'react';
-/*
- This global entry component is not used, specific routes components are used instead.
-*/
-import DeckContext from './context/DeckContext';
-
-export const appContext = React.createContext({
-    theme: 'lightTheme',
-    translationLanguage:'all',
-    selectedScene: '',
-    setSelectedScene: (scene) => {}
-  });
-  
+import React, { useState, } from 'react';
+import { UserContext } from './store/user_context';
 
 function App() {
-    <appContext.Provider>
-      <DeckContext.Provider
-            value={{
-              deck: '',
-              language: 'all',
-              update: () => { // we added this callback
-                this.setDeck((props) => ({
-                    deck: props,
-                }));
-            },
 
-            }}>
-        return (
-        <>
-            This is the App
-        </>
-        );
-      </DeckContext.Provider>
-    </appContext.Provider>
+  const [decks, setDecks] = useState([]);
+
+  return (
+    <UserContext.Provider value={decks}>
+      <div>
+        App
+      </div>
+    </UserContext.Provider>
+  );
+
 }
 
 export default App;
