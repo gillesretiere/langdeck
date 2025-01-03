@@ -74,7 +74,7 @@ const search = (
       <SearchIcon />
     </SearchIconWrapper>
     <StyledInputBase
-      placeholder="Rechercher…"
+      placeholder="SUCHEN"
       inputProps={{ "aria-label": "search" }}
     />
   </StyledSearch>
